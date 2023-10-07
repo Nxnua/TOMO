@@ -1,7 +1,7 @@
 
 
-import background from './assets/bg-light.png'
-import google_icon from './assets/google.png'
+import background from '../assets/bg-light.png'
+import google_icon from '../assets/google.png'
 
 export const LoginSignup = () => {
   return (
@@ -9,7 +9,7 @@ export const LoginSignup = () => {
             backgroundSize: "cover"
             
     }}>
-        <div>sgj</div>
+       
     <div className='container flex flex-col m-0 mr-[915px] w-auto bg-white pb-[10px]'>
     <div className="header">
       <div className="text">Sign Up</div>
