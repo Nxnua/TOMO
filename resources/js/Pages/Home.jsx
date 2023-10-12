@@ -3,6 +3,8 @@ export default function Home() {
     return <div> 
          <h1 class="text-3xl font-bold underline text-blue-500">
     Hello world!
+    smgnkesrjgniuzjkvgnjk
+    soihgisurdg
   </h1>
 
   <p className=" bg-slate-400">sdljg</p>
