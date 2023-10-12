@@ -9,5 +9,10 @@ export default function Home() {
 
   <p className=" bg-slate-400">sdljg</p>
   <p className=" bg-slate-400">sdljg</p>
+  <p className=" bg-slate-400">sdljg</p>
+  <p className=" bg-slate-400">sdljg</p>
+  <h3 className=" bg-slate-800">sdkng</h3>
+
+  <div className="h-200 w-200 bg-red-600">a</div>
     </div>
 }
