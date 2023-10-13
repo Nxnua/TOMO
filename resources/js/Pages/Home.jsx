@@ -1,18 +1,12 @@
 export default function Home() {
     const heading = "Laravel 9 Vite  with React JS";
-    return <div> 
-         <h1 class="text-3xl font-bold underline text-blue-500">
-    Hello world!
-    smgnkesrjgniuzjkvgnjk
-    soihgisurdg
-  </h1>
-
-  <p className=" bg-slate-400">sdljg</p>
-  <p className=" bg-slate-400">sdljg</p>
-  <p className=" bg-slate-400">sdljg</p>
-  <p className=" bg-slate-400">sdljg</p>
-  <h3 className=" bg-slate-800">sdkng</h3>
-
-  <div className="h-200 w-200 bg-red-600">a</div>
+    return <div className=" ">
+        <div className="  h-screen">
+          <img src="/images/background.png" alt="" srcset="" className=" h-screen w-auto" />
+        </div>
+        <div className=" absolute inset-y-0 right-0 bg-white w-[500px] rounded-l-2xl drop-shadow-[-26px_-28px_49px_rgba(0,0,0,0.30)]">
+          <h1>Hi, I'm Tomo!</h1>
+          
+        </div>
     </div>
 }
