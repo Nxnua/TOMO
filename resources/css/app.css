@@ -1,5 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 
+
+
+:root {
+    font-family: 'Nunito', sans-serif;
+
+    --orange: #E46A12;
+    --black-75: 0 0 0 0.75;
+}
 

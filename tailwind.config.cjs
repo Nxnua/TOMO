@@ -7,6 +7,10 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
+    colors: {
+      "orange": "var(--orange)",
+      "black-75": "rgba(var(--black-75))"
+    },
     extend: {},
   },
   plugins: [],
