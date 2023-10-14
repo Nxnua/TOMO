@@ -14,6 +14,7 @@ export default {
                 "footer-texture": "url('/img/footer-texture.png')",
             },
             colors: {
+                info: "var(--info)",
                 orange: "var(--orange)",
                 "black-75": "rgba(var(--black-75))",
             },

@@ -1,11 +1,12 @@
 import Banner from "../components/banner";
+import SignUp from "../components/signup";
 import Start from "../components/start";
 export default function Home() {
   return (
-    <div>
-      <div className="flex relative">
+    <div >
+      <div className="flex tracking-tight relative bg-[#bcf5f7]">
         <Banner />
-        <Start />
+        <SignUp />
       </div>
     </div>
   );
