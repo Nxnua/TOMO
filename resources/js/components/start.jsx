@@ -15,6 +15,7 @@ export default function Start({ startHandler }) {
                     className=" w-[30vh] mt-10"
                 />
             </div>
+           
 
             <button
                 className=" mt-[8vh] flex justify-center "

@@ -16,8 +16,14 @@ export default {
             colors: {
                 info: "var(--info)",
                 orange: "var(--orange)",
-                "black-75": "rgba(var(--black-75))",
+                success: "var(--success)",
+                error: "var(--error)",
+                warning: "var(--warning)",
+                black75 : "rgba(var(--black-75))",
             },
+            keyframes: {
+                
+              }
         },
     },
     plugins: [],
