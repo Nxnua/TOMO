@@ -19,8 +19,15 @@
 .to-left {
     animation-name: move;
     animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    animation-duration: 6s;
+    animation-fill-mode: none;
+    animation-duration: 60s;
+    
+}
+.to-left1 {
+    animation-name: move1;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-duration: 90s;
     
 }
 
@@ -28,10 +35,14 @@
 
 @keyframes move {
     from{ transform: translateX(0px);}
-    to{ transform: translateX(-1000px);}
+    to{ transform: translateX(-10000px);}
     
 }
-
+@keyframes move1 {
+  from{ transform: translateX(4400px);}
+  to{ transform: translateX(-10000px);}
+  
+}
 
 
 @keyframes bounce {
