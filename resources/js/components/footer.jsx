@@ -14,17 +14,17 @@ export default function Footer(){
                         <div>
                             <p className=" text-2xl text-orange font-extrabold">Menu</p>
 
-                            <div className=" flex flex-col">
+                            <div className=" flex flex-col ">
                                 {menu.map((item, i) =>{
                                     return (
-                                        <a key={item.id} href={item.link}> {item.title} </a>
+                                        <a key={item.id} href={item.link} className=" mt-2 text-white" > {item.title} </a>
                                     );
                                 })}
                             </div>
                         </div>
-                        <div className="">
+                        <div >
                         <p className=" text-2xl text-orange font-extrabold ">Trip Planner</p>
-                        <div>
+                        <div className=" flex flex-col">
                         {tripPlanner.map((item, i) =>{
                                     return (
                                         <a key={item.id} href={item.link}> {item.title} </a>
