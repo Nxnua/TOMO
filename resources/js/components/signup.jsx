@@ -19,14 +19,14 @@ export default function SignUp() {
                         className=" w-full mb-6 h-14 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400   rounded-md border-[#E5E5E5] "
                     />
                     <input
-                        type="email"
+                        type="password"
                         name=""
                         id=""
                         placeholder="Password"
                         className=" w-full mb-6 h-14 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400  rounded-md border-[#E5E5E5] "
                     />
                     <input
-                        type="email"
+                        type="password"
                         name=""
                         id=""
                         placeholder="Confirm Password"
