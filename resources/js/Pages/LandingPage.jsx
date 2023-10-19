@@ -3,8 +3,9 @@ import Banner from "../components/banner";
 import SignUp from "../components/signup";
 import Start from "../components/start";
 export default function Landing( scroll){
+    const visibility = scroll? "hidden" : "visible";
     const [onStart, setOnStart] = useState(false);
-    return <div className={" visible" + ({scroll} ? "hidden" : "visible") }>
+    return <div className={({scroll} ? "visible" : "hidden") }>
     <div className="flex tracking-tight relative bg-[#bcf5f7]">
         <Banner />
         

@@ -1,6 +1,6 @@
 export default function Start({ startHandler }) {
     return (
-        <div className="h-full w-[500px] flex flex-col">
+        <div  className="h-full w-[500px] flex flex-col">
             <div className=" flex justify-end m-4">light mode</div>
             <h1 className="flex justify-center m-4 text-3xl font-extrabold tracking-tight text-orange">
                 Hi, I'm Tomo!
