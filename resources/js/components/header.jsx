@@ -19,7 +19,7 @@ export default function Header(){
                 </ul>
             </div>
             <div className="bg-white float-right mr-10" >
-                <ul className="flex items-rigth gap-[1vw]">
+                <ul className="flex items-right gap-[1vw]">
                     <li>
                         <a href="">
                             <img src="images/Lang.png" alt="" width={30} height={30} className="mt-[5px] hover:opacity-70"/>

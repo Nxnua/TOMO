@@ -6,6 +6,7 @@ import Home from './Pages/Homepage/Home';
 
 import { Guides } from './Pages/Guides';
 
-ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Guides />        
+ReactDOM.createRoot(document.getElementById('app')).render(   
+
+    <Home />        
 );
