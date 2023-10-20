@@ -6,6 +6,5 @@ import Home from './Pages/Homepage/Home';
 import Plantrip from './Pages/PlanTrip';
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Plantrip />        
+    <Home />        
 );
-
