@@ -22,7 +22,7 @@ export default function Header(){
                 <ul className="flex items-rigth gap-[1vw]">
                     <li>
                         <a href="">
-                            <img src="images/Lang.png" alt="" width={30} height={30} className="mt-[5px] hover:opacity-70"/>
+                            <img src="images/image 1.png" alt="" width={30} height={30} className="mt-[5px] hover:opacity-70"/>
                         </a>
                     </li>
                     <li>
