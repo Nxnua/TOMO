@@ -59,3 +59,43 @@
     bounce { animation: delay 10s;;}
     
 }
+
+
+/*MY CSS*/
+body
+{
+	text-align:center;
+	font-weight:bold;
+}
+/*CSS3 STROKE EFFECT*/
+#mainNav ul li {
+  display: inline-block;
+	display:inline;
+	margin: 20px;
+}
+#mainNav ul li a,
+#mainNav ul li a:after,
+#mainNav ul li a:before {
+  transition: all .5s;
+}
+/* stroke */
+#mainNav.stroke ul li a
+{
+  position: relative;
+}
+#mainNav.stroke ul li a:after,
+#mainNav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #E34F25;
+  height: 1px;
+}
+#mainNav.stroke ul li a:hover:after {
+  width: 100%;
+}
