@@ -19,6 +19,7 @@ export const Guides = () => {
                     <li><a href="#">By Business</a></li>
                     <li><a href="#">By Travel</a></li>
                     <li><a href="#">Most reviewed</a></li>
+                    <li><a href="#">Most reviewed</a></li>
                     </ul>
                 </div>   
                 </ul>
