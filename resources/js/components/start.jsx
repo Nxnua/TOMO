@@ -1,6 +1,6 @@
 export default function Start({ startHandler }) {
     return (
-        <div  className="float-right rounded-2xl h-[100vh] w-[300px] flex flex-col">
+        <div  className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
                 <a href="">
                     <img src="images/darkmoon.png" alt="" width={25} height={25} className="hover:opacity-70" />
