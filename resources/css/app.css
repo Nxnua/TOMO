@@ -7,6 +7,7 @@
 
 :root {
     font-family: 'Nunito', sans-serif;
+    letter-spacing: -0.05em;
 
     --orange: #E46A12;
     --black-75: 0, 0, 0, 0.75;
@@ -33,7 +34,6 @@
 .divider {
   border-bottom-color: (270deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%)
 }
-
 
 
 @keyframes move {
