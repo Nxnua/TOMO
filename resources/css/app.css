@@ -30,6 +30,9 @@
     animation-duration: 90s;
     
 }
+.divider {
+  border-bottom-color: (270deg, transparent 15%, var(--clr-border) 15%, var(--clr-border) 85%, transparent 85%)
+}
 
 
 
