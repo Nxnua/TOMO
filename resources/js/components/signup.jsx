@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import {BrowserRouter} from "react-router-dom";
 import Login from "./login";
 export default function SignUp() {
     const [formData, setFormData] = useState({

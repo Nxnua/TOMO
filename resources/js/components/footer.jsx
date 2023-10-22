@@ -11,19 +11,20 @@ export default function Footer() {
         { id: 3, title: "Flights", link: "" },
     ];
     return (
-        <div className=" bg-black75 flex flex-col  ">
-            <div className=" h-64 ">
-                <div className=" h-full grid grid-cols-3 text-gray-200 font-semibold text-md ">
+        <div className=" bg-black75 flex flex-col   ">
+            <div className=" h-60">
+                
+                <div className=" h-full grid grid-cols-3 text-gray-200 font-semibold text-md  ">
                     <div className=" relative flex items-center ">
                         <img
                             src="/images/tomo-T.png"
                             alt=""
-                            className=" absolute  h-52 ml-36   "
+                            className=" absolute  h-44 ml-32   "
                         />
                         <img
                             src="/images/Tomo-White.png"
                             alt=""
-                            className=" h-20 ml-44 "
+                            className=" h-20 ml-36 "
                         />
                     </div>
                     <div className="flex flex-row py-12 px-20 justify-between tracking-tight m-0">
@@ -85,11 +86,15 @@ export default function Footer() {
                                 <a href=""><img src="/images/twitter.svg" alt="" /></a>
                                 <a href=""><img src="/images/mail.svg" alt="" /></a>
                         </div>
+                        
                     </div>
+                    
                 </div>
-                <div className=" bg-[#393535] h-20 flex flex-row justify-between px-20 text-gray-200 items-center font-medium ">
+                <div className=" flex justify-center bg-black75 ">
+                <hr className=" w-[80vw] border-[#616161] border-[1px]  "/></div>
+                <div className=" bg-[#393535] h-12 flex flex-row justify-between px-20 text-gray-200 text-xs items-center font-medium ">
                     <div>
-                        <a href="" className=" mr-10">TERMS & CONDITIONS</a>
+                        <a href="" className=" mr-10 ">TERMS & CONDITIONS</a>
                         <a href="">PRIVACY POLICY</a>
                     </div>
                     <div>
