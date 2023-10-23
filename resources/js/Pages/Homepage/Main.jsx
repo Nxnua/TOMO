@@ -121,6 +121,16 @@ export default function Main() {
             review: "47 view",
             star: "*",
         },
+        {
+            id: 4,
+            title: "Uyanga",
+            image: "/images/semi-gobi.png",
+            location:
+                "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
+    
+            review: "47 view",
+            star: "*",
+        },
     
     ];
     return (
