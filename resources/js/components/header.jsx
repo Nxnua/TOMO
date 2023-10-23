@@ -2,7 +2,7 @@ export default function Header(){
     return (
         <nav className="flex justify-between items-center h-[86px] mx-auto font-Nunito ">
             <div className="float-left ms-10">
-            <img src="images/Tomo-White.png" alt="" width={140} height={72} />
+            <img src="images/Logo.png" alt="" width={140} height={72} />
             </div>
             <div className="md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center">
                 <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
@@ -19,10 +19,10 @@ export default function Header(){
                 </ul>
             </div>
             <div className="bg-white float-right mr-10" >
-                <ul className="flex items-rigth gap-[1vw]">
+                <ul className="flex items-right gap-[1vw]">
                     <li>
                         <a href="">
-                            <img src="images/Lang.png" alt="" width={30} height={30} className="mt-[5px] hover:opacity-70"/>
+                            <img src="images/image 1.png" alt="" width={30} height={30} className="mt-[5px] hover:opacity-70"/>
                         </a>
                     </li>
                     <li>
