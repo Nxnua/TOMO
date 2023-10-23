@@ -56,11 +56,11 @@ export default function Guide(id, name, description, image, review,star) {
                                 {item.id}
                             </p>
 
-                            <p  className="review absolute ml-[500px]">
+                            <p  className="review absolute ml-[600px]">
                                 {item.review}
                             </p>
 
-                            <p className="star flex  absolute ml-[475px] ">
+                            <p className="star flex  absolute ml-[575px] ">
                                 {item.star}
                             </p>
 
