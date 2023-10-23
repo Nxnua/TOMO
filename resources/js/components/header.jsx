@@ -1,6 +1,6 @@
 export default function Header(){
     return (
-        <nav className="flex justify-between items-center h-[86px] mx-auto font-Nunito ">
+        <nav className="flex justify-between items-center h-vw[1] mx-auto font-Nunito ">
             <div className="float-left ms-10">
             <img src="images/Logo.png" alt="" width={140} height={72} />
             </div>
@@ -34,6 +34,7 @@ export default function Header(){
                     </li>
                 </ul>
             </div>
+
         </nav>
        
     );

@@ -4,7 +4,8 @@ import { useState } from "react";
 import ReactDOM from 'react-dom/client';        
 import Home from './Pages/Homepage/Home';
 import Plantrip from './Pages/PlanTrip';
+import Map from './Pages/Homepage/Map';
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Home />        
+    <Map />        
 );
