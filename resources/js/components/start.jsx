@@ -1,6 +1,6 @@
 export default function Start({ startHandler }) {
     return (
-        <div  className="float-right rounded-2xl h-[100vh] w-[300px] flex flex-col">
+        <div  className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
                 <a href="">
                     <img src="images/darkmoon.png" alt="" width={25} height={25} className="hover:opacity-70" />
@@ -25,7 +25,7 @@ export default function Start({ startHandler }) {
                 className=" mt-[6vh] flex justify-center "
                 onClick={() => startHandler()}
             >
-                <div className=" border-2 border-orange bg-orange text-white rounded-full hover:bg-warning hover:border-warning font-bold px-10 py-3   text-xl">
+                <div className=" bg-orange text-white rounded-full hover:bg-warning hover:border-warning font-bold px-10 py-3   text-xl">
                     Start
                 </div>
             </button>

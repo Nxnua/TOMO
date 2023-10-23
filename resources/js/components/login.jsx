@@ -1,21 +1,46 @@
 import { useState } from "react";
-import axios from "axios";
+import SignUp from "./signup";
 import {BrowserRouter} from "react-router-dom";
-import Login from "./login";
-export default function SignUp() {
-    const [formData, setFormData] = useState({
-        username: "",
-        password: "",
-        password1: "",
+export default function Login() {
+    const navigate = useNavigate();
+    const [formDat, setFormDat] = useState({
+      username: "",
+      password: "",
     });
-    const onSignUp = (e) => {
-        e.preventDefault();
-        console.log(formData);
-
-        return;
+  
+    const onSubmit = () => {
+      axios
+        .post("api", {
+          username: formDat.username,
+          password: formDat.password,
+        })
+        .then(({ data }) => {
+          if (data.status === "success") {
+            sessionStorage.setItem("token", data.result.user.token);
+            navigate("/")
+          } else {
+            alert("wrong credentials");
+          }
+        })
+        .catch((error) => alert(error));
+      // fetch("api").then( async response => {
+      //     const resData = await response.json();
+      //     setData(resData);
+      // });
     };
+  
+    const onLogin = (e) => {
+      e.preventDefault();
+      if (formDat.username && formDat.password) {
+        onSubmit();
+      } else {
+        alert("Please fill fields!!!");
+      }
+      return;
+    };
+  
     const onChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+      setFormDat({ ...formDat, [e.target.name]: e.target.value });
     };
     return (
         <div className="rounded-2xl w-[30vw] h-[100vh] bg-white float-right">
@@ -55,21 +80,14 @@ export default function SignUp() {
                         placeholder="Password"
                         className=" w-[80%] mx-auto mb-2 h-10 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400  text-sm rounded-md border-[#E5E5E5] "
                     />
-                    <input
-                    onChange={onChange}
-                        type="password"
-                        name=""
-                        id=""
-                        placeholder="Confirm Password"
-                        className=" w-[80%] mx-auto mb-2 h-10 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400 text-sm  rounded-md border-[#E5E5E5] "
-                    />
-                    <input type="submit" className="my-[5vh] mx-auto h-[30px] bg-orange px-8 py-auto rounded-2xl text-white text-xl font-bold" value="Sign Up"/>
+                    
+                    <input type="submit" className="my-[5vh] mx-auto h-[30px] bg-orange px-8 py-auto rounded-2xl text-white text-xl font-bold" value="Log In"/>
           
                 </form>
                 <p className="mb-[5vh] pt-2 text-center text-xs">
-                    Already have an account?
+                    Don't have an account?
                     <a href="#" className=" text-info">
-                        Sign In
+                        Login
                     </a>
                 </p>
 
