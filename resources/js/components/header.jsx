@@ -26,8 +26,8 @@ export default function Header(){
                         </a>
                     </li>
                     <li>
-                    <button className="bg-white border-2 border-warning text-warning px-5 py-2 rounded-full hover:bg-[#fabf66] hover:text-white">Sign In</button>
-                    <button className="ml-2 border-2 border-warning bg-warning text-white px-5 py-2 rounded-full hover:bg-[#fabf66]">Sign Up</button>
+                    <button className="bg-white border-4 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-warning hover:text-white">Sign In</button>
+                    <button className="ml-2 border-4 border-orange bg-orange text-white px-6 py-1 rounded-2xl hover:bg-orange">Sign Up</button>
                     </li>
                     <li>
                         <a href=""><img src="images/darkmoon.png" alt="" width={30} height={30} className=" hover:opacity-70"/></a>

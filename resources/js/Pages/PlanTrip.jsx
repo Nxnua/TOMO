@@ -1,18 +1,35 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
+import {data} from "./sliderData";
+import {MdChevronLeft,MdChevronRight} from 'react-icons/md'
 
 export default function Plantrip(){
+
+    const slideLeft = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft - 500;
+    };
+
+    const slideRight = () =>{
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft + 500;
+    };
     return <div>
         <Header/>
         <div >
-        <div className="text-center font-bold text-2xl">Where do you want to go?</div>
-        <form className=" mx-auto w-[440px] relative items-center justify-center">
-            <div className="">
-            <img src="/images/search.png"/>
-            <input type="search "  placeholder=" City, landmark"      className="w-full p-4 rounded-full bg-white text-center border-2"  />
+        <div className="text-center font-bold text-2xl h-[50px]">Where do you want to go?</div>
+        <form className=" mx-auto w-[900px] relative items-center justify-center">
+            <div className="h-[120px]" >
+                <div className="absolute ml-[20px] mt-[20px]">
+                    <img src="/images/search.png"/>
+                </div>
+            
+            <input type="search "  placeholder=" City, landmark"  className=" w-full p-4 rounded-full bg-white text-center border-2 "  />
             </div>
         </form>
-        <div className=" font-bold text-2xl">Popular destinations go ?</div>
+        <div className="mr-[600px] h-[60px]">
+        <div className=" font-bold text-2xl " >Popular destinations go ?</div>
+        </div>
         <div className=" flex justify-center items-center rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
@@ -31,7 +48,7 @@ export default function Plantrip(){
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-slate-500 group-hover:via-slate/60 group-hover:to-slate/70"></div>
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
-                        <h1 className="text-3x1 font-bold text-white">Erdnet</h1>
+                        <h1 className="text-3x1 font-bold text-white">Erdenet</h1>
                         <p className="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit soluta atque.</p>
                     </div>
                 </div>
@@ -50,15 +67,30 @@ export default function Plantrip(){
         </div>
         <Header/>
         <div>
-        <div className="text-center font-bold text-2xl">When do you want to go?</div>
-        <div className="font-bold text-2xl">How many days?</div>
-        <form className="mx-auto w-[440px] relative items-center justify-center">
-            <div className="">
-            <img src="/images/search.png"/>
-            <input type="search "  placeholder="number of days"  className="w-full p-4 rounded-full bg-white text-center border-2"  />
-            </div>
+        <div className="text-center font-bold text-2xl h-[60px]">When do you want to go?</div>
+        <form className="mx-auto w-[900px] h-[120px] ">
+            <div  className=" text-2xl font-bold  mr-[700px]">How many days?</div>
+            <input type="tel" id="phone" class="w-full p-4  bg-white  border" placeholder="number of days" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></input>
         </form>
+        <div className="absolute m text-center font-bold text-2xl mr-[620px] ">Which month? (optional)</div>
+        </div>
+        <div className="relative flex items-center">
+            <MdChevronLeft className="opacity-50 cursor-pointer hover:opacity-100" onClick={slideLeft} size={40}/>
+            <div id='slider' className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide">
+            {data.map((item) => (
+                <img className="w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300" src={item.img} alt="" />
+            ))}
+            </div>
+            <MdChevronRight className="opacity-50 cursor-pointer hover:opacity-100" onClick={slideRight} size={40}/>
+        </div>
+        <Header/>
+        <div>
+            <div className="font-bold text-2xl  h-10">What activity do you prefer? </div>
+            <span className="absolute">(choose 5 or more)</span>
+        </div>
+        <div>
+      
         </div>
         <Footer/>
     </div>
-}
+} 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SignUp from "./signup";
+import {BrowserRouter} from "react-router-dom";
 export default function Login() {
     const navigate = useNavigate();
     const [formDat, setFormDat] = useState({
@@ -56,7 +57,7 @@ export default function Login() {
             </div>
             <div className=" flex flex-col justify-center">
                 <h1 className="text-orange text-center mt-[1vh] mb-10 font-extrabold text-3xl">
-                    Sign Upff
+                    Sign Up
                 </h1>
                 <form
                     action=""
