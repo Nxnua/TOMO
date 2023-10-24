@@ -6,6 +6,7 @@
 
 
 :root {
+
     font-family: 'Nunito', sans-serif;
     letter-spacing: -0.05em;
 
@@ -16,6 +17,10 @@
     --error: #D24040;
     --warning: #F5A52E;
 
+}
+
+.sty {
+  mix-blend-mode:multiply;
 }
 .to-left {
     animation-name: move;
