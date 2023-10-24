@@ -97,7 +97,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "25",
+        discount: 25,
+        duration:"2 days and 1 night",
     },
     {
         id: 2,
@@ -108,7 +109,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: 30,
+        duration:"1 day"
     },
     {
         id: 3,
@@ -119,7 +121,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: 10,
+        duration:"2 days and 1 night"
     },
     {
         id: 4,
@@ -130,7 +133,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: 5,
+        duration:"2 days and 1 night"
     },
     {
         id: 4,
@@ -142,7 +146,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: "",
+        duration:"7 days"
     },
     {
         id: 4,
@@ -154,7 +159,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: "",
+        duration:"2 days and 1 night"
     },
     {
         id: 4,
@@ -166,7 +172,8 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: "",
+        duration:"2 days and 1 night"
     },
     {
         id: 4,
@@ -177,19 +184,10 @@ export const tripList = [
         review: 47,
         star: 4.5,
         price: 200,
-        sale: "",
+        discount: "",
+        duration:"2 days and 1 night"
     },
-    {
-        id: 4,
-        title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
-        image: "/images/semi-gobi.png",
-        location:
-            "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun",
-        review: 47,
-        star: 4.5,
-        price: 200,
-        sale: "",
-    },
+  
 ];
 
 export const cities = [
