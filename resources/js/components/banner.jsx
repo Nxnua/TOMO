@@ -1,8 +1,17 @@
+import Movement from "./bannerSVG";
+
 export default function Banner() {
     return (
             <div className="relative z-10">
                 <img src="/images/background.png" alt="" className="h-screen" />
-                {/* <img src="/images/bushes1.png"  className=" to-left h-[1vh] max-w-max absolute bottom-[23vh] left-[1vw]"/> */}
+                {/*  this needs to be fixed 
+                <div className=" absolute z-10  bottom-0 left-0">
+                    <Movement/>
+                </div> */}
+
+
+
+
                 <img src="/images/car.png" className=" car animate-bounce z-10 h-[25vh] left-[22vw] absolute bottom-[22vh] "/>
             
                

@@ -6,6 +6,7 @@ import Home from './Pages/Homepage/Home';
 import Plantrip from './Pages/PlanTrip';
 import { Guides } from './Pages/Guides';
 import Map from './Pages/Homepage/Map';
+import Movement from './components/bannerSVG';
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
     <Home />        
