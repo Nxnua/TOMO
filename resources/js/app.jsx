@@ -7,5 +7,8 @@ import Plantrip from './Pages/PlanTrip';
 import Map from './Pages/Homepage/Map';
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Map />        
+    <Home />      
 );
+
+     
+
