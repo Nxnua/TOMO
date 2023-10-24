@@ -24,7 +24,7 @@ export default function Main() {
                                 image={item.image}
                                 review={item.review}
                                 star={item.star}
-                                sale = {item.sale}
+                             
                                 key={v4()}
                             />
                         );
@@ -33,7 +33,7 @@ export default function Main() {
 
                 <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
 
-                <div className="  grid grid-cols-4 gap-6">
+                <div className="  grid  xl:grid-cols-4 gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {tripList.map((item, i) => {
                         return (
                             <TripComponent
@@ -42,6 +42,9 @@ export default function Main() {
                                 image={item.image}
                                 review={item.review}
                                 star={item.star}
+                                discount = {item.discount}
+                                duration={item.duration}
+                                price={item.price}
                                 key={v4()}
                             />
                         );
