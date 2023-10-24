@@ -24,6 +24,7 @@ export default function Main() {
                                 image={item.image}
                                 review={item.review}
                                 star={item.star}
+                                sale = {item.sale}
                                 key={v4()}
                             />
                         );

@@ -1,51 +1,51 @@
-export const data=[
+export const data = [
     {
-        id:1,
-        img:'/images/jan.png'
+        id: 1,
+        img: "/images/jan.png",
     },
     {
-        id:2,
-        img:'/images/feb.png'
+        id: 2,
+        img: "/images/feb.png",
     },
     {
-        id:3,
-        img:'/images/mar.png'
+        id: 3,
+        img: "/images/mar.png",
     },
     {
-        id:4,
-        img:'/images/apr.png'
+        id: 4,
+        img: "/images/apr.png",
     },
     {
-        id:5,
-        img:'/images/may.png'
+        id: 5,
+        img: "/images/may.png",
     },
     {
-        id:6,
-        img:'/images/may.png'
+        id: 6,
+        img: "/images/may.png",
     },
     {
-        id:7,
-        img:'/images/jan.png'
+        id: 7,
+        img: "/images/jan.png",
     },
     {
-        id:8,
-        img:'/images/feb.png'
+        id: 8,
+        img: "/images/feb.png",
     },
     {
-        id:9,
-        img:'/images/mar.png'
+        id: 9,
+        img: "/images/mar.png",
     },
     {
-        id:10,
-        img:'/images/apr.png'
+        id: 10,
+        img: "/images/apr.png",
     },
     {
-        id:11,
-        img:'/images/may.png'
+        id: 11,
+        img: "/images/may.png",
     },
     {
-        id:12,
-        img:'/images/may.png'
+        id: 12,
+        img: "/images/may.png",
     },
 ];
 export const guide = [
@@ -86,97 +86,111 @@ export const guide = [
         star: "*",
     },
 ];
+
 export const tripList = [
     {
         id: 1,
         title: "Overnight Semi-Gobi Tour",
         location:
-            "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
+            "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
         image: "/images/semi-gobi.png",
-        review: "47 view",
-        star: "4.5",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "25",
     },
     {
         id: 2,
         title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-            image: "/images/terelj.png",
-        review: "9 view",
-        star: "2.1",
+            "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
+        image: "/images/terelj.png",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 3,
         title: "Zolboo",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-            image: "/images/manzushir.png",
-        review: "10 view",
-        star: "1.5",
+            "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
+        image: "/images/manzushir.png",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 4,
-        title: "Uyanga",
+        title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/manzushir.png",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-        review: "47 view",
-        star: "*",
+            "Terelj National Park",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 4,
-        title: "Uyanga",
+        title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/semi-gobi.png",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
+            "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
 
-        review: "47 view",
-        star: "*",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 4,
-        title: "Uyanga",
+        title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/terelj.png",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
+            "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
 
-        review: "47 view",
-        star: "*",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 4,
-        title: "Uyanga",
+        title: "A day trip",
         image: "/images/semi-gobi.png",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
+            "Tasarkhai sand dunes, nomadic family",
 
-        review: "47 view",
-        star: "*",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 4,
-        title: "Uyanga",
+        title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/semi-gobi.png",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-
-        review: "47 view",
-        star: "*",
+            "Terelj National Park",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
     {
         id: 4,
-        title: "Uyanga",
+        title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/semi-gobi.png",
         location:
-            "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-
-        review: "47 view",
-        star: "*",
+            "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun",
+        review: 47,
+        star: 4.5,
+        price: 200,
+        sale: "",
     },
-
 ];
-
-
 
 export const cities = [
     {
