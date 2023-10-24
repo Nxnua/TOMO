@@ -21,30 +21,30 @@ export const data=[
     },
     {
         id:6,
-        img:'/images/may.png'
+        img:'/images/jun.png'
     },
     {
         id:7,
-        img:'/images/jan.png'
+        img:'/images/jul.png'
     },
     {
         id:8,
-        img:'/images/feb.png'
+        img:'/images/aug.png'
     },
     {
         id:9,
-        img:'/images/mar.png'
+        img:'/images/sep.png'
     },
     {
         id:10,
-        img:'/images/apr.png'
+        img:'/images/oct.png'
     },
     {
         id:11,
-        img:'/images/may.png'
+        img:'/images/nov.png'
     },
     {
         id:12,
-        img:'/images/may.png'
+        img:'/images/dec.png'
     },
 ]

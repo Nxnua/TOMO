@@ -72,7 +72,7 @@ export default function Plantrip(){
             <div  className=" text-2xl font-bold  mr-[700px]">How many days?</div>
             <input type="tel" id="phone" class="w-full p-4  bg-white  border" placeholder="number of days" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></input>
         </form>
-        <div className="absolute m text-center font-bold text-2xl mr-[620px] ">Which month? (optional)</div>
+        <div className="  text-center font-bold text-2xl mr-[620px] ">Which month? (optional)</div>
         </div>
         <div className="relative flex items-center">
             <MdChevronLeft className="opacity-50 cursor-pointer hover:opacity-100" onClick={slideLeft} size={40}/>
@@ -86,11 +86,163 @@ export default function Plantrip(){
         <Header/>
         <div>
             <div className="font-bold text-2xl  h-10">What activity do you prefer? </div>
-            <span className="absolute">(choose 5 or more)</span>
+            <span className=" h-20 ">(choose 5 or more)</span>
         </div>
-        <div>
-      
+        <div className="flex flex-wrap justify-center gap-12">
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
         </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        <div className=" mx-auto w-28 h-10 object-cover">
+        <label className="relative cursor-pointer">
+            <input type="checkbox" className="peer sr-only"/>
+            <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                <p className="text-cyan-50">text</p>
+            </div>
+        </label>
+        </div>
+        </div>
+        <form>   
+            <div class="relative h-20">
+                <input type="text" id="text" class=" w-[450px] p-4 pl-10 " placeholder="submit" required/>
+                <button type="submit" class="text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 ">Submit</button>
+            </div>
+        </form>
+        
+        
+        
         <Footer/>
     </div>
 } 
