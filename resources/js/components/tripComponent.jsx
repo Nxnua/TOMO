@@ -6,6 +6,7 @@ export default function TripComponent({
     review,
     rating,
     price,
+    sale
 }) {
     return (
         <div className=" h-[400px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
