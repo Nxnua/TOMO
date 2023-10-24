@@ -1,6 +1,6 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import {data} from "./sliderData";
+import {data} from "./data";
 import {MdChevronLeft,MdChevronRight} from 'react-icons/md'
 
 export default function Plantrip(){
