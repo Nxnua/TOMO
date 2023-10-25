@@ -38,16 +38,17 @@ In some cases, the code shows errors due to version differences. We use:
 
 In the project directory, you can run:
 
-### `npm install --force`
+### `npm install`
 At first, you need to open code by using command prompt or zip file.\
 Activate the terminal and write down this code (please note that you need to have installed node to run the code) to install.
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
-Open localhost:3000 to view our website in your browser.
 
+### `php artisan serve`
 
+Opens localhost:8000 to view our website in your browser.
 
 ## 📄 License
 
