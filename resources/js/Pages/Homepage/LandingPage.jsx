@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Banner from "../components/banner";
-import SignUp from "../components/signup";
-import Start from "../components/start";
+import Banner from "../../components/banner";
+import SignUp from "../../components/signup";
+import Start from "../../components/start";
 export default function Landing( scroll){
     const visibility = scroll? "hidden" : "visible";
     const [onStart, setOnStart] = useState(false);

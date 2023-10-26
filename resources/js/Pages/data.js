@@ -94,11 +94,12 @@ export const tripList = [
         location:
             "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
         image: "/images/semi-gobi.png",
-        review: 47,
-        star: 4.5,
         price: 200,
         discount: 25,
-        duration:"2 days and 1 night",
+        duration: "2 days and 1 night",
+        review: 40,
+        rating: 4.5,
+        stars: "",
     },
     {
         id: 2,
@@ -106,11 +107,12 @@ export const tripList = [
         location:
             "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
         image: "/images/terelj.png",
-        review: 47,
-        star: 4.5,
         price: 200,
         discount: 30,
-        duration:"1 day"
+        duration: "1 day",
+        review: 40,
+        rating: 4.5,
+        stars: "",
     },
     {
         id: 3,
@@ -118,23 +120,24 @@ export const tripList = [
         location:
             "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
         image: "/images/manzushir.png",
-        review: 47,
-        star: 4.5,
+       
         price: 200,
         discount: 10,
-        duration:"2 days and 1 night"
+        duration: "2 days and 1 night",
+        review: 40,
+        rating: 4.5,
+        stars: "",
     },
     {
         id: 4,
         title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/manzushir.png",
-        location:
-            "Terelj National Park",
+        location: "Terelj National Park",
         review: 47,
-        star: 4.5,
+        rating: 4.5,
         price: 200,
         discount: 5,
-        duration:"2 days and 1 night"
+        duration: "2 days and 1 night",
     },
     {
         id: 4,
@@ -143,11 +146,11 @@ export const tripList = [
         location:
             "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
 
-        review: 47,
-        star: 4.5,
+        review: 471,
+        rating: 4.5,
         price: 200,
         discount: "",
-        duration:"7 days"
+        duration: "7 days",
     },
     {
         id: 4,
@@ -157,37 +160,34 @@ export const tripList = [
             "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
 
         review: 47,
-        star: 4.5,
+        rating: 4.5,
         price: 200,
         discount: "",
-        duration:"2 days and 1 night"
+        duration: "2 days and 1 night",
     },
     {
         id: 4,
         title: "A day trip",
         image: "/images/semi-gobi.png",
-        location:
-            "Tasarkhai sand dunes, nomadic family",
+        location: "Tasarkhai sand dunes, nomadic family",
 
         review: 47,
-        star: 4.5,
+        rating: 4.5,
         price: 200,
         discount: "",
-        duration:"2 days and 1 night"
+        duration: "2 days and 1 night",
     },
     {
         id: 4,
         title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/semi-gobi.png",
-        location:
-            "Terelj National Park",
+        location: "Terelj National Park",
         review: 47,
-        star: 4.5,
+        rating: 4.5,
         price: 200,
         discount: "",
-        duration:"2 days and 1 night"
+        duration: "2 days and 1 night",
     },
-  
 ];
 
 export const cities = [
