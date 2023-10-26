@@ -19,15 +19,15 @@ export default function Footer() {
                         <img
                             src="/images/tomo-T.png"
                             alt=""
-                            className=" absolute  h-44 ml-32   "
+                            className=" absolute md:ml-16  h-44 lg:ml-32   "
                         />
                         <img
                             src="/images/Tomo-White.png"
                             alt=""
-                            className=" h-20 ml-36 "
+                            className=" h-20 lg:ml-36 md:ml-16"
                         />
                     </div>
-                    <div className="flex flex-row py-12 px-20 justify-between tracking-tight m-0">
+                    <div className="flex flex-row py-12 md:px-5 px-20 justify-between tracking-tight m-0">
                         <div>
                             <p className=" text-xl text-orange font-extrabold flex justify-start mb-2 ">
                                 Menu

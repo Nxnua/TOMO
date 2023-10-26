@@ -12,7 +12,7 @@ export default function TripComponent({
     discount,
 }) {
     return (
-        <div className=" h-[400px] w-[300px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
+        <div className=" transition ease-in-out delay-150  hover:scale-105  duration-200 h-[420px] w-[300px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
             <div className=" relative h-[45%] rounded-2xl rounded-b-md">
                 <img src={image} alt="" className=" h-[180px] w-full " />
                 <div className=" absolute flex justify-center left-3 top-4 rounded-md bg-[#32B837] w-16 h-6 drop-shadow-[_0px_0px_5px_rgba(0,0,0,0.25)] text-white text-xs items-center">
@@ -26,7 +26,7 @@ export default function TripComponent({
                     />
                 </div>
             </div>
-            <div className=" mx-4 my-2 h-12 flex justify-center text-lg leading-5 items-center font-bold">
+            <div className=" mx-4 my-1 h-12 flex justify-center text-lg leading-5 items-center font-bold">
                 <p>{title}</p>
             </div>
             <div className=" h-8 mb-2 mx-4 flex flex-row items-center ">
@@ -44,9 +44,12 @@ export default function TripComponent({
                 </span>
                 <div className=" text-sm font-semibold">{duration}</div>
             </div>
-            <div className=" flex flex-row justify-between mx-4 mt-2">
+            <div className=" flex flex-row justify-between mx-4 mt-4">
                 <div>
-                    <Review />
+                 
+                 <Review reviews={review} rating={rating}/>
+                   
+                   
                 </div>
                 <div className=" flex items-center">
                     <p className="text-xs">
@@ -55,7 +58,7 @@ export default function TripComponent({
                     <p className=" ml-1 text-lg">${price}</p>
                 </div>
             </div>
-            <div className=" drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
+            <div className=" mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
                 <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">Book now</button>
             </div>
         </div>
