@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Main from "./Main";
 export default function Home() {
     const [landingVisible, setLandingVisible] = useState(true);
-    const [scrollTrigered, setScrollTrigered] = useState(false);
+    const [scrollTriggered, setScrollTriggered] = useState(false);
     const [windowTop, setWindowTop] = useState(0);
     const anchorRef = useRef();
 
@@ -12,7 +12,7 @@ export default function Home() {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         
         const handleScroll = (e) => {
-            console.log("teneg");
+         
             setScrollTriggered(true);
             // console.log(window.scrollY, " < ", (anchorRef.current.offsetTop || 0))
             // setLandingVisible(
@@ -45,7 +45,7 @@ export default function Home() {
             anchorRef.current &&
             anchorRef.current.offsetTop === 0 &&
             windowTop === 0 &&
-            !scrollTrigered
+            !scrollTriggered
         ) {
             setLandingVisible(true);
         } else {
