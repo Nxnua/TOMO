@@ -11,5 +11,8 @@ import Movement from './components/bannerSVG';
 
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Trips/>        
-)
+
+
+    <Home />        
+);
+
