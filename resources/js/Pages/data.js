@@ -136,7 +136,7 @@ export const tripList = [
         review: 47,
         rating: 4.3,
         price: 200,
-        discount: 5,
+        discount: null,
         duration: "2 days and 1 night",
     },
     {
@@ -279,4 +279,42 @@ export const cities = [
         id: 22,
         name: "Sukhbaatar",
     },
+];
+
+
+export const stars = [
+    {
+        starfill: 5,
+        img: "",
+    },
+    {
+        starfill: 4.5,
+        img: "",
+    },
+    {
+        starfill: 3.5,
+        img: "",
+    },
+    {
+        starfill: 3,
+        img: "",
+    },
+    {
+        starfill: 2.5,
+        img: "",
+    },
+    {
+        starfill: 2,
+        img: "",
+    },
+    {
+        starfill: 1.5,
+        img: "",
+    },
+    {
+        starfill: 1,
+        img: "",
+    },
+    
+
 ];

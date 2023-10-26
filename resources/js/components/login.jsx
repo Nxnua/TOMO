@@ -96,7 +96,7 @@ export default function Login({ signUpHandler }) {
                         className=" mx-auto w-6"
                     />
                     <p className=" pl-4 text-sm  font-extrabold tracking-tight text-gray-800 ">
-                        Sign up with Google
+                        Sign in with Google
                     </p>
                 </a>
             </div>
