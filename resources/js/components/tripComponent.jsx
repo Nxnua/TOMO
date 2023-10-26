@@ -11,11 +11,18 @@ export default function TripComponent({
     price,
     discount,
 }) {
+    const isDiscountNull = discount === null ? true : false;
     return (
         <div className=" transition ease-in-out delay-150  hover:scale-105  duration-200 h-[420px] w-[300px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
             <div className=" relative h-[45%] rounded-2xl rounded-b-md">
                 <img src={image} alt="" className=" h-[180px] w-full " />
-                <div className=" absolute flex justify-center left-3 top-4 rounded-md bg-[#32B837] w-16 h-6 drop-shadow-[_0px_0px_5px_rgba(0,0,0,0.25)] text-white text-xs items-center">
+                <div
+                    className={
+                        " absolute flex justify-center left-3 top-4 rounded-md bg-[#32B837] w-16 h-6 drop-shadow-[_0px_0px_5px_rgba(0,0,0,0.25)] text-white text-xs " +
+                        (isDiscountNull ? " hidden" : "visible") +
+                        " items-center"
+                    }
+                >
                     {discount}% off
                 </div>
                 <div className=" absolute flex justify-center right-3 top-2 w-7 items-center">
@@ -46,20 +53,25 @@ export default function TripComponent({
             </div>
             <div className=" flex flex-row justify-between mx-4 mt-4">
                 <div>
-                 
-                 <Review reviews={review} rating={rating}/>
-                   
-                   
+                    <Review reviews={review} rating={rating} />
                 </div>
                 <div className=" flex items-center">
-                    <p className="text-xs">
+                    <p
+                        className={
+                            "text-xs " +
+                            (isDiscountNull ? " hidden" : "visible") +
+                            ""
+                        }
+                    >
                         <del> ${price + (price / 100) * discount}</del>
                     </p>
                     <p className=" ml-1 text-lg">${price}</p>
                 </div>
             </div>
             <div className=" mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
-                <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">Book now</button>
+                <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">
+                    Book now
+                </button>
             </div>
         </div>
     );

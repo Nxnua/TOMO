@@ -111,7 +111,7 @@ export const tripList = [
         discount: 30,
         duration: "1 day",
         review: 40,
-        rating: 4.5,
+        rating: 4,
         stars: "",
     },
     {
@@ -120,7 +120,7 @@ export const tripList = [
         location:
             "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
         image: "/images/manzushir.png",
-       
+
         price: 200,
         discount: 10,
         duration: "2 days and 1 night",
@@ -134,7 +134,7 @@ export const tripList = [
         image: "/images/manzushir.png",
         location: "Terelj National Park",
         review: 47,
-        rating: 4.5,
+        rating: 4.3,
         price: 200,
         discount: 5,
         duration: "2 days and 1 night",
@@ -149,7 +149,7 @@ export const tripList = [
         review: 471,
         rating: 4.5,
         price: 200,
-        discount: "",
+        discount: null,
         duration: "7 days",
     },
     {
@@ -160,9 +160,9 @@ export const tripList = [
             "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
 
         review: 47,
-        rating: 4.5,
+        rating: 3.5,
         price: 200,
-        discount: "",
+        discount: null,
         duration: "2 days and 1 night",
     },
     {
@@ -174,7 +174,7 @@ export const tripList = [
         review: 47,
         rating: 4.5,
         price: 200,
-        discount: "",
+        discount: null,
         duration: "2 days and 1 night",
     },
     {
@@ -185,7 +185,7 @@ export const tripList = [
         review: 47,
         rating: 4.5,
         price: 200,
-        discount: "",
+        discount: null,
         duration: "2 days and 1 night",
     },
 ];

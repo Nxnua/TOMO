@@ -1,39 +1,33 @@
 import { useState } from "react";
 import axios from "axios";
-import {BrowserRouter} from "react-router-dom";
-import SignUp from "./signup"
+import { BrowserRouter } from "react-router-dom";
+import SignUp from "./signup";
 import Login from "./login";
 
-export function SignUpNavigator(){
+export function SignUpNavigator() {
     const [onSignIn, setOnSignIn] = useState(false);
- 
-    return(
+
+    return (
         <div>
-        {onSignIn ? (
-            
-            <LoginNavigator
-                               
-            />
-        ) : (
-            <SignUp
-                signHandler={() => {
-                    setOnSignIn(true);
-                }}
-            />
-        )}
+            {onSignIn ? (
+                <LoginNavigator />
+            ) : (
+                <SignUp
+                    signHandler={() => {
+                        setOnSignIn(true);
+                    }}
+                />
+            )}
         </div>
     );
 }
 
-export function LoginNavigator(){
+export function LoginNavigator() {
     const [onSignUp, setOnSignUp] = useState(false);
-        return(
-            <div>
+    return (
+        <div>
             {onSignUp ? (
-                
-                <SignUp 
-                                   
-                />
+                <SignUp />
             ) : (
                 <Login
                     signUpHandler={() => {
@@ -41,7 +35,6 @@ export function LoginNavigator(){
                     }}
                 />
             )}
-            </div>
-        );
-
+        </div>
+    );
 }
