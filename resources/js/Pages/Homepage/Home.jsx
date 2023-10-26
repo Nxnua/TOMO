@@ -9,10 +9,9 @@ export default function Home() {
 
     useEffect(() => {
         setScrollTriggered(false);
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
         const handleScroll = (e) => {
-         
             setScrollTriggered(true);
             // console.log(window.scrollY, " < ", (anchorRef.current.offsetTop || 0))
             // setLandingVisible(

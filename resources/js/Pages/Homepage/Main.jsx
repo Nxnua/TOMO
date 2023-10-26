@@ -5,10 +5,9 @@ import Guide from "../../components/guideComponent";
 import { v4 } from "uuid";
 import TripComponent from "../../components/tripComponent";
 import SvgComponent from "./Map";
-import {guide, tripList} from "../data"
+import { guide, tripList } from "../data";
 
 export default function Main() {
-   
     return (
         <div>
             <Header />
@@ -24,7 +23,6 @@ export default function Main() {
                                 image={item.image}
                                 review={item.review}
                                 star={item.star}
-                             
                                 key={v4()}
                             />
                         );
@@ -42,7 +40,7 @@ export default function Main() {
                                 image={item.image}
                                 review={item.review}
                                 rating={item.rating}
-                                discount = {item.discount}
+                                discount={item.discount}
                                 duration={item.duration}
                                 price={item.price}
                                 key={v4()}
@@ -52,7 +50,7 @@ export default function Main() {
                 </div>
             </div>
             <div className=" mx-28 ">
-            <SvgComponent/>
+                <SvgComponent />
             </div>
 
             <Footer />

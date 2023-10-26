@@ -2,16 +2,7 @@ import { useState } from "react";
 import Login from "./login";
 export default function Start({ startHandler }) {
 
-    const [onSignIn, setOnSignIn] = useState(false);
-    {onSignIn ? (
-        <SignUp />
-    ) : (
-        <Login
-            signHandler={() => {
-                setOnSignIn(true);
-            }}
-        />
-    )}
+   
     return (
         <div  className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
