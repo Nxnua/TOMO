@@ -7,8 +7,7 @@ import Plantrip from './Pages/PlanTrip';
 import { Guides } from './Pages/Guides';
 import Map from './Pages/Homepage/Map';
 
-import Guides from './Pages/Guides';
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
-    <Home />        
+    <Guides />        
 )
