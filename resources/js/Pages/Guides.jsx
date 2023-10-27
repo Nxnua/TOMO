@@ -27,7 +27,7 @@ export const Guides = () => {
             </div>
             
       </div>
-      <div className=" flex grid grid-cols-3 gap-6 mx-28">
+      <div className=" grid grid-cols-3 gap-6 mx-28">
         {guide.map((item,i) => {
           return <Guide  name={item.name} description={item.description} image={item.image} review={item.review} star={item.star} />
         })}

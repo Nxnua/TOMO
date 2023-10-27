@@ -9,5 +9,4 @@ import Map from "./Pages/Homepage/Map";
 import Movement from "./components/bannerSVG";
 
 
-ReactDOM.createRoot(document.getElementById("app")).render(<Home />);
-
+ReactDOM.createRoot(document.getElementById("app")).render(<Trips />);
