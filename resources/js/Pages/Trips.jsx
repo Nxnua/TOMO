@@ -61,6 +61,7 @@ export default function Trip() {
         { isChecked: true, duration: "3-7 days" },
         { isChecked: false, duration: "7+ days" },
     ];
+    
     return (
         <div>
             <Header />
@@ -69,8 +70,8 @@ export default function Trip() {
                     Trips &gt; All trips
                 </div>
                 <div className=" flex flex-row">
-                    <div className=" w-1/4 flex flex-col">
-                        <div className=" mt-4 flex justify-start w-[80%] flex-col">
+                    <div className=" w-1/4 flex flex-col relative">
+                        <div id="bar-fixed" className=" mt-4 flex justify-start w-[300px] flex-col top-16   fixed z-10">
                             <div>
                                 <p className=" w-full  border-b-2 flex justify-start">
                                     {" "}
@@ -177,7 +178,7 @@ export default function Trip() {
                                     <GrSearch className=" text-2xl fill-black50" />
                                 </a>
                             </div>
-                            <div className=" flex flex-row items-center">
+                            <div className=" flex flex-row items-center mb-4">
                                 <p className=" text-lg font-bold">
                                     (255 trips)
                                 </p>
@@ -190,7 +191,7 @@ export default function Trip() {
                                    <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
                                 </div>
                             </div>
-                            <div className=" grid  xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                            <div className=" grid  mb-8 xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
                                 {tripList.map((item, i) => {
                                     return (
                                         <TripComponent
