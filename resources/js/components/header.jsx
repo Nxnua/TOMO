@@ -41,10 +41,10 @@ export default function Header() {
                     <li>
                         <a href="">
                             <img
-                                src="images/darkmoon.png"
+                                src="images/darkmodecircle.png"
                                 alt=""
-                                width={30}
-                                height={30}
+                                width={40}
+                                height={40}
                                 className=" hover:opacity-70"
                             />
                         </a>
