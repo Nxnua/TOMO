@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { cities } from "../data";
 
 const SvgComponent = () => {
-    
     const [selectedCity, setSelectedCity] = useState(null);
     const handleClick = (e) => {
         const target = e.target;

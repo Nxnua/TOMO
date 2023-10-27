@@ -1,12 +1,18 @@
+import { useState } from "react";
+import Login from "./login";
 export default function Start({ startHandler }) {
+
+   
     return (
+
         <div  className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
                 <a href="">
-                    <img src="images/darkmoon.png" alt="" width={25} height={25} className="hover:opacity-70" />
+                    <img src="images/darkmode.png" alt="" className="hover:opacity-70 w-16" />
                 </a>
             </div>
             <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">
+
                 Hi, I'm Tomo!
             </h1>
             <div className=" flex flex-row items-center">
@@ -25,7 +31,7 @@ export default function Start({ startHandler }) {
                 className=" mt-[6vh] flex justify-center "
                 onClick={() => startHandler()}
             >
-                <div className=" bg-orange text-white rounded-full hover:bg-warning hover:border-warning font-bold px-10 py-3   text-xl">
+                <div className=" rounded-xl font-bold px-10 py-3  bg-orange text-white text-2xl">
                     Start
                 </div>
             </button>
