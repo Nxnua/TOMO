@@ -49,7 +49,7 @@ export default function Trip() {
         { isChecked: false, stars: "/images/1andup.png" },
     ];
     const activitiesCat = [
-        { isChecked: false, activities: "Horseback Riding" },
+        { isChecked: true, activities: "Horseback Riding" },
         { isChecked: false, activities: "Hiking" },
         { isChecked: false, activities: "Festival" },
         { isChecked: false, activities: "Photography" },
@@ -58,7 +58,7 @@ export default function Trip() {
     const durationCat = [
         { isChecked: false, duration: "Up to 1 day" },
         { isChecked: false, duration: "1-2 days" },
-        { isChecked: false, duration: "3-7 days" },
+        { isChecked: true, duration: "3-7 days" },
         { isChecked: false, duration: "7+ days" },
     ];
     return (
@@ -153,7 +153,7 @@ export default function Trip() {
                                             >
                                                 <input
                                                     type="checkbox"
-                                                    className=" w-3 h-3 bg-gray-100 border-gray-300 "
+                                                    className=" w-3 h-3 bg-slate-500  border-red-300 active:outline-none  "
                                                 />
                                                 <p className="ml-2 text-sm font-normal">
                                                     {item.duration}
@@ -167,12 +167,28 @@ export default function Trip() {
                     </div>
                     <div className=" flex-1 mt-4">
                         <div className="flex justify-start  flex-col ">
-                            <div className=" flex flex-row items-center">
+                            <div className=" flex flex-row items-center mb-4">
                                 <input
                                     type="text"
-                                    className=" w-[400px] h-8 border-2 rounded-3xl border-gray-300"
+                                    className=" w-[400px] px-4 h-8 text-sm border-2 rounded-3xl outline-gray-300 active:border-gray-300 mr-2 " placeholder="search"
                                 />
-                                <GrSearch className=" text-2xl fill-black50"   />
+                                <a href="">
+                                    {" "}
+                                    <GrSearch className=" text-2xl fill-black50" />
+                                </a>
+                            </div>
+                            <div className=" flex flex-row items-center">
+                                <p className=" text-lg font-bold">
+                                    (255 trips)
+                                </p>
+                                <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
+                                   <p className=" text-sm font-semibold "> Horseback Riding </p>
+                                   <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
+                                </div>
+                                <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
+                                   <p className=" text-sm font-semibold "> 4.0 and up </p>
+                                   <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
+                                </div>
                             </div>
                             <div className=" grid  xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                                 {tripList.map((item, i) => {

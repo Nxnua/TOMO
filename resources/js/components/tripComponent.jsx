@@ -27,7 +27,7 @@ export default function TripComponent({
                 </div>
                 <div className=" absolute flex justify-center right-3 top-2 w-7 items-center">
                     <img
-                        src="/images/favorite.png"
+                        src="/images/favorite1.png"
                         alt=""
                         className=" hover:opacity-50"
                     />
