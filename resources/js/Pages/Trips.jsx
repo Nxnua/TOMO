@@ -6,7 +6,6 @@ import { v4 } from "uuid";
 export default function Trip() {
     return (
         <div>
-            <Header />
             <div className=" mx-28 mt-8">
                 <div className="  grid  xl:grid-cols-4 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {tripList.map((item, i) => {
