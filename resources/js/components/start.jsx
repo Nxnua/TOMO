@@ -1,8 +1,18 @@
+import { useState } from "react";
+import Login from "./login";
 export default function Start({ startHandler }) {
+
+   
     return (
-        <div  className="h-full w-[500px] flex flex-col">
-            <div className=" flex justify-end m-4">light mode</div>
-            <h1 className="flex justify-center m-4 text-3xl font-extrabold tracking-tight text-orange">
+
+        <div  className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
+            <div className=" flex justify-end m-4">
+                <a href="">
+                    <img src="images/darkmode.png" alt="" className="hover:opacity-70 w-16" />
+                </a>
+            </div>
+            <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">
+
                 Hi, I'm Tomo!
             </h1>
             <div className=" flex flex-row items-center">

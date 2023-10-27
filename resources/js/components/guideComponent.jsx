@@ -53,6 +53,7 @@ export default function Guide({ name, description, image, review, star }) {
                 </div>
             </div>
             
+
         </div>
     );
 }

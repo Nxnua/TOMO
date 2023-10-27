@@ -4,8 +4,8 @@ import { guide } from "./data";
 import Guide from "../components/guideComponent";
 // import "./navbar"
 
-
 export const Guides = () => {
+
   return (
     <div>
     <Header/>
@@ -41,3 +41,4 @@ export const Guides = () => {
       </div>
   );
 }
+
