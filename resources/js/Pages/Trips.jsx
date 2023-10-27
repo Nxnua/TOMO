@@ -3,7 +3,7 @@ import { tripList } from "./data";
 import TripComponent from "../components/tripComponent";
 import { v4 } from "uuid";
 import Footer from "../components/footer";
-import {GrSearch} from "react-icons/gr";
+import { GrSearch } from "react-icons/gr";
 
 export default function Trip() {
     const filter = [
@@ -168,8 +168,11 @@ export default function Trip() {
                     <div className=" flex-1 mt-4">
                         <div className="flex justify-start  flex-col ">
                             <div className=" flex flex-row items-center">
-                                <input type="text" className=" w-[400px] h-8 border-2 rounded-3xl border-gray-300" />
-                                <GrSearch className=" text-2xl text-orange"/>
+                                <input
+                                    type="text"
+                                    className=" w-[400px] h-8 border-2 rounded-3xl border-gray-300"
+                                />
+                                <GrSearch className=" text-2xl fill-black50"   />
                             </div>
                             <div className=" grid  xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                                 {tripList.map((item, i) => {
