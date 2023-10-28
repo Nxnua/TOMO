@@ -11,9 +11,11 @@ export default function Footer() {
         { id: 3, title: "Flights", link: "" },
     ];
     return (
+
         <div className=" bg-black75 flex flex-col   ">
             <div className=" h-60">
                 <div className=" h-full grid grid-cols-3 text-gray-200 font-semibold text-md  ">
+
                     <div className=" relative flex items-center ">
                         <img
                             src="/images/tomo-T.png"
@@ -64,6 +66,7 @@ export default function Footer() {
                                 })}
                             </div>
                         </div>
+
                     </div>
                     <div className=" flex flex-col">
                         <div className=" p-12 flex  flex-col ">
@@ -112,6 +115,7 @@ export default function Footer() {
                     </div>
                     <div>
                         &#169; 2023 <strong>TOMO</strong>. All Rights Reserved.
+
                     </div>
                 </div>
             </div>

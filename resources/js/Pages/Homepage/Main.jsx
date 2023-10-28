@@ -9,7 +9,7 @@ import { guide, tripList } from "../data";
 
 export default function Main() {
     return (
-        <div>
+        <div className="this-is-my-class">
             <Header />
             <div className="z-20 my-10 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl  font-bold mb-12"> Guides</p>

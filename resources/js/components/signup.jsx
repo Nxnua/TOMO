@@ -22,6 +22,7 @@ export default function SignUp({ signHandler }) {
     const [showLogin, setShowLogin] = useState(false);
 
     return (
+
         <div className="rounded-2xl w-[30vw] h-[100vh] bg-white float-right">
             {showLogin && <Login closeSignIn={() => setShowLogin(false)} />}
             <div className=" flex justify-end m-4">
@@ -69,10 +70,12 @@ export default function SignUp({ signHandler }) {
                         className="my-[5vh] mx-auto py-2 bg-orange px-8  rounded-xl text-white text-xl font-bold"
                         value="Sign Up"
                     />
+
                 </form>
                 <p className="mb-[5vh] pt-2 text-center text-xs lg:text-sm">
                     Already have an account? &nbsp;
                     <a href="#" onClick={signHandler} className=" text-info">
+
                         Sign In
                     </a>
                 </p>
