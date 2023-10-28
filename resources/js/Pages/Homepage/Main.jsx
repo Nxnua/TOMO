@@ -52,7 +52,6 @@ export default function Main() {
             <div className=" mx-28 ">
                 <SvgComponent />
             </div>
-
             <Footer />
         </div>
     );

@@ -1,6 +1,7 @@
 import Landing from "./LandingPage";
 import { useEffect, useRef, useState } from "react";
 import Main from "./Main";
+import Trip from "../Trips";
 export default function Home() {
     const [landingVisible, setLandingVisible] = useState(true);
     const [scrollTriggered, setScrollTriggered] = useState(false);
@@ -57,6 +58,7 @@ export default function Home() {
             {landingVisible && <Landing />}
             <a className="mt-5" ref={anchorRef} href="#" />
             <Main />
+            
         </div>
     );
 }
