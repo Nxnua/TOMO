@@ -63,7 +63,7 @@ export const guide = [
         name: "Zulaa",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-        image: "/images/profile0.jpg ",
+        image: "/images/profile0.png",
         review: "9 view",
         star: "2.1",
     },

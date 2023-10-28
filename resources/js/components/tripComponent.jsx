@@ -13,7 +13,7 @@ export default function TripComponent({
 }) {
     const isDiscountNull = discount === null ? true : false;
     return (
-        <div className=" transition ease-in-out delay-150  hover:scale-105  duration-200 h-[420px] w-[300px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
+        <div className=" duration-200 h-[420px] w-[300px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
             <div className=" relative h-[45%] rounded-2xl rounded-b-md">
                 <img src={image} alt="" className=" h-[180px] w-full " />
                 <div
@@ -27,7 +27,7 @@ export default function TripComponent({
                 </div>
                 <div className=" absolute flex justify-center right-3 top-2 w-7 items-center">
                     <img
-                        src="/images/favorite.png"
+                        src="/images/favorite1.png"
                         alt=""
                         className=" hover:opacity-50"
                     />
@@ -68,7 +68,7 @@ export default function TripComponent({
                     <p className=" ml-1 text-lg">${price}</p>
                 </div>
             </div>
-            <div className=" mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
+            <div className=" transition ease-in-out delay-50  hover:scale-105  mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
                 <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">
                     Book now
                 </button>
