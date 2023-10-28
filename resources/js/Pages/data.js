@@ -54,7 +54,7 @@ export const guide = [
         name: "Zoloo",
         description:
             "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
-        image: "/images/profile.png",
+        image: "/images/profile.jpg",
         review: "47 view",
         star: "4.5",
     },
@@ -63,7 +63,7 @@ export const guide = [
         name: "Zulaa",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-        image: "/images/profile0.png",
+        image: "/images/profile0.jpg ",
         review: "9 view",
         star: "2.1",
     },
@@ -72,14 +72,14 @@ export const guide = [
         name: "Zolboo",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-        image: "/images/profile1.png",
+        image: "/images/profile1.jpg",
         review: "10 view",
         star: "1.5",
     },
     {
         id: 4,
         name: "Uyanga",
-        image: "/images/profile2.png",
+        image: "/images/profile2.jpg",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
         review: "47 view",
