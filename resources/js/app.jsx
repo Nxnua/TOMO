@@ -10,6 +10,4 @@ import Map from "./Pages/Homepage/Map";
 import Movement from "./components/bannerSVG";
 import { TripDetail } from "./Pages/TripDetail";
 
-
 ReactDOM.createRoot(document.getElementById("app")).render(<Trips />);
-
