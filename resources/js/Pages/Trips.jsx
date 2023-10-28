@@ -71,7 +71,7 @@ export default function Trip() {
                 </div>
                 <div className=" flex flex-row">
                     <div className=" w-1/4 flex flex-col relative">
-                        <div id="bar-fixed" className=" mt-4 flex justify-start w-[300px] flex-col top-16   fixed z-10">
+                        <div id="bar-fixed" className=" mt-4 flex justify-start w-[250px] flex-col top-16 ">
                             <div>
                                 <p className=" w-full  border-b-2 flex justify-start">
                                     {" "}
