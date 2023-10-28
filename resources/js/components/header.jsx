@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header(){
     return (
         <nav className="flex  h-vw[1] mx-auto border-b-[1px] rounded-sm border-black-500  justify-between items-center h-[86px]   ">
             <div className="float-left ms-10">
@@ -41,10 +41,10 @@ export default function Header() {
                     <li>
                         <a href="">
                             <img
-                                src="images/darkmodecircle.png"
+                                src="images/darkmoon.png"
                                 alt=""
-                                width={40}
-                                height={40}
+                                width={30}
+                                height={30}
                                 className=" hover:opacity-70"
                             />
                         </a>
