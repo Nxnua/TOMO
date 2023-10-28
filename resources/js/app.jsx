@@ -9,5 +9,21 @@ import { Guides } from "./Pages/Guides";
 import Map from "./Pages/Homepage/Map";
 import Movement from "./components/bannerSVG";
 import { TripDetail } from "./Pages/TripDetail";
+import {
+    createBrowserRouter,
+    RouterProvider,
+  } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById("app")).render(<Trips />);
+const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+        path: "/trips",
+        element: <Trips />
+    }
+  ]);
+  
+
+ReactDOM.createRoot(document.getElementById("app")).render( <RouterProvider router={router} />);
