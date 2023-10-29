@@ -4,22 +4,16 @@ export default function Guide({ name, description, image, review, star }) {
         <div className="  bg-white rounded-xl h-[20vw] border-[1px] border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)] flex flex-row">
             <div className=" w-[40%]  flex flex-col justify-between">
                 <div className=" rounded-lg border-[1px] border-neutral-200">
-                    <img src={image} alt="" className=" w-[100%] h-[100%]  " />
+                    <img src={image} alt="" className=" w-[187px] h-[170px] rounded-lg " />
                 </div>
-                <div className="mb-28 ">{name}</div>
-                <div className=" justify-center mb-56">
-                    <div className="Languege bg-slate-950 flex  ">
-                        <img src="images/flagmo.png " className=" h-6 w-6 " alt="" />
-                        <img src="images/flagko.png"  className=" h-6 w-6" alt="" />  
-                        <img src="images/flagen.png"  className=" h-6 w-6" alt="" /> 
-                    </div>
-                    <div className="KeyLanguage bg-slate-600 flex">
-                        MGL
-                        KOR 
-                        ENG
-                    </div>
-                    
+                <div className="mb-9  flex justify-center ">{name}</div>
+                <div className=" grid grid-cols-3 gap-4   ">
+                    <img src="images/flagmo.png " className=" h-7 w-7 " alt="" />
+                    <img src="images/flagko.png"  className="flex h-7 w-7" alt="" />  
+                    <img src="images/flagen.png"  className=" h-7 w-7" alt="" /> 
+                                  
                 </div>
+                
                 
             </div>
             
@@ -34,7 +28,7 @@ export default function Guide({ name, description, image, review, star }) {
                     </div>
                 </div>
                 <div className="descrption h-[50%] flex flex-row ">
-                    <div className="m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quod corporis eum amet distinctio est atque illo voluptatem aut accusantium.</div>
+                    <div className="m-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quod corporis eum amet distinctio est atque illo voluptatem aut accusantium.</div>
                 </div>
                 <div className="member flex flex-row ml-5 ">
                     <div>
@@ -42,18 +36,24 @@ export default function Guide({ name, description, image, review, star }) {
                     </div>
                     2-6
                     <div className="favorite flex ml-44">
-                    <div>
-                        <img src="/images/favorite.png " className="w-4 h-4" alt="" />
+                        
+                        <div className=" absolute flex justify-center ">
+                        <img
+                            src="/images/favorite.png"
+                            alt=""
+                            className=" hover:opacity-50 h-6 w-6"
+                        />
                     </div>
                         
                     </div>
                 </div>
-                <div className="booking">
-                    <button className="mt-5 border-4  px-8  rounded-lg ">Book Now</button>
-                </div>
+                <div className=" mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
+                <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">
+                    Book now
+                </button>
+            </div>
             </div>
             
-
         </div>
     );
 }

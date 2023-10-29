@@ -11,11 +11,10 @@ export default function Footer() {
         { id: 3, title: "Flights", link: "" },
     ];
     return (
-
         <div className=" bg-black75 flex flex-col   ">
             <div className=" h-60">
+                
                 <div className=" h-full grid grid-cols-3 text-gray-200 font-semibold text-md  ">
-
                     <div className=" relative flex items-center ">
                         <img
                             src="/images/tomo-T.png"
@@ -66,7 +65,6 @@ export default function Footer() {
                                 })}
                             </div>
                         </div>
-
                     </div>
                     <div className=" flex flex-col">
                         <div className=" p-12 flex  flex-col ">
@@ -83,39 +81,24 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className=" flex flex-row px-24  justify-evenly">
-                            <a href="">
-                                <img
-                                    src="/images/facebook.svg"
-                                    alt=""
-                                    className=" "
-                                />
-                            </a>
-                            <a href="">
-                                {" "}
-                                <img src="/images/instagram.svg" alt="" />
-                            </a>
-                            <a href="">
-                                <img src="/images/twitter.svg" alt="" />
-                            </a>
-                            <a href="">
-                                <img src="/images/mail.svg" alt="" />
-                            </a>
+                                <a href=""><img src="/images/facebook.svg" alt="" className=" "/></a>
+                                <a href=""> <img src="/images/instagram.svg" alt="" /></a>
+                                <a href=""><img src="/images/twitter.svg" alt="" /></a>
+                                <a href=""><img src="/images/mail.svg" alt="" /></a>
                         </div>
+                        
                     </div>
+                    
                 </div>
                 <div className=" flex justify-center bg-black75 ">
-                    <hr className=" w-[80vw] border-[#616161] border-[1px]  " />
-                </div>
+                <hr className=" w-[80vw] border-[#616161] border-[1px]  "/></div>
                 <div className=" bg-[#393535] h-12 flex flex-row justify-between px-20 text-gray-200 text-xs items-center font-medium ">
                     <div>
-                        <a href="" className=" mr-10 ">
-                            TERMS & CONDITIONS
-                        </a>
+                        <a href="" className=" mr-10 ">TERMS & CONDITIONS</a>
                         <a href="">PRIVACY POLICY</a>
                     </div>
                     <div>
-                        &#169; 2023 <strong>TOMO</strong>. All Rights Reserved.
-
+                    &#169; 2023 <strong>TOMO</strong>. All Rights Reserved.
                     </div>
                 </div>
             </div>
