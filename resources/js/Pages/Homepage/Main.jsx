@@ -9,9 +9,9 @@ import { guide, tripList } from "../data";
 
 export default function Main() {
     return (
-        <div>
+        <div className="this-is-my-class">
             <Header />
-            <div className=" my-10 mx-28 flex justify-center flex-col ">
+            <div className="z-20 my-10 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl  font-bold mb-12"> Guides</p>
 
                 <div className="  grid grid-cols-3 gap-6">
@@ -52,7 +52,6 @@ export default function Main() {
             <div className=" mx-28 ">
                 <SvgComponent />
             </div>
-
             <Footer />
         </div>
     );
