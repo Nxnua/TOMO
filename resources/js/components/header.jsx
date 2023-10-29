@@ -5,11 +5,11 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset >= 100) {
+      if (window.pageYOffset >= isSticky) {
         setIsSticky(true);
-      }    else {
-            setIsSticky(false);
-        }
+      } else {
+        setIsSticky(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,17 +21,15 @@ function Header() {
 
   return (
     <nav
-      className={`${
-        isSticky
-          ? "fixed top-0 z-10 w-full bg-white border-b-1 border-black-500 rounded-sm"
-          : ""
-      } flex justify-between items-center h-20 mx-auto font-Nunito`}
+      className={`fixed z-10 w-full top-0 bg-white rounded-lg border-b shadow-sm flex justify-between items-center h-[10vh] mx-auto font-Nunito ${
+        isSticky ? "transform -translate-y-2 sticky top-0" : "transform -translate-y-2"
+      }`}
     >
       <a className="ms-10" href="#">
         <img
           src="images/Logo.png"
           alt=""
-          className="w-vw-1 h-vw-1 mt-5 hover:opacity-70"
+          className="w-vw-1 h-vw-1 mt-5 hover:opacity-80"
         />
       </a>
       <div className="md:static float-right absolute md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
@@ -85,7 +83,7 @@ function Header() {
         </ul>
       </div>
       <div className="bg-white float-right mr-10">
-        <ul className="flex items-center gap-1vw">
+        <ul className="flex items-center gap-1vh">
           <li>
             <a href="#">
               <img
@@ -93,22 +91,18 @@ function Header() {
                 alt=""
                 width={30}
                 height={30}
-                className="hover:opacity-70"
+                className="hover:opacity-70 mx-1"
               />
             </a>
           </li>
           <li>
             <button
-              className={`${
-                isSticky ? "bg-white" : "bg-orange"
-              } border-2 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80`}
+              className="bg-white border mx-1 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80"
             >
               Sign In
             </button>
             <button
-              className={`ml-2 border-2 border-orange ${
-                isSticky ? "bg-orange" : "bg-white"
-              } text-white px-6 py-1 rounded-2xl hover:opacity-80`}
+              className="ml-2 border mx-1 border-orange bg-orange text-white px-6 py-1 rounded-2xl hover:opacity-80"
             >
               Sign Up
             </button>
@@ -120,7 +114,7 @@ function Header() {
                 alt=""
                 width={30}
                 height={30}
-                className="hover:opacity-70"
+                className="hover:opacity-70 mx-1"
               />
             </a>
           </li>

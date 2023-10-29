@@ -29,7 +29,7 @@ export default function Start({ startHandler }) {
                 className=" mt-[6vh] flex justify-center "
                 onClick={() => startHandler()}
             >
-                <div className=" bg-orange text-white rounded-full hover:bg-warning hover:border-warning font-bold px-10 py-3   text-xl">
+                <div className=" bg-orange text-white rounded-full hover:opacity-80 font-bold px-10 py-3   text-xl">
                     Start
                 </div>
             </button>
