@@ -7,11 +7,6 @@ import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
 import Map from "./Pages/Homepage/Map";
 import Movement from "./components/bannerSVG";
+import Main from "./Pages/Homepage/Main";
 
-<<<<<<<<< Temporary merge branch 1
-
-ReactDOM.createRoot(document.getElementById("app")).render(<Home />);
-
-=========
-ReactDOM.createRoot(document.getElementById("app")).render(<Home/>);
->>>>>>>>> Temporary merge branch 2
+ReactDOM.createRoot(document.getElementById("app")).render(<Guides />);

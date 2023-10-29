@@ -7,7 +7,7 @@ export default function Guide({ name, description, image, review, star }) {
                     <img src={image} alt="" className=" w-[187px] h-[170px] rounded-lg " />
                 </div>
                 <div className="mb-9  flex justify-center ">{name}</div>
-                <div className=" grid grid-cols-3 gap-4   ">
+                <div className=" grid grid-cols-3 gap-4 m-10   ">
                     <img src="images/flagmo.png " className=" h-7 w-7 " alt="" />
                     <img src="images/flagko.png"  className="flex h-7 w-7" alt="" />  
                     <img src="images/flagen.png"  className=" h-7 w-7" alt="" /> 
@@ -47,7 +47,7 @@ export default function Guide({ name, description, image, review, star }) {
                         
                     </div>
                 </div>
-                <div className=" mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
+                <div className=" transition ease-in-out delay-50  hover:scale-105  mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
                 <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">
                     Book now
                 </button>
