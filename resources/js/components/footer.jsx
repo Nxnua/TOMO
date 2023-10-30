@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 export default function Footer() {
     const menu = [
-        { id: 1, title: "Trips", link: "" },
-        { id: 2, title: "Guides", link: "" },
+        { id: 1, title: "Trips", link: "/trips" },
+        { id: 2, title: "Guides", link: "/guides" },
         { id: 3, title: "Agencies", link: "" },
         { id: 4, title: "Reviews", link: "" },
     ];
     const tripPlanner = [
-        { id: 1, title: "Plan a trip", link: "" },
+        { id: 1, title: "Plan a trip", link: "/planyourtrip" },
         { id: 2, title: "Travel Budget", link: "" },
         { id: 3, title: "Flights", link: "" },
     ];
@@ -54,13 +55,13 @@ export default function Footer() {
                             <div className=" flex flex-col ">
                                 {tripPlanner.map((item, i) => {
                                     return (
-                                        <a
+                                        <Link to={item.link}
                                             key={item.id}
-                                            href={item.link}
+                                            
                                             className=" mt-2   flex justify-start"
                                         >
                                             {item.title}
-                                        </a>
+                                        </Link>
                                     );
                                 })}
                             </div>
