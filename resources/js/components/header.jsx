@@ -43,7 +43,7 @@ function Header() {
               Trips
             </Link>
             <ul
-              className={`absolute border-black rounded-xl bg-white mt-3 p-5 w-40 space-y-2 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out`}
+              className={`absolute border-black rounded-xl bg-white mt-3 p-5 w-40 space-y-2 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
             >
               <li>
                 <Link  className="hover:text-orange border-black hover:border-b" to="/planyourtrip">
@@ -70,7 +70,7 @@ function Header() {
               More
             </a>
             <ul
-              className={`absolute border-black rounded-xl bg-white mt-3 p-5 space-y-2 w-40 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out`}
+              className={`absolute border-black rounded-xl bg-white mt-3 p-5 space-y-2 w-40 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
             >
               <li>
                 <a href="" className="hover:text-orange border-black hover:border-b">
