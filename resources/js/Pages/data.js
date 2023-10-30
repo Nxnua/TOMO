@@ -281,7 +281,6 @@ export const cities = [
     },
 ];
 
-
 export const stars = [
     {
         starfill: 5,
@@ -315,6 +314,150 @@ export const stars = [
         starfill: 1,
         img: "",
     },
-    
+];
 
+export const tripData = [
+    {
+        title: "SHORT TOUR TO GOLDEN EAGLE FESTIVAL 2024",
+        img: [
+            "/uploads/Golden-eagle-festival-mongolia-short-tour.jpg",
+            "/images/blank.gif",
+            "/uploads/Golden-eagle-festival-mongolia-short-tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$1590",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/mongolia-short-tours-golden-eagle-festival-join",
+    },
+    {
+        title: "MONGOLIAN BLUE TRAIL TO SPIRITUAL SHAMAN TOUR",
+        img: [
+            "/uploads/Mongolian Blue Trail to Spiritual Shaman tour.jpg",
+            "/images/blank.gif",
+            "/uploads/Mongolian Blue Trail to Spiritual Shaman tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2170",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/mongolian-blue-trail-to-spiritual-shaman-tour",
+    },
+    {
+        title: "SAGSAI GOLDEN EAGLE FESTIVAL TOUR 2024",
+        img: [
+            "/uploads/Sagsai_eagle_festival_tour.jpg",
+            "/images/blank.gif",
+            "/uploads/Sagsai_eagle_festival_tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$1640",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/sagsai-golden-eagle-festival-tour-mongolia",
+    },
+    {
+        title: "DISCOVERY TO THE FAR WEST MONGOLIA TOUR",
+        img: [
+            "/uploads/Mongolian_nature_.jpg",
+            "/images/blank.gif",
+            "/uploads/Mongolian_nature_.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2500",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/discovery-to-the-far-west-mongolia-tour",
+    },
+    {
+        title: "MONGOLIA HIGHLIGHTS TOUR WITH NAADAM FESTIVAL 2024/2025",
+        img: [
+            "/uploads/Naadam Festival Mongolia Tour.jpg",
+            "/images/blank.gif",
+            "/uploads/Naadam Festival Mongolia Tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2640",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/mongolia-highlights-tour-with-naadam-festival",
+    },
+    {
+        title: "GOLDEN EAGLE FESTIVAL 2024 TOUR",
+        img: [
+            "/uploads/Golden Eagle Festival Mongolia Tour.jpg",
+            "/images/blank.gif",
+            "/uploads/Golden Eagle Festival Mongolia Tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2215",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/golden-eagle-festival-tour",
+    },
+    {
+        title: "GOLDEN GOBI AND KHARKHORIN TOUR MONGOLIA",
+        img: [
+            "/uploads/Gobi tour Mongolia with ayan travel.jpg",
+            "/images/blank.gif",
+            "/uploads/Gobi tour Mongolia with ayan travel.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$1860",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/golden-gobi-and-kharkhorin-tour",
+    },
+    {
+        title: "MONGOLIA OVERLAND TOUR 2024/2025",
+        img: [
+            "/uploads/mongolia-overland-tour.jpg",
+            "/images/blank.gif",
+            "/uploads/mongolia-overland-tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2150",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/mongolia-overland-tour",
+    },
+    {
+        title: "MONGOLIA HIGHLIGHTS TOUR WITH DANSHIG RELIGIOUS FESTIVAL-2024",
+        img: [
+            "/uploads/danshig_Festival_mongolia_tour.jpg",
+            "/images/blank.gif",
+            "/uploads/danshig_Festival_mongolia_tour.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2450",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/mongolia-highlights-tour-with-danshig-religious-festival",
+    },
+    {
+        title: "NAADAM FESTIVAL AND GOBI DESERT TOUR",
+        img: [
+            "/uploads/Naadam_Festival_tour_mongolian.jpg",
+            "/images/blank.gif",
+            "/uploads/Naadam_Festival_tour_mongolian.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2380",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/naadam-festival-and-gobi-desert-tour",
+    },
+    {
+        title: "VERTICAL BIG LOOP NORTH TO SOUTH OF MONGOLIA TOUR",
+        img: [
+            "/uploads/North_to_south_tours_mongolia.jpg",
+            "/images/blank.gif",
+            "/uploads/North_to_south_tours_mongolia.jpg",
+            "/images/blank.gif",
+        ],
+        date: "",
+        price: "$2650",
+        description: "",
+        link: "https://www.toursmongolia.com/best-sellers/tour/vertical-big-loop-north-to-south-mongolia-tour",
+    },
 ];
