@@ -7,5 +7,6 @@ import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
 import Map from "./Pages/Homepage/Map";
 import Movement from "./components/bannerSVG";
+import feedback from "./Pages/feedback";
 
-ReactDOM.createRoot(document.getElementById("app")).render(<Home/>);
+ReactDOM.createRoot(document.getElementById("app")).render(<Map />);
