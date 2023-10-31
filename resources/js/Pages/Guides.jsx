@@ -9,7 +9,7 @@ export const Guides = () => {
   return (
     <div>
     <Header/>
-    <div className="flex justify-center items-center h-[86px] mx-auto font-Nunito ">
+    <div className="flex justify-star ml-14 items-center h-[86px] mx-auto font-Nunito ">
             <div className="float-left ms-10">
             
             </div>
