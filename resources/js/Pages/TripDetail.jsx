@@ -2,9 +2,9 @@
 import Header from "../components/header";
 import { v4 } from "uuid";
 import Review from "../components/review";
-import { tripList } from "./data";
+import { tripList, tripDays } from "./data";
 import Footer from "../components/footer";
-
+import { useState } from "react";
 export const TripDetail = () => {
     const menuList = [
         { isActive: true, menu: "Photos", link: "" },
@@ -134,75 +134,46 @@ export const TripDetail = () => {
                                 <p className=" ml-1 text-xl text-start font-extrabold">
                                     Itinerary
                                 </p>
-                                <div className=" mt-4 flex flex-col rounded-lg border-gray-200 border-2 p-4">
-                                    <div className=" flex flex-row justify-between items-center pr-2">
-                                        <p className=" text-lg text-start">
-                                            Day 1: Eagle Hunting Mongolia
-                                            Tour-Fly to Ulgii City.
-                                        </p>
-                                        <img
-                                            src="/images/up-arrow.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <p className=" mt-4 font-medium tracking-tight  text-justify ">
-                                        We start on our flight towards the
-                                        Mongolian Far West. We fly over the
-                                        central lakes and the Western mountains,
-                                        then arrive in Ulgii.Olgii is the
-                                        capital of the province of Bayan Ulgii,
-                                        1636 kilometres (1016,56 miles) from
-                                        Ulan Bator and 1710 meters (1,06 mile)
-                                        above the sea level. Main people living
-                                        in Olgii are Kazakhs, and its atmosphere
-                                        is very influenced by Central Asia:
-                                        there are many signs written in Arabic.
-                                        We will learn about Kazakh culture and
-                                        vist the city
-                                    </p>
-                                    <div className=" flex flex-row mt-2">
-                                        <img
-                                            src="/images/thumbnail1.png"
-                                            alt=""
-                                            className=" w-20 rounded-md mr-1"
-                                        />
-                                        <img
-                                            src="/images/thumbnail2.png"
-                                            alt=""
-                                            className=" w-20 rounded-md mr-1"
-                                        />
-                                        <img
-                                            src="/images/thumbnail3.png"
-                                            alt=""
-                                            className=" w-20 rounded-md mr-1"
-                                        />
-                                    </div>
-                                </div>
-                                <div className=" mt-4 flex flex-col rounded-lg border-gray-200 border-2 p-4">
-                                    <div className=" flex flex-row justify-between items-center pr-2">
-                                        <p className=" text-lg text-start">
-                                            Day 2: Visit the eagle Hunters
-                                        </p>
-                                        <img
-                                            src="/images/up-arrow.png"
-                                            alt=""
-                                            className=" rotate-180"
-                                        />
-                                    </div>
-                                </div>
-                                <div className=" mt-4 flex flex-col rounded-lg border-gray-200 border-2 p-4">
-                                    <div className=" flex flex-row justify-between items-center pr-2">
-                                        <p className=" text-lg text-start">
-                                            Day 3: return flight to Ulaanbaatar.
-                                        </p>
-                                        <img
-                                            src="/images/up-arrow.png"
-                                            alt=""
-                                            className=" rotate-180"
-                                        />
-                                    </div>
-                                </div>
+
+                                {tripDays.map((item, i) => {
+                                    return (
+                                        <div className=" mt-4 flex flex-col rounded-lg border-gray-200 border-2 p-4">
+                                            <div  className=" flex flex-row justify-between items-center pr-2">
+                                                <p className=" text-lg text-start">
+                                                    Day {item.day} :
+                                                    {item.title}
+                                                </p>
+                                                <button><img
+                                                    src="/images/up-arrow.png"
+                                                    alt="" className={"" + (item.isActive ? " rotate-0" : "rotate-180")+""}
+                                                /></button>
+                                            </div>
+                                            <div className={" " + (item.isActive ? "visible" : "hidden") + ""}>
+                                            <p className=" mt-4 font-medium tracking-tight  text-justify ">
+                                                {item.desc}
+                                            </p>
+                                            <div className=" flex flex-row mt-2">
+                                                <img
+                                                    src="/images/thumbnail1.png"
+                                                    alt=""
+                                                    className=" w-20 rounded-md mr-1"
+                                                />
+                                                <img
+                                                    src="/images/thumbnail2.png"
+                                                    alt=""
+                                                    className=" w-20 rounded-md mr-1"
+                                                />
+                                                <img
+                                                    src="/images/thumbnail3.png"
+                                                    alt=""
+                                                    className=" w-20 rounded-md mr-1"
+                                                />
+                                            </div></div>
+                                        </div>
+                                    );
+                                })}
                             </div>
+
                             {/* Inclusions */}
                             <div className=" flex flex-col mt-8">
                                 <p className=" ml-1 text-xl text-start font-extrabold">
@@ -271,7 +242,19 @@ export const TripDetail = () => {
                         </div>
                     </div>
 
-                    <div className=" w-[30vw] bg-slate-300 h-70">sakgjlkg</div>
+                    <div className=" w-[30vw] ">
+                        <div className=" flex flex-col ">
+                            <div className=" flex justify-end items-center ">
+                                <img
+                                    src="/images/agency-logo.png"
+                                    alt=""
+                                    className=" w-8 "
+                                />
+                                <p className=" text-lg"> Mongol Tour Agency</p>
+                            </div>
+                            <div className=" w-[100%] rounded-lg border-gray-200 border-2 h-64 mt-4"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className=" h-24"></div>

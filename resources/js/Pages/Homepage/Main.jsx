@@ -4,18 +4,19 @@ import React from "react";
 import Guide from "../../components/guideComponent";
 import { v4 } from "uuid";
 import TripComponent from "../../components/tripComponent";
-import SvgComponent from "./Map";
+import SvgComponent from "../../components/Map";
 import { guide, tripList } from "../data";
 import { Link } from "react-router-dom";
-
 
 export default function Main() {
     return (
         <div className="this-is-my-class">
             <Header />
 
-            <div className=" h-[80vh] bg-slate-100 pt-10">
+            <div className=" h-[30vh] bg-white pt-10 mt-40">
+
                 Search
+
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
                     <div className="h-[120px]">
                         <div className="absolute ml-[20px] mt-[20px]">
@@ -30,8 +31,10 @@ export default function Main() {
                     </div>
                 </form>
             </div>
-            <div className="z-20 my-10 mx-28 flex justify-center flex-col ">
-                                <p className=" text-2xl  font-bold mb-12"> Guides</p>
+
+            <div className="z-20 mt-50 mx-28 flex justify-center flex-col ">
+                <p className=" text-2xl font-bold mb-12"> Guides</p>
+
 
                 <div className="  grid grid-cols-3 gap-6">
                     {guide.map((item, i) => {
@@ -74,6 +77,7 @@ export default function Main() {
                 <SvgComponent />
             </div>
 
+            <div className=" h-12"></div>
             <Footer />
         </div>
     );

@@ -73,7 +73,7 @@ export default function SignUp({ signHandler }) {
                 <p className="mb-[5vh] pt-2 text-center text-xs">
                     Already have an account?
                     <a href="#" className=" text-info">
-                        Sign In
+                       SignUp
                     </a>
                 </p>
 

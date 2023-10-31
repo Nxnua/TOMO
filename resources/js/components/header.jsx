@@ -6,7 +6,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset >= 100) {
+      if (window.pageYOffset >= isSticky) {
         setIsSticky(true);
       }    else {
             setIsSticky(false);
