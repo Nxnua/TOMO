@@ -16,11 +16,32 @@
     --warning: #f5a52e;
 }
 
+
 #bar-fixed {
     height: 100vh;
-    top: 10px; /* or whatever top you need */
+    top: 10px;
     position: -webkit-sticky;
     position: sticky;
+}
+::-webkit-scrollbar {
+    margin-left: 20px;
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 5px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+}
+ 
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 .sty {
     mix-blend-mode: multiply;
