@@ -730,29 +730,29 @@ const SvgComponent = () => {
 <rect width="100%" height="100%" fill="none"/>
 </clipPath>
 <div  style={{backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-zTCTKefm_UO8lv-VsjZya9phg73MOxXhZ9BKnrb01WM9cS4c16kxlvOCxiLtF4EmZk&usqp=CAU"}}>
-<image loading="lazy"  id="image23_0_1" width="640" height="480" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg" />
-<image loading="lazy"  id="image1_0_1" width="640" height="480" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image2_0_1" width="1920" height="1380" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image3_0_1" width="640" height="450" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image4_0_1" width="1920" height="1380" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image5_0_1" width="1920" height="1278" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image6_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image7_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image8_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image9_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image10_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image11_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image12_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image13_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image14_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image15_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image16_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image17_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image18_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image19_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image20_0_1" width="820" height="550" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image21_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
-<image loading="lazy"  id="image22_0_1" width="700" height="500" xlinkHref="https://news.mit.edu/sites/default/files/images/202304/MIT-biggerrings-01-press.jpg"/>
+<image loading="lazy"  id="image23_0_1" width="750" height="480" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/safety-orange-color-solid-background-1920x1080.png" />
+<image loading="lazy"  id="image1_0_1" width="750" height="480" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image2_0_1" width="2500" height="1380" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/green-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image3_0_1" width="750" height="450" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/light-brown-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image4_0_1" width="2500" height="1380" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/pink-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image5_0_1" width="2000" height="1278" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/copper-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image6_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/dark-pink-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image7_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/wine-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image8_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/steel-blue-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image9_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/brass-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image10_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/blue-green-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image11_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/light-brown-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image12_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/neon-pink-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image13_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/dark-green-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image14_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/burgundy-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image15_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/salmon-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image16_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/pastel-blue-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image17_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/pastel-purple-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image18_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/eucalyptus-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image19_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/dark-blue-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image20_0_1" width="1000" height="550" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/garnet-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image21_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/hunter-green-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image22_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png"/>
 </div>
       {/* {cities.map(city => (
         <image
@@ -767,17 +767,15 @@ const SvgComponent = () => {
 </svg>
 
 
-
-
       {selectedCity && (
-   <div  onClick={closeDiv}>
-   <div  onClick={(e) => e.stopPropagation()}>
-     <div onClick={closeDiv}>
+   <div className='fixed -translate-x-2/4 -translate-y-2/4 flex items-center justify-center w-screen h-screen left-2/4 top-2/4' onClick={closeDiv}>
+   <div className='.bg-gray-300 relative w-[90vw] min-h-[70vh] max-w-[1000px] flex items-center flex-col rounded-[10px]' onClick={(e) => e.stopPropagation()}>
+     <div className='text-[black] font-medium text-center' onClick={closeDiv}>
        X
      </div>
      <p >Name: {selectedCity.name}</p>
      <div >
-     <img src={selectedCity.imageURL}></img>
+     <img className='w-[300px] h-[300px] overflow-hidden mt-5 rounded-[1%]' src={selectedCity.imageURL}></img>
      </div>
    </div>
  </div>

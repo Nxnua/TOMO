@@ -19,7 +19,7 @@ export default function Landing(scroll) {
                             }}
                         />
                     )}
-                    ;
+                    
                 </div>
             </div>
         </div>
