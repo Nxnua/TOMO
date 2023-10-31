@@ -2,7 +2,7 @@ import Movement from "./bannerSVG";
 
 export default function Banner() {
     return (
-        <div className="relative z-20">
+        <div className="relative z-10">
             <img src="/images/background.png" alt="" className="h-screen" />
             {/*  this needs to be fixed 
                 <div className=" absolute z-10  bottom-0 left-0">

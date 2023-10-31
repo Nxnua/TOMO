@@ -1,3 +1,4 @@
+
 import Header from "../components/header";
 import { v4 } from "uuid";
 import Review from "../components/review";
@@ -262,3 +263,4 @@ export const TripDetail = () => {
         </div>
     );
 };
+

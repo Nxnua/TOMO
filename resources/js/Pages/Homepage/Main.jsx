@@ -12,7 +12,9 @@ export default function Main() {
     return (
         <div className="this-is-my-class">
             <Header />
+
             <div className=" h-[30vh] bg-white pt-10 mt-40">
+
                 Search
 
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
@@ -29,8 +31,10 @@ export default function Main() {
                     </div>
                 </form>
             </div>
+
             <div className="z-20 mt-50 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
+
 
                 <div className="  grid grid-cols-3 gap-6">
                     {guide.map((item, i) => {
@@ -72,6 +76,7 @@ export default function Main() {
             <div className=" mx-28 ">
                 <SvgComponent />
             </div>
+
             <div className=" h-12"></div>
             <Footer />
         </div>
