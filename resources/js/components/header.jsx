@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -27,13 +28,13 @@ function Header() {
           : ""
       } flex justify-between items-center h-20 mx-auto font-Nunito`}
     >
-      <a className="ms-10" href="#">
+      <Link className="ms-10" to="/">
         <img
           src="images/Logo.png"
           alt=""
           className="w-vw-1 h-vw-1 mt-5 hover:opacity-70"
         />
-      </a>
+      </Link>
       <div className="md:static float-right absolute md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
         <ul className="relative flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto">
           <li id="trips" className="relative group">
