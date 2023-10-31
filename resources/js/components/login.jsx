@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SignUp from "./signup";
 import {BrowserRouter} from "react-router-dom";
-export default function Login() {
+export default function Login({ login }) {
     const navigate = useNavigate();
     const [formDat, setFormDat] = useState({
       username: "",
@@ -86,7 +86,7 @@ export default function Login() {
                 </form>
                 <p className="mb-[5vh] pt-2 text-center text-xs">
                     Don't have an account?
-                    <a href="#" className=" text-info">
+                    <a href="#s" className=" text-info">
                         Login
                     </a>
                 </p>
