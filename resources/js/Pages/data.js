@@ -55,6 +55,7 @@ export const guide = [
         description:
             "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
         image: "/images/profile.jpg",
+        image: "/images/profile.jpg",
         review: "47 view",
         star: "4.5",
     },
@@ -63,6 +64,10 @@ export const guide = [
         name: "Zulaa",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
+
+        image: "/images/profile0.jpg ",
+
+
 
         image: "/images/profile0.jpg ",
 
@@ -76,12 +81,14 @@ export const guide = [
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
         image: "/images/profile1.jpg",
+        image: "/images/profile1.jpg",
         review: "10 view",
         star: "1.5",
     },
     {
         id: 4,
         name: "Uyanga",
+        image: "/images/profile2.jpg",
         image: "/images/profile2.jpg",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
@@ -103,6 +110,11 @@ export const tripList = [
         review: 40,
         rating: 4.5,
         stars: "",
+        discount: 25,
+        duration: "2 days and 1 night",
+        review: 40,
+        rating: 4.5,
+        stars: "",
     },
     {
         id: 2,
@@ -116,6 +128,11 @@ export const tripList = [
         review: 40,
         rating: 4,
         stars: "",
+        discount: 30,
+        duration: "1 day",
+        review: 40,
+        rating: 4,
+        stars: "",
     },
     {
         id: 3,
@@ -124,7 +141,13 @@ export const tripList = [
             "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
         image: "/images/manzushir.png",
 
+
         price: 200,
+        discount: 10,
+        duration: "2 days and 1 night",
+        review: 40,
+        rating: 4.5,
+        stars: "",
         discount: 10,
         duration: "2 days and 1 night",
         review: 40,
@@ -136,9 +159,13 @@ export const tripList = [
         title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/manzushir.png",
         location: "Terelj National Park",
+        location: "Terelj National Park",
         review: 47,
         rating: 4.3,
+        rating: 4.3,
         price: 200,
+        discount: null,
+        duration: "2 days and 1 night",
         discount: null,
         duration: "2 days and 1 night",
     },
@@ -151,7 +178,11 @@ export const tripList = [
 
         review: 471,
         rating: 4.5,
+        review: 471,
+        rating: 4.5,
         price: 200,
+        discount: null,
+        duration: "7 days",
         discount: null,
         duration: "7 days",
     },
@@ -164,7 +195,10 @@ export const tripList = [
 
         review: 47,
         rating: 3.5,
+        rating: 3.5,
         price: 200,
+        discount: null,
+        duration: "2 days and 1 night",
         discount: null,
         duration: "2 days and 1 night",
     },
@@ -173,10 +207,14 @@ export const tripList = [
         title: "A day trip",
         image: "/images/semi-gobi.png",
         location: "Tasarkhai sand dunes, nomadic family",
+        location: "Tasarkhai sand dunes, nomadic family",
 
         review: 47,
         rating: 4.5,
+        rating: 4.5,
         price: 200,
+        discount: null,
+        duration: "2 days and 1 night",
         discount: null,
         duration: "2 days and 1 night",
     },
@@ -184,6 +222,7 @@ export const tripList = [
         id: 4,
         title: "A day trip to Terelj National Park and Statue of Chinggis Khan",
         image: "/images/semi-gobi.png",
+        location: "Terelj National Park",
         location: "Terelj National Park",
         review: 47,
         rating: 4.5,
@@ -464,6 +503,9 @@ export const tripData = [
         link: "https://www.toursmongolia.com/best-sellers/tour/vertical-big-loop-north-to-south-mongolia-tour",
     },
 ];
+
+
+
 
 
 export const tripDays = [
