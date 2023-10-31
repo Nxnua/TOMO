@@ -1,10 +1,13 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { data } from "./data";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { data } from "./data";
+
+
 
 export default function Plantrip() {
     const slideLeft = () => {
+        var slider = document.getElementById("slider");
         var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft - 500;
     };
@@ -13,6 +16,7 @@ export default function Plantrip() {
         var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft + 500;
     };
+    
     return (
         <div>
             <Header />
@@ -100,12 +104,12 @@ export default function Plantrip() {
                     </div>
                 </div>
             </div>
-            <Header />
-            <div>
-                <div className="text-center font-bold text-2xl h-[60px]">
-                    When do you want to go?
+           
+            <div >
+                <div className="text-center font-bold text-2xl  mt-10" >
+                    When do you want to go? 
                 </div>
-                <form className="mx-auto w-[900px] h-[120px] ">
+                <form className="mx-auto w-[900px] mt-10 ">
                     <div className=" text-2xl font-bold  mr-[700px]">
                         How many days?
                     </div>
@@ -116,13 +120,13 @@ export default function Plantrip() {
                         placeholder="number of days"
                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                         required
-                    ></input>
+                    />
                 </form>
-                <div className="  text-center font-bold text-2xl mr-[620px] ">
+                <div className=" mt-10 text-center font-bold text-2xl mr-[620px] ">
                     Which month? (optional)
                 </div>
             </div>
-            <div className="relative flex items-center">
+            <div className="relative flex items-center mt-10 ">
                 <MdChevronLeft
                     className="opacity-50 cursor-pointer hover:opacity-100"
                     onClick={slideLeft}
@@ -130,7 +134,7 @@ export default function Plantrip() {
                 />
                 <div
                     id="slider"
-                    className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
+                    className=" w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
                 >
                     {data.map((item) => (
                         <img
@@ -146,14 +150,13 @@ export default function Plantrip() {
                     size={40}
                 />
             </div>
-            <Header />
             <div>
-                <div className="font-bold text-2xl  h-10">
+                <div className="font-bold text-2xl  mt-20">
                     What activity do you prefer?{" "}
                 </div>
-                <span className=" h-20 ">(choose 5 or more)</span>
+                <span>(choose 5 or more)</span>
             </div>
-            <div className="flex flex-wrap justify-center gap-12">
+            <div className="flex flex-wrap gap-12 ml-56 mr-56 mt-20">
                 <div className=" mx-auto w-28 h-10 object-cover">
                     <label className="relative cursor-pointer">
                         <input type="checkbox" className="peer sr-only" />
@@ -300,7 +303,7 @@ export default function Plantrip() {
                 </div>
             </div>
             <form>
-                <div class="relative h-20">
+                <div class="relative mt-20">
                     <input
                         type="text"
                         id="text"
@@ -310,14 +313,16 @@ export default function Plantrip() {
                     />
                     <button
                         type="submit"
-                        class="text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 "
+                        class=" ml-5 text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 "
                     >
                         Submit
                     </button>
                 </div>
             </form>
-
+            <div className="mt-10">
             <Footer />
+            </div>
         </div>
+        
     );
 }
