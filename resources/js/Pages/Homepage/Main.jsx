@@ -12,7 +12,7 @@ export default function Main() {
     return (
         <div className="this-is-my-class">
             <Header />
-            <div className=" h-[30vh] bg-white pt-10 mt-60">
+            <div className=" h-[30vh] bg-white pt-10 mt-40">
                 Search
 
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
@@ -72,6 +72,7 @@ export default function Main() {
             <div className=" mx-28 ">
                 <SvgComponent />
             </div>
+            <div className=" h-12"></div>
             <Footer />
         </div>
     );

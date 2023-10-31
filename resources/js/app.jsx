@@ -6,8 +6,6 @@ import { Guides } from "./Pages/Guides";
 import Map from "./components/Map";
 import Movement from "./components/bannerSVG";
 import feedback from "./Pages/feedback";
-
-ReactDOM.createRoot(document.getElementById("app")).render(<Home />);
 import { TripDetail } from "./Pages/TripDetail";
 import {
     createBrowserRouter,
