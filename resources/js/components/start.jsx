@@ -1,4 +1,8 @@
+import { useState } from "react";
+import Login from "./login";
 export default function Start({ startHandler }) {
+
+   
     return (
         <div  className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
@@ -25,7 +29,7 @@ export default function Start({ startHandler }) {
                 className=" mt-[6vh] flex justify-center "
                 onClick={() => startHandler()}
             >
-                <div className=" bg-orange text-white rounded-full hover:bg-warning hover:border-warning font-bold px-10 py-3   text-xl">
+                <div className=" rounded-xl font-bold px-10 py-3  bg-orange text-white text-2xl">
                     Start
                 </div>
             </button>
