@@ -1,15 +1,19 @@
-
 import ReactDOM from "react-dom/client";
 import Home from "./Pages/Homepage/Home";
 import Plantrip from "./Pages/PlanTrip";
 import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
+import Map from "./components/Map";
+import Movement from "./components/bannerSVG";
+import feedback from "./Pages/feedback";
+
+
 import { TripDetail } from "./Pages/TripDetail";
 import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import SvgComponent from "./Pages/Homepage/Map";
+import SvgComponent from "./components/Map";
 
 const router = createBrowserRouter([
     {

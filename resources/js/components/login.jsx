@@ -1,8 +1,7 @@
 import { useState } from "react";
-import SignUp from "./signup";
-import {BrowserRouter} from "react-router-dom";
-export default function Login() {
-    const navigate = useNavigate();
+
+import { BrowserRouter } from "react-router-dom";
+export default function Login({ signUpHandler }) {
     const [formDat, setFormDat] = useState({
         username: "",
         password: "",
@@ -80,10 +79,10 @@ export default function Login() {
                         value="Sign In"
                     />
                 </form>
-                <p className="mb-[5vh] pt-2 text-center text-xs">
-                    Don't have an account?
-                    <a href="#" className=" text-info">
-                        Login
+                <p className="mb-[5vh] pt-2 text-center text-xs lg:text-sm">
+                    Don't have an account? &nbsp;
+                    <a href="#" onClick={signUpHandler} className=" text-info">
+                        Sign Up
                     </a>
                 </p>
 

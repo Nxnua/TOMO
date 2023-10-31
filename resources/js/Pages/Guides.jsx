@@ -10,7 +10,7 @@ export const Guides = () => {
     <div>
     <Header/>
     <div className="flex justify-center items-center h-[86px] mx-auto font-Nunito ">
-            <div className="float-left ms-10">
+            <div className="float-left ms-15">
             
             </div>
             <div className="md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center">

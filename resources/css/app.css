@@ -136,3 +136,8 @@ body {
 #mainNav.stroke ul li a:hover:after {
     width: 100%;
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}

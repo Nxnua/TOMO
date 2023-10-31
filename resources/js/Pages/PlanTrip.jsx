@@ -1,10 +1,13 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { data } from "./data";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { data } from "./data";
+
+
 
 export default function Plantrip() {
     const slideLeft = () => {
+        var slider = document.getElementById("slider");
         var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft - 500;
     };
@@ -13,6 +16,7 @@ export default function Plantrip() {
         var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft + 500;
     };
+    
     return (
         <div>
             <Header />
@@ -319,5 +323,6 @@ export default function Plantrip() {
             <Footer />
             </div>
         </div>
+        
     );
 }
