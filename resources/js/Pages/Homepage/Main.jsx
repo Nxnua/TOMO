@@ -6,13 +6,32 @@ import { v4 } from "uuid";
 import TripComponent from "../../components/tripComponent";
 import SvgComponent from "./Map";
 import { guide, tripList } from "../data";
+import { Link } from "react-router-dom";
+
 
 export default function Main() {
     return (
         <div className="this-is-my-class">
             <Header />
-            <div className=" my-10 mx-28 flex justify-center flex-col ">
-                <p className=" text-2xl  font-bold mb-12"> Guides</p>
+
+            <div className=" h-[80vh] bg-slate-100 pt-10">
+                Search
+                <form className=" mx-auto w-[900px] relative items-center justify-center">
+                    <div className="h-[120px]">
+                        <div className="absolute ml-[20px] mt-[20px]">
+                            <img src="/images/search.png" />
+                        </div>
+
+                        <input
+                            type="search "
+                            placeholder=" City, landmark"
+                            className=" w-full p-4 rounded-full bg-white text-center border-2 "
+                        />
+                    </div>
+                </form>
+            </div>
+            <div className="z-20 my-10 mx-28 flex justify-center flex-col ">
+                                <p className=" text-2xl  font-bold mb-12"> Guides</p>
 
                 <div className="  grid grid-cols-3 gap-6">
                     {guide.map((item, i) => {
@@ -28,6 +47,7 @@ export default function Main() {
                         );
                     })}
                 </div>
+                <Link to="/guides" className=" mt-20">See more</Link>
 
                 <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
 
@@ -48,6 +68,7 @@ export default function Main() {
                         );
                     })}
                 </div>
+                <Link to="/trips" className=" mt-20">See more</Link>
             </div>
             <div className=" mx-28 ">
                 <SvgComponent />
