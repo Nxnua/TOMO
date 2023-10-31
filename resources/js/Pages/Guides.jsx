@@ -31,11 +31,11 @@ export const Guides = () => {
   return (
     <div>
     <Header/>
-    <div className="flex justify-center items-center h-[86px] mx-auto font-Nunito ">
-            <div className="float-left ms-15">
+    <div className="flex justify-center  mx-auto font-Nunito flex-col ">
+            {/* <div className="float-left ms-15">
             
-            </div>
-            <div className="md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center">
+            </div> */}
+            <div className=" mb-12 mt-16 h-20 md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center shadow-lg">
                 <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
                 <div className="stroke" id="mainNav">
                     <ul>
@@ -118,7 +118,7 @@ export const Guides = () => {
                         </div>
                     </div>
                 </div>
-
+                <div>
                 <div className=" grid grid-cols-2 gap-6  ml-28">
                     {guide.map((item, i) => {
                         return (
@@ -142,12 +142,16 @@ export const Guides = () => {
                         </a>
                     </div>
                 </div>
+                </div>
+                </div>
                 
             </div >
+         
             <div className="mt-10">
             <Footer />
             </div>
             
+       
         </div>
     );
 };
