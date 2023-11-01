@@ -8,6 +8,7 @@ import Movement from "./components/bannerSVG";
 import feedback from "./Pages/feedback";
 
 import { TripDetail } from "./Pages/TripDetail";
+import { TripDetail2 } from "./Pages/TripDetail2";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path: "/trip",
         element: <TripDetail />
+    },
+    {
+        path: "/trip2",
+        element: <TripDetail2 />
     },
     {
         path: "/planyourtrip",
