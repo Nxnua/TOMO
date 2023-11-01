@@ -222,6 +222,21 @@ export default function Trip() {
                                         />
                                     );
                                 })}
+                                {tripList.map((item, i) => {
+                                    return (
+                                        <TripComponent
+                                            title={item.title}
+                                            location={item.location}
+                                            image={item.image}
+                                            review={item.review}
+                                            rating={item.rating}
+                                            discount={item.discount}
+                                            duration={item.duration}
+                                            price={item.price}
+                                            key={v4()}
+                                        />
+                                    );
+                                })}
                             </div>
                         </div>
                     </div>
