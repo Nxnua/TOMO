@@ -5,47 +5,48 @@ import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
 import Map from "./components/Map";
 import Movement from "./components/bannerSVG";
-import feedback from "./Pages/feedback";
+import Feedback from "./Pages/feedback";
 
 import { TripDetail } from "./Pages/TripDetail";
 import { TripDetail2 } from "./Pages/TripDetail2";
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 
 const router = createBrowserRouter([
     {
-      path: "/",
-      element: <Home />,
+        path: "/",
+        element: <Home />,
     },
     {
         path: "/trips",
-        element: <Trips />
+        element: <Trips />,
     },
     {
         path: "/guides",
-        element: <Guides />
+        element: <Guides />,
     },
     {
         path: "/trip",
-        element: <TripDetail />
+        element: <TripDetail />,
     },
     {
         path: "/trip2",
-        element: <TripDetail2 />
+        element: <TripDetail2 />,
     },
     {
         path: "/planyourtrip",
-        element: <Plantrip />
+        element: <Plantrip />,
     },
     {
         path: "/map",
-        element: <SvgComponent />
+        element: <SvgComponent />,
     },
+    {
+        path: "/feedback",
+        element: <Feedback />,
+    },
+]);
 
-  ]);
-  
-
-ReactDOM.createRoot(document.getElementById("app")).render( <RouterProvider router={router} />);
+ReactDOM.createRoot(document.getElementById("app")).render(
+    <RouterProvider router={router} />
+);
