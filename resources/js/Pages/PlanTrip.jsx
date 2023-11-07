@@ -21,7 +21,7 @@ export default function Plantrip() {
         <div>
             <Header />
             <div>
-                <div className="text-center font-bold text-2xl h-[50px] mt-40">
+                <div className="text-center font-bold text-2xl h-[50px] ">
                     Where do you want to go?
                 </div>
                 <form className=" mx-auto w-[900px] relative items-center justify-center mt-10">
@@ -29,7 +29,6 @@ export default function Plantrip() {
                         <div className="absolute ml-[20px] mt-[20px]">
                             <img src="/images/search.png" />
                         </div>
-
                         <input
                             type="search "
                             placeholder=" City, landmark"
@@ -106,27 +105,34 @@ export default function Plantrip() {
             </div>
            
             <div >
-                <div className="text-center font-bold text-2xl  mt-10" >
+                <div className="text-center font-bold text-2xl  mt-20" >
                     When do you want to go? 
                 </div>
                 <form className="mx-auto w-[900px] mt-10 ">
-                    <div className=" text-2xl font-bold  mr-[700px] ">
+
+
+                    <div className=" text-2xl font-bold mt-10 mr-[700px]">
+
                         How many days?
                     </div>
                     <input
                         type="tel"
                         id="phone"
+
                         class="w-full p-4  bg-white  border mt-10"
+
+
                         placeholder="number of days"
                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                         required
                     />
                 </form>
-                <div className=" mt-10 text-center font-bold text-2xl mr-[620px] ">
+                <div className=" mt-20 text-center font-bold text-2xl mr-[620px] ">
                     Which month? (optional)
                 </div>
             </div>
-            <div className="relative flex items-center mt-10 ml-56 mr-56 ">
+            <div className="relative flex items-center mt-10 ml-72 mr-72 ">
+
                 <MdChevronLeft
                     className="opacity-50 cursor-pointer hover:opacity-100"
                     onClick={slideLeft}
@@ -309,6 +315,7 @@ export default function Plantrip() {
                         </div>
                     </label>
                 </div>
+
                 <div className=" mx-auto w-28 h-10 object-cover">
                     <label className="relative cursor-pointer">
                         <input type="checkbox" className="peer sr-only" />
@@ -317,6 +324,7 @@ export default function Plantrip() {
                         </div>
                     </label>
                 </div>
+
             </div>
             <form>
                 <div class="relative mt-20 ">
@@ -329,16 +337,15 @@ export default function Plantrip() {
                     />
                     <button
                         type="submit"
-                        class=" ml-5 text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 "
+                        class=" ml-5 text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
                     >
                         Submit
                     </button>
                 </div>
             </form>
-            <div className="mt-10">
+            <div className="mt-40">
             <Footer />
             </div>
         </div>
-        
     );
 }

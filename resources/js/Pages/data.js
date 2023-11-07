@@ -54,6 +54,24 @@ export const guide = [
         name: "Zoloo",
         description:
             "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
+        image: "/images/profile3.jpg",
+        review: "47 view",
+        star: "4.5",
+    },
+    {
+        id: 1,
+        name: "Zolboo",
+        description:
+            "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
+        image: "/images/profile4.jpg",
+        review: "47 view",
+        star: "4.5",
+    },
+    {
+        id: 1,
+        name: "Zoloo",
+        description:
+            "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
         image: "/images/profile.jpg",
         image: "/images/profile.jpg",
         review: "47 view",
@@ -67,6 +85,7 @@ export const guide = [
 
         image: "/images/profile0.jpg ",
 
+        image: "/images/profile0.jpg",
 
 
         image: "/images/profile0.jpg ",

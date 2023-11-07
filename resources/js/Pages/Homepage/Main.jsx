@@ -12,8 +12,10 @@ export default function Main() {
     return (
         <div className="this-is-my-class">
             <Header />
-            <div className=" h-[30vh] bg-white pt-10 mt-60">
-                Search
+
+            <div className=" h-[30vh] bg-white pt-10 mt-10">
+
+                
 
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
                     <div className="h-[120px]">
@@ -29,10 +31,12 @@ export default function Main() {
                     </div>
                 </form>
             </div>
-            <div className="z-20 mt-50 mx-28 flex justify-center flex-col ">
+
+            <div className="z-20 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
 
-                <div className="  grid grid-cols-3 gap-6">
+
+                <div className="  grid grid-cols-3 gap-4">
                     {guide.map((item, i) => {
                         return (
                             <Guide
@@ -50,7 +54,7 @@ export default function Main() {
 
                 <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
 
-                <div className="  grid  xl:grid-cols-4 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                <div className="  grid  xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {tripList.map((item, i) => {
                         return (
                             <TripComponent
@@ -72,6 +76,8 @@ export default function Main() {
             <div className=" mx-28 ">
                 <SvgComponent />
             </div>
+
+            <div className=" h-12"></div>
             <Footer />
         </div>
     );
