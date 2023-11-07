@@ -13,6 +13,7 @@ import {
     RouterProvider,
   } from "react-router-dom";
 import SvgComponent from "./components/Map";
+import { Profile } from "./Pages/Profile";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     {
         path: "/map",
         element: <SvgComponent />
+    },
+    {
+        path: "/profile",
+        element: <Profile />
     },
 
   ]);

@@ -10,6 +10,7 @@ export default function Footer() {
         { id: 1, title: "Plan a trip", link: "/planyourtrip" },
         { id: 2, title: "Travel Budget", link: "" },
         { id: 3, title: "Flights", link: "" },
+        { id: 3, title: "Profile", link: "/profile" },
     ];
     return (
         <div className=" bg-black75 flex flex-col   ">
