@@ -1,0 +1,776 @@
+[
+    {
+        "title": "Legendary Mongolian Gobi Tour",
+        "overview": "Least thing to do in Mongolia for travelers is to visit two major important highlights of the country: South Gobi and Kharkhorin! Indeed, this itinerary could be classified as a CLASSIC by presenting true essence of Mongolian nature and culture with visits to hospitable nomad settlement, active Buddhist monastery, historical sites and natural parks. Nature along this tour will be changing dramatically: from the golden dunes of Gobi to the open green valleys dotted with wild flowers, through vast steppes, a great waterfall and charming Lake Orog! Additionally, the highlight of the tour is exploring mystical Khermen Tsav- a famous place for paleontologists, locating to the west from scenic Khongor Sand Dunes. Here you will feel like living in a middle of nowhere and end of the world.",
+        "locations": [],
+        "price": [
+            "2 PAX",
+            "2560$",
+            "3-4 PAX",
+            "2390$",
+            "5-8 PAX",
+            "2210$",
+            "9-15 PAX",
+            "2060$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Arrival Fin Ulaanbaatar.",
+                "description": "Transfer to the hotel. Unpack and rest in the hotel. Short city tour with Gandan Monastery, the National Museum of Mongolia, and Sukhbaatar Square (also known as Chingis Khaan Square). (L/D)",
+                "images": [
+                    "/uploads/city tour ulaanbaatar mongolia-ayan-travel.jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Arrive at Baga Gazriin Chuluu",
+                "description": "After breakfast drive to Baga Gazriin Chuluu in Dundgobi province. This is another granite rock formation in the middle of the steppe plains. Five km away, the highest peak 1768 meters in the area at Baga Gazriin Uul Mountain. Leisure time for rock climbing and hiking activities if time is available. /280 km 5-6 hours of driving/ (B/L/D)",
+                "images": [
+                    "/uploads/Baga Gazriin Chuluu  (Mongolia Overland Tour 2021).jpg"
+                ]
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Drive to Dalanzadgad via Tsagaan Suvarga",
+                "description": "After breakfast, we head to South Gobi. We will have lunch on the way near the Tsagaan Suvarga, also known as mini Grand Canyon. After enjoying the Tsagaan Suvarga we keep on the tour to Dalanzadgad and stay overnight at ger camp near the Dalanzadgad. /370 km 6-7 hours of driving/ (B/L/D)",
+                "images": [
+                    "/uploads/Tsagaan Suvarga - White Stupa (Classic Mongolia Photography Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 4.",
+                "title": "Hiking to the Eagle Valley/ Bayanzag-Flaming Cliff",
+                "description": "This morning drive to South Gobi and Yol Am is known as Eagle valley in the Gobi Gurvan Saikhan Mountain -this sunless canyon located in the middle of Gobi Gurvan Saikhan Mountain has a particular beauty with narrow paths broadening in places between rocks, while buzzards and eagles wheel and glide in the blue skies above. The cliffs of the canyon block the sunlight from the rivers below so that they remain frozen throughout the year. After visiting Eagle Valley we go to Bayanzag - a classic desert of rock, red sands, scrub, sun, and unbelievable emptiness has become known to the world as \"Cemetery of Dinosaurs”. The red sandstone cliffs and canyons of Bayanzag are where the American paleontologist Roy Chapman Andrews first discovered fossil beds of dinosaur bones and first-ever recorded dinosaur eggs in 1922 - discoveries which made world headlines. /120 km 1.30-2 hours/ (B/L/D)",
+                "images": [
+                    "/uploads/Yoliin Am & Bayanzag - Flaming Cliffs (Legendary Mongolian Gobi Tour).jpg",
+                    "/uploads/Top travel destination Mongolia -Gobi Desert.jpg"
+                ]
+            },
+            {
+                "number": "DAY 5.",
+                "title": "Climb up Khongor Sand Dunes",
+                "description": "Drive to Khongor Sand Dunes (195km) - the largest and most spectacular sand dunes in Mongolia. Dunes of Khongor is known as the « singing sands » and rise from the plain reaching a height of 80m and extending for about 180km long. The spectacular dunes are bordered by lush green vegetation supported by a small river, named Khongor. Hiking and sliding through the sand dunes. Visit camel breeding family and experience short camel riding. /170 km 4-5 hours/ (B/L/D)",
+                "images": ["/uploads/Camel_riding_gobi_tour_Mongolia.jpg"]
+            },
+            {
+                "number": "DAY 6.",
+                "title": "Heading to Noyon Sum, Mirror Rock, Khuren Khanangiin Nuruu Mountain",
+                "description": "After Breakfast. Transfer to Khuren Khanangiin Nuruu and Mirror Rock which is 10 m long and 3 meters high, that looks like a sparkling mirror. /200 km 5+6 hours/. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 7.",
+                "title": "Enjoy Nemegt/ Narandaats",
+                "description": "After breakfast transfer to Nemegt canyon. The Nemegt locality is one of the most famous dinosaur localities in Mongolia ever since the site was discovered in 1946. It yields abundant dinosaur skeletons; however, little attention had been given to dinosaur footprints at the locality. The only Nemegt dinosaur footprint study focused on descriptions of the footprints, gave only a few taxonomic implications, and provided no comparison with other dinosaur track sites. /230 km 6-7 hours/ (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 8.",
+                "title": "Discover Khermen Tsav",
+                "description": "In the Gobi, natural miracles are countless and one of them is named Khermen Tsav, a wonderful canyon made of red mudrocks. The spectacular rocky formations of Khermen Tsav are located North the sum of Gurvantes, in the extreme Northwest of the province of Omnogovi, between Mount Sharing at North and Mount Altan at South.",
+                "images": []
+            },
+            {
+                "number": "DAY 9.",
+                "title": "Admire scene near Bayanlig",
+                "description": "This morning we drive to Bayanlig soum, Bayankhongor province, which is located southern part of Mongolia. This area is well-known as Tsagaan Agui-White cave, a crystal cave that is 40 meters long and is famous in the world by its beauty and trace of ancient people who were living 700’000-800’000 years ago. Bedrock and large blocks of dolomite debris occur at depths of as much as four meters below the present surface of the cave interior. /360 km 7-8 hours/ (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 10.",
+                "title": "Keep driving to Orog Lake",
+                "description": "Have breakfast in the camp and move to Orog Lake, which is the second biggest lake in the valley of Lakes. The territory is 140 km and 4.5 m depth. It flows to the Tuin Gol River.  During the bird migration, it has plenty of opportunities to see the birds. Stay overnight at a tent near the lake. /130 km 2-3 hours/ (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 11.",
+                "title": "Arrive at Arvaikheer Town",
+                "description": "Arvaikheer is the center of the Uvurkhangai province. This province is the center of the culture of central Mongolian provinces. You have a chance to see Mongolian most famous horses’ statues near the Arvaikheer town. Stay overnight at local hotel in the town. /260 km 5-6 hours/ (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 12.",
+                "title": "Visit Ulaan Tsutsgalan Waterfall",
+                "description": "In the morning head to the magnificent seasonal waterfall, also called Ulaan Tsutgalan, is one of the best sights in central Mongolia. About 24m downstream from the waterfall you can climb down to the bottom of the gorge; it’s 22m deep and dotted with pine trees. /160 km 3-4 hour/ (B/L/D)",
+                "images": ["/uploads/Orkhon Waterfall (Ulaantsutgalan).jpg"]
+            },
+            {
+                "number": "DAY 13.",
+                "title": "Relaxing Tsenkher Hot Spa",
+                "description": "Breakfast at camp. Then we head to Tsetserleg town, which is center of Arkhangai Province. Visit local museum- Zayiin Gegeen Monastery. Tsenkher Hot Springs & Spa.  Enjoy the nature and hot spa after long drive. You can discuss options for exploring the local area with your tour guide. /190 km 4-5 hours/ (B/L/D) ",
+                "images": []
+            },
+            {
+                "number": "DAY 14.",
+                "title": "Sightseeing at Kharkhorin",
+                "description": "Arrive in Kharkhorin. The ancient capital city Kharkhorin was founded in 1220 in the legendary Orkhon river valley. It was from there that the Mongol Empire governed, until Khubilai khaan, the grandson of Chinggis Khaan, moved the city to Beijing. On the ruins of Kharkhorin, in 1586, was built Erdene Zuu Monastery which is surrounded by monumental walls with 108 stupas. The monastery is kept till nowadays and it is considered as one of the leading religious centers of Mongolia. Visit Erdene Zuu Monastery and the local market of art crafts and antique items. /150 km 3-4 hours/ (B/L/D)",
+                "images": ["/uploads/Erdenezuu Monastery (Kharkhorin).jpg"]
+            },
+            {
+                "number": "DAY 15.",
+                "title": "Arrive at Ulaanbaatar",
+                "description": "Drive back to Ulaanbaatar after breakfast. We pass by Elsen Tasarkhai Sand Dunes and have lunch on the way. Arrive in Ulaanbaatar and transfer to the hotel. /400 km 6-7 hours/ (B/L/D)",
+                "images": [
+                    "/uploads/Elsen Tasarkhai & Ulaanbaatar (Legendary Mongolian Gobi Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 16.",
+                "title": "Departure",
+                "description": "Transfer to Chingis Khaan International Airport or Train station and depart Mongolia. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel**** and ger camps in the countryside 2-3 PAX\nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment",
+        "notIncludes": "Accommodation: Hotel**** and ger camps in the countryside 2-3 PAX\nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment"
+    },
+    {
+        "title": "Golden Gobi and Kharkhorin Tour Mongolia",
+        "overview": "​Discover must-visit places in Mongolia, the Gobi Desert, and Orkhon Valley If you travel to Mongolia. This classic Mongolia tour offers you to enjoy the natural view that is changing dramatically: from the golden dunes of Gobi to the open green valleys dotted with wildflowers, through vast steppes, a great waterfall, and a charming lake. Visit Khustai National Park which covers the steppe and forest mountain area, home to abundant wildlife such as Takhi, Przewalski's wild horses, hundreds of species of birds. You will explore not only wildlife and natural beauties but also experience Mongolia’s culture with visits to a hospitable nomad settlement, active Buddhist monasteries, and other important historical sites.",
+        "locations": [
+            "Legendary Orkhon Valley",
+            "The ancient capital of the Mongol Empire - Kharkhorin",
+            "Erdene Zuu Monastery",
+            "Khongor Sand Dune",
+            "Yol Valley- Gobi Gurvan Saikhan National Park"
+        ],
+        "price": [
+            "2 PAX",
+            "2650$",
+            "3-4 PAX",
+            "2350$",
+            "5-8 PAX",
+            "2200$",
+            "9-12 PAX",
+            "1995$",
+            "13-15 PAX",
+            "1860$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Arrival in Ulaanbaatar",
+                "description": "Transfer to the hotel. Unpack and rest in the hotel. Short city tour with Gandan Monastery, the National Museum of Mongolia, which represents Mongolian Culture starting from Stone Age to the 21st century and Buddhism, and Sukhbaatar Square (also known as Chingis Khaan Square). (L/D)",
+                "images": [
+                    "/uploads/Ulaanbaatar (Sukhbaatar Square & Gandan Monastery).jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Gobi Gurvan Saikhan Mountain National Park",
+                "description": "Flight to Dalanzagdad town, the central town of Southgobi province. Drive to Yoliin Am or Yol valley known as Vulture valley in the Gobi Gurvan Saikhan Mountain (28km) - this sunless canyon located in the middle of Gobi Gurvan Saikhan Mountain National Park has a particular beauty with narrow paths broadening in places between rocks, while buzzards and eagles wheel and glide in the blue skies above. The cliffs of the canyon block the sunlight from the rivers below so that they remain frozen until the end of June. (B/L/D)",
+                "images": ["/uploads/Yol Valley (Golden Gobi short tour).jpg"]
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Khongor Sand Dunes",
+                "description": "Drive to Khongor sand dunes (195km) - the largest and most spectacular sand dunes in Mongolia. Dunes of Khongor is known as the «Singing dunes» and rise from the plain reaching a height of 80m and extending for about 180km long. The spectacular dunes are bordered by lush green vegetation supported by a small river Khongoriin gol. Hiking and sliding through the sand dunes. Visit camel breeding family and experience short camel riding. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 4.",
+                "title": "Bayanzag - Flaming Cliffs",
+                "description": "Drive towards Bayanzag (140 km) - the classic desert of rock, red sands, scrub, sun, and unbelievable emptiness has become known to the world as \"Cemetery of Dinosaurs”. The red sandstone cliffs and canyons of Bayanzag are where the American paleontologist Roy Chapman Andrews first discovered fossil beds of dinosaur bones and first-ever recorded dinosaur eggs in 1922 - discoveries which made world headlines. The best time for photographing is before sunset when the cliffs look like flames. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 5.",
+                "title": "Mysterious Ongi Monastery",
+                "description": "Head to the north towards Orkhon Waterfall. Overnight stop in Middle Gobi province, at the Ongi monastery ruins, a small mountainous area with the sites of remains of ruined old monasteries. Once the monastery has served as a midway point for Buddhist pilgrimages going to holy Tibet. After dinner walk to the ruins of the monastery and enjoy the sunset. (B/L/D)",
+                "images": [
+                    "/uploads/Ongi Monastery Ruins (Classic Mongolia Photography Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 6.",
+                "title": "Orkhon Waterfall",
+                "description": "We will reach the Orkhon waterfall or known as Ulaantsutgalan waterfall. Formed by volcanic eruptions about 20.000 years ago, the waterfall cascades from a height of 20m. It is a scenic, tranquil spot and surrounding nature is undisturbed, as such there are opportunities for good walking and riding in the area. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 7.",
+                "title": "Erdene Zuu Monastery in Kharkhorin",
+                "description": "Drive to Kharkhorin (130 km) – ruins of the ancient capital of the Mongol Empire built by king Ugudei in 1235. The city was strategically located at the crossroads of traditional routes, creating a staging post for migrating nomads and merchants’ caravans. Foreign envoys and prominent clerics traveled to this city for an audience with the king of the Mongol Empire. Far after when the Khubilai Khaan (King) moved the capital to Beijing in 1264, Kharkhorin was raised to the ground by Manchu soldiers. However, the bricks and stones from the ruins of this ancient city were used to build the Erdene Zuu Monastery nearby. Visit Erdene Zuu monastery and Karakorum Museum in Kharkhorin and local market for interesting souvenirs and artworks. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 8.",
+                "title": "Walking along the Ugii Lake",
+                "description": "Head to Ugii Lake. The road is smoothly paved, and for the last 90 km, we drive on a dirt road, which leads to the lake. Ugii Lake is a wonderful place to have to relax after long driving. The lake has an abundant birdlife of more than 150 bird species. Bird watching, fishing is parts of the available entertainment. We will visit a local family, exploring their nomadic lifestyle and livestock farming. (B/L/D)",
+                "images": [
+                    "/uploads/Ogii Lake (A True Nomadic Adventure Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 9.",
+                "title": "Discover Khustai National Park",
+                "description": "Drive to Khustai national park /190 km/ to see a wild horse- takhi, widely known as “Przewalski horse”. Those are the only wild horse to survive in modern times. The species were returned to Mongolia from world zoos and reserves within Hustai National Park, which is 100 km west of Ulaanbaatar in 1992. Khustain Nuruu has good vegetation, springs, birch forest, and rocks which are suitable for many wild animals including 46 species of mammals and 172 species of birds. (B/L/D)",
+                "images": [
+                    "/uploads/Khustai National Park (Classic Mongolia Photography Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 10.",
+                "title": "Back to Ulaanbaatar",
+                "description": "Drive back to Ulaanbaatar and visit the Bogd Khan Winter Palace Museum, where the last king of Mongolia lived and now turned into a museum. Option to go shopping for souvenirs and other Mongolian natural products. Amazing cultural performance - national folk and dance concert in the evening. (B/L/D)",
+                "images": [
+                    "/uploads/Bogd Khan Palace Museum & Cultural Performance (Golden Gobi and Kharkhorin Tour Mongolia).jpg"
+                ]
+            },
+            {
+                "number": "DAY 11.",
+                "title": "Departure",
+                "description": "Transfer to Chingis Khaan International Airport or Train station and depart Mongolia. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/",
+        "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/"
+    },
+    {
+        "title": "Golden Gobi Short Tour Mongolia",
+        "overview": "Discover the golden Gobi Desert, which once was an ancient sea, occupies much of Southern Mongolia. Gobi Desert has become a primary destination to visit Mongolia because of the discovery of dinosaur fossils and beautiful combination of Sand dunes, oasis, and rocky mountains. The landscape is rugged and inhospitable, with little vegetation, but it varies enormously, from mountain massifs with barren rocky outcrops to the flat plains where you find a poplar-fringed oasis and Sand dunes. This region is a habitat of threatened species, such as wild camel, Gobi bear /known as Mazaalai/, one of the rarest kind of bear on the earth, and wild ass /known as Khulan/.",
+        "locations": [
+            "Visit camel breeding family",
+            "Short camel riding",
+            "Hiking on sand dune",
+            "Visit local museum"
+        ],
+        "price": [
+            "2 PAX",
+            "1700$",
+            "3-4 PAX",
+            "1500$",
+            "5-8 PAX",
+            "1380$",
+            "9-12 PAX",
+            "1280$",
+            "13-15 PAX",
+            "1230$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Arrive in Ulaanbaatar",
+                "description": "Transfer to the hotel. Unpack and rest in the hotel. Short city tour with Gandan Monastery, the National Museum of Mongolia, and Sukhbaatar Square (also known as Chinggis Khaan Square). (L/D)",
+                "images": [
+                    "/uploads/Ulaanbaatar (Sukhbaatar Square & Gandan Monastery).jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Fly to South Gobi",
+                "description": "Take a flight to Dalanzadgad town, the central town of South Gobi province. Meet with our driver and drive to Yol Valley known as Yoliin Am or Lammergeier Valley in the Gobi Gurvan Saikhan Mountain National Park. This is a picturesque valley in the middle of the Gobi desert with thick ice almost all year round. While ascending to the valley we will find a glacier in the middle of the rocky cliffs If we visit before August. (B/L/D)",
+                "images": ["/uploads/Yol Valley (Golden Gobi short tour).jpg"]
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Drive to Khongor Sand Dunes",
+                "description": "Getting the first experience of Gobi. Visit camel breeding family and familiarizing with their isolated lifestyle. Camel riding is arranged for you /optional/. Hiking in the vicinity area, enjoying the sand dunes. (B/L/D)",
+                "images": [
+                    "/uploads/Khongor Sand Dunes (Golden Gobi short tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 4.",
+                "title": "Bayanzag - Flaming Cliffs",
+                "description": "Today we will drive to Bayanzag, (known as a Flaming Cliffs where the first nest of dinosaur eggs ever discovered was found in 1922.) a site famous for the remains of dinosaurs which lived here 60 million years ago. It was discovered by the American paleontologist Roy Chapman Andrews who first discovered fossil beds of dinosaur bones which made world headlines. You can walk around where dinosaurs once roamed and see saksaul trees and other classic desert vegetation. (B/L/D)",
+                "images": [
+                    "/uploads/Bayanzag - Flaming Cliffs (Golden Gobi short tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 5.",
+                "title": "Back to Ulaanbaatar",
+                "description": "Take a flight back to Ulaanbaatar. Option to go shopping for souvenirs and cashmere products. Cultural performance in the evening. (B/L/D)",
+                "images": [
+                    "/uploads/Concert_mongolia (Cultural Performance).jpg"
+                ]
+            },
+            {
+                "number": "DAY 6.",
+                "title": "Departure",
+                "description": "Transfer to Chinggis Khaan International Airport or Train station and depart Mongolia. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nDomestic Round-trip flights (UB-Dalanzadgad-UB)\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding",
+        "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nDomestic Round-trip flights (UB-Dalanzadgad-UB)\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding"
+    },
+    {
+        "title": "Hiking in Khustai National Park Tour",
+        "overview": "Explore the 90,000-hectare Khustain Nuruu National Park, set 60 miles southwest of Ulaanbaatar, is home to the World's only naturally surviving wild horse. The Przewalskii horse (or takhi in Mongolian) has been successfully reintroduced into the wild and has a light yellow coat and a short, stiff black mane. Each horse is approximately 250cm long, 146cm tall, and weighs on average 300kg.\n\nKhustain Nuruu has good vegetation, springs, birch forest, and rocks which are suitable for many wild animals including 46 species of mammals and 172 species of birds. The best time of the day for game viewing in the early morning and early evening.",
+        "locations": [
+            "Przewalski horses",
+            "Hustai National Park",
+            "Wild life nature"
+        ],
+        "price": [
+            "2 PAX",
+            "750$",
+            "3-4 PAX",
+            "650$",
+            "5-8 PAX",
+            "600$",
+            "9-12 PAX",
+            "550$",
+            "13-15 PAX",
+            "530$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Arrive in Hustai National Park.",
+                "description": "At a pre-arranged time you will be met by your driver and guide and drive to Khustai National Park. The drive will take about 2 hours until you reach your destination where the re-introduction of the wild Przewalski horses has taken place since 1992. ",
+                "images": []
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Mount Khoshoot",
+                "description": "A full day of hiking along a prepared route accompanied by your guide. There will be plenty of wildlife to see, including vultures, deer, marmots, and of course the Przewalski horses. You will have lunch at Mount Khoshoot and descend into the North Bird Cherry Valley for dinner and overnight. You will be accommodated in charming wooden huts. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Visit nomadic family",
+                "description": "This morning you will saddle up your horses and ride towards the ancient, so-called Turkic graves, which are the remains of an ancient tribe that existed in this area during the 6th-9th centuries. On the way, we will visit a nomadic herders' family and learn about their lifestyles. You will be accompanied by your guide and a horse wrangler to look after you. You will observe a piece of history while enjoying your packed lunch, before continuing to a beautiful island on the Tuul River where you will spend your last night in a tent. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 4.",
+                "title": "Back to Ulaanbaatar",
+                "description": "After breakfast, we will drive back to Ulaanbaatar. The drive will take two and a half hours. On arrival, you will be taken to your hotel. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: ger camp, wooden house, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding,  ",
+        "notIncludes": "Accommodation: ger camp, wooden house, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding"
+    },
+    {
+        "title": "Golden Eagle Festival 2024 Tour",
+        "overview": "Travel Mongolia and enjoy Golden Eagle Festival with us! For the last few years, local Kazakh people who live in Bayan-Ulgii province, organize an important celebration for the benefits of next generation local community and international falconry. Eagle Hunting Festival, a colorful and picturesque event attracting the best hunters and birds in early October. The Golden Eagle Festival became one of the main events to captivate photographers, researchers, and travelers to Mongolia.\n\nThe highlight of the trip takes place near the capital of Bayan-Ulgii province in western Mongolia. Ninety percent of the population here is Kazakh, a group that is renowned for its hunter’s extraordinary skills in using golden eagles to hunt for small prey animals.\n\nDuring these 2 days of Eagle Festival, you will attend the opening ceremony and many different competitions between Eagle hunters and their trained eagles, a special performance of Kazakh dance, and songs.",
+        "locations": [
+            "Visit to Khazakh family, in their colorful gers",
+            "Meeting with eagle hunters",
+            "Eagle hunting festival"
+        ],
+        "price": ["2 PAX", "2590$", "3-5 PAX", "2445$", "6-8 PAX", "2215$"],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "City tour",
+                "description": "(Sep 27) Transfer to the hotel. Unpack and rest in the hotel. Short city tour with Gandan Monastery, the National Museum of Mongolia, which represents Mongolian Culture starting from Stone Age to the 21st century and Buddhism, and Sukhbaatar Square (also known as Chingis Khaan Square). In Gandan you can take local prayers, monks, the biggest standing indoor Buddha statue and temples own figure. Prepare for the trip. (B/L/D)",
+                "images": [
+                    "/uploads/Ulaanbaatar (Sukhbaatar Square & Gandan Monastery).jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Terelj National Park",
+                "description": "(Sep 28) Drive to Terelj National Park, one of the most beautiful destinations close to Ulaanbaatar. Travelers can take a horseback riding trip and visiting local nomads, view fascinating rock formations against a backdrop of pine-covered mountains and wander along the wooded banks of a mountain stream. The possibility to take hiking to Ariyabal temple on a beautiful rocky mountain and capturing Turtle Rock from that mountain is another angle. (B/L/D)",
+                "images": ["/uploads/Tour_To_Terelj_National Park_Mongolia.jpg"]
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Flight to Ulgii",
+                "description": "(Sep 29) Take a flight to Ulgii town, the center of Bayan-Ulgii province where 90% of population is Kazakhs who have their own language and unique culture. Meet the local team and have a visit to Kazakh family. This is a day of cultural exploration: local women decorate their gers in a dazzling array of colors hand crafted felt carpets line the floor and delicately-embroidered tapestries adorn the walls, with each design unique to a particular family. (B/L/D)",
+                "images": ["/uploads/Mongolia_tour_to_eagle_hunters.jpg"]
+            },
+            {
+                "number": "DAY 4-5.",
+                "title": "The Golden Eagle Festival",
+                "description": "(Sep 30 - Oct 01) The Golden Eagle Festival starts with its parades and competitions for costuming and hunting techniques. This festival has been celebrated since 2000 and now attracts many travelers and photographers. Each year the number of eagle hunters participating in the festival is increasing which makes the festival more colorful and spectacular. Eagles chase fox skins dragged by their owners on horseback. Points are given for their speed and gripping ability. In 2 days you will capture plenty of portraits and competition photos, names Kokbar, Kizkhuar, etc. Festival winners are announced at the closing ceremony. (B/L/D)",
+                "images": ["/uploads/trip-to-golden-eagle-festival-tour.jpg"]
+            },
+            {
+                "number": "DAY 6.",
+                "title": "Flight back to Ulaanbaatar",
+                "description": "(Oct 02) Take a flight back to Ulaanbaatar. Relaxing hours at the hotel. Option to go shopping for souvenirs and cashmere products. In the evening we will have farewell dinner together. (B/L/D)",
+                "images": ["/uploads/Ulaanbaatar_Night.jpg"]
+            },
+            {
+                "number": "DAY 7.",
+                "title": "Departure",
+                "description": "(Oct 03) Transfer to Chinggis Khaan International Airport or Train station and depart Mongolia. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel****, *ger camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding",
+        "notIncludes": "Accommodation: Hotel****, *ger camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding"
+    },
+    {
+        "title": "Mongolia Winter Festivals - 2024 Tour",
+        "overview": "​Come join us in March for a time of festivals! This is a fantastic opportunity to get involved in the festivities of local communities in Mongolia. Not organized for 'tourists', these local events are put on by communities for their own amusement, but visitors are always welcome. ",
+        "locations": [
+            "Ice Festival at lake Khovsgol",
+            "Golden Eagle Festival in capital city",
+            "Nomad family visits",
+            "Mongolian winter experiences"
+        ],
+        "price": [
+            "2 PAX",
+            "1398$",
+            "3-4 PAX",
+            "1298$",
+            "5-8 PAX",
+            "1198$",
+            "9-12 PAX",
+            "1098$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "(01 Mar). Arrival in Ulaanbaatar",
+                "description": "Arrive in Ulaanbaatar. Transfer to the hotel and relax. City tour including the Gandan Monastery, the National Museum of Mongolia, which represents Mongolian Culture starting from the Stone Age to the 21st century, and Buddhism, Sukhbaatar Square (also known as Chingis Khaan Square). In Gandan Monastery, you can take local prayers, monks, the biggest standing indoor Buddha statue, and temples' own figure. (L/D)",
+                "images": [
+                    "/uploads/Ulaanbaatar (Sukhbaatar Square & Gandan Monastery).jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "(02 Mar). Fly to Northern Mongolia",
+                "description": "Take a flight to Murun town, the central town of Khovsgol province in northern Mongolia. After arriving in Murun town, we will visit Deer Stones at Uushgiin Uvur if the flight schedule allows us. Then head to the Lake Khovsgol National Park and stay overnight at ger camp on the Shore of Lake Khovsgol. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 3.",
+                "title": "(03 Mar). Ice Festival Day",
+                "description": "",
+                "images": []
+            },
+            {
+                "number": "DAY 4.",
+                "title": "(04 Mar). Khuvsgul Lake Ice Festival /Back to Ulaanbaatar",
+                "description": "It is the second day of the Festival. However, we need to miss half of the events due to fly back to catch another fascinating event in Ulaanbaatar.",
+                "images": []
+            },
+            {
+                "number": "DAY 5.",
+                "title": "(05 Mar). Winter/Spring Golden Eagle Festival in Ulaanbaatar",
+                "description": "The Winter Golden Eagle Festival (also called Spring) starts with its parades and competitions for costuming and hunting techniques. This festival has been celebrated since 2000 and now attracts many travelers. Each year the number of eagle hunters participating in the festival is increasing which makes the festival more colorful and spectacular. Eagles chase fox skins dragged by their owners on horseback. Points are given for their speed and gripping ability. In 2 days you will capture plenty of portraits and competition photos, names Kokbar, Kizkhuar, etc. Festival winners will be announced at the closing ceremony. (B/L/D)",
+                "images": ["/uploads/Mongolia_winter_golden_eagle_fesival.jpg"]
+            },
+            {
+                "number": "DAY 6.",
+                "title": "",
+                "description": "(06 Mar). Departure",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nDomestic Round-trip flights (UB-Murun-UB)\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nFestival taxes",
+        "notIncludes": ""
+    },
+    {
+        "title": "Trekking in Khovd Province - Tsambagarav Mountain tour",
+        "overview": "The trek takes place in one of the most remote mountain ranges of the world, in Altai mountain ranges, heading towards its mighty peak of Tsambagarav mountain (4202m), which is the third-highest mountain of Mongolia. The trekking adventure will start and end in Khovd town. Local team will meet you at the aipport and will skillfully manage the tour. Mongolian horses and camels are part of the team carrying your luggages and tools through the places unaccessible by vehicles. Serenity of wild open valleys, snow capped mountains and stunning lakes make this journey real paradise for a trekkers and nature- lovers. While meetings with local inhabitants you will find their hardness and generosity seem like the arid and spectacular nature which surrounds them. ",
+        "locations": [
+            "Khovd town",
+            "Mongol Altai mountain range, snow-capped mountains",
+            "Wide open valleys, icy streams and lakes",
+            "Visit to Kazakh family and herders settlements",
+            "Tsambagarav mountain peak (4202 m)",
+            "Amazing sceneries of Virgin nature"
+        ],
+        "price": [
+            "2 pax",
+            "3100$",
+            "3-4 pax",
+            "2950$",
+            "5-8 pax",
+            "2750$",
+            "13-15 pax",
+            "2580$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Arrive in Ulaanbaatar.",
+                "description": "City tour with visits to Natural History Museum and the Gandan monastery. Short breifing and Prepare for the next day flight to remote Khovd province. ",
+                "images": []
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Flight to Khovd.",
+                "description": "Driving towards Tsagaan Burgas valley to have an overnight stay in tented camp. Our travel team will welcome you to already settled tented camp. Get accquanted with the team: drivers, chef and the local guides. ",
+                "images": []
+            },
+            {
+                "number": "DAYS 3-7.",
+                "title": "Tsambaragav mountain",
+                "description": "Load our luggage on horse and camel backs and start terkking to Sairiin Ekh, Salbangiin Belchir, and Argali summer settlements. Our final point to be achieved is the mighty peak of Tsambaragav mountain. Pass Nogoon Lake, Urt Bulag river and make a visit to Kazakh family. 5-6 hour trekking per day. Opportunity to observe wildlife while beeing on treks. ",
+                "images": []
+            },
+            {
+                "number": "DAYS 8-10.",
+                "title": "Altai mountain range",
+                "description": "Trekking in Buurgiin Lake, Serven Hill, and Duroo Lake areas. These areas are dotted with impressive high mountains of Altai mountain range. ",
+                "images": []
+            },
+            {
+                "number": "DAY 11.",
+                "title": "Tsagaan Sair",
+                "description": "Now we reach sight of three snow-capped mountains: Sutai Khairkhan , Maraa Khairhan and Tsambagarav Mountain (4202m). Now we join 4x4 vehicle team.Tented camp in Tsagaan Sair.",
+                "images": []
+            },
+            {
+                "number": "DAY 12.",
+                "title": "Visit herder family",
+                "description": "Trekking to the Khashaatiin Am, after a lunch break continue our trek to Urgun Shireg, where there is a nomadic settlement of herders. Meet with herders and guesture to their gers to have conversation about their lives and taste home made products kindly offered by the families. ",
+                "images": []
+            },
+            {
+                "number": "DAYS 13-14.",
+                "title": "Snow-capped Tsambagarav mountain",
+                "description": "Cross over the Khamar Pass and come in the right slope of the mountain. Next day trek up to mighty peak of snow-capped Tsambagarav Mountain. Final breifing on achieved treks. ",
+                "images": []
+            },
+            {
+                "number": "DAY 15.",
+                "title": "Erdeneburen village",
+                "description": "Drive to the center of Khovd province via Erdeneburen village . ",
+                "images": []
+            },
+            {
+                "number": "DAY 16.",
+                "title": "Take a flight to Ulaanbaatar.",
+                "description": "Today is the time we say good bye to our local team and the drivers. Take a flight to Ulaanbaatar. Free hours. Evening cultural performance. ",
+                "images": []
+            },
+            {
+                "number": "DAY 17.",
+                "title": "Departure",
+                "description": "Transfer to the Airport. Depart from Ulaanbaatar. ",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel***,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nDomestic flights \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorses\nCamping equipments    ",
+        "notIncludes": "Accommodation: Hotel***,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nDomestic flights \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorses\nCamping equipments    "
+    },
+    {
+        "title": "Vertical Big Loop North to South of Mongolia Tour",
+        "overview": "A real off-road adventure that crosses the vast Mongolian land vertically, while passing by unique wild passages of nature. In less than 20 days, you will encounter yourself in chilling areas of taiga, clear waters of the north, peaceful green meadows, as well as hot desert plains, surrounded by mighty impressive dunes of the south, so different colors like Mongolia itself. Our experienced tour team will let you explore all the wonders that this tour offers. We offer you to spend most of the nights under the star dazzling skies to be settled in beautiful wilderness areas.",
+        "locations": [],
+        "price": [
+            "2 PAX",
+            "3450$",
+            "3-4 PAX",
+            "3150$",
+            "5-8 PAX",
+            "2950$",
+            "9-12 PAX",
+            "2800$",
+            "13-15 PAX",
+            "2650$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Arrive in Ulaanbaatar.",
+                "description": "Transfer to the hotel. Unpack and rest in the hotel. Short city tour with Gandan Monastery, the National Museum of Mongolia, and Sukhbaatar Square (also known as Chingis Khaan Square). (L/D)",
+                "images": [
+                    "/uploads/Ulaanbaatar (Sukhbaatar Square & Gandan Monastery).jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "Amarbayasgalant Monastery",
+                "description": "Drive to the famous Amarbayasgalant Monastery. Excursion through the monastery. Located at the foot of Burenkhaan mountain close to the city Erdenet, Amarbaysgalant, or \"monastery of tranquil felicity”, is one of the largest and most important monasteries in Mongolia. Built between 1727 and 1736 with more than 40 temples in honor of Zanabazar, the first Bogd Gegeen, it is one of the very few monasteries to have partly escaped the destruction of 1937, after which only the buildings of the central section remained. The entire contents: the tankas, statues, and manuscripts were looted by the Communists or hidden until more fortunate times. Restoration work began in 1988 and now the Amarbayasgalant monastery shows great stylistic unity. ",
+                "images": [
+                    "/uploads/Amarbayasgalant Monastery (Mongolian Blue Trail to Spiritual Shaman Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Erdenet city",
+                "description": "Pass Erdenet city and Bulgan provincial center. Heading to the Khuvsgul lake we will have overnight stop at the middle way. Opportunities of meeting local people and nomad families during this driving day. ",
+                "images": []
+            },
+            {
+                "number": "DAY 4-6.",
+                "title": "Khovsgol Lake National Park",
+                "description": "Drive towards Khovsgol Lake and overnight at Moron town, the central town of Khovsgol Province.",
+                "images": []
+            },
+            {
+                "number": "DAY 7-9.",
+                "title": "Khorgo-Terkhiin Tsagaan Lake National Park",
+                "description": "Leave Khovsgol Lake National Park and drive to Terkhiin Tsagaan Lake National Park,  passing through Shine-Ider village. An astonishingly beautiful freshwater lake surrounded by extinct volcanoes at an altitude of 2.060 m. The lake is 16 km wide and 10 m deep with its deepest point at 28 meters and over 20 kilometers in length. It has lovely sandy shores and enough warm water good for swimming. The area offers a great adventure for visitors with its caves, mountain cliffs, and Khorgo volcano creator. Explore the lake and the volcano creator. Horse riding experience.",
+                "images": [
+                    "/uploads/Khorgo Terkhiin Tsagaan NP (Mongolian Blue Trail to Spiritual Shaman Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 10.",
+                "title": "Tsetserleg town in Arkhangai province.",
+                "description": "Local museum with interesting exhibits.",
+                "images": []
+            },
+            {
+                "number": "DAY 11.",
+                "title": "Arrive in Kharkhorin.",
+                "description": "Arrive in Kharkhorin. The ancient capital city Kharkhorin was founded in 1220 in the legendary Orkhon river valley. It was from there that the Mongol Empire governed, until Khubilai khaan, the grandson of Chinggis Khaan, moved the city to Beijing. On the ruins of Kharkhorin, in 1586, was built Erdene Zuu Monastery which is surrounded by monumental walls with 108 stupas. The monastery is kept till nowadays and it is considered as one of the leading religious centers of Mongolia. Visit Erdene Zuu Monastery and the local market of art crafts and antique items. Tourist ger camp. (B/L/D)",
+                "images": ["/uploads/Erdenezuu Monastery (Kharkhorin).jpg"]
+            },
+            {
+                "number": "DAY 12.",
+                "title": "Drive to Tovkhon Monastery.",
+                "description": "",
+                "images": []
+            },
+            {
+                "number": "DAY 13.",
+                "title": "Explore Mystical Ongi Monastery",
+                "description": "Drive to the south towards Gobi Desert. Overnight stop at Ongi River and Saikhan ovoo area of Middle Gobi province. Ongi Monastery, a small mountainous area with the sites of remains of ruined old monasteries. Once the monastery has served as a midway point for Buddhist pilgrimages going to holy Tibet. Enjoy the sunset from the top of the mountain. (B/L/D)",
+                "images": [
+                    "/uploads/Ongi Monastery Ruins (Classic Mongolia Photography Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 14.",
+                "title": "Khongor Sand Dunes",
+                "description": "The sand dunes of Khongor are known as the « singing dunes » and they extend for 180 km and at some places they are 80m high. These spectacular dunes are bordered by lush green vegetation supported by a small river Khongor. Walking and Sliding at the dunes before the sunset and meditate in the middle of nowhere. Visit camel breeding family and get some experience with camel riding. (B/L/D)",
+                "images": [
+                    "/uploads/Khongor Sand Dunes (Golden Gobi short tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 15.",
+                "title": "Bayanzag - The red stone cliffs and canyons",
+                "description": "Drive towards Bayanzag /also known as Flaming Cliffs/ - the classic desert of rock, red sands, scrub, sun and, unbelievable emptiness has become known to the world as \"Cemetery of Dinosaurs”. The red sandstone cliffs and canyons of Bayanzag are where the fossil beds of dinosaur bones and first-ever recorded dinosaur eggs in 1922 - discoveries which made world headlines by American paleontologist Roy Chapman Andrews first time. Nowadays there is a local museum which displays important facts and some exhibits of this famous area. (B/L/D)",
+                "images": [
+                    "/uploads/Bayanzag - Flaming Cliffs (Golden Gobi short tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 16.",
+                "title": "Yol Valley in Gobi Gurvan Saikhan National Park.",
+                "description": "Yol Valley in Gobi Gurvan Saikhan National Park. Yol valley is formatted by two high rock walls a big glacier on the ground kept frozen during hot summer days. It has breathtaking dramatic scenery and without a doubt is one of the beautiful places in the country. Hiking along the valley and reach up the icy glacier. Visit the natural museum of localities. (B/L/D)",
+                "images": ["/uploads/Yol Valley (Golden Gobi short tour).jpg"]
+            },
+            {
+                "number": "DAY 17.",
+                "title": "Arrive in Baga Gazriin Chuluu area middle Gobi province.",
+                "description": "Arrive in Baga Gazriin Chuluu mountain area Dundgobi province. This is another granite rock formation in the middle of the steppe plains. 5 km away, the highest peak of 1768 meters in the area of Baga Gazriin Uul Mountain. Leisure time for rock climbing and hiking activities. (B/L/D)",
+                "images": [
+                    "/uploads/Baga Gazriin Chuluu  (Mongolia Overland Tour 2021).jpg"
+                ]
+            },
+            {
+                "number": "DAY 18.",
+                "title": "Back to Ulaanbaatar",
+                "description": "Drive back to Ulaanbaatar. Transfer to the hotel and relax.",
+                "images": []
+            },
+            {
+                "number": "DAY 19.",
+                "title": "City tour / Free Day",
+                "description": "Free activities for personal exploration. Option to go shopping and watch the cultural performance. Farewell dinner.",
+                "images": [
+                    "/uploads/Concert_mongolia (Cultural Performance).jpg"
+                ]
+            },
+            {
+                "number": "DAY 20.",
+                "title": "Departure",
+                "description": "Transfer to Chingis Khaan International Airport or Train station and depart Mongolia. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel***, * ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
+        "notIncludes": "Accommodation: Hotel***, * ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments"
+    },
+    {
+        "title": "Mongolia Wildlife Photo Tour to Ikh Nart Nature Reserve",
+        "overview": "We are sure that, this special wildlife photography tour will give you exciting adventures and amazing shooting. Even it is only 4 days, the landscapes are a perfect challenge to your creative photo interests. We are offering you the chance to get thousands of amazing wildlife photos in the East Gobi Province in Mongolia in the fascinating granite rock formation and globally important population of Argali sheep (Ovis ammon). This is a great wilderness adventure that targeted landscapes with steppe and rocky mountains. The best time for capturing wild animals is early in the morning and evening when they going to the water.",
+        "locations": [],
+        "price": [
+            "2 PAX",
+            "1248$",
+            "3-4 PAX",
+            "1098$",
+            "5-8 PAX",
+            "998$",
+            "9-12 PAX",
+            "898$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1",
+                "title": "Heading to Ikh Nart Nature Reserve",
+                "description": "This morning we drive to Ikh Nart nature reserve, 66,000 ha, located in Dornogobi province. It contains a relatively high diversity of plants and animals, including 41 species of mammals. Almost 200 species of birds have been recorded in this reserve, most during migration, as Ikh Nart contains perennial freshwater springs. Not only wildlife but also it protects historical sites such as ruins, artifacts, burial sites, and petroglyphs related to the Stone Age, Bronze Age and Stalinist Era, and much more. Visit the research center to know more about protection. (L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 2",
+                "title": "Hiking in the Rocky Mountains in Ikh Nart",
+                "description": "Great wildlife photography can be a result of being in the right place at the right time. Do you agree?  Early morning and late afternoon guide will lead the points of Argali and Ibex watering and rest. Snap photos. (B/L/D)",
+                "images": []
+            },
+            {
+                "number": "DAY 3",
+                "title": "Khustai National Park – Wildlife Photography Mongolia",
+                "description": "The final destination is Khustai National Park - 90 000 hectares reserved area to the west of Ulaanbaatar is a wild horse sanctuary that offers an unexpected encounter with wild horses of Przewalski or Takhi, the world's only naturally surviving wild horses, recently re-introduced to the region. (B/L/D)",
+                "images": [
+                    "/uploads/Khustai National Park (Classic Mongolia Photography Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 4",
+                "title": "Khustai National Park / Back to Ulaanbaatar",
+                "description": "Today we will explore the Khustai National Park, hike to the Moilt camp. On the way, we have opportunities to capture Przewalski’s horses- last truly wild horses on earth, Red deer, Marmot, and many kind of birds especially rare birds such as Black stork, Bar-headed Goose, Whooper Swan, Lammergeier, Himalayan Vulture, Amur Falcon, etc. Drive back to Ulaanbaatar for 120 km. Transfer to hotel accommodation in Ulaanbaatar. (B/L)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
+        "notIncludes": "Accommodation: * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance"
+    },
+    {
+        "title": "Weekend Tour",
+        "overview": "It's time to Get Excited...!!!\n\nBest way to spend your free time in the fresh air, to escape to the countryside from the noisy, overcrowded bustling city lifestyle. \nWeekend Tour is suitable for anyone, all year round. \nEach season is different from one another, but all give you fresh energy and new inspiration.\nTo be stress-free and well refreshed for the new week needs only one little move - to put up your stuff in your backpack and get your foot on this Weekend Tour with Us.\n\nBe Ready! Be Prepared! Make a Call to Us to Pick You Up!\nAnytime we are ready to make it happen. \nAlso, this tour is so suitable for short term tourists or Trans-Mongolian Travelers.\nYou are Welcome !!!",
+        "locations": [
+            "Terelj National Park",
+            "13th Century Complex",
+            "Adventure hiking",
+            "Visiting Nomad family"
+        ],
+        "price": [
+            "2 PAX",
+            "680$",
+            "3-4 PAX",
+            "590$",
+            "5-8 PAX",
+            "490$",
+            "9-12 PAX",
+            "420$",
+            "13-15 PAX",
+            "390$"
+        ],
+        "dailyData": [
+            {
+                "number": "DAY 1.",
+                "title": "Terelj National Park",
+                "description": "Arrive in Ulaanbaatar. Short city tour with Gandan Monastery, the National Museum of Mongolia, and Sukhbaatar Square (also known as Chingis Khaan Square). Then, drive to Terelj National Park, which is a rocky mountain area 80 km northeast of Ulaanbaatar. The area is cool, and its alpine scenery is magnificent. There are great opportunities for hiking, rock climbing, and horse riding. First experience of a Mongolian ger. (L/D)",
+                "images": [
+                    "/uploads/Ulaanbaatar & Terelj NP  (Weekend Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 2.",
+                "title": "13th Century camp",
+                "description": "Leisure hiking at the park. Short horse riding session. Drive to 13th - century camp. Explore the lifestyle and tradition of ancient Mongols. Visit the nomad family. Drive back to Ulaanbaatar. Evening cultural performance - national folk and dance concert. Shopping for souvenirs or cashmere products. (B/L/D)",
+                "images": [
+                    "/uploads/13th Century Camp & Cultural Performance  (Weekend Tour).jpg"
+                ]
+            },
+            {
+                "number": "DAY 3.",
+                "title": "Departure",
+                "description": "Transfer to Chingis Khaan International Airport or Train station and depart Mongolia. (B)",
+                "images": []
+            }
+        ],
+        "inclusions": "Accommodation: Hotel***,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding",
+        "notIncludes": "Accommodation: Hotel***,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan Entrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding"
+    }
+]

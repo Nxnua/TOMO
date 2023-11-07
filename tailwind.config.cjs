@@ -21,6 +21,7 @@ export default {
                 warning: "var(--warning)",
                 black75 : "rgba(var(--black-75))",
                 black50 : "rgba(var(--black-50))",
+                
             },
             keyframes: {
                 

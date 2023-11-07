@@ -13,9 +13,9 @@ export default function Main() {
         <div className="this-is-my-class">
             <Header />
 
-            <div className=" h-[30vh] bg-white pt-10 mt-40">
+            <div className=" h-[30vh] bg-white pt-10 mt-10">
 
-                Search
+                
 
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
                     <div className="h-[120px]">
@@ -32,7 +32,7 @@ export default function Main() {
                 </form>
             </div>
 
-            <div className="z-20 mt-50 mx-28 flex justify-center flex-col ">
+            <div className="z-20 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
 
 
@@ -54,7 +54,7 @@ export default function Main() {
 
                 <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
 
-                <div className="  grid  xl:grid-cols-4 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                <div className="  grid  xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {tripList.map((item, i) => {
                         return (
                             <TripComponent
