@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -8,9 +7,9 @@ function Header() {
     const handleScroll = () => {
       if (window.pageYOffset >= isSticky) {
         setIsSticky(true);
-      }    else {
-            setIsSticky(false);
-        }
+      } else {
+        setIsSticky(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,32 +21,30 @@ function Header() {
 
   return (
     <nav
-      className={`${
-        isSticky
-          ? "fixed top-0 z-10 w-full bg-white border-b-1 border-black-500 rounded-sm"
-          : ""
-      } flex justify-between items-center h-20 mx-auto font-Nunito`}
+      className={`fixed z-10 w-full top-0 bg-white rounded-lg border-b shadow-sm flex justify-between items-center h-[10vh] mx-auto font-Nunito ${
+        isSticky ? "transform -translate-y-2 sticky top-0" : "transform -translate-y-2"
+      }`}
     >
-      <Link className="ms-10" to="/">
+      <a className="ms-10" href="#">
         <img
           src="images/Logo.png"
           alt=""
-          className="w-vw-1 h-vw-1 mt-5 hover:opacity-70"
+          className="w-vw-1 h-vw-1 mt-5 hover:opacity-80"
         />
-      </Link>
+      </a>
       <div className="md:static float-right absolute md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
         <ul className="relative flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto">
           <li id="trips" className="relative group">
-            <Link to="/trips" className="hover:text-gray-500">
+            <a href="#" className="hover:text-gray-500">
               Trips
-            </Link>
+            </a>
             <ul
-              className={`absolute border-black rounded-xl bg-white mt-3 p-5 w-40 space-y-2 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
+              className={`absolute border-black rounded-xl bg-white mt-3 p-5 w-40 space-y-2 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out`}
             >
               <li>
-                <Link  className="hover:text-orange border-black hover:border-b" to="/planyourtrip">
+                <a href="" className="hover:text-orange border-black hover:border-b">
                   Plan a trip
-                </Link>
+                </a>
               </li>
               <li>
                 <a href="" className="hover:text-orange border-black hover:border-b">
@@ -62,14 +59,14 @@ function Header() {
             </ul>
           </li>
           <li className="hover:text-gray-500">
-            <Link to="/guides">Travel Guides</Link>
+            <a href="#">Travel Guides</a>
           </li>
           <li className="relative group">
             <a href="#" className="hover:text-gray-500">
               More
             </a>
             <ul
-              className={`absolute border-black rounded-xl bg-white mt-3 p-5 space-y-2 w-40 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
+              className={`absolute border-black rounded-xl bg-white mt-3 p-5 space-y-2 w-40 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out`}
             >
               <li>
                 <a href="" className="hover:text-orange border-black hover:border-b">
@@ -86,7 +83,7 @@ function Header() {
         </ul>
       </div>
       <div className="bg-white float-right mr-10">
-        <ul className="flex items-center gap-1vw">
+        <ul className="flex items-center gap-1vh">
           <li>
             <a href="#">
               <img
@@ -94,22 +91,18 @@ function Header() {
                 alt=""
                 width={30}
                 height={30}
-                className="hover:opacity-70"
+                className="hover:opacity-70 mx-1"
               />
             </a>
           </li>
           <li>
             <button
-              className={`${
-                isSticky ? "bg-white text-orange" : "bg-orange text-white"
-              } border-2 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80 ml-2`}
+              className="bg-white border mx-1 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80"
             >
               Sign In
             </button>
             <button
-              className={`ml-2 border-2 border-orange ${
-                isSticky ? "bg-orange text-white" : "bg-white text-orange"
-              } px-6 py-1 rounded-2xl hover:opacity-80`}
+              className="ml-2 border mx-1 border-orange bg-orange text-white px-6 py-1 rounded-2xl hover:opacity-80"
             >
               Sign Up
             </button>
@@ -117,11 +110,11 @@ function Header() {
           <li>
             <a href="#">
               <img
-                src="images/darkmodecircle.png"
+                src="images/darkmoon.png"
                 alt=""
-                width={38}
-                height={38}
-                className="hover:opacity-70 ml-2"
+                width={30}
+                height={30}
+                className="hover:opacity-70 mx-1"
               />
             </a>
           </li>

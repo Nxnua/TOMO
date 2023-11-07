@@ -13,9 +13,9 @@ export default function Main() {
         <div className="this-is-my-class">
             <Header />
 
-            <div className=" h-[30vh] bg-white pt-10 mt-40">
+            <div className=" h-[20vh] bg-white pt-10 mt-26">
 
-                Search
+                
 
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
                     <div className="h-[120px]">
@@ -32,7 +32,7 @@ export default function Main() {
                 </form>
             </div>
 
-            <div className="z-20 mt-50 mx-28 flex justify-center flex-col ">
+            <div className="z-20 mt-0 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
 
 
@@ -50,7 +50,7 @@ export default function Main() {
                         );
                     })}
                 </div>
-                <Link to="/guides" className=" mt-20">See more</Link>
+                <Link to="/guides" className=" mt-20">See more </Link>
 
                 <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
 
