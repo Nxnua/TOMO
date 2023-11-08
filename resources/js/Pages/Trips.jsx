@@ -65,7 +65,7 @@ export default function Trip() {
     return (
         <div>
             <Header />
-            <div className=" mx-28 mt-4 flex justify-start flex-col">
+            <div className=" mx-28 mt-20 flex justify-start flex-col">
                 <div className=" w-100 flex justify-start">
                     Trips &gt; All trips
                 </div>
@@ -192,6 +192,21 @@ export default function Trip() {
                                 </div>
                             </div>
                             <div className=" grid  mb-8 xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
+                                {tripList.map((item, i) => {
+                                    return (
+                                        <TripComponent
+                                            title={item.title}
+                                            location={item.location}
+                                            image={item.image}
+                                            review={item.review}
+                                            rating={item.rating}
+                                            discount={item.discount}
+                                            duration={item.duration}
+                                            price={item.price}
+                                            key={v4()}
+                                        />
+                                    );
+                                })}
                                 {tripList.map((item, i) => {
                                     return (
                                         <TripComponent
