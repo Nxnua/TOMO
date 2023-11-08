@@ -348,7 +348,8 @@ export const TripDetail = () => {
                                         </div>
                                         <hr className=" border-[1px]" />
                                         <div className=" flex justify-start ml-4 mt-2">
-                                            ACTIVITIES
+                                            ACTIVITIES 
+                                            
                                         </div>
                                         <div className=" flex flex-col">
                                             <div className=" flex flex-row mx-4 my-2 items-center">
