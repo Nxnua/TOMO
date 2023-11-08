@@ -36,7 +36,7 @@ export default function Main() {
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
 
 
-                <div className="  grid grid-cols-3 gap-6">
+                <div className="  grid grid-cols-3 gap-4">
                     {guide.map((item, i) => {
                         return (
                             <Guide
