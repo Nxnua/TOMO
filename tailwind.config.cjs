@@ -20,11 +20,12 @@ export default {
                 error: "var(--error)",
                 warning: "var(--warning)",
                 black75 : "rgba(var(--black-75))",
+                black50 : "rgba(var(--black-50))",
             },
             keyframes: {
                 
               }
         },
     },
-    plugins: [],
+    plugins: [require('tailwind-scrollbar-hide')],
 };
