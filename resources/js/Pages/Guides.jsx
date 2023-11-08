@@ -31,12 +31,12 @@ export const Guides = () => {
   return (
     <div>
     <Header/>
-    <div className="flex justify-center  mx-auto font-Nunito flex-col ">
+    <div className="flex mx-auto font-Nunito flex-col ">
             {/* <div className="float-left ms-15">
             
             </div> */}
-            <div className=" mb-12 mt-16 h-20 md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center shadow-lg border-[2px]">
-                <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
+            <div className=" mb-12 h-20 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-0 md:w-auto w-full flex float-left  border-[2px]">
+                <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
                 <div className="stroke" id="mainNav">
                     <ul>
                     <li><a href="#">All guides</a></li>

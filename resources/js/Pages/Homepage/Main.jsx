@@ -12,10 +12,7 @@ export default function Main() {
     return (
         <div className="this-is-my-class">
             <Header />
-
-            <div className=" h-[20vh] bg-white pt-10 mt-26">
-
-            <div className=" h-[30vh] bg-white pt-10 mt-10">
+            <div className=" h-[30vh] bg-white pt-10">
 
                 
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
@@ -83,7 +80,6 @@ export default function Main() {
 
             <div className=" h-12"></div>
             <Footer />
-        </div>
         </div>
         </div>
     );
