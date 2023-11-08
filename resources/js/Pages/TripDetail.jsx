@@ -4,7 +4,7 @@ import { v4 } from "uuid";
 import Review from "../components/review";
 import { tripList, tripDays } from "./data";
 import Footer from "../components/footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Accordion, Breadcrumb, Datepicker } from "flowbite-react";
 // const customTheme: CustomFlowbiteTheme["accordion"] = {
@@ -14,9 +14,50 @@ import { Accordion, Breadcrumb, Datepicker } from "flowbite-react";
 // };
 
 export const TripDetail = () => {
+    const ReadMore = ({ children }) => {
+        const text = children;
+        const [isReadMore, setIsReadMore] = useState(true);
+        const toggleReadMore = () => {
+            setIsReadMore(!isReadMore);
+        };
+        return (
+            <p>
+                {isReadMore ? text.slice(0, 400) : text}
+                <span
+                    onClick={toggleReadMore}
+                    className="read-or-hide text-orange cursor-pointer"
+                >
+                    {isReadMore ? "...read more" : " show less"}
+                </span>
+            </p>
+        );
+    };
+    const [topBar, setTopBar] = useState("photos");
+
+    const [activeLink, setActiveLink] = useState("");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll(".section");
+            const scrollPosition = window.scrollY;
+            sections.forEach((section) => {
+                const { top, bottom } = section.getBoundingClientRect();
+                if (top <= 120 && bottom >= 120) {
+                    setActiveLink(section.id);
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <div className=" relative mt-20">
-            <div className=" hidden sm:block"><Header /></div> 
+            <div className=" hidden sm:block">
+                <Header />
+            </div>
             <div className=" flex flex-col">
                 <div className=" mx-2 sm:mx-14 lg:mx-28  mt-4 flex justify-start flex-col ">
                     <div className=" w-100 flex justify-start whitespace-nowrap">
@@ -33,22 +74,27 @@ export const TripDetail = () => {
                         </Breadcrumb>
                     </div>
                     <br />
-                    <div className="  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9]  ">
-                        <div className=" flex flex-row  items-center ">
+                    <div className="  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] z-20 overflow-x-hidden sticky top-0 sm:top-20  ">
+                        <div className="  flex flex-row  items-center ">
                             {menuList.map((item, i) => {
                                 return (
-                                    <div
-                                        key={v4()}
+                                    <a
+                                        href={item.link}
+                                        key={"some_item_" + i}
                                         className={
                                             "text-xs sm:text-sm font-semibold px-2 sm:px-6   " +
                                             (item.isActive
                                                 ? " font-extrabold "
                                                 : "bg-[#F6F6F6]") +
-                                            "rounded-[3px]  "
+                                            "rounded-[3px]  " +
+                                            (activeLink ===
+                                            item.link.replace("#", "")
+                                                ? "menu-active"
+                                                : "")
                                         }
                                     >
                                         {item.menu}
-                                    </div>
+                                    </a>
                                 );
                             })}
                         </div>
@@ -74,7 +120,10 @@ export const TripDetail = () => {
                                         <Review reviews="250" rating="4.7" />
                                     </div>
                                 </div>
-                                <div className=" flex justify-start flex-row w-[100%]">
+                                <div
+                                    id="photos"
+                                    className="section flex justify-start flex-row w-[100%]"
+                                >
                                     <div className=" flex relative flex-col z-0 mr-2">
                                         {imageGallery
                                             .slice(0, 5)
@@ -100,7 +149,7 @@ export const TripDetail = () => {
                                                 );
                                             })}
                                     </div>
-                                    <div className=" flex relative flex-col w-[100%]">
+                                    <div className="section flex relative flex-col w-[100%]">
                                         {imageGallery
                                             .slice(0, 1)
                                             .map((item, i) => {
@@ -116,12 +165,15 @@ export const TripDetail = () => {
                                             })}
                                     </div>
                                 </div>
-                                <div className=" flex flex-col">
-                                    <p className=" text-xl text-start font-extrabold mt-4">
+                                <div className="section flex flex-col">
+                                    <p
+                                        id="overview"
+                                        className=" text-xl text-start font-extrabold mt-4"
+                                    >
                                         Overview
                                     </p>
                                     <p className=" mt-4 font-medium tracking-tight text-justify ">
-                                        {tripData.overview}
+                                        <ReadMore>{tripData.overview}</ReadMore>
                                     </p>
                                 </div>
                             </div>
@@ -147,7 +199,10 @@ export const TripDetail = () => {
                             <div className="flex-1 lg:mr-10 ">
                                 <div className="mt-4 flex flex-col">
                                     {/* Itinerary */}
-                                    <div className="mt-8 flex flex-col">
+                                    <div
+                                        id="itinerary"
+                                        className="section mt-8 flex flex-col"
+                                    >
                                         <p className=" ml-1 text-xl text-start font-extrabold">
                                             Itinerary
                                         </p>
@@ -157,160 +212,35 @@ export const TripDetail = () => {
                                     </div>
 
                                     {/* Inclusions */}
-                                    <div className=" flex flex-col mt-8">
+                                    <div
+                                        id="inclusions"
+                                        className="section flex flex-col mt-8"
+                                    >
                                         <p className=" ml-1 text-xl text-start font-extrabold">
                                             Inclusions
                                         </p>
-                                        <div className=" grid lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1">
-                                            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
-                                                <p className=" text-lg text-start ml-4">
-                                                    Tour includes
-                                                </p>
-                                                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                                                    <li className=" list-disc ">
-                                                        Transfers upon arrival
-                                                        and departure
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        In the countryside, all
-                                                        lodging will be in ger
-                                                        camps and nomadic
-                                                        family’s Ger.
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        All meals are provided
-                                                        as stated in the
-                                                        itinerary.
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Park entrance fees
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Horse and Camel ride
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full ">
-                                                <p className=" text-lg text-start ml-4">
-                                                    Not includes
-                                                </p>
-                                                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                                                    <li className=" list-disc ">
-                                                        Accommodation in a hotel
-                                                        or hostel in Ulaanbaatar
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Hotel extras, such as
-                                                        telephone calls, bar
-                                                        bills, and laundry
-                                                        services
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Travel insurance,
-                                                        medical insurance
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Visa application fees
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Alcoholic beverages
-                                                    </li>
-                                                    <li className=" list-disc ">
-                                                        Personal expenses such
-                                                        as IDD call, the
-                                                        internet, laundry, items
-                                                        of a personal nature
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <Inclusion />
                                     </div>
                                     {/* packing list */}
                                     <div className=" flex flex-col mt-8">
                                         <p className=" ml-1 text-xl text-start font-extrabold">
                                             Packing List
                                         </p>
-                                        <div className="  mt-4 ">
-                                            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
-                                                <p className=" text-lg text-start ml-4">
-                                                    Packing list{" "}
-                                                </p>
-                                                <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-                                                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                                                        <li className=" list-disc ">
-                                                            Backpack or soft bag
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Waterproof bag cover
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Daypack
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Headlamp/flashlight
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Spare batteries/bulb
-                                                        </li>
-                                                    </ul>
-                                                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                                                        <li className=" list-disc ">
-                                                            Waterproof hiking
-                                                            boots
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Waterproof jacket
-                                                            with hood
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Fleece jacket or
-                                                            wool jumper
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Cotton t-shirts
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Long sleeve shirts
-                                                        </li>
-                                                    </ul>
-                                                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                                                        <li className=" list-disc ">
-                                                            Lightweight trousers
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Shorts
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Resealing/Ziploc
-                                                            plastic bags
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Insurance
-                                                            confirmation copy
-                                                        </li>
-                                                        <li className=" list-disc ">
-                                                            Emergency contact
-                                                            number
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <PackingList />
                                     </div>
                                 </div>
                             </div>
                             <div className=" lg:w-[30vw] sm:w-[100%]">
-                                <div><CheckAvailability/></div>
+                                <div>
+                                    <CheckAvailability />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
-            <div>
-                <CheckAvailability />
-            </div>
-            <div className=" h-24 ">
-                {/* <CAccordion alwaysOpen activeItemKey={2}>
+
+                <div className=" h-24 ">
+                    {/* <CAccordion alwaysOpen activeItemKey={2}>
 										<CAccordionItem itemKey={1}>
 												<CAccordionHeader>Accordion Item #1</CAccordionHeader>
 												<CAccordionBody>
@@ -363,7 +293,7 @@ export const TripDetail = () => {
 												</CAccordionBody>
 										</CAccordionItem>
 								</CAccordion> */}
-            </div>
+                </div>
             </div>
 
             <Footer />
@@ -373,18 +303,18 @@ export const TripDetail = () => {
 
 const DayInfo = () => {
     return (
-        <Accordion className=" ">
+        <Accordion className=" border-2 ">
             {tripData.dailyData.map((item, i) => {
                 return (
                     <Accordion.Panel>
                         <Accordion.Title className=" focus:ring-0">
-                            <p className=" text-lg font-bold text-start tracking-tighter">
+                            <p className=" text-base sm:text-lg font-bold text-start tracking-tighter">
                                 {item.number} {item.title}
                             </p>
                         </Accordion.Title>
                         <Accordion.Content>
                             <div>
-                                <p className=" font-medium tracking-tight  text-justify ">
+                                <p className=" font-medium tracking-tight leading-5  text-justify ">
                                     {item.description}
                                 </p>
                                 <div className=" flex flex-row mt-2">
@@ -441,11 +371,7 @@ function Info() {
                 {inclusions.map((item, i) => {
                     return (
                         <div className=" mr-4 flex flex-col justify-center">
-                            <img
-                                src={item.icon}
-                                className=" h-6"
-                                alt=""
-                            />
+                            <img src={item.icon} className=" h-6" alt="" />
                             <p className=" ">{item.name}</p>
                         </div>
                     );
@@ -560,10 +486,10 @@ function CheckAvailability() {
 }
 
 const menuList = [
-    { isActive: true, menu: "Photos", link: "" },
-    { isActive: false, menu: "Itinerary", link: "" },
-    { isActive: false, menu: "Inclusions", link: "" },
-    { isActive: false, menu: "Review", link: "" },
+    { isActive: true, menu: "Photos", link: "#photos" },
+    { isActive: false, menu: "Itinerary", link: "#itinerary" },
+    { isActive: false, menu: "Inclusions", link: "#inclusions" },
+    { isActive: false, menu: "Review", link: "#reviews" },
 ];
 const imageGallery = [
     { isSelected: true, img: "/images/thumbnail5.png" },
@@ -671,3 +597,92 @@ const inclusions = [
     { name: "Accomodation", icon: "/images/accomodation-icon.svg" },
     { name: "Entry fees", icon: "/images/entryfees-icon.svg" },
 ];
+
+function PackingList() {
+    return (
+        <div className="  mt-4 ">
+            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
+                <p className=" text-lg text-start ml-4">Packing list </p>
+                <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                        <li className=" list-disc ">Backpack or soft bag</li>
+                        <li className=" list-disc ">Waterproof bag cover</li>
+                        <li className=" list-disc ">Daypack</li>
+                        <li className=" list-disc ">Headlamp/flashlight</li>
+                        <li className=" list-disc ">Spare batteries/bulb</li>
+                    </ul>
+                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                        <li className=" list-disc ">Waterproof hiking boots</li>
+                        <li className=" list-disc ">
+                            Waterproof jacket with hood
+                        </li>
+                        <li className=" list-disc ">
+                            Fleece jacket or wool jumper
+                        </li>
+                        <li className=" list-disc ">Cotton t-shirts</li>
+                        <li className=" list-disc ">Long sleeve shirts</li>
+                    </ul>
+                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                        <li className=" list-disc ">Lightweight trousers</li>
+                        <li className=" list-disc ">Shorts</li>
+                        <li className=" list-disc ">
+                            Resealing/Ziploc plastic bags
+                        </li>
+                        <li className=" list-disc ">
+                            Insurance confirmation copy
+                        </li>
+                        <li className=" list-disc ">
+                            Emergency contact number
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Inclusion() {
+    return (
+        <div className=" grid lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1">
+            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
+                <p className=" text-lg text-start ml-4">Tour includes</p>
+                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                    <li className=" list-disc ">
+                        Transfers upon arrival and departure
+                    </li>
+                    <li className=" list-disc ">
+                        In the countryside, all lodging will be in ger camps and
+                        nomadic family’s Ger.
+                    </li>
+                    iol
+                    <li className=" list-disc ">
+                        All meals are provided as stated in the itinerary.
+                    </li>
+                    <li className=" list-disc ">Park entrance fees</li>
+                    <li className=" list-disc ">Horse and Camel ride</li>
+                </ul>
+            </div>
+            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full ">
+                <p className=" text-lg text-start ml-4">Not includes</p>
+                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                    <li className=" list-disc ">
+                        Accommodation in a hotel or hostel in Ulaanbaatar
+                    </li>
+                    <li className=" list-disc ">
+                        Hotel extras, such as telephone calls, bar bills, and
+                        laundry services
+                    </li>
+                    <li className=" list-disc ">
+                        Travel insurance, medical insurance
+                    </li>
+                    <li className=" list-disc ">Visa application fees</li>
+                    <li className=" list-disc ">Alcoholic beverages</li>
+                    <li className=" list-disc ">
+                        Personal expenses such as IDD call, the internet,
+                        laundry, items of a personal nature
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+}
