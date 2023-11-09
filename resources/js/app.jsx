@@ -11,6 +11,7 @@ import { TripDetail } from "./Pages/TripDetail";
 import { TripDetail2 } from "./Pages/TripDetail2";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
+import { Profile } from "./Pages/Profile";
 
 const router = createBrowserRouter([
     {
@@ -42,10 +43,15 @@ const router = createBrowserRouter([
         element: <SvgComponent />,
     },
     {
+        path: "/profile",
+        element: <Profile />
+    },
+    {
         path: "/feedback",
         element: <Feedback />,
     },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("app")).render(
     <RouterProvider router={router} />
