@@ -40,7 +40,7 @@ function Header() {
         isSticky ? "transform -translate-y-2 sticky top-0" : "transform -translate-y-2"
       }`}
     >
-      <a className="ms-10" href="#">
+      <a className="ms-10" href="http://127.0.0.1:8000/">
         <img
           src="images/Logo.png"
           alt=""
@@ -50,7 +50,7 @@ function Header() {
       <div className="md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center" onMouseLeave={closeDropdowns}>
         <ul className="absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto ">
           <li id="trips" className="relative" onMouseEnter={toggleTripsDropdown}>
-            <a href="#" className="hover:text-gray-500 inline-block">
+            <a href="http://127.0.0.1:8000/trips" className="hover:text-gray-500 inline-block">
               Trips
             </a>
             <ul
@@ -59,12 +59,12 @@ function Header() {
               } absolute border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out `}
             >
               <li className="relative">
-                <a href="" className="hover:text-orange border-black hover:border-b">
+                <a href="http://127.0.0.1:8000/planyourtrip" className="hover:text-orange border-black hover:border-b">
                   Plan a trip
                 </a>
               </li>
               <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
+                <a href="guides" className="hover:text-orange border-black hover:border-b">
                   Agencies
                 </a>
               </li>

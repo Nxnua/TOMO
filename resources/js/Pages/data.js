@@ -550,3 +550,28 @@ export const tripDays = [
 
     },
 ];
+
+
+export const profile = [
+    {
+        day: 1,
+        title: "Eagle Hunting Mongolia Tour-Fly to Ulgii City.",
+        desc: "We start on our flight towards the Mongolian Far West. We fly over the central lakes and the Western mountains, then arrive in Ulgii.Olgii is the capital of the province of Bayan Ulgii, 1636 kilometres (1016,56 miles) from Ulan Bator and 1710 meters (1,06 mile) above the sea level. Main people living in Olgii are Kazakhs, and its atmosphere is very influenced by Central Asia: there are many signs written in Arabic. We will learn about Kazakh culture and vist the city",
+        isActive: true,
+
+    },
+    {
+        day: 2,
+        title: "Visit the eagle Hunters",
+        desc: "We start on our flight towards the Mongolian Far West. We fly over the central lakes and the Western mountains, then arrive in Ulgii.Olgii is the capital of the province of Bayan Ulgii, 1636 kilometres (1016,56 miles) from Ulan Bator and 1710 meters (1,06 mile) above the sea level. Main people living in Olgii are Kazakhs, and its atmosphere is very influenced by Central Asia: there are many signs written in Arabic. We will learn about Kazakh culture and vist the city",
+        isActive: false ,
+
+    },
+    {
+        day: 3,
+        title: "return flight to Ulaanbaatar.",
+        desc: "We start on our flight towards the Mongolian Far West. We fly over the central lakes and the Western mountains, then arrive in Ulgii.Olgii is the capital of the province of Bayan Ulgii, 1636 kilometres (1016,56 miles) from Ulan Bator and 1710 meters (1,06 mile) above the sea level. Main people living in Olgii are Kazakhs, and its atmosphere is very influenced by Central Asia: there are many signs written in Arabic. We will learn about Kazakh culture and vist the city",
+        isActive: false ,
+
+    },
+];
