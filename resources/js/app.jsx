@@ -8,10 +8,11 @@ import Movement from "./components/bannerSVG";
 import Feedback from "./Pages/feedback";
 
 import { TripDetail } from "./Pages/TripDetail";
-import { TripDetail2 } from "./Pages/TripDetail2";
+import { GuideDetail } from "./Pages/guideDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
+
 
 const router = createBrowserRouter([
     {
@@ -31,8 +32,8 @@ const router = createBrowserRouter([
         element: <TripDetail />,
     },
     {
-        path: "/trip2",
-        element: <TripDetail2 />,
+        path: "/guide",
+        element: <GuideDetail />,
     },
     {
         path: "/planyourtrip",
