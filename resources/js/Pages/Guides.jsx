@@ -35,7 +35,7 @@ export const Guides = () => {
             {/* <div className="float-left ms-15">
             
             </div> */}
-            <div className=" mb-12 mt-16 h-20 md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center shadow-lg border-[2px]">
+            <div className=" mb-12  h-20 md:static float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto w-full flex items-center shadow-lg border-[2px]">
                 <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
                 <div className="stroke" id="mainNav">
                     <ul>
