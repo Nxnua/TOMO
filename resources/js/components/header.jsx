@@ -1,146 +1,150 @@
 import React, { useState, useEffect } from "react";
 
+import { Link } from "react-router-dom";
+import {Flowbite,DarkThemeToggle} from "flowbite-react"
+
 function Header() {
-  const [isSticky, setIsSticky] = useState(false);
-  const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
-  const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset >= isSticky) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset >= isSticky) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
 
-    window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
-  const toggleTripsDropdown = () => {
-    setTripsDropdownVisible(!tripsDropdownVisible);
-  };
+    return (
+        <nav
+            className={`${
+                isSticky
+                    ? "fixed top-0 z-10 w-full bg-white border-b-1 border-black-500 rounded-sm"
+                    : ""
+            } flex justify-between items-center h-20 mx-auto font-Nunito`}
+        >
+            <Link className="ms-10" to="/">
+                <img
+                    src="images/Logo.png"
+                    alt=""
+                    className="w-vw-1 h-vw-1 mt-5 hover:opacity-70"
+                />
+            </Link>
+            <div className="md:static float-right absolute md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
+                <ul className="relative flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto">
+                    <li id="trips" className="relative group">
+                        <Link to="/trips" className="hover:text-gray-500">
+                            Trips
+                        </Link>
+                        <ul
+                            className={`absolute border-black rounded-xl bg-white mt-3 p-5 w-40 space-y-2 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
+                        >
+                            <li>
+                                <Link
+                                    className="hover:text-orange border-black hover:border-b"
+                                    to="/planyourtrip"
+                                >
+                                    Plan a trip
+                                </Link>
+                            </li>
+                            <li>
+                                <a
+                                    href=""
+                                    className="hover:text-orange border-black hover:border-b"
+                                >
+                                    Agencies
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href=""
+                                    className="hover:text-orange border-black hover:border-b"
+                                >
+                                    Travel budget
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className="hover:text-gray-500">
+                        <Link to="/guides">Travel Guides</Link>
+                    </li>
+                    <li className="relative group">
+                        <a href="#" className="hover:text-gray-500">
+                            More
+                        </a>
+                        <ul
+                            className={`absolute border-black rounded-xl bg-white mt-3 p-5 space-y-2 w-40 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
+                        >
+                            <li>
+                                <a
+                                    href=""
+                                    className="hover:text-orange border-black hover:border-b"
+                                >
+                                    Reviews
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href=""
+                                    className="hover:text-orange border-black hover:border-b"
+                                >
+                                    Flights
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div className="bg-white float-right mr-10">
+                <ul className="flex items-center gap-1vw">
+                    <li>
+                        <a href="#">
+                            <img
+                                src="images/image 1.png"
+                                alt=""
+                                width={30}
+                                height={30}
+                                className="hover:opacity-70"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <button
+                            className={`${
+                                isSticky
+                                    ? "bg-white text-orange"
+                                    : "bg-orange text-white"
+                            } border-2 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80 ml-2`}
+                        >
+                            Sign In
+                        </button>
+                        <button
+                            className={`ml-2 border-2 border-orange ${
+                                isSticky
+                                    ? "bg-orange text-white"
+                                    : "bg-white text-orange"
+                            } px-6 py-1 rounded-2xl hover:opacity-80`}
+                        >
+                            Sign Up
+                        </button>
+                    </li>
+                    <li>
+                        <Flowbite>
+                            <DarkThemeToggle className=" ml-1 outline-none focus:ring-0 active:ring-0" />
+                        </Flowbite>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
 
-  const toggleMoreDropdown = () => {
-    setMoreDropdownVisible(!moreDropdownVisible);
-  };
-
-  const closeDropdowns = () => {
-    setTripsDropdownVisible(false);
-    setMoreDropdownVisible(false);
-  };
-
-  return (
-    <nav
-      className={`fixed z-10 w-full top-0 bg-white rounded-lg border-b shadow-sm flex justify-between items-center h-[10vh] mx-auto font-Nunito ${
-        isSticky ? "transform -translate-y-2 sticky top-0" : "transform -translate-y-2"
-      }`}
-    >
-      <a className="ms-10" href="http://127.0.0.1:8000/">
-        <img
-          src="images/Logo.png"
-          alt=""
-          className="w-vw-1 h-vw-1 mt-5 hover:opacity-80"
-        />
-      </a>
-      <div className="md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center" onMouseLeave={closeDropdowns}>
-        <ul className="absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto ">
-          <li id="trips" className="relative" onMouseEnter={toggleTripsDropdown}>
-            <a href="http://127.0.0.1:8000/trips" className="hover:text-gray-500 inline-block">
-              Trips
-            </a>
-            <ul
-              className={`${
-              tripsDropdownVisible ? "block" : "hidden"
-              } absolute border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out `}
-            >
-              <li className="relative">
-                <a href="http://127.0.0.1:8000/planyourtrip" className="hover:text-orange border-black hover:border-b">
-                  Plan a trip
-                </a>
-              </li>
-              <li>
-                <a href="guides" className="hover:text-orange border-black hover:border-b">
-                  Agencies
-                </a>
-              </li>
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Travel budget
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="relative hover:text-gray-500" onMouseEnter={closeDropdowns}>
-            <a href="#">Travel Guides</a>
-          </li>
-          <li className="relative" onMouseEnter={toggleMoreDropdown}>
-            <a href="#" className="hover:text-gray-500 inline-block">
-              More
-            </a>
-            <ul
-              className={`${
-                moreDropdownVisible ? "block" : "hidden"
-              } absolute border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out`}
-            >
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Reviews
-                </a>
-              </li>
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Flights
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div className="bg-white float-right mr-10">
-        <ul className="flex items-center gap-1vh">
-          <li>
-            <a href="#">
-              <img
-                src="images/image 1.png"
-                alt=""
-                width={30}
-                height={30}
-                className="hover:opacity-70 mx-1"
-              />
-            </a>
-          </li>
-          <li>
-            <button
-              className="bg-white border mx-1 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80"
-            >
-              Sign In
-            </button>
-            <button
-              className="ml-2 border mx-1 border-orange bg-orange text-white px-6 py-1 rounded-2xl hover:opacity-80"
-            >
-              Sign Up
-            </button>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="images/darkmoon.png"
-                alt=""
-                width={30}
-                height={30}
-                className="hover:opacity-70 mx-1"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
 }
 
 export default Header;

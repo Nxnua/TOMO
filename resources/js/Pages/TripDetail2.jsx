@@ -153,10 +153,10 @@ export const TripDetail2 = () => {
                 <div className=" flex lg:flex-row  sm:flex-col mt-8 mx-2 ">
                     <div className=" flex-1 flex-col mr-10">
                         <div className=" flex flex-row  justify-between mb-2">
-                            <div className=" text-left text-xl w-[65%] leading-5 mr-4">
+                            {/* <div className=" text-left text-xl w-[65%] leading-5 mr-4">
                                 A day trip to Terelj National Park and Statue of
                                 Chinggis Khan
-                            </div>
+                            </div> */}
                             <div className=" ">
                                 <Review reviews="250" rating="4.7" />
                             </div>
