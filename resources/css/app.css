@@ -16,6 +16,14 @@
     --warning: #f5a52e;
 }
 
+.menu-active{
+    @apply text-orange;
+}
+
+#overview, #itinerary, #inclusions,#photos {
+    scroll-margin-top: 120px;
+}
+
 #bar-fixed {
     height: 100vh;
     top: 10px;
