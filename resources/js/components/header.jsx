@@ -2,13 +2,18 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import DarkThemeToggle from "./darkModeToggler";
 import { useThemeContext } from "./states";
+import { Modal, Button } from "flowbite-react";
+import Login from "./login";
+import { SignUpNavigator } from "./signupnav";
 
 function Header() {
     const { darkMode } = useThemeContext();
+    const [onSignIn, setOnSignIn] = useState(false);
+    const [onSignUp, setOnSignUp] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
     const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
     const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
-
+    const [openModal, setOpenModal] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
             if (window.pageYOffset >= isSticky) {
@@ -40,6 +45,16 @@ function Header() {
         setMoreDropdownVisible(false);
     };
 
+    const onSignInButton =() => {
+       setOpenModal(true)
+        setOnSignIn(true)
+    }
+    const onSignUpButton =() => {
+       setOpenModal(true)
+        setOnSignUp(true)
+    }
+    
+
     return (
         <nav
             className={`fixed z-20 w-full top-0 bg-white rounded-lg border-b dark:border-gray-600 shadow-lg flex justify-between items-center h-[10vh] mx-auto font-Nunito dark:bg-darknav dark:text-white ${
@@ -48,9 +63,9 @@ function Header() {
                     : "transform -translate-y-2"
             }`}
         >
-            <Link className="ms-10" to="/" >
+            <Link className="ms-10" to="/">
                 <img
-                    src= {darkMode? "images/Tomo-White.png":"images/Logo.png" } 
+                    src={darkMode ? "images/Tomo-White.png" : "images/Logo.png"}
                     alt=""
                     className="w-24 h-12  hover:opacity-80"
                 />
@@ -155,11 +170,27 @@ function Header() {
                     </li>
                     <li>
                         <button
+                            onClick={onSignInButton}
+                           
                             className={`bg-white dark:bg-darknav text-orange border mx-1 border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90`}
                         >
                             Sign In
                         </button>
+                        <Modal className="  bg-white   "
+                            show={openModal}
+                            onClose={() => setOpenModal(false)}
+                        >
+                            <Modal.Body className=" w-[75vw] self-center   p-0">
+                                <div className=" flex relative h-[600px] ">
+                                    <img src={darkMode? "/images/bg-dark.png" : "/images/bg-light.png"} alt=""  className=" rounded-2xl w-[600px]  lg:w-[900px]" />
+                                    <div className=" absolute right-0">
+                                    <SignUpNavigator status= {onSignIn}/>
+                                    </div>
+                                </div>
+                            </Modal.Body>
+                        </Modal>
                         <button
+                        onClick={onSignUpButton}
                             className={`bg-orange text-white border mx-1 border-orange px-6 py-1 rounded-2xl hover:opacity-80`}
                         >
                             Sign Up

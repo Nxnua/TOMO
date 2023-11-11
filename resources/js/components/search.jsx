@@ -132,7 +132,7 @@ export function Search() {
                     type="search"
                     id="default-search"
                     class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-gray-400 focus:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-400 dark:focus:border-gray-400"
-                    placeholder="Search Mockups, Logos..."
+                    placeholder="Search..."
                     required
                 />
                 <button
