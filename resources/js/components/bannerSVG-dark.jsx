@@ -579,6 +579,15 @@ export default function MovementDark() {
                         </g>
                     </g>
                     <g id="roadlines">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        from="0 0"
+                        to="-400 0"
+                        dur="2.5s"
+                        repeatCount="indefinite"
+                    />
                         <path
                             id="1"
                             d="M1194.27 616.978C1128.13 617.357 1063.69 617.88 1000.33 618.502C998.924 620.239 996.983 621.885 994.707 623.447C1059.41 622.803 1125.28 622.272 1192.85 621.877C1193.23 620.254 1193.74 618.616 1194.27 616.978H1194.27Z"
@@ -611,6 +620,10 @@ export default function MovementDark() {
                         />
                     </g>
                     <g id="car">
+                    <animateMotion
+                        path="M 0 0 V 6 Z"
+                        dur="0.8s"
+                        repeatCount="indefinite"/>
                         <g id="Group_29">
                             <path
                                 id="Vector_84"
@@ -974,7 +987,7 @@ export default function MovementDark() {
                             fill="url(#paint10_linear_1060_893)"
                         />
                     </g>
-                    <g id="light">
+                    <g id="light-animate" className=" animate-pulse duration-100">
                         <path
                             id="Vector_153"
                             opacity="0.25"
@@ -983,6 +996,15 @@ export default function MovementDark() {
                         />
                     </g>
                     <g id="bushes">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        from="0 0"
+                        to="-400 0"
+                        dur="2.5s"
+                        repeatCount="indefinite"
+                    />
                         <g id="Group_37">
                             <path
                                 id="Vector_154"
@@ -1309,8 +1331,8 @@ export default function MovementDark() {
                         y2="663.256"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint1_linear_1060_893"
@@ -1320,8 +1342,8 @@ export default function MovementDark() {
                         y2="839.143"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint2_linear_1060_893"
@@ -1331,8 +1353,8 @@ export default function MovementDark() {
                         y2="601.707"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#C5C5D9" />
-                        <stop offset="1" stop="#AAA296" />
+                        <stop stopColor="#C5C5D9" />
+                        <stop offset="1" stopColor="#AAA296" />
                     </linearGradient>
                     <linearGradient
                         id="paint3_linear_1060_893"
@@ -1342,8 +1364,8 @@ export default function MovementDark() {
                         y2="729.494"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#C5C5D9" />
-                        <stop offset="1" stop="#AAA296" />
+                        <stop stopColor="#C5C5D9" />
+                        <stop offset="1" stopColor="#AAA296" />
                     </linearGradient>
                     <linearGradient
                         id="paint4_linear_1060_893"
@@ -1353,8 +1375,8 @@ export default function MovementDark() {
                         y2="802.028"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint5_linear_1060_893"
@@ -1364,8 +1386,8 @@ export default function MovementDark() {
                         y2="801.264"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint6_linear_1060_893"
@@ -1375,8 +1397,8 @@ export default function MovementDark() {
                         y2="805.799"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint7_linear_1060_893"
@@ -1386,8 +1408,8 @@ export default function MovementDark() {
                         y2="805.035"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint8_linear_1060_893"
@@ -1397,8 +1419,8 @@ export default function MovementDark() {
                         y2="805.67"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint9_linear_1060_893"
@@ -1408,8 +1430,8 @@ export default function MovementDark() {
                         y2="804.163"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#F5EAFF" />
-                        <stop offset="1" stop="#ABB1C4" />
+                        <stop stopColor="#F5EAFF" />
+                        <stop offset="1" stopColor="#ABB1C4" />
                     </linearGradient>
                     <linearGradient
                         id="paint10_linear_1060_893"
@@ -1419,18 +1441,62 @@ export default function MovementDark() {
                         y2="629.16"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stop="#FFFF00" />
-                        <stop offset="0.14" stop="#FFFF00" stopOpacity="0.85" />
-                        <stop offset="0.33" stop="#FFFF00" stopOpacity="0.67" />
-                        <stop offset="0.42" stop="#FFFF00" stopOpacity="0.6" />
-                        <stop offset="0.46" stop="#FBFB1D" stopOpacity="0.47" />
-                        <stop offset="0.52" stop="#F7F744" stopOpacity="0.3" />
-                        <stop offset="0.57" stop="#F4F460" stopOpacity="0.18" />
-                        <stop offset="0.61" stop="#F2F271" stopOpacity="0.11" />
-                        <stop offset="0.64" stop="#F2F278" stopOpacity="0.08" />
-                        <stop offset="0.69" stop="#EEEE98" stopOpacity="0.06" />
-                        <stop offset="0.83" stop="#E8E8D3" stopOpacity="0.01" />
-                        <stop offset="1" stop="#E6E6E6" stopOpacity="0" />
+                        <stop stopColor="#FFFF00" />
+                        <stop
+                            offset="0.14"
+                            stopColor="#FFFF00"
+                            stopOpacity="0.85"
+                        />
+                        <stop
+                            offset="0.33"
+                            stopColor="#FFFF00"
+                            stopOpacity="0.67"
+                        />
+                        <stop
+                            offset="0.42"
+                            stopColor="#FFFF00"
+                            stopOpacity="0.6"
+                        />
+                        <stop
+                            offset="0.46"
+                            stopColor="#FBFB1D"
+                            stopOpacity="0.47"
+                        />
+                        <stop
+                            offset="0.52"
+                            stopColor="#F7F744"
+                            stopOpacity="0.3"
+                        />
+                        <stop
+                            offset="0.57"
+                            stopColor="#F4F460"
+                            stopOpacity="0.18"
+                        />
+                        <stop
+                            offset="0.61"
+                            stopColor="#F2F271"
+                            stopOpacity="0.11"
+                        />
+                        <stop
+                            offset="0.64"
+                            stopColor="#F2F278"
+                            stopOpacity="0.08"
+                        />
+                        <stop
+                            offset="0.69"
+                            stopColor="#EEEE98"
+                            stopOpacity="0.06"
+                        />
+                        <stop
+                            offset="0.83"
+                            stopColor="#E8E8D3"
+                            stopOpacity="0.01"
+                        />
+                        <stop
+                            offset="1"
+                            stopColor="#E6E6E6"
+                            stopOpacity="0"
+                        />
                     </linearGradient>
                     <radialGradient
                         id="paint11_radial_1060_893"
@@ -1440,14 +1506,30 @@ export default function MovementDark() {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(872.054 623.802) rotate(1.55005) scale(329.893 135.055)"
                     >
-                        <stop offset="0.02" stop="#FFFF00" />
-                        <stop offset="0.06" stop="#FFFF00" />
-                        <stop offset="0.1" stop="#FCFC12" />
-                        <stop offset="0.14" stop="#FBFB24" />
-                        <stop offset="0.29" stop="#FAFA30" stopOpacity="0.81" />
-                        <stop offset="0.38" stop="#F5F55D" stopOpacity="0.61" />
-                        <stop offset="0.58" stop="#EAEABE" stopOpacity="0.17" />
-                        <stop offset="0.68" stop="#E6E6E6" stopOpacity="0" />
+                        <stop offset="0.02" stopColor="#FFFF00" />
+                        <stop offset="0.06" stopColor="#FFFF00" />
+                        <stop offset="0.1" stopColor="#FCFC12" />
+                        <stop offset="0.14" stopColor="#FBFB24" />
+                        <stop
+                            offset="0.29"
+                            stopColor="#FAFA30"
+                            stopOpacity="0.81"
+                        />
+                        <stop
+                            offset="0.38"
+                            stopColor="#F5F55D"
+                            stopOpacity="0.61"
+                        />
+                        <stop
+                            offset="0.58"
+                            stopColor="#EAEABE"
+                            stopOpacity="0.17"
+                        />
+                        <stop
+                            offset="0.68"
+                            stopColor="#E6E6E6"
+                            stopOpacity="0"
+                        />
                     </radialGradient>
                     <image
                         id="image0_1060_893"

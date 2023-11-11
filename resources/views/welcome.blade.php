@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app" class=" dark:bg-darkbg dark:text-gray-300"></div>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 

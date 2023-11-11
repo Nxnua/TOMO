@@ -5,8 +5,8 @@ import { useThemeContext } from "./states";
 export default function Banner() {
     const { darkMode } = useThemeContext();
     return (
-        <div className="relative z-10 h-screen">
-            <div className=" absolute z-10  bottom-0 left-0">
+        <div className="relative z-50 h-screen">
+            <div className=" absolute z-20  bottom-0 left-0">
                 {darkMode ? <MovementDark /> : <Movement />}
             </div>
 

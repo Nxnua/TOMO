@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { BrowserRouter } from "react-router-dom";
+import { Flowbite, DarkThemeToggle } from "flowbite-react";
 export default function Login({ signUpHandler }) {
     const [formDat, setFormDat] = useState({
         username: "",
@@ -41,11 +42,9 @@ export default function Login({ signUpHandler }) {
     return (
         <div className="rounded-2xl w-[30vw] h-[100vh] bg-white float-right">
             <div className=" flex justify-end m-4">
-                <img
-                    src="images/darkmode.png"
-                    alt=""
-                    className="hover:opacity-70 w-16"
-                />
+            <Flowbite>
+              <DarkThemeToggle className=" ml-1 outline-none focus:ring-0 active:ring-0" />
+            </Flowbite>
             </div>
             <div className=" flex flex-col justify-center">
                 <h1 className=" text-center mt-[4vh] mb-10 font-extrabold text-3xl">

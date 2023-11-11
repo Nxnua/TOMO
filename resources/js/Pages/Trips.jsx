@@ -4,6 +4,8 @@ import TripComponent from "../components/tripComponent";
 import { v4 } from "uuid";
 import Footer from "../components/footer";
 import { GrSearch } from "react-icons/gr";
+import BreadCrumb from "../components/breadcrumb";
+import { Search } from "../components/search";
 
 export default function Trip() {
     const filter = [
@@ -61,17 +63,19 @@ export default function Trip() {
         { isChecked: true, duration: "3-7 days" },
         { isChecked: false, duration: "7+ days" },
     ];
-    
+
     return (
         <div>
             <Header />
-            <div className=" mx-28 mt-20 flex justify-start flex-col">
-                <div className=" w-100 flex justify-start">
-                    Trips &gt; All trips
-                </div>
+            <div className=" h-20"></div>
+            <BreadCrumb />
+            <div className=" mx-28 mt-4 flex justify-start flex-col">
                 <div className=" flex flex-row">
                     <div className=" w-1/4 flex flex-col relative">
-                        <div id="bar-fixed" className=" overflow-y-auto mt-4 flex justify-start w-[250px] flex-col top-16 ">
+                        <div
+                            id="bar-fixed"
+                            className=" overflow-y-auto mt-4 flex justify-start w-[250px] flex-col top-16 "
+                        >
                             <div>
                                 <p className=" w-full  border-b-2 flex justify-start">
                                     {" "}
@@ -168,27 +172,34 @@ export default function Trip() {
                     </div>
                     <div className=" flex-1 mt-4">
                         <div className="flex justify-start  flex-col ">
-                            <div className=" flex flex-row items-center mb-4">
-                                <input
-                                    type="text"
-                                    className=" w-[400px] px-4 h-8 text-sm border-2 rounded-3xl outline-gray-300 active:border-gray-300 mr-2 " placeholder="search"
-                                />
-                                <a href="">
-                                    {" "}
-                                    <GrSearch className=" text-2xl fill-black50" />
-                                </a>
+                            <div className="  items-center mb-4">
+                                <Search/>
                             </div>
                             <div className=" flex flex-row items-center mb-4">
                                 <p className=" text-lg font-bold">
                                     (255 trips)
                                 </p>
                                 <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
-                                   <p className=" text-sm font-semibold "> Horseback Riding </p>
-                                   <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
+                                    <p className=" text-sm font-semibold ">
+                                        {" "}
+                                        Horseback Riding{" "}
+                                    </p>
+                                    <img
+                                        src="/images/clearbutton.png"
+                                        alt=""
+                                        className=" w-4 h-4 ml-1"
+                                    />
                                 </div>
                                 <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
-                                   <p className=" text-sm font-semibold "> 4.0 and up </p>
-                                   <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
+                                    <p className=" text-sm font-semibold ">
+                                        {" "}
+                                        4.0 and up{" "}
+                                    </p>
+                                    <img
+                                        src="/images/clearbutton.png"
+                                        alt=""
+                                        className=" w-4 h-4 ml-1"
+                                    />
                                 </div>
                             </div>
                             <div className=" grid  mb-8 xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">

@@ -2,7 +2,7 @@ import DarkThemeToggle from "./darkModeToggler";
 
 export default function Start({ startHandler }) {
     return (
-        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col`}>
+        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-darkbg`}>
             <div className=" flex justify-end m-4">
             <DarkThemeToggle />
             </div>
