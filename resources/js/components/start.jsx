@@ -1,15 +1,10 @@
-import { useState } from "react";
-import Login from "./login";
-import { Flowbite, DarkThemeToggle } from "flowbite-react";
+import DarkThemeToggle from "./darkModeToggler";
+
 export default function Start({ startHandler }) {
     return (
-        <div className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
+        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-darkbg`}>
             <div className=" flex justify-end m-4">
-                <a href="">
-                    <Flowbite>
-                        <DarkThemeToggle className=" ml-1 outline-none focus:ring-0 active:ring-0" />
-                    </Flowbite>
-                </a>
+            <DarkThemeToggle />
             </div>
             <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">
                 Hi, I'm Tomo!

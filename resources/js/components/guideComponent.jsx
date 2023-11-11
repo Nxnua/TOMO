@@ -1,9 +1,10 @@
 import Review from "./review";
 export default function Guide({ name, description, image, review, star }) {
     return (
-        <div className=" mt-4  bg-white rounded-xl h-[20vw] border-[1px] border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)] flex flex-row">
+        <div className=" mt-4  bg-white dark:bg-darknav rounded-xl h-[20vw] border-[1px] dark:border-gray-800 border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)]">
+            <div className="  flex flex-row">
             <div className=" w-[35%]  flex flex-col justify-between">
-                <div className=" rounded-lg border-[1px] border-neutral-200">
+                <div className=" rounded-lg border-[2px] border-neutral-200 dark:border-gray-600">
                     <img src={image} alt="" className=" w-[180px] h-[150px] rounded-lg " />
                 </div>
                 <div className="  flex justify-center ">{name}</div>
@@ -49,13 +50,13 @@ export default function Guide({ name, description, image, review, star }) {
                     </div>
                 </div>
                 <div className=" transition ease-in-out delay-50  hover:scale-105  mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
-                <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter ">
+                <button className=" bg-white dark:bg-[#383C51] w-[75%] border-2 dark:border-gray-400 py-1 border-black50 rounded-lg font-extrabold tracking-tighter ">
                     Book now
                 </button>
             </div>
             </div>
             
-            
+            </div>
         </div>
         
         
