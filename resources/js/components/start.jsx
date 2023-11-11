@@ -1,18 +1,10 @@
-import { useState } from "react";
-import Login from "./login";
+import DarkThemeToggle from "./darkModeToggler";
+
 export default function Start({ startHandler }) {
     return (
-        <div className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
+        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-darkbg`}>
             <div className=" flex justify-end m-4">
-                <a href="">
-                    <img
-                        src="images/darkmoon.png"
-                        alt=""
-                        width={25}
-                        height={25}
-                        className="hover:opacity-70"
-                    />
-                </a>
+            <DarkThemeToggle />
             </div>
             <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">
                 Hi, I'm Tomo!

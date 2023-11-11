@@ -1,12 +1,11 @@
 import Header from "../components/header";
-import { HiHome } from "react-icons/hi";
 import { v4 } from "uuid";
 import Review from "../components/review";
 import { tripList, tripDays } from "./data";
 import Footer from "../components/footer";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Accordion, Breadcrumb, Datepicker } from "flowbite-react";
+import { Accordion,  Datepicker } from "flowbite-react";
+import BreadCrumb from "../components/breadcrumb";
 // const customTheme: CustomFlowbiteTheme["accordion"] = {
 //     color: {
 //         primary: "bg-red-500 hover:bg-red-600",
@@ -58,24 +57,13 @@ export const TripDetail = () => {
             <div className=" hidden sm:block">
                 <Header />
             </div>
+            <BreadCrumb/>
 
             <div className=" flex flex-col">
                 <div className=" mx-2 sm:mx-14 lg:mx-28  mt-4 flex justify-start flex-col ">
-                    <div className=" w-100 flex justify-start whitespace-nowrap">
-                        <Breadcrumb aria-label="Default breadcrumb example">
-                            <Breadcrumb.Item icon={HiHome}>
-                                <Link to="/">Home</Link>
-                            </Breadcrumb.Item>
-                            <Breadcrumb.Item href="#">
-                                <Link to="/trips">Trips</Link>
-                            </Breadcrumb.Item>
-                            <Breadcrumb.Item>
-                                Golden Eagle Festival
-                            </Breadcrumb.Item>
-                        </Breadcrumb>
-                    </div>
+                    
                     <br />
-                    <div className="  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] z-20 overflow-x-hidden sticky top-0 sm:top-20  ">
+                    <div className=" z-10  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9]  overflow-x-hidden sticky top-0 sm:top-20  ">
                         <div className="  flex flex-row  items-center ">
                             {menuList.map((item, i) => {
                                 return (
@@ -159,7 +147,7 @@ export const TripDetail = () => {
                                                         src={item.img}
                                                         alt=""
                                                         className={
-                                                            "  rounded-md hover:relative w-[100%] -z-10"
+                                                            "  rounded-md hover:relative w-[100%] "
                                                         }
                                                     />
                                                 );

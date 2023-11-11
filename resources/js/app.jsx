@@ -12,6 +12,7 @@ import { GuideDetail } from "./Pages/guideDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
+import { ThemeContextProvider } from "./components/states";
 
 
 const router = createBrowserRouter([
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         element: <Guides />,
     },
     {
-        path: "/trip",
+        path: "/trips/trip",
         element: <TripDetail />,
     },
     {
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/profile",
-        element: <Profile />
+        element: <Profile />,
     },
     {
         path: "/feedback",
@@ -53,7 +54,8 @@ const router = createBrowserRouter([
     },
 ]);
 
-
 ReactDOM.createRoot(document.getElementById("app")).render(
-    <RouterProvider router={router} />
+    <ThemeContextProvider>
+        <RouterProvider router={router} />
+    </ThemeContextProvider>
 );
