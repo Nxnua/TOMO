@@ -53,8 +53,8 @@ export const TripDetail = () => {
         };
     }, []);
     return (
-        <div className=" relative mt-20">
-            <div className=" hidden sm:block">
+        <div className=" relative ">
+            <div className=" ">
                 <Header />
             </div>
             <BreadCrumb/>
@@ -63,7 +63,7 @@ export const TripDetail = () => {
                 <div className=" mx-2 sm:mx-14 lg:mx-28  mt-4 flex justify-start flex-col ">
                     
                     <br />
-                    <div className=" z-10  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9]  overflow-x-hidden sticky top-0 sm:top-20  ">
+                    <div className=" z-20  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9]  overflow-x-hidden sticky top-0 sm:top-20  ">
                         <div className="  flex flex-row  items-center ">
                             {menuList.map((item, i) => {
                                 return (

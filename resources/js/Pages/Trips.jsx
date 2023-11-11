@@ -179,7 +179,7 @@ export default function Trip() {
                                 <p className=" text-lg font-bold">
                                     (255 trips)
                                 </p>
-                                <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
+                                <div className=" flex flex-row items-center dark:bg-darknav bg-gray-200 rounded-md px-2 mx-2">
                                     <p className=" text-sm font-semibold ">
                                         {" "}
                                         Horseback Riding{" "}
@@ -190,7 +190,7 @@ export default function Trip() {
                                         className=" w-4 h-4 ml-1"
                                     />
                                 </div>
-                                <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
+                                <div className=" flex flex-row items-center dark:bg-darknav bg-gray-200 rounded-md px-2 mx-2">
                                     <p className=" text-sm font-semibold ">
                                         {" "}
                                         4.0 and up{" "}

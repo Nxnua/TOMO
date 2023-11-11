@@ -4,13 +4,18 @@ import { BrowserRouter } from "react-router-dom";
 import SignUp from "./signup";
 import Login from "./login";
 
-export function SignUpNavigator() {
-    const [onSignIn, setOnSignIn] = useState(false);
+export function SignUpNavigator({status}) {
+    const [onSignIn, setOnSignIn] = useState(status);
+
 
     return (
-        <div>
+        <div className=" h-[600px]">
+        
+
             {onSignIn ? (
-                <LoginNavigator />
+                <Login signUpHandler={() => {
+                    setOnSignIn(false);
+                }} />
             ) : (
                 <SignUp
                     signHandler={() => {
@@ -22,19 +27,4 @@ export function SignUpNavigator() {
     );
 }
 
-export function LoginNavigator() {
-    const [onSignUp, setOnSignUp] = useState(false);
-    return (
-        <div>
-            {onSignUp ? (
-                <SignUp />
-            ) : (
-                <Login
-                    signUpHandler={() => {
-                        setOnSignUp(true);
-                    }}
-                />
-            )}
-        </div>
-    );
-}
+
