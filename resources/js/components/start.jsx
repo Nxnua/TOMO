@@ -1,17 +1,14 @@
 import { useState } from "react";
 import Login from "./login";
+import { Flowbite, DarkThemeToggle } from "flowbite-react";
 export default function Start({ startHandler }) {
     return (
         <div className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
                 <a href="">
-                    <img
-                        src="images/darkmoon.png"
-                        alt=""
-                        width={25}
-                        height={25}
-                        className="hover:opacity-70"
-                    />
+                    <Flowbite>
+                        <DarkThemeToggle className=" ml-1 outline-none focus:ring-0 active:ring-0" />
+                    </Flowbite>
                 </a>
             </div>
             <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">

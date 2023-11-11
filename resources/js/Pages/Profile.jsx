@@ -1,5 +1,8 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
+import profile from "../components/profileComponent";
+import Profiles from "../components/profileComponent";
+import ProfileEditPage from "../components/profileComponent";
 
 export const Profile = () => {
     return (
@@ -8,7 +11,8 @@ export const Profile = () => {
                 <Header />
             </div>
             
-            <div className="flex flex-row mx-12 mt-2 w-11/12 justify-center shadow-md ">
+            <div className="flex flex-row mx-12 mt-2 w-11/12 justify-center shadow-md h-28">
+
                 <div className="grid grid-cols-3 gap-2     ">
                     <a href="#">
                         <img
@@ -16,7 +20,8 @@ export const Profile = () => {
                             alt=""
                             width={100}
                             height={100}
-                            className="flex  border-[2px]  rounded-full h-24 "
+                            className="flex  border-[2px]  rounded-full h-24 mt-1 "
+
                         />
                     </a>
                     <div className="name flex flex-row items-end mb-4">
@@ -47,10 +52,11 @@ export const Profile = () => {
                 <div className="flex mt-2 justify-start md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
                 <div className="stroke" id="mainNav">
                     <ul>
-                    <li><a href="#">All guides</a></li>
-                    <li><a href="#">By Business</a></li>
-                    <li><a href="#">By Travel</a></li>
-                    <li><a href="#">Most reviewed</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Notication</a></li>
+                    <li><a href="#">Favorite</a></li>
+                    <li><a href="#">Review</a></li>
+
                     </ul>
                 </div>
 
@@ -80,6 +86,10 @@ export const Profile = () => {
             </div>
 
             <div className="mt-10">
+
+                <div>
+                    <ProfileEditPage/>
+                </div>
                 <Footer />
             </div>
         </div>

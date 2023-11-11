@@ -32,11 +32,9 @@ export const Guides = () => {
     <div>
     <Header/>
     <div className="flex mx-auto font-Nunito flex-col ">
-            {/* <div className="float-left ms-15">
-            
-            </div> */}
-            <div className=" mb-12 h-20 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-0 md:w-auto w-full flex float-left  border-[2px]">
-                <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 ">
+            <div className=" mb-12 mt-[10vh] p-[1vh] h-[10vh] md:static float-left md:min-h-fit min-h-[60vh] inline-block ml-0 top-0 w-[70vh] flex items-center">
+
+                <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
                 <div className="stroke" id="mainNav">
                     <ul>
                     <li><a href="#">All guides</a></li>

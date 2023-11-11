@@ -30,9 +30,9 @@ export default function Main() {
                 </form>
             </div>
 
-            <div className="z-20 mt-0 mx-28 flex justify-center flex-col ">
+            <div className="mt-0 mx-28 flex justify-center flex-col ">
 
-            <div className="z-20 mx-28 flex justify-center flex-col ">
+            <div className="mx-28 flex justify-center flex-col ">
 
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
 
