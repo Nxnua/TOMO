@@ -31,7 +31,7 @@ const ProfileEditPage = () => {
     <div className="min-h-screen flex items-center justify-center">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96" onSubmit={handleSubmit}>
         <h2 className="text-2xl mb-6 text-center">Edit Profile</h2>
-
+        
         <label className="block text-gray-700 text-sm font-bold mb-2">
           First Name:
           <input
