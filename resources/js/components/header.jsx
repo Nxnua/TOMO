@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-
 import { Link } from "react-router-dom";
-import {Flowbite,DarkThemeToggle} from "flowbite-react"
+import React, { useState, useEffect } from "react";
+import DarkThemeToggle from "./darkModeToggler";
+
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
@@ -14,9 +14,7 @@ function Header() {
                 setIsSticky(false);
             }
         };
-
         window.addEventListener("scroll", handleScroll);
-
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -136,15 +134,12 @@ function Header() {
                         </button>
                     </li>
                     <li>
-                        <Flowbite>
-                            <DarkThemeToggle className=" ml-1 outline-none focus:ring-0 active:ring-0" />
-                        </Flowbite>
+                        <DarkThemeToggle />
                     </li>
                 </ul>
             </div>
         </nav>
     );
-
 }
 
 export default Header;

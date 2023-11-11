@@ -33,7 +33,7 @@ export default function Main() {
             </div>
 
             <div className="z-20 mx-28 flex justify-center flex-col ">
-                <p className=" text-2xl font-bold mb-12"> Guides</p>
+                <p className=" text-2xl font-bold mb-12 dark:bg-red-600"> Guides</p>
 
 
                 <div className="  grid grid-cols-3 gap-4">
