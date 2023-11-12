@@ -771,7 +771,7 @@ const SvgComponent = () => {
    <div className='fixed -translate-x-2/4 -translate-y-2/4 flex items-center justify-center w-screen h-screen left-2/4 top-2/4' onClick={closeDiv}>
    <div className='.bg-gray-300 relative w-[90vw] min-h-[70vh] max-w-[1000px] flex items-center flex-col rounded-[10px]' onClick={(e) => e.stopPropagation()}>
      <div className='text-[black] font-medium text-center' onClick={closeDiv}>
-       
+
      </div>
      <p >Name: {selectedCity.name}</p>
      <div >
@@ -779,9 +779,9 @@ const SvgComponent = () => {
      </div>
    </div>
  </div>
- 
-     
-      
+
+
+
       )}
     </div>
   );

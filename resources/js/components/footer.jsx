@@ -13,7 +13,7 @@ export default function Footer() {
         { id: 3, title: "Profile", link: "/profile" },
     ];
     return (
-        <div className=" bg-black75 flex flex-col   ">
+        <div className=" bg-black75 dark:bg-darknav flex flex-col   ">
             <div className=" lg:h-60 h-full">
                 
                 <div className=" h-full grid lg:grid-cols-3 sm:grid-cols-1  text-gray-200 font-semibold text-md  ">
@@ -94,7 +94,7 @@ export default function Footer() {
                 </div>
                 <div className=" flex justify-center bg-black75 ">
                 <hr className=" w-[80vw] border-[#616161] border-[1px]  "/></div>
-                <div className=" bg-[#393535] h-12 flex flex-row justify-between px-2 sm:px-20 text-gray-200 text-xs items-center font-medium ">
+                <div className=" bg-[#393535] h-12 flex flex-row justify-between px-2 sm:px-20 text-gray-200 text-xs items-center font-medium dark:bg-[#1E202E]  ">
                     <div className=" flex flex-col sm:flex-row">
                         <a href="" className=" sm:mr-10 text-start">TERMS & CONDITIONS</a>
                         <a href="" className=" sm:mr-10 text-start" >PRIVACY POLICY</a>

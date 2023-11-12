@@ -14,7 +14,10 @@
     --success: #51d175;
     --error: #d24040;
     --warning: #f5a52e;
+    --background-dark: #101727;
+    --navigation-dark: #272B3F;
 }
+
 
 .menu-active{
     @apply text-orange;

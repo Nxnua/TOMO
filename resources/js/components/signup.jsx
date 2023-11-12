@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { BrowserRouter } from "react-router-dom";
 import Login from "./login";
+import { Flowbite, DarkThemeToggle } from "flowbite-react";
 
 export default function SignUp({ signHandler }) {
     const [formData, setFormData] = useState({
@@ -25,13 +26,9 @@ export default function SignUp({ signHandler }) {
         <div className="rounded-2xl w-[30vw] h-[100vh] bg-white float-right">
             <div className=" flex justify-end m-4">
                 <a href="">
-                    <img
-                        src="images/darkmoon.png"
-                        alt=""
-                        width={25}
-                        height={25}
-                        className="hover:opacity-70"
-                    />
+                    <Flowbite>
+                        <DarkThemeToggle className=" ml-1 outline-none focus:ring-0 active:ring-0" />
+                    </Flowbite>
                 </a>
             </div>
             <div className=" flex flex-col justify-center">
