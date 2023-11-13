@@ -1,6 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import Review from "./review";
+import Review from "./review/review";
 export default function TripComponent({
     title,
     image,

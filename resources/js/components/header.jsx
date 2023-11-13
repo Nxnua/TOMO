@@ -45,15 +45,14 @@ function Header() {
         setMoreDropdownVisible(false);
     };
 
-    const onSignInButton =() => {
-       setOpenModal(true)
-        setOnSignIn(true)
-    }
-    const onSignUpButton =() => {
-       setOpenModal(true)
-        setOnSignUp(true)
-    }
-    
+    const onSignInButton = () => {
+        setOpenModal(true);
+        setOnSignIn(true);
+    };
+    const onSignUpButton = () => {
+        setOpenModal(true);
+        setOnSignUp(true);
+    };
 
     return (
         <nav
@@ -65,7 +64,7 @@ function Header() {
         >
             <Link className="ms-10" to="/">
                 <img
-                    src={darkMode ? "images/Tomo-White.png" : "images/Logo.png"}
+                    src={darkMode ? "/images/Tomo-White.png" : "/images/Logo.png"}
                     alt=""
                     className="w-24 h-12  hover:opacity-80"
                 />
@@ -160,7 +159,7 @@ function Header() {
                     <li>
                         <a href="#">
                             <img
-                                src="images/image 1.png"
+                                src="/images/image 1.png"
                                 alt=""
                                 width={30}
                                 height={30}
@@ -171,27 +170,51 @@ function Header() {
                     <li>
                         <button
                             onClick={onSignInButton}
-                           
-                            className={`bg-white dark:bg-darknav text-orange border mx-1 border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90`}
+                            className={`bg-white dark:bg-darknav text-orange border mx-1 border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90 dark:border-error dark:text-error`}
                         >
                             Sign In
                         </button>
-                        <Modal className="  bg-white   "
+                        <Modal
+                            className="  bg-white    "
+                            tabindex="-1"
                             show={openModal}
                             onClose={() => setOpenModal(false)}
                         >
                             <Modal.Body className=" w-[75vw] self-center   p-0">
                                 <div className=" flex relative h-[600px] ">
-                                    <img src={darkMode? "/images/bg-dark.png" : "/images/bg-light.png"} alt=""  className=" rounded-2xl w-[600px]  lg:w-[900px]" />
+                                    <img
+                                        src={
+                                            darkMode
+                                                ? "/images/bg-dark.png"
+                                                : "/images/bg-light.png"
+                                        }
+                                        alt=""
+                                        className=" rounded-2xl w-[600px]  lg:w-[900px]"
+                                    />
                                     <div className=" absolute right-0">
-                                    <SignUpNavigator status= {onSignIn}/>
+                                        <SignUpNavigator status={onSignIn} />
+                                    </div>
+                                    <div className=" absolute float right-4 top-4 ">
+                                        <button
+                                            onClick={() => setOpenModal(false)}
+                                        >
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                            >
+                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </Modal.Body>
                         </Modal>
                         <button
-                        onClick={onSignUpButton}
-                            className={`bg-orange text-white border mx-1 border-orange px-6 py-1 rounded-2xl hover:opacity-80`}
+                            onClick={onSignUpButton}
+                            className={`bg-orange text-white border mx-1 border-orange px-6 py-1 rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
                         >
                             Sign Up
                         </button>

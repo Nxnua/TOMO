@@ -1,4 +1,4 @@
-import Review from "./review";
+import Review from "./review/review";
 export default function Guide({ name, description, image, review, star }) {
     return (
         <div className=" mt-4  bg-white dark:bg-darknav rounded-xl h-[20vw] border-[1px] dark:border-gray-800 border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)]">

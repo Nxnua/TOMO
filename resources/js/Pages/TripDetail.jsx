@@ -1,10 +1,11 @@
 import Header from "../components/header";
 import { v4 } from "uuid";
-import Review from "../components/review";
+import Review from "../components/review/review";
+import ReviewSection from "../components/review/ReviewSection";
 import { tripList, tripDays } from "./data";
 import Footer from "../components/footer";
 import { useEffect, useState } from "react";
-import { Accordion,  Datepicker } from "flowbite-react";
+import { Accordion, Datepicker } from "flowbite-react";
 import BreadCrumb from "../components/breadcrumb";
 // const customTheme: CustomFlowbiteTheme["accordion"] = {
 //     color: {
@@ -31,7 +32,6 @@ export const TripDetail = () => {
             </p>
         );
     };
-    const [topBar, setTopBar] = useState("photos");
 
     const [activeLink, setActiveLink] = useState("");
 
@@ -52,18 +52,19 @@ export const TripDetail = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
     return (
-        <div className=" relative ">
-            <div className=" ">
-                <Header />
-            </div>
-            <BreadCrumb/>
+        <div className="">
+            <Header />
+            <div className=" pt-20"></div>
+            <BreadCrumb />
 
             <div className=" flex flex-col">
-                <div className=" mx-2 sm:mx-14 lg:mx-28  mt-4 flex justify-start flex-col ">
-                    
+                <div className=" mx-2 sm:mx-14 lg:mx-28 flex justify-start flex-col ">
                     <br />
-                    <div className=" z-20  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9]  overflow-x-hidden sticky top-0 sm:top-20  ">
+                    <div
+                        className={`  z-20   h-10 dark:bg-darknav bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] dark:border-gray-600 overflow-x-hidden top-[8.5vh] sticky `}
+                    >
                         <div className="  flex flex-row  items-center ">
                             {menuList.map((item, i) => {
                                 return (
@@ -228,9 +229,16 @@ export const TripDetail = () => {
                     </div>
                 </div>
 
-                <div className=" h-24 ">
-                   
+                <div id="review" className="section mt-8 flex flex-col mx-28">
+                    <p className=" ml-1 text-xl text-start font-extrabold">
+                        Review
+                    </p>
+                    <div className="  mt-4">
+                        <ReviewSection />
+                    </div>
                 </div>
+
+                <div className=" h-24 "></div>
             </div>
 
             <Footer />
@@ -276,7 +284,7 @@ const DayInfo = () => {
 
 function Info() {
     return (
-        <div className=" w-[100%] rounded-lg border-gray-200 border-2  mt-4 font-semibold text-xs">
+        <div className=" w-[100%] rounded-lg border-gray-200 border-2 dark:border-gray-700 mt-4 font-semibold text-xs">
             <div className=" flex justify-start ml-4 mt-2">
                 DURATION & GROUP SIZE
             </div>
@@ -302,7 +310,7 @@ function Info() {
                     <p className=" ml-2">16 (max)</p>
                 </div>
             </div>
-            <hr className=" border-[1px]" />
+            <hr className=" border-[1px] dark:border-gray-700" />
             <div className=" flex justify-start ml-4 mt-2">INCLUSIONS</div>
             <div className=" grid grid-cols-5 mx-4 my-2 items-center">
                 {inclusions.map((item, i) => {
@@ -314,7 +322,7 @@ function Info() {
                     );
                 })}
             </div>
-            <hr className=" border-[1px]" />
+            <hr className=" border-[1px] dark:border-gray-700" />
             <div className=" flex flex-col">
                 <div className=" flex justify-start ml-4 mt-2">STAY</div>
                 <div className=" flex flex-col mb-4 mx-4">
@@ -353,7 +361,7 @@ function Info() {
                     </div>
                 </div>
             </div>
-            <hr className=" border-[1px]" />
+            <hr className=" border-[1px] dark:border-gray-700" />
             <div className=" flex justify-start ml-4 mt-2">ACTIVITIES</div>
             <div className=" flex flex-col">
                 <div className=" flex flex-row mx-4 my-2 items-center">
@@ -404,7 +412,7 @@ function Info() {
                     <img src="/images/physical level.png" alt="" />
                 </div>
             </div>
-            <hr className=" border-[1px]" />
+            <hr className=" border-[1px] dark:border-gray-700" />
             <div className=" flex justify-start ml-4 mt-2">PRICE</div>
             <div className=" flex flex-row justify-between mx-4">
                 <div>prices</div>
@@ -538,7 +546,7 @@ const inclusions = [
 function PackingList() {
     return (
         <div className="  mt-4 ">
-            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
+            <div className=" round flex flex-col rounded-lg border-gray-200 dark:border-gray-700 border-2 p-4 w-full mr-4 ">
                 <p className=" text-lg text-start ml-4">Packing list </p>
                 <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     <ul className=" mt-4 text-start pl-4 text-base font-medium ">
@@ -581,7 +589,7 @@ function PackingList() {
 function Inclusion() {
     return (
         <div className=" grid lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1">
-            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
+            <div className=" round flex flex-col rounded-lg border-gray-200 dark:border-gray-700 border-2 p-4 w-full mr-4 ">
                 <p className=" text-lg text-start ml-4">Tour includes</p>
                 <ul className=" mt-4 text-start pl-4 text-base font-medium ">
                     <li className=" list-disc ">
@@ -599,7 +607,7 @@ function Inclusion() {
                     <li className=" list-disc ">Horse and Camel ride</li>
                 </ul>
             </div>
-            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full ">
+            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 dark:border-gray-700 p-4 w-full ">
                 <p className=" text-lg text-start ml-4">Not includes</p>
                 <ul className=" mt-4 text-start pl-4 text-base font-medium ">
                     <li className=" list-disc ">

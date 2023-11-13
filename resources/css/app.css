@@ -23,7 +23,7 @@
     @apply text-orange;
 }
 
-#overview, #itinerary, #inclusions,#photos {
+#overview, #itinerary, #inclusions,#photos, #review {
     scroll-margin-top: 120px;
 }
 
