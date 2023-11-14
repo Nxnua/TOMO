@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import DarkThemeToggle from "./darkModeToggler";
-import { useThemeContext } from "./states";
+import DarkThemeToggle from "./darkmode/darkModeToggler";
+import { useThemeContext } from "./darkmode/states";
 import { Modal, Button } from "flowbite-react";
 import Login from "./login";
 import { SignUpNavigator } from "./signupnav";
@@ -73,7 +73,7 @@ function Header() {
                 className="  md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center"
                 onMouseLeave={closeDropdowns}
             >
-                <ul className=" absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto ">
+                <ul className=" absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto  z-30 ">
                     <li
                         id="trips"
                         className="relative"

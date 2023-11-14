@@ -3,8 +3,7 @@ import Home from "./Pages/Homepage/Home";
 import Plantrip from "./Pages/PlanTrip";
 import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
-import Map from "./components/Map";
-import Movement from "./components/bannerSVG";
+
 import Feedback from "./Pages/feedback";
 
 import { TripDetail } from "./Pages/TripDetail";
@@ -12,7 +11,7 @@ import { GuideDetail } from "./Pages/guideDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
-import { ThemeContextProvider } from "./components/states";
+import { ThemeContextProvider } from "./components/darkmode/states";
 
 
 const router = createBrowserRouter([

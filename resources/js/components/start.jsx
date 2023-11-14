@@ -1,5 +1,5 @@
-import DarkThemeToggle from "./darkModeToggler";
-import { useThemeContext } from "./states";
+import DarkThemeToggle from "./darkmode/darkModeToggler";
+import { useThemeContext } from "./darkmode/states";
 export default function Start({ startHandler }) {
     const { darkMode } = useThemeContext();
     return (
@@ -28,8 +28,10 @@ export default function Start({ startHandler }) {
                 className=" mt-[6vh] flex justify-center "
                 onClick={() => startHandler()}
             >
-                <div className="  rounded-xl font-bold px-10 py-3  bg-orange text-white dark:bg-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
-                    Start
+                <div className="  animate-bounce  rounded-xl font-bold px-10 py-3  bg-orange text-white dark:bg-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
+                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
                 </div>
             </button>
         </div>
