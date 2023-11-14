@@ -15,7 +15,7 @@ export const StarRating = ({ totalStars, rating, width, margin }) => {
     return (
         <div className=" flex flex-row">
             {[...Array(totalStars)].map((_, index) => {
-                const starValue = index + 1;
+               
                 return <span key={index}>{renderStar(index)}</span>;
             })}
         </div>
