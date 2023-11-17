@@ -1,4 +1,4 @@
-import { RatingStar } from "flowbite-react/lib/esm/components/Rating/RatingStar";
+
 import { StarRating } from "./StarRating";
 import { useState } from "react";
 const ReadMore = ({ children }) => {

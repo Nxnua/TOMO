@@ -69,7 +69,7 @@ export default function TripComponent({
                 </div>
             </div>
             <div className=" transition ease-in-out delay-50  hover:scale-105  mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
-                <button className=" bg-white dark:border-gray-400 dark:bg-[#383C51] w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">
+                <button className="text-sm text-white bg-orange dark:border-orange-400 dark:bg-[#383C51] w-[75%] border py-1 rounded-lg font-normal tracking-tight">
                     Book now
                 </button>
             </div>
