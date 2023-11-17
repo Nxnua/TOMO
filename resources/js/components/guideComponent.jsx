@@ -1,17 +1,19 @@
 import Review from "./review";
 export default function Guide({ name, description, image, review, star }) {
     return (
-        <div className=" mt-4  bg-white rounded-xl h-[20vw] border-[1px] border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)] flex flex-row">
+        <div className="   bg-white rounded-xl w-[450px] h-[300px] border-[1px] border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)] flex  flex-row ">
             <div className=" w-[35%]  flex flex-col justify-between">
-                <div className=" rounded-lg border-[1px] border-neutral-200">
+                
+                <div className=" w-[150px] h-[150px] rounded-lg border-[1px]  border-neutral-200">
                     <img
                         src={image}
                         alt=""
                         className=" w-[180px] h-[150px] rounded-lg "
                     />
+                    
                 </div>
                 <div className="  flex justify-center ">{name}</div>
-                <div className=" grid grid-cols-3 gap-1 m-10 mb-20  ">
+                <div className=" grid grid-cols-3 gap-1 m-10 mb-20 w-24 h-3 ">
                     <img
                         src="images/flagmo.png "
                         className=" h-5 w-5 "
@@ -32,7 +34,7 @@ export default function Guide({ name, description, image, review, star }) {
                         </div>
                     </div>
                 </div>
-                <div className="descrption h-[50%] flex flex-row ">
+                <div className="descrption h-36 w-70 flex flex-row ">
                     <div className="m-4 text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Ad quod corporis eum amet distinctio est atque
