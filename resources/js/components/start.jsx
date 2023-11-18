@@ -1,12 +1,13 @@
-import DarkThemeToggle from "./darkModeToggler";
-
+import DarkThemeToggle from "./darkmode/darkModeToggler";
+import { useThemeContext } from "./darkmode/states";
 export default function Start({ startHandler }) {
+    const { darkMode } = useThemeContext();
     return (
-        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-darkbg`}>
+        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}>
             <div className=" flex justify-end m-4">
             <DarkThemeToggle />
             </div>
-            <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">
+            <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange dark:text-error">
                 Hi, I'm Tomo!
             </h1>
             <div className=" flex flex-row items-center">
@@ -17,7 +18,7 @@ export default function Start({ startHandler }) {
                     Choose your travel destination with me!
                 </p>
                 <img
-                    src="images/tomo-green.png"
+                    src={darkMode? "images/tomo-red.png":"images/tomo-green.png"}
                     alt=""
                     className=" w-[28vh] mt-10"
                 />
@@ -27,8 +28,10 @@ export default function Start({ startHandler }) {
                 className=" mt-[6vh] flex justify-center "
                 onClick={() => startHandler()}
             >
-                <div className="  rounded-xl font-bold px-10 py-3  bg-orange text-white text-2xl">
-                    Start
+                <div className="  animate-bounce  rounded-xl font-bold px-10 py-3  bg-orange text-white dark:bg-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
+                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
                 </div>
             </button>
         </div>

@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import { HiHome } from "react-icons/hi";
 import { v4 } from "uuid";
-import Review from "../components/review";
+import Review from "../components/review/review";
 import { tripList, tripDays } from "./data";
 import Footer from "../components/footer";
 import { useEffect, useState } from "react";

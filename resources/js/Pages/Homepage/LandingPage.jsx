@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Banner from "../../components/banner";
+import Banner from "../../components/banner/banner";
 import { SignUpNavigator } from "../../components/signupnav";
 import Start from "../../components/start";
 import Login from "../../components/login";

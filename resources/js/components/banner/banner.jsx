@@ -1,6 +1,6 @@
 import Movement from "./bannerSVG";
 import MovementDark from "./bannerSVG-dark";
-import { useThemeContext } from "./states";
+import { useThemeContext } from "../darkmode/states";
 
 export default function Banner() {
     const { darkMode } = useThemeContext();
