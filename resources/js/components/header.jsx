@@ -51,7 +51,7 @@ function Header() {
           className="w-vw-1 h-vw-1 my-auto hover:opacity-80"
         />
       </a>
-      <div className="md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center" onMouseLeave={closeDropdowns}>
+      <div className="md:static float-right relative left-0 md:w-auto w-full flex items-center" onMouseLeave={closeDropdowns}>
         <ul className="absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto ">
           <li id="trips" className="relative" onMouseEnter={toggleTripsDropdown}>
             <a href="#" className="hover:text-gray-500 inline-block">
