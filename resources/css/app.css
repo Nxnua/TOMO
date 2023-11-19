@@ -14,13 +14,28 @@
     --success: #51d175;
     --error: #d24040;
     --warning: #f5a52e;
+    --background-dark: #101727;
+    --navigation-dark: #272B3F;
+}
+
+
+.menu-active{
+    @apply text-orange;
+}
+
+#overview, #itinerary, #inclusions, #review {
+    scroll-margin-top: 120px;
+}
+#photos {
+    scroll-margin-top: 200px;
 }
 
 #bar-fixed {
     height: 100vh;
-    top: 10px;
+    top: 110px;
     position: -webkit-sticky;
     position: sticky;
+
 }
 ::-webkit-scrollbar {
     margin-left: 20px;
@@ -87,7 +102,7 @@
 @keyframes bounce {
     0%,
     100% {
-        transform: translateY(-2%);
+        transform: translateY(-4%);
     }
     50% {
         transform: translateY(0);
@@ -95,7 +110,7 @@
 }
 @keyframes animation {
     bounce {
-        animation: delay 10s;
+        animation: delay 2s;
     }
 }
 
