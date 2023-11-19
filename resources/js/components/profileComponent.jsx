@@ -92,7 +92,7 @@ const ProfileEditPage = () => {
           type="submit"
           className="bg-orange hover:bg-slate-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline mr-2"
         >
-            Dicard
+            Discard
         </button>    
         <button
           type="submit"
