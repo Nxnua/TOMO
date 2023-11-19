@@ -17,10 +17,10 @@ export default function Main() {
                 <SearchCategory/>
             </div>
 
-            <div className="z-20 mx-28 flex justify-center flex-col ">
+            <div className="z-20 mx-20 flex justify-center flex-col ">
             <p className=" text-2xl  font-bold mb-12 mt-20"> Guides</p>
 
-                <div className="  grid  xl:grid-cols-3 md:gap-8 lg:gap-8 md:grid-cols-2 grid-cols-1">
+                <div className="grid xl:grid-cols-3 md:gap-8 lg:gap-8 md:grid-cols-2 grid-cols-1">
                     {guide.map((item, i) => {
                         return (
                             <Guide
