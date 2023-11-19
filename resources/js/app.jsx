@@ -6,6 +6,7 @@ import { Guides } from "./Pages/Guides";
 import Map from "./components/Map";
 import Movement from "./components/bannerSVG";
 import Feedback from "./Pages/feedback";
+import Profile from "./admin/profile"
 
 import { TripDetail } from "./Pages/TripDetail";
 import { TripDetail2 } from "./Pages/TripDetail2";
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
     {
         path: "/feedback",
         element: <Feedback />,
+    },
+    {
+        path: "/profile",
+        element: <Profile />,
     },
 ]);
 

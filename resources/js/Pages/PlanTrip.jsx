@@ -8,7 +8,6 @@ import { data } from "./data";
 export default function Plantrip() {
     const slideLeft = () => {
         var slider = document.getElementById("slider");
-        var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft - 500;
     };
 
