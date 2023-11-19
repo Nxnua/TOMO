@@ -13,6 +13,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
 import { ThemeContextProvider } from "./components/states";
+import  Notif  from "./components/Notif";
+
 
 
 const router = createBrowserRouter([
@@ -49,9 +51,10 @@ const router = createBrowserRouter([
         element: <Profile />,
     },
     {
-        path: "/feedback",
-        element: <Feedback />,
+        path: "/Notif",
+        element: <Notif />,
     },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("app")).render(

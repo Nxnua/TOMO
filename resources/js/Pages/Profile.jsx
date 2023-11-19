@@ -47,10 +47,10 @@ export const Profile = () => {
                 <div className="flex mt-2 justify-start md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
                 <div className="stroke" id="mainNav">
                     <ul>
-                    <li><a href="#">All guides</a></li>
-                    <li><a href="#">By Business</a></li>
-                    <li><a href="#">By Travel</a></li>
-                    <li><a href="#">Most reviewed</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Notifiction</a></li>
+                    <li><a href="#">Favorite</a></li>
+                    <li><a href="#">Reviewed</a></li>
                     </ul>
                 </div>
 
