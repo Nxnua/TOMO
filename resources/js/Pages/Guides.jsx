@@ -5,14 +5,15 @@ import { guide } from "./data";
 import Guide from "../components/guideComponent";
 import { v4 } from "uuid";
 import BreadCrumb from "../components/breadcrumb";
+import { StarRating } from "../components/review/StarRating";
 // import "./navbar"
 
 export const Guides = () => {
     const ratingCat = [
-        { isChecked: false, stars: "/images/4andup.png" },
-        { isChecked: false, stars: "/images/3andup.png" },
-        { isChecked: false, stars: "/images/2andup.png" },
-        { isChecked: false, stars: "/images/1andup.png" },
+        { isChecked: false, rating: 4 },
+        { isChecked: false, rating: 3 },
+        { isChecked: false, rating: 2 },
+        { isChecked: false, rating: 1 },
     ];
     const activitiesCat = [
         { isChecked: true, activities: "Horseback Riding" },
@@ -32,10 +33,9 @@ export const Guides = () => {
         <div>
             <Header />
             <div className=" h-20"></div>
-            <BreadCrumb/>
+            <BreadCrumb />
             <div className="flex mx-auto font-Nunito flex-col ">
                 <div className=" mb-12  p-[1vh] h-[10vh] md:static float-left md:min-h-fit min-h-[60vh] ml-0 top-0 w-[70vh]inline-block flex items-center">
-          
                     <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mx-auto">
                         <div className="stroke" id="mainNav">
                             <ul>
@@ -74,15 +74,16 @@ export const Guides = () => {
                                                 href=""
                                                 className=" flex flex-row mt-1 items-center"
                                             >
-                                                <input
+                                                {/* <input
                                                     type="checkbox"
-                                                    className=" w-3 h-3 bg-gray-100 border-gray-300 "
+                                                    className=" w-3 h-3 bg-gray-100 border-gray-300 mr-1 "
+                                                /> */}
+                                                <StarRating
+                                                    totalStars={5}
+                                                    rating={item.rating}
+                                                    width={4}
                                                 />
-                                                <img
-                                                    src={item.stars}
-                                                    alt=""
-                                                    className=" w-20 ml-2"
-                                                />
+                                                <p className=" ml-1 text-black75 text-sm leading-3"> & up</p>
                                             </a>
                                         );
                                     })}
@@ -112,9 +113,9 @@ export const Guides = () => {
                                             >
                                                 <input
                                                     type="checkbox"
-                                                    className=" w-3 h-3 bg-slate-500  border-red-300 active:outline-none  "
+                                                    className=" dark:bg-darkbg w-4 h-4 rounded-sm border-2 bg-gray-100 border-gray-300 mr-2  "
                                                 />
-                                                <p className="ml-2 text-sm font-normal">
+                                                <p className="text-sm font-normal">
                                                     {item.duration}
                                                 </p>
                                             </a>

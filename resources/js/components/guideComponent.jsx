@@ -1,7 +1,8 @@
-import Review from "./review";
+import Review from "./review/review";
 export default function Guide({ name, description, image, review, star }) {
     return (
-        <div className="   bg-white rounded-xl w-[450px] h-[300px] border-[1px] border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)] flex  flex-row ">
+
+        <div className="  dark:bg-darknav  bg-white dark:border-gray-800 rounded-xl w-[450px] h-[300px] border-[1px] border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)] flex  flex-row ">
             <div className=" w-[35%]  flex flex-col justify-between">
                 
                 <div className=" w-[150px] h-[150px] rounded-lg border-[1px]  border-neutral-200">
@@ -21,9 +22,9 @@ export default function Guide({ name, description, image, review, star }) {
                     />
                     <img src="images/flagko.png" className=" h-5 w-5" alt="" />
                     <img src="images/flagen.png" className=" h-5 w-5" alt="" />
+
                 </div>
             </div>
-
             <div className=" flex-1">
                 <div className=" flex h-16 justify-center items-center">
                     <div className="rating  justify-center flex flex-row  ml-48 mt-5 ">
@@ -40,8 +41,12 @@ export default function Guide({ name, description, image, review, star }) {
                         elit. Ad quod corporis eum amet distinctio est atque
                         illo voluptatem aut accusantium.
                     </div>
+
                 </div>
-                <div className="member flex flex-row ml-3 ">
+                <div className="descrption w-auto h-[50%] flex flex-row ">
+                    <div className="w-auto m-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quod corporis eum amet distinctio est atque illo voluptatem aut accusantium.</div>
+                </div>
+                <div className="w-fullmember flex flex-row ml-3 ">
                     <div>
                         <img src="/images/hun.png" alt="" />
                     </div>
@@ -57,10 +62,11 @@ export default function Guide({ name, description, image, review, star }) {
                     </div>
                 </div>
                 <div className=" transition ease-in-out delay-50  hover:scale-105  mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
-                    <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter ">
+                    <button className=" bg-white w-[75%] border-2 py-1 border-black50 dark:border-orange-400 dark:bg-[#383C51] rounded-lg font-extrabold tracking-tighter ">
                         Book now
                     </button>
                 </div>
+
             </div>
         </div>
     );

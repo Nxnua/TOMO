@@ -73,16 +73,16 @@ const NotificationPage = () => {
                     notificationsData.filter((notif) => notif.isNew).length
                 }
             />
-            <div className=" ml-[75px] w-11/12 container mx-auto  bg-slate-100">
-                <div className="grid grid-cols-1 gap-4">
+            <div className=" ml-[75px] w-11/12 container mx-auto  bg-slate-100 ">
+                <div className="grid grid-cols-1 gap-4 ">
                     {notificationsData.map((notification) => (
                         <div
                             key={notification.id}
-                            className="bg-white rounded-lg p-4 shadow-md flex items-center"
+                            className="bg-white rounded-lg p-4 shadow-md flex items-center bg-slate-600 "
                         >
                             <div className="mr-4">{notification.icon}</div>
                             <div>
-                                <div className="font-bold">
+                                <div className="font-bold bg-slate-100">
                                     {notification.person}
                                 </div>
                                 <div>{notification.title}</div>
