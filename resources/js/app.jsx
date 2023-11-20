@@ -3,7 +3,7 @@ import Home from "./Pages/Homepage/Home";
 import Plantrip from "./Pages/PlanTrip";
 import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
-
+import Reviews from "./Pages/Reviews";
 import Feedback from "./Pages/feedback";
 
 import { TripDetail } from "./Pages/TripDetail";
@@ -50,6 +50,10 @@ const router = createBrowserRouter([
     {
         path: "/feedback",
         element: <Feedback />,
+    },
+    {
+        path: "/reviews",
+        element: <Reviews />,
     },
 ]);
 
