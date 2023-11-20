@@ -3,9 +3,11 @@ import { useThemeContext } from "./darkmode/states";
 export default function Start({ startHandler }) {
     const { darkMode } = useThemeContext();
     return (
-        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}>
+        <div
+            className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}
+        >
             <div className=" flex justify-end m-4">
-            <DarkThemeToggle />
+                <DarkThemeToggle />
             </div>
             <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange dark:text-error">
                 Hi, I'm Tomo!
@@ -18,22 +20,51 @@ export default function Start({ startHandler }) {
                     Choose your travel destination with me!
                 </p>
                 <img
-                    src={darkMode? "images/tomo-red.png":"images/tomo-green.png"}
+                    src={
+                        darkMode
+                            ? "images/tomo-red.png"
+                            : "images/tomo-green.png"
+                    }
                     alt=""
                     className=" w-[28vh] mt-10"
                 />
             </div>
 
-            <button
-                className=" mt-[6vh] flex justify-center "
-                onClick={() => startHandler()}
-            >
-                <div className="  animate-bounce  rounded-xl font-bold px-10 py-3  bg-orange text-white dark:bg-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
+            <div className=" mt-[6vh] flex justify-center ">
+                {/* <div className="  animate-bounce  rounded-xl font-bold px-10 py-3   text-orange dark:text-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
                 <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg>
-                </div>
-            </button>
+                </div> */}
+                {/* <div id="wrapper">
+                    <div id="wrapper-inner">
+                        <div id="scroll-down">
+                            <span class="arrow-down"></span>
+                            <span id="scroll-title">Scroll down</span>
+                        </div>
+                    </div>
+                </div> */}
+
+{/* <div class='mouse-container'>
+  <div class='mouse'>
+    <span class='scroll-down'></span>
+  </div>
+</div> */}
+
+
+{/* <div class="single-scroll-down-animation animation2">
+            <h4>scroll effect-2</h4>
+            <div class="scroll-down2"></div>
+        </div> */}
+
+<a href="#demo">
+  <div class="box">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</a>
+            </div>
         </div>
     );
 }
