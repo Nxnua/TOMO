@@ -128,7 +128,7 @@ function RatingDetailed({ totalRating }) {
     );
 }
 
-function UserReview() {
+export function UserReview() {
     return (
         <div className=" mt-4 mb-4">
             
