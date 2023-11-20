@@ -26,3 +26,20 @@ export function SignUpNavigator({status}) {
         </div>
     );
 }
+
+export function LoginNavigator() {
+    const [onSignUp, setOnSignUp] = useState(false);
+    return (
+        <div>
+            {onSignUp ? (
+                <SignUp />
+            ) : (
+                <Login
+                    signUpHandler={() => {
+                        setOnSignUp(true);
+                    }}
+                />
+            )}
+        </div>
+    );
+}

@@ -1,6 +1,5 @@
 export default function MovementDark() {
     return (
-        
         <div>
             <svg
                 width="1440"

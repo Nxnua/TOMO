@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: 'class',
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.jsx",
         "./resources/**/*.vue",
-        "./node_modules/flowbite/**/*.js",
-        'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
     ],
     theme: {
         extend: {
@@ -22,13 +19,13 @@ export default {
                 success: "var(--success)",
                 error: "var(--error)",
                 warning: "var(--warning)",
-                darkbg: "var(--background-dark)",
-                darknav: "var(--navigation-dark)",
-                black75: "rgba(var(--black-75))",
-                black50: "rgba(var(--black-50))",
+                black75 : "rgba(var(--black-75))",
+                black50 : "rgba(var(--black-50))",
             },
-            keyframes: {}
+            keyframes: {
+                
+              }
         },
     },
-    plugins: [require("tailwind-scrollbar-hide"), require("flowbite/plugin")],
+    plugins: [require('tailwind-scrollbar-hide')],
 };

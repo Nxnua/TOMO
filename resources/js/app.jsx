@@ -10,12 +10,8 @@ import Faq from "./Pages/faq";
 import Faqclose from "./Pages/faqClose";
 
 import { TripDetail } from "./Pages/TripDetail";
-import { GuideDetail } from "./Pages/GuideDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
-import Flights from "./Pages/flights";
-import { Profile } from "./Pages/Profile";
-import { ThemeContextProvider } from "./components/darkmode/states";
 
 const router = createBrowserRouter([
     {
@@ -53,18 +49,6 @@ const router = createBrowserRouter([
     {
         path: "/feedback",
         element: <Feedback />,
-    },
-    {
-        path: "/faq",
-        element: <Faq />,
-    },
-    {
-        path: "/faqq",
-        element: <Faqclose />,
-    },
-    {
-        path: "/flights",
-        element: <Flights />,
     },
 ]);
 
