@@ -32,12 +32,12 @@ function Header() {
 
     const toggleTripsDropdown = () => {
         setTripsDropdownVisible(!tripsDropdownVisible);
-        setMoreDropdownVisible(false); // Close the "More" dropdown when opening "Trips"
+        setMoreDropdownVisible(false);
     };
 
     const toggleMoreDropdown = () => {
         setMoreDropdownVisible(!moreDropdownVisible);
-        setTripsDropdownVisible(false); // Close the "Trips" dropdown when opening "More"
+        setTripsDropdownVisible(false);
     };
 
     const closeDropdowns = () => {
@@ -66,14 +66,14 @@ function Header() {
                 <img
                     src={darkMode ? "/images/Tomo-White.png" : "/images/Logo.png"}
                     alt=""
-                    className="w-24 h-12  hover:opacity-80"
+                    className="w-auto h-[8vh]  hover:opacity-80"
                 />
             </Link>
             <div
-                className="  md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center"
+                className="  md:static float-right relative left-0 top-86px md:w-auto sm:justify-between w-full flex items-center"
                 onMouseLeave={closeDropdowns}
             >
-                <ul className=" absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto  z-30 ">
+                <ul className=" absolute flex md:flex-row sm:flex-row  flex-col gap-8 mx-auto  z-30 ">
                     <li
                         id="trips"
                         className="relative"
@@ -155,22 +155,20 @@ function Header() {
                 </ul>
             </div>
             <div className="bg-white dark:bg-darknav float-right mr-10">
-                <ul className="flex items-center gap-1vh">
+                <ul className="flex items-center gap-[1vh]">
                     <li>
                         <a href="#">
                             <img
                                 src="/images/image 1.png"
                                 alt=""
-                                width={30}
-                                height={30}
-                                className="hover:opacity-80 mx-1"
+                                className="hover:opacity-80 mx-1 w-6 h-auto"
                             />
                         </a>
                     </li>
                     <li>
                         <button
                             onClick={onSignInButton}
-                            className={`bg-white dark:bg-darknav text-orange border mx-1 border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90 dark:border-error dark:text-error`}
+                            className={`bg-white dark:bg-darknav text-orange border border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90 dark:border-error dark:text-error`}
                         >
                             Sign In
                         </button>
@@ -212,9 +210,11 @@ function Header() {
                                 </div>
                             </Modal.Body>
                         </Modal>
+                    </li>
+                    <li>
                         <button
                             onClick={onSignUpButton}
-                            className={`bg-orange text-white border mx-1 border-orange px-6 py-1 rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
+                            className={`bg-orange text-white border border-orange px-6 py-1 rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
                         >
                             Sign Up
                         </button>
