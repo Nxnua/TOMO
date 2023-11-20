@@ -1,134 +1,218 @@
-import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import DarkThemeToggle from "./darkmode/darkModeToggler";
+import { useThemeContext } from "./darkmode/states";
+import { Modal, Button } from "flowbite-react";
+import Login from "./login";
+import { SignUpNavigator } from "./signupnav";
 
 function Header() {
-  const [isSticky, setIsSticky] = useState(false);
+    const { darkMode } = useThemeContext();
+    const [onSignIn, setOnSignIn] = useState(false);
+    const [onSignUp, setOnSignUp] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
+    const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
+    const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
+    const [openModal, setOpenModal] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.pageYOffset >= isSticky) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset >= isSticky) {
-        setIsSticky(true);
-      }    else {
-            setIsSticky(false);
-        }
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const toggleTripsDropdown = () => {
+        setTripsDropdownVisible(!tripsDropdownVisible);
+        setMoreDropdownVisible(false); // Close the "More" dropdown when opening "Trips"
     };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+    const toggleMoreDropdown = () => {
+        setMoreDropdownVisible(!moreDropdownVisible);
+        setTripsDropdownVisible(false); // Close the "Trips" dropdown when opening "More"
     };
-  }, []);
 
-  return (
-    <nav
-      className={`${
-        isSticky
-          ? "fixed top-0 z-10 w-full bg-white border-b-1 border-black-500 rounded-sm"
-          : ""
-      } flex justify-between items-center h-20 mx-auto font-Nunito`}
-    >
-      <Link className="ms-10" to="/">
-        <img
-          src="images/Logo.png"
-          alt=""
-          className="w-vw-1 h-vw-1 mt-5 hover:opacity-70"
-        />
-      </Link>
-      <div className="md:static float-right absolute md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
-        <ul className="relative flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto">
-          <li id="trips" className="relative group">
-            <Link to="/trips" className="hover:text-gray-500">
-              Trips
+    const closeDropdowns = () => {
+        setTripsDropdownVisible(false);
+        setMoreDropdownVisible(false);
+    };
+
+    const onSignInButton = () => {
+        setOpenModal(true);
+        setOnSignIn(true);
+    };
+    const onSignUpButton = () => {
+        setOpenModal(true);
+        setOnSignUp(true);
+    };
+
+    return (
+        <nav
+            className={`fixed z-20 w-full top-0 bg-white rounded-lg border-b dark:border-gray-600 shadow-lg flex justify-between items-center h-[10vh] mx-auto font-Nunito dark:bg-darknav dark:text-white ${
+                isSticky
+                    ? "transform -translate-y-2 sticky top-0"
+                    : "transform -translate-y-2"
+            }`}
+        >
+            <Link className="ms-10" to="/">
+                <img
+                    src={darkMode ? "/images/Tomo-White.png" : "/images/Logo.png"}
+                    alt=""
+                    className="w-24 h-12  hover:opacity-80"
+                />
             </Link>
-            <ul
-              className={`absolute border-black rounded-xl bg-white mt-3 p-5 w-40 space-y-2 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
+            <div
+                className="  md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center"
+                onMouseLeave={closeDropdowns}
             >
-              <li>
-                <Link  className="hover:text-orange border-black hover:border-b" to="/planyourtrip">
-                  Plan a trip
-                </Link>
-              </li>
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Agencies
-                </a>
-              </li>
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Travel budget
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="hover:text-gray-500">
-            <Link to="/guides">Travel Guides</Link>
-          </li>
-          <li className="relative group">
-            <a href="#" className="hover:text-gray-500">
-              More
-            </a>
-            <ul
-              className={`absolute border-black rounded-xl bg-white mt-3 p-5 space-y-2 w-40 shadow-2xl transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-20`}
-            >
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Reviews
-                </a>
-              </li>
-              <li>
-                <a href="" className="hover:text-orange border-black hover:border-b">
-                  Flights
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div className="bg-white float-right mr-10">
-        <ul className="flex items-center gap-1vw">
-          <li>
-            <a href="#">
-              <img
-                src="images/image 1.png"
-                alt=""
-                width={30}
-                height={30}
-                className="hover:opacity-70"
-              />
-            </a>
-          </li>
-          <li>
-            <button
-              className={`${
-                isSticky ? "bg-white text-orange" : "bg-orange text-white"
-              } border-2 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80 ml-2`}
-            >
-              Sign In
-            </button>
-            <button
-              className={`ml-2 border-2 border-orange ${
-                isSticky ? "bg-orange text-white" : "bg-white text-orange"
-              } px-6 py-1 rounded-2xl hover:opacity-80`}
-            >
-              Sign Up
-            </button>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="images/darkmodecircle.png"
-                alt=""
-                width={38}
-                height={38}
-                className="hover:opacity-70 ml-2"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
+                <ul className=" absolute flex md:flex-row flex-col md:items-center md:gap-4vw gap-8 mx-auto  z-30 ">
+                    <li
+                        id="trips"
+                        className="relative"
+                        onMouseEnter={toggleTripsDropdown}
+                    >
+                        <Link
+                            
+                            className="hover:text-gray-500 inline-block"
+                        >
+                            Trips
+                        </Link>
+                        <ul
+                            className={`${
+                                tripsDropdownVisible ? "block" : "hidden"
+                            } absolute border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out  dark:bg-darknav`}
+                        >
+                            <li className="relative">
+                                <Link
+                                    to="/planyourtrip"
+                                    className="hover:text-orange dark:hover:border-white border-black hover:border-b"
+                                >
+                                    Plan a trip
+                                </Link>
+                            </li>
+                            <li>
+                                <a
+                                    href="/trips"
+                                    className="hover:text-orange dark:hover:border-white border-black hover:border-b"
+                                >
+                                    Agencies
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li
+                        className="relative hover:text-gray-500"
+                        onMouseEnter={closeDropdowns}
+                    >
+                        <Link to="/guides">Travel Guides</Link>
+                    </li>
+                    <li className="relative" onMouseEnter={toggleMoreDropdown}>
+                        
+                        <Link
+                            
+                            className="hover:text-gray-500 inline-block"
+                        >
+                            More
+                        </Link>
+                        <ul
+                            className={`${
+                                moreDropdownVisible ? "block" : "hidden"
+                            } absolute dark:bg-darknav border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out`}
+                        >
+                            
+                            <li>
+                                <a
+                                    href="/flights"
+                                    className="hover:text-orange border-black dark:hover:border-white hover:border-b"
+                                >
+                                    Flights
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div className="bg-white dark:bg-darknav float-right mr-10">
+                <ul className="flex items-center gap-1vh">
+                    <li>
+                        <a href="#">
+                            <img
+                                src="/images/image 1.png"
+                                alt=""
+                                width={30}
+                                height={30}
+                                className="hover:opacity-80 mx-1"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <button
+                            onClick={onSignInButton}
+                            className={`bg-white dark:bg-darknav text-orange border mx-1 border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90 dark:border-error dark:text-error`}
+                        >
+                            Sign In
+                        </button>
+                        <Modal
+                            className="  bg-white    "
+                            tabindex="-1"
+                            show={openModal}
+                            onClose={() => setOpenModal(false)}
+                        >
+                            <Modal.Body className=" w-[75vw] self-center   p-0">
+                                <div className=" flex relative h-[600px] ">
+                                    <img
+                                        src={
+                                            darkMode
+                                                ? "/images/bg-dark.png"
+                                                : "/images/bg-light.png"
+                                        }
+                                        alt=""
+                                        className=" rounded-2xl w-[600px]  lg:w-[900px]"
+                                    />
+                                    <div className=" absolute right-0">
+                                        <SignUpNavigator status={onSignIn} />
+                                    </div>
+                                    <div className=" absolute float right-4 top-4 ">
+                                        <button
+                                            onClick={() => setOpenModal(false)}
+                                        >
+                                            <svg
+                                                class="w-6 h-6 text-gray-800 dark:text-white"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                            >
+                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </Modal.Body>
+                        </Modal>
+                        <button
+                            onClick={onSignUpButton}
+                            className={`bg-orange text-white border mx-1 border-orange px-6 py-1 rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
+                        >
+                            Sign Up
+                        </button>
+                    </li>
+                    <li className=" flex items-center active:ring-2 p-1 active:ring-gray-600 rounded-md">
+                        <DarkThemeToggle />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
 }
 
 export default Header;

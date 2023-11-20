@@ -1,17 +1,17 @@
 import Header from "../components/header"
 import Footer from "../components/footer"
-import Faq from "../components/faq"
+import Fbfaq from "../components/fbfaq"
 
 export default function Feedback() {
   return (
     <div>
         <Header />
 
-        <Faq/>
+        <Fbfaq/>
 
 		<div className="w-screen h-[100vh] bg-white">
 		
-		<div className="absolute mt-52 ml-48 w-80 float-left border-2 p-2 rounded-xl shadow-xl text-xl">
+		<div className="absolute mt-52 ml-32 w-80 float-left border-2 p-2 rounded-xl shadow-xl text-xl">
 			<form>
 				<p className="text-2xl">Feedback & Queries</p>
 				<div> 
@@ -48,7 +48,7 @@ export default function Feedback() {
 										text-sm rounded-lg focus:border-blue-500 
 										w-full p-2.5"
 							type="text"
-							placeholder="Jonahtan"/> 
+							placeholder="Tomo"/> 
 					<br></br> 
 					<label className="text-sm"> 
 						Drop Your Query 
@@ -73,8 +73,12 @@ export default function Feedback() {
 				</div> 
 			</form> 
 		</div>
-		<div className="absolute mt-52 ml-[60vh] w-[120vh] h-[50vh] border-2 p-2 rounded-xl">
-			Map
+		<div className="absolute mt-40 ml-[50vh] w-[120vh] h-[70vh] border-2 p-2 rounded-xl text-2xl">
+			<p>Huree University of ICT</p>
+			<a href="https://maps.app.goo.gl/tPUtktMxCQkhkvYv5" target="_blank" rel="noreferrer" >
+        <img className="p-2 h-5/6 mt-8 border-2 w-full" src="images/HureeMap.png" alt="" />
+      </a>
+
 		</div>
 		</div>
       <div className="">

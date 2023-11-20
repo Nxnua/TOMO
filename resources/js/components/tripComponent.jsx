@@ -1,6 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import Review from "./review";
+import Review from "./review/review";
 export default function TripComponent({
     title,
     image,
@@ -13,7 +13,8 @@ export default function TripComponent({
 }) {
     const isDiscountNull = discount === null ? true : false;
     return (
-        <div className=" duration-200 h-[420px] md:w-[300px] lg:w-[310px] xl:w-[320px] border-2 border-neutral-100 rounded-2xl bg-white flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
+        
+        <div className="mb-5 duration-200 h-[420px] md:w-[300px] lg:w-[310px] xl:w-[320px] border-2 dark:border-darknav border-neutral-100 rounded-2xl bg-white dark:bg-darknav flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
             <div className=" relative h-[45%] rounded-2xl rounded-b-md">
                 <img src={image} alt="" className=" h-[180px] w-full " />
                 <div
@@ -40,7 +41,7 @@ export default function TripComponent({
                 <span className=" text-black50 text-xl mr-2">
                     <FaLocationDot />
                 </span>
-                <div className=" leading-4 text-black75 font-medium text-sm">
+                <div className=" leading-4 text-black75 dark:text-gray-400 font-medium text-sm">
                     {location}
                 </div>
             </div>
@@ -68,8 +69,8 @@ export default function TripComponent({
                     <p className=" ml-1 text-lg">${price}</p>
                 </div>
             </div>
-            <div className=" transition ease-in-out delay-50  hover:scale-105  mt-2 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
-                <button className=" bg-white w-[75%] border-2 py-1 border-black50 rounded-lg font-extrabold tracking-tighter">
+            <div className=" transition ease-in-out delay-50  hover:scale-105  mt-5 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
+                <button className="mx-auto text-sm text-white bg-orange dark:border-orange-400 dark:bg-[#383C51] w-[90%] border py-1 rounded-lg font-normal tracking-tight">
                     Book now
                 </button>
             </div>
