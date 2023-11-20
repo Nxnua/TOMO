@@ -36,34 +36,15 @@ export default function Start({ startHandler }) {
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg>
                 </div> */}
-                {/* <div id="wrapper">
-                    <div id="wrapper-inner">
-                        <div id="scroll-down">
-                            <span class="arrow-down"></span>
-                            <span id="scroll-title">Scroll down</span>
-                        </div>
+             
+
+                <a href="#demo" >
+                    <div className="box">
+                        <span className="  border-b-[2px] border-r-[2px] dark:border-white  border-orange"></span>
+                        <span className="  border-b-[2px] border-r-[2px] dark:border-white  border-orange"></span>
+                        <span className="  border-b-[2px] border-r-[2px] dark:border-white  border-orange"></span>
                     </div>
-                </div> */}
-
-{/* <div class='mouse-container'>
-  <div class='mouse'>
-    <span class='scroll-down'></span>
-  </div>
-</div> */}
-
-
-{/* <div class="single-scroll-down-animation animation2">
-            <h4>scroll effect-2</h4>
-            <div class="scroll-down2"></div>
-        </div> */}
-
-<a href="#demo">
-  <div class="box">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</a>
+                </a>
             </div>
         </div>
     );
