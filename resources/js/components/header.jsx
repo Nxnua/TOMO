@@ -1,35 +1,67 @@
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import DarkThemeToggle from "./darkmode/darkModeToggler";
+import { useThemeContext } from "./darkmode/states";
+import { Modal, Button } from "flowbite-react";
+import Login from "./login";
+import { SignUpNavigator } from "./signupnav";
 
 function Header() {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset >= isSticky) {
+      if (window.pageYOffset >= 100) {
         setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
+      }    else {
+            setIsSticky(false);
+        }
     };
 
-    window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const toggleTripsDropdown = () => {
+        setTripsDropdownVisible(!tripsDropdownVisible);
+        setMoreDropdownVisible(false);
     };
-  }, []);
+
+    const toggleMoreDropdown = () => {
+        setMoreDropdownVisible(!moreDropdownVisible);
+        setTripsDropdownVisible(false);
+    };
+
+    const closeDropdowns = () => {
+        setTripsDropdownVisible(false);
+        setMoreDropdownVisible(false);
+    };
+
+    const onSignInButton = () => {
+        setOpenModal(true);
+        setOnSignIn(true);
+    };
+    const onSignUpButton = () => {
+        setOpenModal(true);
+        setOnSignUp(true);
+    };
 
   return (
     <nav
-      className={`fixed z-10 w-full top-0 bg-white rounded-lg border-b shadow-sm flex justify-between items-center h-[10vh] mx-auto font-Nunito ${
-        isSticky ? "transform -translate-y-2 sticky top-0" : "transform -translate-y-2"
-      }`}
+      className={`${
+        isSticky
+          ? "fixed top-0 z-10 w-full bg-white border-b-1 border-black-500 rounded-sm"
+          : ""
+      } flex justify-between items-center h-20 mx-auto font-Nunito`}
     >
       <a className="ms-10" href="#">
         <img
           src="images/Logo.png"
           alt=""
-          className="w-vw-1 h-vw-1 mt-5 hover:opacity-80"
+          className="w-vw-1 h-vw-1 mt-5 hover:opacity-70"
         />
       </a>
       <div className="md:static float-right absolute md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
@@ -83,7 +115,7 @@ function Header() {
         </ul>
       </div>
       <div className="bg-white float-right mr-10">
-        <ul className="flex items-center gap-1vh">
+        <ul className="flex items-center gap-1vw">
           <li>
             <a href="#">
               <img
@@ -91,18 +123,22 @@ function Header() {
                 alt=""
                 width={30}
                 height={30}
-                className="hover:opacity-70 mx-1"
+                className="hover:opacity-70"
               />
             </a>
           </li>
           <li>
             <button
-              className="bg-white border mx-1 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80"
+              className={`${
+                isSticky ? "bg-white" : "bg-orange"
+              } border-2 border-orange text-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-80`}
             >
               Sign In
             </button>
             <button
-              className="ml-2 border mx-1 border-orange bg-orange text-white px-6 py-1 rounded-2xl hover:opacity-80"
+              className={`ml-2 border-2 border-orange ${
+                isSticky ? "bg-orange" : "bg-white"
+              } text-white px-6 py-1 rounded-2xl hover:opacity-80`}
             >
               Sign Up
             </button>
@@ -114,7 +150,7 @@ function Header() {
                 alt=""
                 width={30}
                 height={30}
-                className="hover:opacity-70 mx-1"
+                className="hover:opacity-70"
               />
             </a>
           </li>

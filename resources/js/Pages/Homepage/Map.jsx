@@ -24,7 +24,7 @@ const SvgComponent = () => {
     return (
         <div>
             <svg
-                width="100%"
+                width="100% "
                 height="100%"
                 viewBox="0 0 1000 1000"
                 fill="#616161"
@@ -287,3 +287,4 @@ const SvgComponent = () => {
 };
 
 export default SvgComponent;
+

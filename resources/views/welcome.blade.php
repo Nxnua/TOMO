@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel 9 vite with react</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @viteReactRefresh
-        @vite('../resources/js/app.jsx')
-        @vite('../resources/css/app.css')
-    </head>
-    <body>
-        <div id="app"></div>
-       
-        
+    <title>Laravel 9 vite with react</title>
 
-        
-    </body>
+    @viteReactRefresh
+    @vite('../resources/js/app.jsx')
+    @vite('../resources/css/app.css')
+    <script>
+        localStorage.theme === 'dark' ||
+            (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) ?
+            document.documentElement.classList.add('dark') :
+            document.documentElement.classList.remove('dark');
+    </script>
+</head>
+
+<body>
+    <div id="app" class=" dark:bg-darkbg dark:text-gray-300"></div>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
 </html>

@@ -1,15 +1,17 @@
 import Movement from "./bannerSVG";
+import MovementDark from "./bannerSVG-dark";
+import { useThemeContext } from "../darkmode/states";
 
 export default function Banner() {
+    const { darkMode } = useThemeContext();
     return (
-        <div className="relative z-20">
-            <img src="/images/background.png" alt="" className="h-screen" />
-            {/*  this needs to be fixed 
-                <div className=" absolute z-10  bottom-0 left-0">
-                    <Movement/>
-                </div> */}
+        <div className="relative z-50 h-screen">
+            <div className=" absolute z-20  bottom-0 left-0">
+                {darkMode ? <MovementDark /> : <Movement />}
+                
+            </div>
 
-            <img
+            {/* <img
                 src="/images/car.png"
                 className=" car animate-bounce z-10 h-[25vh] left-[22vw] absolute bottom-[22vh] "
             />
@@ -33,7 +35,7 @@ export default function Banner() {
                     src="/images/bushes.png"
                     className="to-left1 absolute h-[15vh] max-w-max left-[5vw] bottom-[0vh] "
                 />
-            </div>
+            </div> */}
         </div>
     );
 }

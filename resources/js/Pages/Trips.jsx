@@ -4,6 +4,10 @@ import TripComponent from "../components/tripComponent";
 import { v4 } from "uuid";
 import Footer from "../components/footer";
 import { GrSearch } from "react-icons/gr";
+import BreadCrumb from "../components/breadcrumb";
+import { Search } from "../components/search";
+import { StarRating } from "../components/review/StarRating";
+import { useState } from "react";
 
 export default function Trip() {
     const filter = [
@@ -43,10 +47,10 @@ export default function Trip() {
     ];
 
     const ratingCat = [
-        { isChecked: false, stars: "/images/4andup.png" },
-        { isChecked: false, stars: "/images/3andup.png" },
-        { isChecked: false, stars: "/images/2andup.png" },
-        { isChecked: false, stars: "/images/1andup.png" },
+        { isChecked: false, rating: 4 },
+        { isChecked: false, rating: 3 },
+        { isChecked: false, rating: 2 },
+        { isChecked: false, rating: 1 },
     ];
     const activitiesCat = [
         { isChecked: true, activities: "Horseback Riding" },
@@ -61,18 +65,21 @@ export default function Trip() {
         { isChecked: true, duration: "3-7 days" },
         { isChecked: false, duration: "7+ days" },
     ];
-    
+
     return (
         <div>
             <Header />
+            <div className=" h-20"></div>
+            <BreadCrumb />
             <div className=" mx-28 mt-4 flex justify-start flex-col">
-                <div className=" w-100 flex justify-start">
-                    Trips &gt; All trips
-                </div>
                 <div className=" flex flex-row">
                     <div className=" w-1/4 flex flex-col relative">
-                        <div id="bar-fixed" className=" mt-4 flex justify-start w-[250px] flex-col top-16 ">
+                        <div
+                            id="bar-fixed"
+                            className=" overflow-y-auto mt-4 flex justify-start w-[250px] flex-col top-16 "
+                        >
                             <div>
+                                
                                 <p className=" w-full  border-b-2 flex justify-start">
                                     {" "}
                                     &emsp; RATING
@@ -83,17 +90,20 @@ export default function Trip() {
                                             <a
                                                 key={v4()}
                                                 href=""
-                                                className=" flex flex-row mt-1 items-center"
+                                                className=" flex flex-row mt-1 items-center dark:opacity-80"
                                             >
-                                                <input
+                                                {/* <input
                                                     type="checkbox"
-                                                    className=" w-3 h-3 bg-gray-100 border-gray-300 "
+                                                    className=" w-3 h-3 bg-gray-100 border-gray-300 mr-1 "
+                                                /> */}
+                                               
+                                                <StarRating 
+                                                    totalStars={5}
+                                                    rating={item.rating}
+                                                    width={4}
+                                                    
                                                 />
-                                                <img
-                                                    src={item.stars}
-                                                    alt=""
-                                                    className=" w-20 ml-2"
-                                                />
+                                                <p className=" ml-1  text-sm leading-3 font-medium"> & up</p>
                                             </a>
                                         );
                                     })}
@@ -114,9 +124,9 @@ export default function Trip() {
                                             >
                                                 <input
                                                     type="checkbox"
-                                                    className=" w-3 h-3  bg-gray-100 border-gray-300 "
+                                                    className=" dark:bg-darkbg w-4 h-4 rounded-sm border-2 bg-gray-100 border-gray-300 mr-2  "
                                                 />
-                                                <p className=" ml-2 text-sm font-normal">
+                                                <p className="text-sm font-normal">
                                                     {item.activities}
                                                 </p>
                                             </a>
@@ -135,7 +145,7 @@ export default function Trip() {
                                 <p className=" w-full border-b-2 flex justify-start">
                                     &emsp; PRICE
                                 </p>
-                                <div className=" mt-4 ml-2">
+                                <div className=" mt-4 ml-2 dark:opacity-80">
                                     <img src="/images/price.png" alt="" />
                                 </div>
                             </div>
@@ -154,9 +164,9 @@ export default function Trip() {
                                             >
                                                 <input
                                                     type="checkbox"
-                                                    className=" w-3 h-3 bg-slate-500  border-red-300 active:outline-none  "
+                                                    className=" dark:bg-darkbg w-4 h-4 rounded-sm border-2 bg-gray-100 border-gray-300 mr-2 "
                                                 />
-                                                <p className="ml-2 text-sm font-normal">
+                                                <p className="text-sm font-normal">
                                                     {item.duration}
                                                 </p>
                                             </a>
@@ -168,30 +178,52 @@ export default function Trip() {
                     </div>
                     <div className=" flex-1 mt-4">
                         <div className="flex justify-start  flex-col ">
-                            <div className=" flex flex-row items-center mb-4">
-                                <input
-                                    type="text"
-                                    className=" w-[400px] px-4 h-8 text-sm border-2 rounded-3xl outline-gray-300 active:border-gray-300 mr-2 " placeholder="search"
-                                />
-                                <a href="">
-                                    {" "}
-                                    <GrSearch className=" text-2xl fill-black50" />
-                                </a>
+                            <div className="  items-center mb-4">
+                                <Search />
                             </div>
                             <div className=" flex flex-row items-center mb-4">
                                 <p className=" text-lg font-bold">
                                     (255 trips)
                                 </p>
-                                <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
-                                   <p className=" text-sm font-semibold "> Horseback Riding </p>
-                                   <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
+                                <div className=" flex flex-row items-center dark:bg-darknav bg-gray-200 rounded-md px-2 mx-2">
+                                    <p className=" text-sm font-semibold ">
+                                        {" "}
+                                        Horseback Riding{" "}
+                                    </p>
+                                    <img
+                                        src="/images/clearbutton.png"
+                                        alt=""
+                                        className=" w-4 h-4 ml-1"
+                                    />
                                 </div>
-                                <div className=" flex flex-row items-center bg-gray-200 rounded-md px-2 mx-2">
-                                   <p className=" text-sm font-semibold "> 4.0 and up </p>
-                                   <img src="/images/clearbutton.png" alt="" className=" w-4 h-4 ml-1" />
+                                <div className=" flex flex-row items-center dark:bg-darknav bg-gray-200 rounded-md px-2 mx-2">
+                                    <p className=" text-sm font-semibold ">
+                                        {" "}
+                                        4.0 and up{" "}
+                                    </p>
+                                    <img
+                                        src="/images/clearbutton.png"
+                                        alt=""
+                                        className=" w-4 h-4 ml-1"
+                                    />
                                 </div>
                             </div>
                             <div className=" grid  mb-8 xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
+                                {tripList.map((item, i) => {
+                                    return (
+                                        <TripComponent
+                                            title={item.title}
+                                            location={item.location}
+                                            image={item.image}
+                                            review={item.review}
+                                            rating={item.rating}
+                                            discount={item.discount}
+                                            duration={item.duration}
+                                            price={item.price}
+                                            key={v4()}
+                                        />
+                                    );
+                                })}
                                 {tripList.map((item, i) => {
                                     return (
                                         <TripComponent
