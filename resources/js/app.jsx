@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
 import Home from "./Pages/Homepage/Home";
-import Plantrip from "./Pages/PlanTrip";
+import Plantrip from "./Pages/plantrip/PlanTrip";
+import {Days} from "./Pages/plantrip/days";
 import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
 import Map from "./components/Map";
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
     {
         path: "/planyourtrip",
         element: <Plantrip />,
+    },
+    {
+        path: "/planyourtrip/days",
+        element: <Days />,
     },
     {
         path: "/map",
