@@ -3,11 +3,17 @@ import Home from "./Pages/Homepage/Home";
 import Plantrip from "./Pages/PlanTrip";
 import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
-
+import Map from "./components/Map";
+import Movement from "./components/banner/bannerSVG";
 import Feedback from "./Pages/feedback";
-
+import Faq from "./Pages/faq";
+import Faqclose from "./Pages/faqClose";
+import Home1 from "./admin1/pages1/home1";
+//import App from "./admin1/App";
+import Single from "./admin1/pages1/Single";
+import { GuideDetail } from "./Pages/GuideDetail1";
+import Reviews from "./Pages/Reviews";
 import { TripDetail } from "./Pages/TripDetail";
-import { GuideDetail } from "./Pages/guideDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
@@ -55,6 +61,18 @@ const router = createBrowserRouter([
     {
         path: "/Notif",
         element: <Notif />,
+    },
+    {
+        path: "/admin",
+        element: <Home1 />,
+    },
+    {
+        path: "/admin/users",
+        element: <Single />,
+    },
+    {
+        path: "/reviews",
+        element: <Reviews />,
     },
 
 ]);

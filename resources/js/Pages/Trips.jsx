@@ -90,14 +90,14 @@ export default function Trip() {
                                             <a
                                                 key={v4()}
                                                 href=""
-                                                className=" flex flex-row mt-1 items-center"
+                                                className=" flex flex-row mt-1 items-center dark:opacity-80"
                                             >
                                                 {/* <input
                                                     type="checkbox"
                                                     className=" w-3 h-3 bg-gray-100 border-gray-300 mr-1 "
                                                 /> */}
                                                
-                                                <StarRating
+                                                <StarRating 
                                                     totalStars={5}
                                                     rating={item.rating}
                                                     width={4}
@@ -145,7 +145,7 @@ export default function Trip() {
                                 <p className=" w-full border-b-2 flex justify-start">
                                     &emsp; PRICE
                                 </p>
-                                <div className=" mt-4 ml-2">
+                                <div className=" mt-4 ml-2 dark:opacity-80">
                                     <img src="/images/price.png" alt="" />
                                 </div>
                             </div>
