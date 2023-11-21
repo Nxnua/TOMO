@@ -1,39 +1,45 @@
 import Header from "../components/header";
-import { HiHome } from "react-icons/hi";
 import { v4 } from "uuid";
 import Review from "../components/review/review";
+import ReviewSection from "../components/review/ReviewSection";
 import { tripList, tripDays } from "./data";
 import Footer from "../components/footer";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Accordion, Breadcrumb, Datepicker } from "flowbite-react";
+import { Accordion, Datepicker } from "flowbite-react";
+import BreadCrumb from "../components/breadcrumb";
+import TripComponent from "../components/tripComponent";
+import SvgComponent from "../components/Map";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 // const customTheme: CustomFlowbiteTheme["accordion"] = {
 //     color: {
 //         primary: "bg-red-500 hover:bg-red-600",
 //     },
 // };
+const ReadMore = ({ children }) => {
+    const text = children;
+    const [isReadMore, setIsReadMore] = useState(true);
+    const toggleReadMore = () => {
+        setIsReadMore(!isReadMore);
+    };
+    const length = text.length > 500;
 
-export const GuideDetail = () => {
-    const ReadMore = ({ children }) => {
-        const text = children;
-        const [isReadMore, setIsReadMore] = useState(true);
-        const toggleReadMore = () => {
-            setIsReadMore(!isReadMore);
-        };
-        return (
-            <p>
-                {isReadMore ? text.slice(0, 400) : text}
+    return (
+        <p>
+            {isReadMore ? text.slice(0, 500) : text}
+            {length ? (
                 <span
                     onClick={toggleReadMore}
                     className="read-or-hide text-orange cursor-pointer"
                 >
                     {isReadMore ? "...read more" : " show less"}
                 </span>
-            </p>
-        );
-    };
-    const [topBar, setTopBar] = useState("photos");
-
+            ) : (
+                ""
+            )}
+        </p>
+    );
+};
+export const GuideDetail = () => {
     const [activeLink, setActiveLink] = useState("");
 
     useEffect(() => {
@@ -53,67 +59,59 @@ export const GuideDetail = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
     return (
-        <div className=" relative mt-20">
-            <div className=" hidden sm:block">
-                <Header />
+        <div className="">
+            <Header />
+            <div className=" pt-20"></div>
+            <BreadCrumb />
+            <div
+                className={` mx-28  z-10   h-10 dark:bg-darknav bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] dark:border-gray-600 overflow-x-hidden top-[8.5vh] sticky `}
+            >
+                <div className="  flex flex-row  items-center ">
+                    {menuList.map((item, i) => {
+                        return (
+                            <a
+                                href={item.link}
+                                key={"some_item_" + i}
+                                className={
+                                    "text-xs sm:text-sm font-semibold px-2 sm:px-6   " +
+                                    (item.isActive
+                                        ? " font-extrabold "
+                                        : "bg-[#F6F6F6]") +
+                                    "rounded-[3px]  " +
+                                    (activeLink === item.link.replace("#", "")
+                                        ? "menu-active"
+                                        : "")
+                                }
+                            >
+                                {item.menu}
+                            </a>
+                        );
+                    })}
+                </div>
+                <div>
+                    <img
+                        src="/images/favorite-gray.png"
+                        alt=""
+                        className=" h-7 pr-4"
+                    />
+                </div>
             </div>
 
             <div className=" flex flex-col">
-                <div className=" mx-2 sm:mx-14 lg:mx-28  mt-4 flex justify-start flex-col ">
-                    <div className=" w-100 flex justify-start whitespace-nowrap">
-                        <Breadcrumb aria-label="Default breadcrumb example">
-                            <Breadcrumb.Item icon={HiHome}>
-                                <Link to="/">Home</Link>
-                            </Breadcrumb.Item>
-                            <Breadcrumb.Item href="#">
-                                <Link to="/trips">Trips</Link>
-                            </Breadcrumb.Item>
-                            <Breadcrumb.Item>
-                                Golden Eagle Festival
-                            </Breadcrumb.Item>
-                        </Breadcrumb>
-                    </div>
+                <div className=" mx-2 sm:mx-14 lg:mx-28 flex justify-start flex-col ">
                     <br />
-                    <div className="  w-[100%] h-10 bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] z-20 overflow-x-hidden sticky top-0 sm:top-20  ">
-                        <div className="  flex flex-row  items-center ">
-                            {menuList.map((item, i) => {
-                                return (
-                                    <a
-                                        href={item.link}
-                                        key={"some_item_" + i}
-                                        className={
-                                            "text-xs sm:text-sm font-semibold px-2 sm:px-6   " +
-                                            (item.isActive
-                                                ? " font-extrabold "
-                                                : "bg-[#F6F6F6]") +
-                                            "rounded-[3px]  " +
-                                            (activeLink ===
-                                            item.link.replace("#", "")
-                                                ? "menu-active"
-                                                : "")
-                                        }
-                                    >
-                                        {item.menu}
-                                    </a>
-                                );
-                            })}
-                        </div>
-                        <div>
-                            <img
-                                src="/images/favorite-gray.png"
-                                alt=""
-                                className=" h-7 pr-4"
-                            />
-                        </div>
-                    </div>
 
                     {/* body */}
 
                     <div className=" flex flex-col mt-8 mx-2 ">
                         <div className=" flex lg:flex-row flex-col">
-                            <div className=" flex-1 flex-col sm:mr-10">
-                                <div className=" flex flex-row  justify-between mb-2">
+                            <div
+                                id="photos"
+                                className=" flex-1 flex-col sm:mr-10"
+                            >
+                                <div className="section flex flex-row  justify-between mb-2">
                                     <div className=" text-left text-xl w-[65%] leading-5 mr-4">
                                         {guideData.title}
                                     </div>
@@ -121,10 +119,7 @@ export const GuideDetail = () => {
                                         <Review reviews="250" rating="4.7" />
                                     </div>
                                 </div>
-                                <div
-                                    id="photos"
-                                    className="section flex justify-start flex-row w-[100%]"
-                                >
+                                <div className=" flex justify-start flex-row w-[100%]">
                                     <div className=" flex relative flex-col z-0 mr-2">
                                         {imageGallery
                                             .slice(0, 5)
@@ -159,7 +154,7 @@ export const GuideDetail = () => {
                                                         src={item.img}
                                                         alt=""
                                                         className={
-                                                            "  rounded-md hover:relative w-[100%] -z-10"
+                                                            "  rounded-md hover:relative w-[100%] "
                                                         }
                                                     />
                                                 );
@@ -174,9 +169,7 @@ export const GuideDetail = () => {
                                         Overview
                                     </p>
                                     <p className=" mt-4 font-medium tracking-tight text-justify ">
-                                        <ReadMore>
-                                            {guideData.overview}
-                                        </ReadMore>
+                                        {guideData.overview}
                                     </p>
                                 </div>
                             </div>
@@ -188,7 +181,9 @@ export const GuideDetail = () => {
                                             alt=""
                                             className=" w-8 "
                                         />
-                                        <p className=" text-lg">Information</p>
+                                        <p className=" text-lg">
+                                            Mongol Tour Agency
+                                        </p>
                                     </div>
                                     <div>
                                         <Info />
@@ -229,9 +224,23 @@ export const GuideDetail = () => {
                                         </p>
                                         <PackingList />
                                     </div>
+                                    <div
+                                        id="review"
+                                        className="section mt-8 flex flex-col"
+                                    >
+                                        <p className=" ml-1 text-xl text-start font-extrabold">
+                                            Review
+                                        </p>
+                                        <div className=" h-screen  mt-4">
+                                            <ReviewSection />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className=" lg:w-[30vw] sm:w-[100%]">
+                            <div
+                                id="bar-fixed"
+                                className=" lg:w-[30vw] sm:w-[100%] "
+                            >
                                 <div>
                                     <CheckAvailability />
                                 </div>
@@ -240,9 +249,49 @@ export const GuideDetail = () => {
                     </div>
                 </div>
 
-                <div className=" h-24 "></div>
+                <div className=" h-screen "></div>
+                <div className="ml-8  grid  xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                    {tripList.map((item, i) => {
+                        return (
+                            <TripComponent
+                                title={item.title}
+                                location={item.location}
+                                image={item.image}
+                                review={item.review}
+                                rating={item.rating}
+                                discount={item.discount}
+                                duration={item.duration}
+                                price={item.price}
+                                key={v4()}
+                            />
+                        );
+                        <div className="relative flex items-center mt-10 ml-72 mr-72 ">
+                            <MdChevronLeft
+                                className="opacity-50 cursor-pointer hover:opacity-100"
+                                onClick={slideLeft}
+                                size={40}
+                            />
+                            <div
+                                id="slider"
+                                className=" w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
+                            >
+                                {TripComponent.map((item) => (
+                                    <img
+                                        className="w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                                        src={item.img}
+                                        alt=""
+                                    />
+                                ))}
+                            </div>
+                            <MdChevronRight
+                                className="opacity-50 cursor-pointer hover:opacity-100"
+                                onClick={slideRight}
+                                size={40}
+                            />
+                        </div>;
+                    })}
+                </div>
             </div>
-
             <Footer />
         </div>
     );
@@ -254,15 +303,15 @@ const DayInfo = () => {
             {guideData.dailyData.map((item, i) => {
                 return (
                     <Accordion.Panel>
-                        <Accordion.Title className=" focus:ring-0">
-                            <p className=" text-base sm:text-lg font-bold text-start tracking-tighter">
+                        <Accordion.Title className=" focus:ring-0 ">
+                            <p className=" text-base sm:text-md font-bold text-start tracking-tighter">
                                 {item.number} {item.title}
                             </p>
                         </Accordion.Title>
                         <Accordion.Content>
                             <div>
                                 <p className=" font-medium tracking-tight leading-5  text-justify ">
-                                    {item.description}
+                                    <ReadMore>{item.description}</ReadMore>
                                 </p>
                                 <div className=" flex flex-row mt-2">
                                     <img
@@ -447,12 +496,6 @@ function Info() {
                     </div>
                 </div>
             </div>
-            <hr className=" border-[1px]" />
-            <div className=" flex justify-start ml-4 mt-2">PRICE</div>
-            <div className=" flex flex-row justify-between mx-4">
-                <div>prices</div>
-                <div>$500</div>
-            </div>
         </div>
     );
 }
@@ -460,6 +503,8 @@ function Info() {
 function CheckAvailability() {
     return (
         <div>
+            <Datepicker title=" start date" />
+            <Datepicker title=" start date" />
             <Datepicker title=" start date" />
         </div>
     );
@@ -469,15 +514,104 @@ const menuList = [
     { isActive: true, menu: "Photos", link: "#photos" },
     { isActive: false, menu: "Itinerary", link: "#itinerary" },
     { isActive: false, menu: "Inclusions", link: "#inclusions" },
-    { isActive: false, menu: "Review", link: "#reviews" },
+    { isActive: false, menu: "Review", link: "#review" },
 ];
 const imageGallery = [
-    { isSelected: true, img: "/images/guide0.jpg" },
-    { isSelected: true, img: "/images/guide1.jpg" },
-    { isSelected: true, img: "/images/guide2.jpg" },
-    { isSelected: true, img: "/images/guide3.jpg" },
-    { isSelected: true, img: "/images/guide4.jpg" },
+    { isSelected: true, img: "/images/thumbnail5.png" },
+    { isSelected: false, img: "/images/thumbnail1.png" },
+    { isSelected: false, img: "/images/thumbnail2.png" },
+    { isSelected: false, img: "/images/thumbnail3.png" },
+    { isSelected: false, img: "/images/thumbnail4.png" },
 ];
+
+function PackingList() {
+    return (
+        <div className="  mt-4 ">
+            <div className=" round flex flex-col rounded-lg border-gray-200 dark:border-gray-700 border-2 p-4 w-full mr-4 ">
+                <p className=" text-lg text-start ml-4">Packing list </p>
+                <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                        <li className=" list-disc ">Backpack or soft bag</li>
+                        <li className=" list-disc ">Waterproof bag cover</li>
+                        <li className=" list-disc ">Daypack</li>
+                        <li className=" list-disc ">Headlamp/flashlight</li>
+                        <li className=" list-disc ">Spare batteries/bulb</li>
+                    </ul>
+                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                        <li className=" list-disc ">Waterproof hiking boots</li>
+                        <li className=" list-disc ">
+                            Waterproof jacket with hood
+                        </li>
+                        <li className=" list-disc ">
+                            Fleece jacket or wool jumper
+                        </li>
+                        <li className=" list-disc ">Cotton t-shirts</li>
+                        <li className=" list-disc ">Long sleeve shirts</li>
+                    </ul>
+                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                        <li className=" list-disc ">Lightweight trousers</li>
+                        <li className=" list-disc ">Shorts</li>
+                        <li className=" list-disc ">
+                            Resealing/Ziploc plastic bags
+                        </li>
+                        <li className=" list-disc ">
+                            Insurance confirmation copy
+                        </li>
+                        <li className=" list-disc ">
+                            Emergency contact number
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Inclusion() {
+    return (
+        <div className=" grid lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1">
+            <div className=" round flex flex-col rounded-lg border-gray-200 dark:border-gray-700 border-2 p-4 w-full mr-4 ">
+                <p className=" text-lg text-start ml-4">Tour includes</p>
+                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                    <li className=" list-disc ">
+                        Transfers upon arrival and departure
+                    </li>
+                    <li className=" list-disc ">
+                        In the countryside, all lodging will be in ger camps and
+                        nomadic family’s Ger.
+                    </li>
+                    iol
+                    <li className=" list-disc ">
+                        All meals are provided as stated in the itinerary.
+                    </li>
+                    <li className=" list-disc ">Park entrance fees</li>
+                    <li className=" list-disc ">Horse and Camel ride</li>
+                </ul>
+            </div>
+            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 dark:border-gray-700 p-4 w-full ">
+                <p className=" text-lg text-start ml-4">Not includes</p>
+                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
+                    <li className=" list-disc ">
+                        Accommodation in a hotel or hostel in Ulaanbaatar
+                    </li>
+                    <li className=" list-disc ">
+                        Hotel extras, such as telephone calls, bar bills, and
+                        laundry services
+                    </li>
+                    <li className=" list-disc ">
+                        Travel insurance, medical insurance
+                    </li>
+                    <li className=" list-disc ">Visa application fees</li>
+                    <li className=" list-disc ">Alcoholic beverages</li>
+                    <li className=" list-disc ">
+                        Personal expenses such as IDD call, the internet,
+                        laundry, items of a personal nature
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+}
 
 const guideData = {
     title: "Golden Eagle Festival and Altai Mountain 2024 Tour",
@@ -577,92 +711,13 @@ const inclusions = [
     { name: "Accomodation", icon: "/images/accomodation-icon.svg" },
     { name: "Entry fees", icon: "/images/entryfees-icon.svg" },
 ];
+const slideLeft = () => {
+    var slider = document.getElementById("slider");
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 500;
+};
 
-function PackingList() {
-    return (
-        <div className="  mt-4 ">
-            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
-                <p className=" text-lg text-start ml-4">Packing list </p>
-                <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                        <li className=" list-disc ">Backpack or soft bag</li>
-                        <li className=" list-disc ">Waterproof bag cover</li>
-                        <li className=" list-disc ">Daypack</li>
-                        <li className=" list-disc ">Headlamp/flashlight</li>
-                        <li className=" list-disc ">Spare batteries/bulb</li>
-                    </ul>
-                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                        <li className=" list-disc ">Waterproof hiking boots</li>
-                        <li className=" list-disc ">
-                            Waterproof jacket with hood
-                        </li>
-                        <li className=" list-disc ">
-                            Fleece jacket or wool jumper
-                        </li>
-                        <li className=" list-disc ">Cotton t-shirts</li>
-                        <li className=" list-disc ">Long sleeve shirts</li>
-                    </ul>
-                    <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                        <li className=" list-disc ">Lightweight trousers</li>
-                        <li className=" list-disc ">Shorts</li>
-                        <li className=" list-disc ">
-                            Resealing/Ziploc plastic bags
-                        </li>
-                        <li className=" list-disc ">
-                            Insurance confirmation copy
-                        </li>
-                        <li className=" list-disc ">
-                            Emergency contact number
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-function Inclusion() {
-    return (
-        <div className=" grid lg:grid-cols-2 gap-4 mt-4 sm:grid-cols-1">
-            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full mr-4 ">
-                <p className=" text-lg text-start ml-4">Tour includes</p>
-                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                    <li className=" list-disc ">
-                        Transfers upon arrival and departure
-                    </li>
-                    <li className=" list-disc ">
-                        In the countryside, all lodging will be in ger camps and
-                        nomadic family’s Ger.
-                    </li>
-                    iol
-                    <li className=" list-disc ">
-                        All meals are provided as stated in the itinerary.
-                    </li>
-                    <li className=" list-disc ">Park entrance fees</li>
-                    <li className=" list-disc ">Horse and Camel ride</li>
-                </ul>
-            </div>
-            <div className=" round flex flex-col rounded-lg border-gray-200 border-2 p-4 w-full ">
-                <p className=" text-lg text-start ml-4">Not includes</p>
-                <ul className=" mt-4 text-start pl-4 text-base font-medium ">
-                    <li className=" list-disc ">
-                        Accommodation in a hotel or hostel in Ulaanbaatar
-                    </li>
-                    <li className=" list-disc ">
-                        Hotel extras, such as telephone calls, bar bills, and
-                        laundry services
-                    </li>
-                    <li className=" list-disc ">
-                        Travel insurance, medical insurance
-                    </li>
-                    <li className=" list-disc ">Visa application fees</li>
-                    <li className=" list-disc ">Alcoholic beverages</li>
-                    <li className=" list-disc ">
-                        Personal expenses such as IDD call, the internet,
-                        laundry, items of a personal nature
-                    </li>
-                </ul>
-            </div>
-        </div>
-    );
-}
+const slideRight = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft + 500;
+};
