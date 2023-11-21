@@ -19,7 +19,7 @@ export default function Plantrip() {
     return (
         <div>
             <Header />
-            <div>
+            <div className="mt-32">
                 <div className="text-center font-bold text-2xl h-[50px] ">
                     Where do you want to go?
                 </div>
@@ -110,7 +110,10 @@ export default function Plantrip() {
                 <form className="mx-auto w-[900px] mt-10 ">
 
 
+
+
                     <div className=" text-2xl font-bold mt-10 mr-[700px]">
+
 
                         How many days?
                     </div>
@@ -119,6 +122,7 @@ export default function Plantrip() {
                         id="phone"
 
                         class="w-full p-4  bg-white  border mt-10"
+
 
 
                         placeholder="number of days"
@@ -131,6 +135,7 @@ export default function Plantrip() {
                 </div>
             </div>
             <div className="relative flex items-center mt-10 ml-72 mr-72 ">
+
 
                 <MdChevronLeft
                     className="opacity-50 cursor-pointer hover:opacity-100"
@@ -314,6 +319,16 @@ export default function Plantrip() {
                         </div>
                     </label>
                 </div>
+
+                <div className=" mx-auto w-28 h-10 object-cover">
+                    <label className="relative cursor-pointer">
+                        <input type="checkbox" className="peer sr-only" />
+                        <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                            <p className="text-cyan-50">text</p>
+                        </div>
+                    </label>
+                </div>
+
 
                 <div className=" mx-auto w-28 h-10 object-cover">
                     <label className="relative cursor-pointer">
