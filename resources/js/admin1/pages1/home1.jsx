@@ -12,9 +12,9 @@ const Home1 = () => {
         <Navbar />
         <div className="flex gap-5 p-5">
           <Link to="/admin/users"><Widget type="user" /></Link>
+          <Widget type="travel" />
           <Widget type="order" />
-          <Widget type="earning" />
-          <Widget type="balance" />
+          <Widget type="logs" />
         </div>
         <div className="px-5 py-[5px]">
           <Featured />
