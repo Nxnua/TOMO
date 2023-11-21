@@ -137,12 +137,12 @@ function Header() {
                             } absolute dark:bg-darknav border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out`}
                         >
                             <li>
-                                <a
-                                    href=""
+                                <Link
+                                    to="/reviews"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
                                     Reviews
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a
