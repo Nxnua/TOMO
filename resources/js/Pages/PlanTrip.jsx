@@ -8,7 +8,6 @@ import { data } from "./data";
 export default function Plantrip() {
     const slideLeft = () => {
         var slider = document.getElementById("slider");
-        var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft - 500;
     };
 
@@ -21,15 +20,14 @@ export default function Plantrip() {
         <div>
             <Header />
             <div>
-                <div className="mt-40 text-center font-bold text-2xl h-[50px]">
+                <div className="text-center font-bold text-2xl h-[50px] ">
                     Where do you want to go?
                 </div>
-                <form className=" mx-auto w-[900px] relative items-center justify-center">
+                <form className=" mx-auto w-[900px] relative items-center justify-center mt-10">
                     <div className="h-[120px]">
                         <div className="absolute ml-[20px] mt-[20px]">
                             <img src="/images/search.png" />
                         </div>
-
                         <input
                             type="search "
                             placeholder=" City, landmark"
@@ -110,13 +108,19 @@ export default function Plantrip() {
                     When do you want to go? 
                 </div>
                 <form className="mx-auto w-[900px] mt-10 ">
+
+
                     <div className=" text-2xl font-bold mt-10 mr-[700px]">
+
                         How many days?
                     </div>
                     <input
                         type="tel"
                         id="phone"
-                        class="w-full p-4 mt-4 bg-white  border"
+
+                        class="w-full p-4  bg-white  border mt-10"
+
+
                         placeholder="number of days"
                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                         required
@@ -127,6 +131,7 @@ export default function Plantrip() {
                 </div>
             </div>
             <div className="relative flex items-center mt-10 ml-72 mr-72 ">
+
                 <MdChevronLeft
                     className="opacity-50 cursor-pointer hover:opacity-100"
                     onClick={slideLeft}
@@ -309,9 +314,19 @@ export default function Plantrip() {
                         </div>
                     </label>
                 </div>
+
+                <div className=" mx-auto w-28 h-10 object-cover">
+                    <label className="relative cursor-pointer">
+                        <input type="checkbox" className="peer sr-only" />
+                        <div className="overflow-hidden rounded-lg bg-amber-600 shadow-md ring ring-transparent peer-checked:ring-yellow-400 grayscale peer-checked:grayscale-0 active:scale-95 transition-all">
+                            <p className="text-cyan-50">text</p>
+                        </div>
+                    </label>
+                </div>
+
             </div>
             <form>
-                <div class="relative mt-20">
+                <div class="relative mt-20 ">
                     <input
                         type="text"
                         id="text"
@@ -331,6 +346,5 @@ export default function Plantrip() {
             <Footer />
             </div>
         </div>
-        
     );
 }

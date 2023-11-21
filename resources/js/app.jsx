@@ -3,14 +3,19 @@ import Home from "./Pages/Homepage/Home";
 import Plantrip from "./Pages/PlanTrip";
 import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
-import Map from "./components/Map";
-import Movement from "./components/bannerSVG";
+
 import Feedback from "./Pages/feedback";
+import Home1 from "./admin1/pages1/home1";
+//import App from "./admin1/App";
+import Single from "./admin1/pages1/Single";
 
 import { TripDetail } from "./Pages/TripDetail";
-import { TripDetail2 } from "./Pages/TripDetail2";
+import { GuideDetail } from "./Pages/guideDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
+import { Profile } from "./Pages/Profile";
+import { ThemeContextProvider } from "./components/darkmode/states";
+
 
 const router = createBrowserRouter([
     {
@@ -26,12 +31,12 @@ const router = createBrowserRouter([
         element: <Guides />,
     },
     {
-        path: "/trip",
+        path: "/trips/trip",
         element: <TripDetail />,
     },
     {
-        path: "/trip2",
-        element: <TripDetail2 />,
+        path: "/guide",
+        element: <GuideDetail />,
     },
     {
         path: "/planyourtrip",
@@ -42,11 +47,25 @@ const router = createBrowserRouter([
         element: <SvgComponent />,
     },
     {
+        path: "/profile",
+        element: <Profile />,
+    },
+    {
         path: "/feedback",
         element: <Feedback />,
+    },
+    {
+        path: "/admin",
+        element: <Home1 />,
+    },
+    {
+        path: "/admin/users",
+        element: <Single />,
     },
 ]);
 
 ReactDOM.createRoot(document.getElementById("app")).render(
-    <RouterProvider router={router} />
+    <ThemeContextProvider>
+        <RouterProvider router={router} />
+    </ThemeContextProvider>
 );
