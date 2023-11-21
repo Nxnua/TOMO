@@ -58,7 +58,7 @@ export default function ReviewSection() {
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mt-1">
                         {totalRating} global ratings
                     </p>
-                    <button className="  mt-2 text-white rounded-lg bg-orange py-2 px-4 text-xs">
+                    <button className="  mt-2 text-white dark:opacity-80 rounded-lg bg-orange py-2 px-4 text-xs">
                         Write a Review
                     </button>
                 </div>
@@ -114,7 +114,7 @@ function RatingDetailed({ totalRating }) {
                         </div>
                         <div className="w-full h-4 mx-4 bg-gray-200 rounded dark:bg-gray-700">
                             <div
-                                className={`h-4 bg-orange rounded`}
+                                className={`h-4 dark:opacity-80 bg-orange rounded`}
                                 style={fill}
                             ></div>
                         </div>
@@ -128,7 +128,7 @@ function RatingDetailed({ totalRating }) {
     );
 }
 
-function UserReview() {
+export function UserReview() {
     return (
         <div className=" mt-4 mb-4">
             
