@@ -5,7 +5,9 @@ import Trips from "./Pages/Trips";
 import { Guides } from "./Pages/Guides";
 
 import Feedback from "./Pages/feedback";
-import Profile from "./admin/profile"
+import Home1 from "./admin1/pages1/home1";
+//import App from "./admin1/App";
+import Single from "./admin1/pages1/Single";
 
 import { TripDetail } from "./Pages/TripDetail";
 import { GuideDetail } from "./Pages/guideDetail";
@@ -53,8 +55,12 @@ const router = createBrowserRouter([
         element: <Feedback />,
     },
     {
-        path: "/profile",
-        element: <Profile />,
+        path: "/admin",
+        element: <Home1 />,
+    },
+    {
+        path: "/admin/users",
+        element: <Single />,
     },
 ]);
 
