@@ -14,28 +14,28 @@ const Widget = ({ type }) => {
         link: "See all users",
       };
       break;
-    case "order":
+    case "travel":
       data = {
-        title: "ORDERS",
+        title: "Travel",
         isMoney: false,
-        link: "View all orders",
+        link: "View all travel",
        
       };
       break;
-    case "earning":
+    case "order":
       data = {
-        title: "EARNINGS",
+        title: "order",
         isMoney: true,
-        link: "View net earnings",
+        link: "View net order",
       
          
       };
       break;
-    case "balance":
+    case "logs":
       data = {
-        title: "BALANCE",
+        title: "logs",
         isMoney: true,
-        link: "See details",
+        link: "See logs",
        
       };
       break;

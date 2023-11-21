@@ -17,6 +17,7 @@ import { Profile } from "./Pages/Profile";
 import { ThemeContextProvider } from "./components/darkmode/states";
 
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -66,6 +67,7 @@ const router = createBrowserRouter([
         path: "/reviews",
         element: <Reviews />,
     },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("app")).render(

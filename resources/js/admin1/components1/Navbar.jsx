@@ -39,6 +39,9 @@ const Navbar = () => {
               alt=""
               className="w-[30px] h-[30px] rounded-[50%]"
             />
+            <div>
+              <p className='text-[bold] ml-2'>Gundalai gang</p>
+            </div>
           </div>
         </div>
       </div>
