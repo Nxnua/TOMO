@@ -1,6 +1,7 @@
-import { useState } from "react";
-import Login from "./login";
+import DarkThemeToggle from "./darkmode/darkModeToggler";
+import { useThemeContext } from "./darkmode/states";
 export default function Start({ startHandler }) {
+    const { darkMode } = useThemeContext();
     return (
         <div className="float-right rounded-2xl h-[100vh] bg-white w-[30vw] flex flex-col">
             <div className=" flex justify-end m-4">
@@ -14,7 +15,7 @@ export default function Start({ startHandler }) {
                     />
                 </a>
             </div>
-            <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange">
+            <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange dark:text-error">
                 Hi, I'm Tomo!
             </h1>
             <div className=" flex flex-row items-center">

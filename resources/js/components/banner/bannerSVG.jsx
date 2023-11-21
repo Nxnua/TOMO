@@ -1,6 +1,5 @@
 export default function Movement() {
     return (
-        
         <div>
             <svg
                 width="1440"

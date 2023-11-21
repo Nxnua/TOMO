@@ -13,11 +13,10 @@ export default function Main() {
         <div className="this-is-my-class">
             <Header />
 
-            <div className=" h-[20vh] bg-white pt-10 mt-26">
+            <div className=" h-[30vh] bg-white pt-10 mt-40">
 
-            <div className=" h-[30vh] bg-white pt-10 mt-10">
+                Search
 
-                
                 <form className=" mx-auto w-[900px] relative items-center justify-center">
                     <div className="h-[120px]">
                         <div className="absolute ml-[20px] mt-[20px]">
@@ -33,14 +32,11 @@ export default function Main() {
                 </form>
             </div>
 
-            <div className="z-20 mt-0 mx-28 flex justify-center flex-col ">
-
-            <div className="z-20 mx-28 flex justify-center flex-col ">
-
+            <div className="z-20 mt-50 mx-28 flex justify-center flex-col ">
                 <p className=" text-2xl font-bold mb-12"> Guides</p>
 
 
-                <div className="  grid grid-cols-3 gap-4">
+                <div className="  grid grid-cols-3 gap-6">
                     {guide.map((item, i) => {
                         return (
                             <Guide
@@ -54,9 +50,9 @@ export default function Main() {
                         );
                     })}
                 </div>
-                <Link to="/guides" className=" mt-20">See more </Link>
+                <Link to="/guides" className=" mt-20">See more</Link>
 
-                <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
+                <p className=" text-2xl  font-bold mb-12 mt-12"> Trips</p>
 
                 <div className="  grid  xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                     {tripList.map((item, i) => {
@@ -75,7 +71,9 @@ export default function Main() {
                         );
                     })}
                 </div>
-                <Link to="/trips" className=" mt-20">See more</Link>
+                <Link to="/trips" className=" mt-20">
+                    See more
+                </Link>
             </div>
             <div className=" mx-28 ">
                 <SvgComponent />
@@ -83,8 +81,6 @@ export default function Main() {
 
             <div className=" h-12"></div>
             <Footer />
-        </div>
-        </div>
         </div>
     );
 }
