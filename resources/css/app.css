@@ -14,6 +14,22 @@
     --success: #51d175;
     --error: #d24040;
     --warning: #f5a52e;
+    --background-dark: #101727;
+    --navigation-dark: #272b3f;
+}
+
+.menu-active {
+    @apply text-orange;
+}
+
+#overview,
+#itinerary,
+#inclusions,
+#review {
+    scroll-margin-top: 120px;
+}
+#photos {
+    scroll-margin-top: 200px;
 }
 
 #bar-fixed {
@@ -137,4 +153,36 @@ body {
 .App {
     font-family: sans-serif;
     text-align: center;
+}
+
+.box span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-right: 2px solid #e46a12;
+    border-bottom: 2px solid #e46a12;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+    100% {
+        opacity: 0;
+    }
 }
