@@ -58,7 +58,7 @@ export default function SignUp({ signHandler }) {
                         placeholder="Confirm Password"
                         className=" w-[80%] mx-auto mb-2 h-10 lg:mb-4 lg:h-12 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400 dark:bg-darknav dark:border-0 text-sm rounded-md border-[#E5E5E5] "
                     />
-                    <input type="submit" className="my-[5vh] mx-auto h-[30px] bg-orange px-8 py-auto rounded-2xl text-white text-xl font-bold" value="Sign Up"/>
+                    <input type="submit" className="my-[5vh] mx-auto py-2 bg-orange px-8  rounded-xl text-white text-xl font-bold dark:bg-[#0068B4]  " value="Sign Up"/>
           
                 </form>
                 <p className="mb-[5vh] pt-2 text-center text-xs lg:text-sm dark:text-gray-400" onClick={signHandler}>
