@@ -11,12 +11,16 @@ import Faqclose from "./Pages/faqClose";
 import Home1 from "./admin1/pages1/home1";
 //import App from "./admin1/App";
 import Single from "./admin1/pages1/Single";
-import { GuideDetail } from "./Pages/GuideDetail";
+import { GuideDetail } from "./Pages/GuideDetail1";
 import Reviews from "./Pages/Reviews";
 import { TripDetail } from "./Pages/TripDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
+
+import  Notif  from "./components/Notif";
+
+
 import { ThemeContextProvider } from "./components/darkmode/states";
 
 
@@ -55,8 +59,8 @@ const router = createBrowserRouter([
         element: <Profile />,
     },
     {
-        path: "/feedback",
-        element: <Feedback />,
+        path: "/Notif",
+        element: <Notif />,
     },
     {
         path: "/admin",
