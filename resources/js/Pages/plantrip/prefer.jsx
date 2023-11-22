@@ -2,14 +2,15 @@ import React from 'react'
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
-export const prefer = () => {
+
+export const Prefer = () => {
   return (
     <div>
         <div>
             <Header/>
         </div>
         <div>
-                <div className="font-bold text-2xl  mt-20">
+                <div className="font-bold text-2xl  mt-10">
                     What activity do you prefer?{" "}
                 </div>
                 <span>(choose 5 or more)</span>
@@ -189,7 +190,7 @@ export const prefer = () => {
 
             </div>
             <form>
-                <div class="relative mt-20 ">
+                <div class="relative mt-10 mb-3 ">
                     <input
                         type="text"
                         id="text"
@@ -199,7 +200,7 @@ export const prefer = () => {
                     />
                     <button
                         type="submit"
-                        class=" ml-5 text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
+                        class=" ml-5  text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
                     >
                         Submit
                     </button>

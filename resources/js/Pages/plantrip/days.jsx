@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import { Link } from "react-router-dom";
 import { data } from "../data";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
@@ -21,7 +22,7 @@ export const Days = () => {
             <Header/>
         </div>
         <div >
-                <div className="text-center font-bold text-2xl  mt-20" >
+                <div className="text-center font-bold text-2xl  mt-10" >
                     When do you want to go? 
                 </div>
                 <form className="mx-auto w-[900px] mt-10 ">
@@ -77,6 +78,7 @@ export const Days = () => {
                     size={40}
                 />
             </div>
+            <Link to="/plantrip/prefer"><button className="mt-10 mb-3 rounded-full bg-yellow-400 py-2 px-3.5 text-sm capitalize text-white">next</button></Link>
             <div>
                 <Footer/>
             </div>

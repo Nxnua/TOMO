@@ -1,5 +1,6 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import { Link } from "react-router-dom";
 
 
 export default function Plantrip () {
@@ -8,12 +9,12 @@ export default function Plantrip () {
     return (
         <div>
             <Header />
-            <div className="mt-32">
-                <div className="text-center font-bold text-2xl h-[50px] ">
+            <div className="mt-10">
+                <div className="text-center font-bold text-2xl mt-10">
                     Where do you want to go?
                 </div>
                 <form className=" mx-auto w-[900px] relative items-center justify-center mt-10">
-                    <div className="h-[120px]">
+                    <div >
                         <div className="absolute ml-[20px] mt-[20px]">
                             <img src="/images/search.png" />
                         </div>
@@ -24,7 +25,7 @@ export default function Plantrip () {
                         />
                     </div>
                 </form>
-                <div className="mr-[600px] h-[60px]">
+                <div className="mr-[600px] mt-10 mb-10">
                     <div className=" font-bold text-2xl ">
                         Popular destinations go ?
                     </div>
@@ -91,12 +92,12 @@ export default function Plantrip () {
                     </div>
                 </div>
             </div>
-            <Link to="/planyourtrip/days"><button className="mt-10 rounded-full bg-yellow-400 py-2 px-3.5 text-sm capitalize text-white">next</button></Link>
+            <Link to="/planyourtrip/days"><button className="mt-10 mb-3 rounded-full bg-yellow-400 py-2 px-3.5 text-sm capitalize text-white">next</button></Link>
             
             
-            <div className="mt-40">
+            
             <Footer />
-            </div>
+            
         </div>
     );
 }
