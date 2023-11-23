@@ -74,7 +74,6 @@ const router = createBrowserRouter([
         path: "/reviews",
         element: <Reviews />,
     },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("app")).render(

@@ -3,9 +3,7 @@ import { useThemeContext } from "./darkmode/states";
 export default function Start({ startHandler }) {
     const { darkMode } = useThemeContext();
     return (
-        <div
-            className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}
-        >
+        <div className={`float-right rounded-l-2xl h-full md:h-[100vh] md:w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}>
             <div className=" flex justify-end m-4">
                 <DarkThemeToggle />
             </div>
