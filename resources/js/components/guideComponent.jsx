@@ -5,11 +5,11 @@ export default function Guide({ name, description, image, review, star }) {
         <div className="flex mb-5 dark:bg-darknav  bg-white dark:border-gray-800 rounded-2xl w-[450px] h-[300px] border border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)]">
             <div className=" w-[35%]  flex flex-col justify-between items-center">
                 
-                <div className="float-left w-[150px] h-[150px] rounded-2xl">
+                <div className="float-left w-full h-[150px] rounded-2xl">
                     <img
                         src={image}
                         alt=""
-                        className="float-left w-[150px] h-[150px] rounded-2xl "
+                        className="float-left w-full h-[150px] rounded-2xl "
                     />
                     
                 </div>

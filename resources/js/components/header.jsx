@@ -73,7 +73,7 @@ function Header() {
                 className="  md:static float-right relative left-0 top-86px md:w-auto sm:justify-between w-full flex items-center"
                 onMouseLeave={closeDropdowns}
             >
-                <ul className=" absolute flex md:flex-row sm:flex-row  flex-col gap-8 mx-auto  z-30 ">
+                <ul className=" absolute flex items-center md:flex-row sm:flex-row  flex-col gap-8 mx-auto  z-30 ">
                     <li
                         id="trips"
                         className="relative"
@@ -154,9 +154,9 @@ function Header() {
                     </li>
                 </ul>
             </div>
-            <div className="bg-white dark:bg-darknav float-right mr-10">
+            <div className="bg-white dark:bg-darknav items-center float-right mr-10">
                 <ul className="flex items-center gap-[1vh]">
-                    <li>
+                    <li className="flex w-6 h-auto">
                         <a href="#">
                             <img
                                 src="/images/image 1.png"
@@ -168,7 +168,7 @@ function Header() {
                     <li>
                         <button
                             onClick={onSignInButton}
-                            className={`bg-white dark:bg-darknav text-orange border border-orange px-6 py-1 rounded-2xl hover:bg-orange hover:text-white hover:opacity-90 dark:border-error dark:text-error`}
+                            className={`ml-3 bg-white dark:bg-darknav text-orange text-base border border-orange px-6 py-1 w-[15vh] h-[5vh] rounded-2xl sm:px-3 hover:bg-orange hover:text-white hover:opacity-90 dark:border-error dark:text-error`}
                         >
                             Sign In
                         </button>
@@ -214,7 +214,7 @@ function Header() {
                     <li>
                         <button
                             onClick={onSignUpButton}
-                            className={`bg-orange text-white border border-orange px-6 py-1 rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
+                            className={`bg-orange text-white border border-orange px-6 py-1 w-[15vh] h-[5vh] rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
                         >
                             Sign Up
                         </button>
