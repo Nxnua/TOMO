@@ -7,12 +7,12 @@ export default function Landing(scroll) {
     const [onStart, setOnStart] = useState(false);
     return (
         <div>
-            <div className="flex tracking-tight relative bg-[#bcf5f7]">
-                <Banner />
-                <div className="z-50 absolute right-0 inset-y-0 dark:bg-darkbg bg-white w-[300px] rounded-l-2xl drop-shadow-[-26px_-28px_49px_rgba(0,0,0,0.40)]">
-                    <Start />
-                </div>
-            </div>
+      <div className="flex tracking-tight relative bg-[#bcf5f7]">
+        <Banner />
+        <div className="z-50 absolute right-0 inset-y-0 md:w-[300px]">
+          <Start />
         </div>
+      </div>
+    </div>
     );
 }

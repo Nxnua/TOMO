@@ -12,6 +12,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
 import { ThemeContextProvider } from "./components/darkmode/states";
+import Flights from "./Pages/flights";
 
 
 const router = createBrowserRouter([
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
     {
         path: "/feedback",
         element: <Feedback />,
+    },
+    {
+        path: "/fli",
+        element: <Flights />,
     },
 ]);
 

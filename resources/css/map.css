@@ -1,44 +1,53 @@
-
 .container {
     @apply fixed -translate-x-2/4 -translate-y-2/4 flex items-center justify-center w-screen h-screen left-2/4 top-2/4;
     background: rgba(39, 40, 33, 0.75);
-  }
-  .div {
+}
+
+.div {
     @apply relative w-[90vw] min-h-[70vh] max-w-[1000px] flex items-center flex-col rounded-[10px];
     background: rgb(255, 255, 255);
-  }
-  .p {
+}
+
+.p {
     @apply text-[black] font-medium text-center;
-  }
-  .button {
-    @apply overflow-hidden absolute w-[2em] h-[2em] text-[#323539] indent-[100%] cursor-pointer p-0 rounded-[50%] border-[none] right-2.5 top-2.5 focus:shadow-[0_0_0_2px_#8ed0f9] after:-rotate-45;
+}
+
+.button {
+    @apply overflow-hidden absolute w-[2em] h-[2em] text-[#323539] indent-[100%] cursor-pointer p-0 rounded-[50%] border-[none] right-2.5 top-2.5 focus: shadow-[0_0_0_2px_#8ed0f9] after: -rotate-45;
     background: transparent;
     font: inherit;
-  }
-  .button:focus {
+}
+
+.button:focus {
     outline: solid 0 transparent;
-  }
-  .button:hover {
+}
+
+.button:hover {
     background: rgba(29, 161, 142, 0.1);
-  }
-  .button:before,
-  .button:after {
+}
+
+.button:before,
+.button:after {
     @apply absolute left-[calc(50%_-_0.0625em)] w-[0.125em] h-[70%] rotate-45 content-[''] rounded-[0.125em] top-[15%];
     background: currentcolor;
-  }
-  .img {
+}
+
+.img {
     @apply w-[300px] h-[300px] overflow-hidden mt-5 rounded-[1%];
-  }
-  .img img {
+}
+
+.img img {
     @apply w-full h-full aspect-[1/1] block object-cover object-center;
-  }
-  .blurLoad {
+}
+
+.blurLoad {
     @apply bg-cover bg-center;
-  }
-  .blurLoad.blurLoad > img {
+}
+
+.blurLoad.blurLoad>img {
     @apply opacity-100;
-  }
-  .blurLoad > img {
+}
+
+.blurLoad>img {
     @apply opacity-0 transition-opacity duration-200 ease-[ease-in-out];
-  }
-  
+}

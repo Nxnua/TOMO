@@ -56,7 +56,7 @@ function Header() {
 
     return (
         <nav
-            className={`fixed z-20 w-full top-0 bg-white rounded-lg border-b dark:border-gray-600 shadow-lg flex justify-between items-center h-[10vh] mx-auto font-Nunito dark:bg-darknav dark:text-white ${
+            className={`fixed z-20 w-full top-0 bg-white rounded-b-lg border-b dark:border-gray-600 shadow-lg flex justify-between items-center h-[10vh] mx-auto font-Nunito dark:bg-darknav dark:text-white ${
                 isSticky
                     ? "transform -translate-y-2 sticky top-0"
                     : "transform -translate-y-2"

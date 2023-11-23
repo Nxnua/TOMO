@@ -13,7 +13,7 @@ export default function Footer() {
         { id: 3, title: "Profile", link: "/profile" },
     ];
     return (
-        <div className=" bg-black75 dark:bg-darknav flex flex-col   ">
+        <div className=" bg-black75 dark:bg-darknav flex flex-col">
             <div className=" lg:h-60 h-full">
                 
                 <div className=" h-full grid lg:grid-cols-3 sm:grid-cols-1  text-gray-200 font-semibold text-md  ">

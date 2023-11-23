@@ -3,7 +3,7 @@ import { useThemeContext } from "./darkmode/states";
 export default function Start({ startHandler }) {
     const { darkMode } = useThemeContext();
     return (
-        <div className={`float-right rounded-2xl h-[100vh] w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}>
+        <div className={`float-right rounded-l-2xl h-full md:h-[100vh] md:w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}>
             <div className=" flex justify-end m-4">
             <DarkThemeToggle />
             </div>
@@ -24,16 +24,22 @@ export default function Start({ startHandler }) {
                 />
             </div>
 
-            <button
-                className=" mt-[6vh] flex justify-center "
-                onClick={() => startHandler()}
-            >
-                <div className="  animate-bounce  rounded-xl font-bold px-10 py-3  bg-orange text-white dark:bg-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
+            <div className=" mt-[6vh] flex justify-center ">
+                {/* <div className="  animate-bounce  rounded-xl font-bold px-10 py-3   text-orange dark:text-gradient-to-r from-red-500 via-red-500 to-orange-600 text-2xl">
                 <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg>
-                </div>
-            </button>
+                </div> */}
+             
+
+                <a href="#demo" >
+                    <div className="box">
+                        <span className="  border-b-[2px] border-r-[2px] dark:border-white  border-orange"></span>
+                        <span className="  border-b-[2px] border-r-[2px] dark:border-white  border-orange"></span>
+                        <span className="  border-b-[2px] border-r-[2px] dark:border-white  border-orange"></span>
+                    </div>
+                </a>
+            </div>
         </div>
     );
 }
