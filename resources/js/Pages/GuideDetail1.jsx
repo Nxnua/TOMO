@@ -199,11 +199,9 @@ export const GuideDetail = () => {
                                         id="itinerary"
                                         className="section mt-8 flex flex-col"
                                     >
-                                        <p className=" ml-1 text-xl text-start font-extrabold">
-                                            Itinerary
-                                        </p>
+                                        
                                         <div className=" mt-4">
-                                            <DayInfo />
+                                            
                                         </div>
                                     </div>
 
@@ -249,8 +247,8 @@ export const GuideDetail = () => {
                     </div>
                 </div>
 
-                <div className=" h-screen "></div>
-                <div className="ml-8  grid  xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                
+                {/* <div className="ml-8  grid  xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {tripList.map((item, i) => {
                         return (
                             <TripComponent
@@ -290,48 +288,14 @@ export const GuideDetail = () => {
                             />
                         </div>;
                     })}
-                </div>
+                </div> */}
             </div>
             <Footer />
         </div>
     );
 };
 
-const DayInfo = () => {
-    return (
-        <Accordion className=" border-2 ">
-            {guideData.dailyData.map((item, i) => {
-                return (
-                    <Accordion.Panel>
-                        <Accordion.Title className=" focus:ring-0 ">
-                            <p className=" text-base sm:text-md font-bold text-start tracking-tighter">
-                                {item.number} {item.title}
-                            </p>
-                        </Accordion.Title>
-                        <Accordion.Content>
-                            <div>
-                                <p className=" font-medium tracking-tight leading-5  text-justify ">
-                                    <ReadMore>{item.description}</ReadMore>
-                                </p>
-                                <div className=" flex flex-row mt-2">
-                                    <img
-                                        // src="/images/thumbnail1.png"
-                                        src={
-                                            "https://www.toursmongolia.com" +
-                                            item.images
-                                        }
-                                        alt=""
-                                        className=" w-auto rounded-md mr-1"
-                                    />
-                                </div>
-                            </div>
-                        </Accordion.Content>
-                    </Accordion.Panel>
-                );
-            })}
-        </Accordion>
-    );
-};
+
 
 function Info() {
     return (
@@ -393,8 +357,8 @@ function Info() {
                     />
                     <p className=" ml-2 flexs">
                         {" "}
-                        {guideData.dailyData.length}Year Teacher, {""}
-                        {guideData.dailyData.length} Year Guide{" "}
+                        1 Year Teacher, {""}
+                        2 Year Guide{" "}
                     </p>
                 </div>
                 {/* <div className=" flex flex-row items-center mx-4 my-2">
@@ -512,16 +476,15 @@ function CheckAvailability() {
 
 const menuList = [
     { isActive: true, menu: "Photos", link: "#photos" },
-    { isActive: false, menu: "Itinerary", link: "#itinerary" },
     { isActive: false, menu: "Inclusions", link: "#inclusions" },
     { isActive: false, menu: "Review", link: "#review" },
 ];
 const imageGallery = [
-    { isSelected: true, img: "/images/thumbnail5.png" },
-    { isSelected: false, img: "/images/thumbnail1.png" },
-    { isSelected: false, img: "/images/thumbnail2.png" },
-    { isSelected: false, img: "/images/thumbnail3.png" },
-    { isSelected: false, img: "/images/thumbnail4.png" },
+    { isSelected: true, img: "/images/guide3.jpg" },
+    { isSelected: false, img: "/images/guide1.jpg" },
+    { isSelected: false, img: "/images/guide2.jpg" },
+    { isSelected: false, img: "/images/guide0.jpg" },
+    { isSelected: false, img: "/images/guide4.jpg" },
 ];
 
 function PackingList() {
@@ -616,7 +579,7 @@ function Inclusion() {
 const guideData = {
     title: "Golden Eagle Festival and Altai Mountain 2024 Tour",
     overview:
-        "Traveling through Mongol Altai mountains - the country’s largest and highest mountain range with glacier topped peaks over 3000 meters, crystal clear mountain rivers, and glistening streams were to inhabit the world’s largest wild sheep - argali, ibex, snow leopard, wolves, eagles, and many other bird species. Then heading to Ulgii town, enjoy Golden Eagle Festival, experience ancient eagle hunting tradition and Kazakh culture. \n\nThe name Altai Tavan Bogd (Five Holy Peaks of  Altai) was given to a  cluster of 5 dramatic peaks that tower this extensive Mongol Altai mountain range. The climate is extreme with very little vegetation, giving the surrounding landscape a barren appearance. Trekking session leads us to the holy 5 peaks where the highest is Khuiten peak at 4374m. We trek through the snowy mountains, cross the longest glaciers of the country.\nThe official opening ceremony begins with a parade of the hunters on horseback with their eagles. The most elaborate clothing and accessories are rewarded with the highest points. Later in the day, the eagles are judged for their speed and agility. The second day of the competition is packed with action-eagles fly from the cliff’s edge to chase bait dragged by their human hunting partners, and the men demonstrate their courage in an ancient test of horsemanship.",
+        "Traveling through Mongol Altai mountains - the country’s  giving the surrounding landscape a barren appearance. Trekking session leads us to the holy 5 peaks where the highest is Khuiten peak at 4374m. We trek through the snowy mountains, cross the longest glaciers of the country.\nThe official opening ceremony begins with a parade of the hunters on horseback with their eagles. The most elaborate clothing and accessories are rewarded with the highest points. Later in the day, the eagles are judged for their speed and agility. The second day of the competition is packed with action-eagles fly from the cliff’s edge to chase bait dragged by their human hunting partners, and the men demonstrate their courage in an ancient test of horsemanship.",
     locations: [
         "Altai Tavan Bogd National Park",
         "3 days horse riding",
@@ -625,79 +588,7 @@ const guideData = {
         "Golden Eagle Festival",
     ],
     price: ["2 PAX", "3530$", "3-4 PAX", "3310$", "5-8 PAX", "3135$"],
-    dailyData: [
-        {
-            number: "DAY 1.",
-            title: "(11 Sep) Arrival in Ulaanbaatar",
-            description:
-                "Transfer to the hotel. Unpack and rest in the hotel. Short city tour with Gandan Monastery, the National Museum of Mongolia, which represents Mongolian Culture starting from Stone Age to the 21st century and Buddhism, and Sukhbaatar Square (also known as Chingis Khaan Square). In Gandan you can take local prayers, monks, the biggest standing indoor Buddha statue and temples own figure. Prepare for the trip. (B/L/D)",
-            images: [
-                "/uploads/Ulaanbaatar (Sukhbaatar Square & Gandan Monastery).jpg",
-            ],
-        },
-        {
-            number: "DAY 2.",
-            title: "(12 Sep) Fly to Western Mongolia",
-            description:
-                "Take a flight to Khovd. Then dive to Ulgii town - the central town of Bayan-Ulgii province where 90% of the population is Kazakhs who have their own language and unique culture. Kazakhs are famous for their Eagle hunting game tradition. Meet our vehicle and the local team. Visit the local museum to know more about Bayan-Ulgii province and its majority ethnic group - Kazakhs. Drive to Sagsay River to meet eagle hunter's family. In the evening, we come back to Ulgii town to stay overnight in a local hotel or ger camp (B/L/D)",
-            images: ["/uploads/Golden eagle festival tour west mongolia.jpg"],
-        },
-        {
-            number: "DAY 3.",
-            title: "(13 Sep) Arrive at Shiveet Khairkhan Mountain",
-            description:
-                "Today we head to Altai MountaiWe are entering Altai high mountain area and arrive at Shiveet Khairkhan mountain- the closest place to the Altai peaks reachable by car. We are traveling at the altitude of 2500-3000 m. We will visit a local Kazakh family to explore their lives as well as rent horses for our further trip. Here you can meet the local people and take portraits and the daily life of Kazakhs. They have a bigger Ger dwelling than the Khalkha majority group and they are characteristic. Prepare our luggage for the next 3 day-trekking trips to Altai peaks. (B/L/D)",
-            images: [
-                "/uploads/Oigor-(Golden_Eagle_Festival_and_Altai_Mountain_2021_Tour).jpg",
-            ],
-        },
-        {
-            number: "DAY 4.",
-            title: "(14 Sep) Altai Tavan Bogd Peak",
-            description:
-                "Leave our vehicle and load our luggage to the horses and trek toward the Altai Tavan Bogd peaks of 4100-4374m. You can take photos of a horse or camel caravan which suites the Western Mongolian landscape, rocky and show-capped mountains. Arrive at the foot of the high peaks. (B/L/D)",
-            images: ["/uploads/photo tour to Altai Mountains Mongolia.jpg"],
-        },
-        {
-            number: "DAY 6.",
-            title: "(15 Sep) Arrive at Tsagaan Gol - White River",
-            description:
-                "Head to Tsagaan Gol to change our horses or relax if you trek. Tsagaan Gol, or White river, owes its color to glacial milk, the suspended powder of rock eroded by the high glaciers. Here you have a chance to photograph both landscape and people. Tent near nomad family. Talking with nomads and sharing our experiences. (B/L/D)",
-            images: [
-                "/uploads/Tsagaan_Gol-(Golden_Eagle_Festival_and_Altai_Mountain_2021_Tour).jpg",
-            ],
-        },
-        {
-            number: "DAY 7.",
-            title: "(16 Sep) Back to Ulgii town",
-            description:
-                "Drive back to Ulgii town for the Golden Eagle Festival. On the way, we will take plenty of Landscape photos and families. During this time most of the Kazakh people moved to the winter house. Arrive in Ulgii and stay overnight at a local hotel or ger camp. (B/L/D)",
-            images: [
-                "/uploads/Golden eagle festival and mongolia altai mountains photographic expedition.jpg",
-            ],
-        },
-        {
-            number: "DAY 8-9.",
-            title: "(17-18 Sep) The Golden Eagle Festival",
-            description:
-                "The first day of the Sagsai Golden Eagle Festival is to experience the culture and lifestyle of nomadic eagle hunters. Kazakh eagle hunters in Mongolia have been living in both pastoral and eagle falconry living ways. Pastoral living is summer time, and eagle falconry living in the wintertime. This kind of lifestyle makes them true nomadic eagle falconers and heritage keepers in this modern world. Today we will learn all about their life and culture. The procedure of assembly of Kazak Ger (yurt) and the Migration of nomadic families will be the highlights of the first day of the festival. (B/L/D)",
-            images: [],
-        },
-        {
-            number: "DAY 10.",
-            title: "(19 Sep) Fly back to Ulaanbaatar",
-            description:
-                "Take a flight back to Ulaanbaatar and relax at the hotel. Option to go shopping for souvenirs and cashmere products. Farewell dinner together. (B/L/D)",
-            images: ["/uploads/Ulaanbaatar_Night.jpg"],
-        },
-        {
-            number: "DAY 11.",
-            title: "(20 Sep) Departure Day",
-            description:
-                "Transfer to Chinggis Khaan International Airport or Train station and depart Mongolia. (B)",
-            images: [],
-        },
-    ],
+    
     inclusions:
         "Accommodation: Hotel****, local hotel or ger camp, tented camping\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding /optional/",
     notIncludes:
