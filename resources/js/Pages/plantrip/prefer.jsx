@@ -1,167 +1,16 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import { data } from "./data";
+import React from 'react'
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 
-
-export default function Plantrip() {
-    const slideLeft = () => {
-        var slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft - 500;
-    };
-
-    const slideRight = () => {
-        var slider = document.getElementById("slider");
-        slider.scrollLeft = slider.scrollLeft + 500;
-    };
-    
-    return (
+export const Prefer = () => {
+  return (
+    <div>
         <div>
-            <Header />
-            <div className="mt-32">
-                <div className="text-center font-bold text-2xl h-[50px] ">
-                    Where do you want to go?
-                </div>
-                <form className=" mx-auto w-[900px] relative items-center justify-center mt-10">
-                    <div className="h-[120px]">
-                        <div className="absolute ml-[20px] mt-[20px]">
-                            <img src="/images/search.png" />
-                        </div>
-                        <input
-                            type="search "
-                            placeholder=" City, landmark"
-                            className=" w-full p-4 rounded-full bg-white text-center border-2 "
-                        />
-                    </div>
-                </form>
-                <div className="mr-[600px] h-[60px]">
-                    <div className=" font-bold text-2xl ">
-                        Popular destinations go ?
-                    </div>
-                </div>
-                <div className=" flex justify-center items-center rounded-lg">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
-                            <div className=" h-96 w-72 ">
-                                <img
-                                    className="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500 rounded-3xl "
-                                    src="/images/ub.png"
-                                />
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-slate-500 group-hover:via-slate/60 group-hover:to-slate/70"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
-                                <h1 className="text-3x1 font-bold text-white">
-                                    Ulaanbaatar
-                                </h1>
-                                <p className="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequuntur impedit
-                                    soluta atque.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
-                            <div className=" h-96 w-72 ">
-                                <img
-                                    className="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500 rounded-3xl"
-                                    src="/images/ER.png"
-                                />
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-slate-500 group-hover:via-slate/60 group-hover:to-slate/70"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
-                                <h1 className="text-3x1 font-bold text-white">
-                                    Erdenet
-                                </h1>
-                                <p className="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequuntur impedit
-                                    soluta atque.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
-                            <div className=" h-96 w-72 ">
-                                <img
-                                    className="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500 rounded-3xl "
-                                    src="/images/Kh.png"
-                                />
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-slate-500 group-hover:via-slate/60 group-hover:to-slate/70"></div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
-                                <h1 className="text-3x1 font-bold text-white">
-                                    Khuwsgul
-                                </h1>
-                                <p className="text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequuntur impedit
-                                    soluta atque.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <div >
-                <div className="text-center font-bold text-2xl  mt-20" >
-                    When do you want to go? 
-                </div>
-                <form className="mx-auto w-[900px] mt-10 ">
-
-
-
-
-                    <div className=" text-2xl font-bold mt-10 mr-[700px]">
-
-
-                        How many days?
-                    </div>
-                    <input
-                        type="tel"
-                        id="phone"
-
-                        class="w-full p-4  bg-white  border mt-10"
-
-
-
-                        placeholder="number of days"
-                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                        required
-                    />
-                </form>
-                <div className=" mt-20 text-center font-bold text-2xl mr-[620px] ">
-                    Which month? (optional)
-                </div>
-            </div>
-            <div className="relative flex items-center mt-10 ml-72 mr-72 ">
-
-
-                <MdChevronLeft
-                    className="opacity-50 cursor-pointer hover:opacity-100"
-                    onClick={slideLeft}
-                    size={40}
-                />
-                <div
-                    id="slider"
-                    className=" w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
-                >
-                    {data.map((item) => (
-                        <img
-                            className="w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
-                            src={item.img}
-                            alt=""
-                        />
-                    ))}
-                </div>
-                <MdChevronRight
-                    className="opacity-50 cursor-pointer hover:opacity-100"
-                    onClick={slideRight}
-                    size={40}
-                />
-            </div>
-            <div>
-                <div className="font-bold text-2xl  mt-20">
+            <Header/>
+        </div>
+        <div>
+                <div className="font-bold text-2xl  mt-10">
                     What activity do you prefer?{" "}
                 </div>
                 <span>(choose 5 or more)</span>
@@ -341,7 +190,7 @@ export default function Plantrip() {
 
             </div>
             <form>
-                <div class="relative mt-20 ">
+                <div class="relative mt-10 mb-3 ">
                     <input
                         type="text"
                         id="text"
@@ -351,15 +200,13 @@ export default function Plantrip() {
                     />
                     <button
                         type="submit"
-                        class=" ml-5 text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
+                        class=" ml-5  text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
                     >
                         Submit
                     </button>
                 </div>
             </form>
-            <div className="mt-40">
-            <Footer />
-            </div>
-        </div>
-    );
+            <Footer/>
+    </div>
+  )
 }
