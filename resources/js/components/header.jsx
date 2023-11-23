@@ -82,7 +82,6 @@ function Header() {
                         onMouseEnter={toggleTripsDropdown}
                     >
                         <Link
-                            to="/trips"
                             className="hover:text-gray-500 inline-block"
                         >
                             Trips
@@ -102,18 +101,10 @@ function Header() {
                             </li>
                             <li>
                                 <a
-                                    href=""
+                                    href="/trips"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
                                     Agencies
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="hover:text-orange  dark:hover:border-white border-black hover:border-b"
-                                >
-                                    Travel budget
                                 </a>
                             </li>
                         </ul>
@@ -125,12 +116,11 @@ function Header() {
                         <Link to="/guides">Travel Guides</Link>
                     </li>
                     <li className="relative" onMouseEnter={toggleMoreDropdown}>
-                        <a
-                            href="#"
+                        <Link
                             className="hover:text-gray-500 inline-block"
                         >
                             More
-                        </a>
+                        </Link>
                         <ul
                             className={`${
                                 moreDropdownVisible ? "block" : "hidden"

@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import { guide } from "./data";
-import Guide from "../components/guideComponent";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import { guide } from "../data";
+import Guide from "../../components/guideComponent";
 import { v4 } from "uuid";
-import BreadCrumb from "../components/breadcrumb";
-import { StarRating } from "../components/review/StarRating";
+import BreadCrumb from "../../components/breadcrumb";
+import { StarRating } from "../../components/review/StarRating";
+import Fbfaq from "../../components/faq/Fbfaq";
 // import "./navbar"
 
 export const Guides = () => {
@@ -154,6 +155,7 @@ export const Guides = () => {
 
             <div className="mt-10">
                 <Footer />
+                <Fbfaq />
             </div>
         </div>
     );
