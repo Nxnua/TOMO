@@ -1,7 +1,7 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Fbfaq from "../components/fbfaq";
-import Closediv from "../components/faqclosediv";
+import Header from "../header";
+import Footer from "../footer";
+import Fbfaq from "./Fbfaq";
+import Closediv from "./faqclosediv";
 
 export default function Accordion() {
     return (

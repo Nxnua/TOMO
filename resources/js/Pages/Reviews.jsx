@@ -18,7 +18,7 @@ export default function Reviews() {
                 <UserReview />
                 <UserReview />
             </div>
-            <div className=" mt-8 mb-20">
+            <div className=" mt-20">
                 <Footer />
             </div>
         </div>
