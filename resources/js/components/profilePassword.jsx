@@ -22,9 +22,9 @@ const ChangePasswordPage = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center">
+        <div className= " min-h-screen flex items-center justify-center">
             <form
-                className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96"
+                className="bg-white dark:bg-slate-700 shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96"
                 onSubmit={handleSubmit}
             >
                 <h2 className="text-2xl mb-6 text-center">Change Password</h2>
