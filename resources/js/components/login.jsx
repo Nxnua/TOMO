@@ -3,42 +3,7 @@ import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Flowbite, DarkThemeToggle } from "flowbite-react";
 export default function Login({ signUpHandler }) {
-    const [formDat, setFormDat] = useState({
-        username: "",
-        password: "",
-    });
 
-    // const onSubmit = () => {
-    //   axios
-    //     .post("api", {
-    //       username: formDat.username,
-    //       password: formDat.password,
-    //     })
-    //     .then(({ data }) => {
-    //       if (data.status === "success") {
-    //         sessionStorage.setItem("token", data.result.user.token);
-
-    //       } else {
-    //         alert("wrong credentials");
-    //       }
-    //     })
-    //     .catch((error) => alert(error));
-
-    // };
-
-    const onLogin = (e) => {
-        e.preventDefault();
-        if (formDat.username && formDat.password) {
-            onSubmit();
-        } else {
-            alert("Please fill fields!!!");
-        }
-        return;
-    };
-
-    const onChange = (e) => {
-        setFormDat({ ...formDat, [e.target.name]: e.target.value });
-    };
     return (
         <div className="rounded-2xl w-[30vw] bg-white dark:bg-darkbg h-full float-right">
            
