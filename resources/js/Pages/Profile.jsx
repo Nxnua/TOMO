@@ -10,15 +10,15 @@ export const Profile = () => {
     const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
     const [openModal, setOpenModal] = useState(false);
     const [openPasswordModal, setOpenPasswordModal] = useState(false);
-    const onClick = () => {
-        setOpenModal(true);
-    };
-    const onPassClick = () => {
-        setOpenPasswordModal(true);
-    };
-    const onClose = () => {
+
+    const onCloseProfile = () => {
         setOpenModal(false);
+    }
+    const onClosePassword = () => {
         setOpenPasswordModal(false);
+    }
+    const onCli = () => {
+        console.log("clicked");
     }
 
 
@@ -84,24 +84,22 @@ export const Profile = () => {
                                     >
                                         <li className="relative hover:text-gray-500">
                                             <div>
-                                                <button  onClick={onClick}>
-                                                    Edit profile
+                                                <button  onClick={()=> setOpenModal(true)}> 
+                                                    Edit profile </button>
                                                     <Modal
                                                         className="  bg-white    "
-                                                        tabindex="-1"
+                                                        tabIndex="-1"
                                                         show={openModal}
                                                        
                                                     >
                                                         <Modal.Body className=" w-[50vw] self-center   p-0">
-                                                            <ProfileEditPage />
-                                                            {openModal && (
-                                                            
-                                                            <div className=" absolute float right-4 top-4 "  >
-                                                            <button onClick={onClose}
+                                                        <div className=" absolute z-50 float right-4 top-4 "  >
+                                                        {/* {openModal && ( */}
+                                                        <button onClick={onCloseProfile}
                                                                
                                                             >
                                                                 <svg
-                                                                    class="w-6 h-6 text-gray-800 dark:text-white"
+                                                                    className="w-6 h-6 text-gray-800 dark:text-white"
                                                                     aria-hidden="true"
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     fill="currentColor"
@@ -110,34 +108,39 @@ export const Profile = () => {
                                                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
                                                                 </svg>
                                                             </button>
+                                                            {/* )} */}
                                                         </div> 
-                                                        )}
+                                                            <ProfileEditPage />
+                                                            
+                                                            
+                                                            
+                                                       
                                                         </Modal.Body>
                                                         
                                                     </Modal>
-                                                </button>
+                                                
                                             </div>
                                         </li>
                                         <li className="relative hover:text-gray-500">
                                             <div>
-                                                <button  onClick={onPassClick}>
-                                                    Edit password
+                                                <button  onClick={()=> setOpenPasswordModal(true)}>
+                                                    Edit password </button>
                                                     <Modal
                                                         className="  bg-white    "
-                                                        tabindex="-1"
+                                                        tabIndex="-1"
                                                         show={openPasswordModal}
-                                                        onClose={onClose }
+                                                        onClose={onClosePassword }
                                                     >
                                                         <Modal.Body className=" w-[75vw] self-center   p-0">
                                                             <ChangePasswordPage />
                                                         </Modal.Body>
-                                                        <div  onClick={onClose
+                                                        <div  onClick={onClosePassword
                                                                 } className=" absolute float right-4 top-4 ">
                                                             <button
                                                                
                                                             >
                                                                 <svg
-                                                                    class="w-6 h-6 text-gray-800 dark:text-white"
+                                                                    className="w-6 h-6 text-gray-800 dark:text-white"
                                                                     aria-hidden="true"
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     fill="currentColor"
@@ -149,7 +152,7 @@ export const Profile = () => {
                                                             
                                                         </div>
                                                     </Modal>
-                                                </button>
+                                            
                                             </div>
                                         </li>
                                     </ul>
