@@ -5,130 +5,153 @@ const cities = [
   {
     id: 1,
     name: 'Bayan-Ulgii',
+    capital: 'B',
     imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ph9pUIkxtY7InvFwIFnRC2BajqGpNCjxTQ&usqp=CAU'
   },
   {
     id: 2,
     name: 'Khovd',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   },
   {
     id: 3,
     name: 'Uvs',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   },
   {
     id: 4,
     name: 'Khovsgol',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 5,
     name: 'Arkhangai',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 6,
     name: 'Tuv',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 7,
     name: 'Bulgan',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 8,
     name: 'Selenge',
+    capital: 'B',
     imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ph9pUIkxtY7InvFwIFnRC2BajqGpNCjxTQ&usqp=CAU'
   },
   {
     id: 9,
     name: 'Orkhon',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 10,
     name: 'Darkhan-Uul',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/a/a8/TEIDE.JPG'
   
   },
   {
     id: 11,
     name: 'Sukhbaatar',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 12,
     name: 'Dornod',
+    capital: 'B',
     imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfTi4DsP1e_4TnYNxHDNouTCq_pO0gEfhHH5LYJUu&s'
   },
   {
     id: 13,
     name: 'Khentii',
+    capital: 'B',
     imageURL : 'https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMDY1OTc2fHxlbnwwfHx8fHw%3D'
   },
   {
     id: 14,
     name: 'Gobisumber',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 15,
     name: 'Dundgovi',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 16,
     name: 'Umnugovi',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 17,
     name: 'Dornogovi',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 18,
     name: 'Bayankhongor',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 19,
     name: 'Gobi-Altai',
+    capital: 'B',
     imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ph9pUIkxtY7InvFwIFnRC2BajqGpNCjxTQ&usqp=CAU'
   },
   {
     id: 20,
     name: 'Zavkhan',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 21,
     name: 'Govisumber',
+    capital: 'B',
     imageURL : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png'
   
   },
   {
     id: 22,
     name: 'Uvurkhangai',
+    capital: 'B',
     imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ph9pUIkxtY7InvFwIFnRC2BajqGpNCjxTQ&usqp=CAU'
   },
   {
     id: 23,
     name: 'Ulaanbaatar',
+    capital: 'B',
     imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ph9pUIkxtY7InvFwIFnRC2BajqGpNCjxTQ&usqp=CAU'
   },
 ];
@@ -731,13 +754,13 @@ const SvgComponent = () => {
 </clipPath>
 <div  style={{backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-zTCTKefm_UO8lv-VsjZya9phg73MOxXhZ9BKnrb01WM9cS4c16kxlvOCxiLtF4EmZk&usqp=CAU"}}>
 <image loading="lazy"  id="image23_0_1" width="750" height="480" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/safety-orange-color-solid-background-1920x1080.png" />
-<image loading="lazy"  id="image1_0_1" width="750" height="480" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image1_0_1" width="1000" height="550" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/bright-orange-color-solid-background-1920x1080.png"/>
 <image loading="lazy"  id="image2_0_1" width="2500" height="1380" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/green-color-solid-background-1920x1080.png"/>
 <image loading="lazy"  id="image3_0_1" width="750" height="450" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/light-brown-color-solid-background-1920x1080.png"/>
 <image loading="lazy"  id="image4_0_1" width="2500" height="1380" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/pink-color-solid-background-1920x1080.png"/>
-<image loading="lazy"  id="image5_0_1" width="2000" height="1278" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/copper-color-solid-background-1920x1080.png"/>
-<image loading="lazy"  id="image6_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/dark-pink-color-solid-background-1920x1080.png"/>
-<image loading="lazy"  id="image7_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/wine-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image5_0_1" width="2500" height="1380" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/copper-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image6_0_1" width="1000" height="550" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/dark-pink-color-solid-background-1920x1080.png"/>
+<image loading="lazy"  id="image7_0_1" width="1000" height="550" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/wine-color-solid-background-1920x1080.png"/>
 <image loading="lazy"  id="image8_0_1" width="800" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/steel-blue-color-solid-background-1920x1080.png"/>
 <image loading="lazy"  id="image9_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/brass-color-solid-background-1920x1080.png"/>
 <image loading="lazy"  id="image10_0_1" width="1000" height="500" xlinkHref="https://htmlcolorcodes.com/assets/images/colors/blue-green-color-solid-background-1920x1080.png"/>
@@ -768,14 +791,23 @@ const SvgComponent = () => {
 
 
       {selectedCity && (
-   <div className='fixed -translate-x-2/4 -translate-y-2/4 flex items-center justify-center w-screen h-screen left-2/4 top-2/4' onClick={closeDiv}>
-   <div className='.bg-gray-300 relative w-[90vw] min-h-[70vh] max-w-[1000px] flex items-center flex-col rounded-[10px]' onClick={(e) => e.stopPropagation()}>
+   <div className='dark:bg-slate-700 bg-slate-200 bg-transparent opacity-90 fixed -translate-x-2/4 -translate-y-2/4 flex items-center justify-center w-screen h-screen left-2/4 top-2/4' onClick={closeDiv}>
+   <div className=' relative w-[90vw] min-h-[70vh] max-w-[1000px] flex items-center flex-col rounded-[10px]' onClick={(e) => e.stopPropagation()}>
      <div className='text-[black] font-medium text-center' onClick={closeDiv}>
-       X
+       <img className=' ml-64 w-[20px] h-[20px]' src='images/clearbutton.png'/>
      </div>
+     <div className='shadow-2xl'>
      <p >Name: {selectedCity.name}</p>
+     <p >Capital: {selectedCity.capital}</p>
+     </div>
      <div >
-     <img className='w-[300px] h-[300px] overflow-hidden mt-5 rounded-[1%]' src={selectedCity.imageURL}></img>
+     <img className='w-[300px] h-[300px] overflow-hidden mt-3 rounded-[1%]' src={selectedCity.imageURL}></img>
+     <button
+          type="submit"
+          class="border mt-3 text-white bottom-2.5 bg-gray-600 hover:bg-gray-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
+          >
+          <a href='/planyourtrip'>Choose</a>
+      </button>
      </div>
    </div>
  </div>
