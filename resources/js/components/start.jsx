@@ -5,7 +5,7 @@ export default function Start({ startHandler }) {
     return (
         <div className={`float-right rounded-l-2xl h-full md:h-[100vh] md:w-[30vw] flex flex-col bg-white dark:bg-[#002444]`}>
             <div className=" flex justify-end m-4">
-            <DarkThemeToggle />
+                <DarkThemeToggle />
             </div>
             <h1 className="flex justify-center mx-auto mt-[1vh] text-3xl font-extrabold tracking-tight text-orange dark:text-error">
                 Hi, I'm Tomo!
@@ -18,7 +18,11 @@ export default function Start({ startHandler }) {
                     Choose your travel destination with me!
                 </p>
                 <img
-                    src={darkMode? "images/tomo-red.png":"images/tomo-green.png"}
+                    src={
+                        darkMode
+                            ? "images/tomo-red.png"
+                            : "images/tomo-green.png"
+                    }
                     alt=""
                     className=" w-[28vh] mt-10"
                 />
