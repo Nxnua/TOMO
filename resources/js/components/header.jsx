@@ -65,10 +65,10 @@ function Header() {
             <Link className="ms-10" to="/">
                 <img
                     src={
-                        darkMode ? "/images/Tomo-White.png" : "/images/Logo.png"
+                        darkMode ? "/images/Tomo-White.png" : "/images/tomo-new.png"
                     }
                     alt=""
-                    className="w-auto h-[8vh]  hover:opacity-80"
+                    className="w-[13vw] h-[12vh]  mt-1 hover:opacity-80"
                 />
             </Link>
             <div

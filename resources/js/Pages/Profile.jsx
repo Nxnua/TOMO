@@ -3,15 +3,26 @@ import Footer from "../components/footer";
 import { useState } from "react";
 import ProfileEditPage from "../components/profileComponent";
 import ChangePasswordPage from "../components/profilePassword";
-import { Button, Modal } from "flowbite-react";
+import { Modal } from "flowbite-react";
 import { Link } from "react-router-dom";
 export const Profile = () => {
     const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
     const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
     const [openModal, setOpenModal] = useState(false);
+    const [openPasswordModal, setOpenPasswordModal] = useState(false);
     const onClick = () => {
         setOpenModal(true);
     };
+    const onPassClick = () => {
+        setOpenPasswordModal(true);
+    };
+    const onClose = () => {
+        setOpenModal(false);
+        setOpenPasswordModal(false);
+    }
+
+
+    
     const toggleTripsDropdown = () => {
         setTripsDropdownVisible(!tripsDropdownVisible);
         setMoreDropdownVisible(false); // Close the "More" dropdown when opening "Trips"
@@ -39,7 +50,7 @@ export const Profile = () => {
                 <div className="grid grid-cols-3 gap-2     ">
                     <a href="#">
                         <img
-                            src="images/profile4.jpg "
+                            src="images/profile4.jpg"
                             alt=""
                             width={100}
                             height={100}
@@ -58,13 +69,13 @@ export const Profile = () => {
                     <div className="  md:static float-right relative md:min-h-fit min-h-60vh left-0 top-86px md:w-auto w-full flex items-center">
                         <div
                             id="trips"
-                            onClick={onClick}
+                           
                             className="edit relative flex  border-[2px] w-16 h-7 rounded-md border-slate-600  items-center justify-center text-sm text-orange font-bold shadow-lg "
                         >
                             <div>
                                 <div href="#" className=" inline-block w-full ">
                                     Edit
-                                    <ul
+                                    <ul 
                                         className={`${
                                             tripsDropdownVisible
                                                 ? "block"
@@ -73,26 +84,21 @@ export const Profile = () => {
                                     >
                                         <li className="relative hover:text-gray-500">
                                             <div>
-                                                <button>
+                                                <button  onClick={onClick}>
                                                     Edit profile
                                                     <Modal
                                                         className="  bg-white    "
                                                         tabindex="-1"
                                                         show={openModal}
-                                                        onClose={() =>
-                                                            setOpenModal(false)
-                                                        }
+                                                       
                                                     >
-                                                        <Modal.Body className=" w-[75vw] self-center   p-0">
+                                                        <Modal.Body className=" w-[50vw] self-center   p-0">
                                                             <ProfileEditPage />
-                                                        </Modal.Body>
-                                                        <div className=" absolute float right-4 top-4 ">
-                                                            <button
-                                                                onClick={() =>
-                                                                    setOpenModal(
-                                                                        false
-                                                                    )
-                                                                }
+                                                            {openModal && (
+                                                            
+                                                            <div className=" absolute float right-4 top-4 "  >
+                                                            <button onClick={onClose}
+                                                               
                                                             >
                                                                 <svg
                                                                     class="w-6 h-6 text-gray-800 dark:text-white"
@@ -104,33 +110,31 @@ export const Profile = () => {
                                                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
                                                                 </svg>
                                                             </button>
-                                                        </div>
+                                                        </div> 
+                                                        )}
+                                                        </Modal.Body>
+                                                        
                                                     </Modal>
                                                 </button>
                                             </div>
                                         </li>
                                         <li className="relative hover:text-gray-500">
                                             <div>
-                                                <button>
+                                                <button  onClick={onPassClick}>
                                                     Edit password
                                                     <Modal
                                                         className="  bg-white    "
                                                         tabindex="-1"
-                                                        show={openModal}
-                                                        onClose={() =>
-                                                            setOpenModal(false)
-                                                        }
+                                                        show={openPasswordModal}
+                                                        onClose={onClose }
                                                     >
                                                         <Modal.Body className=" w-[75vw] self-center   p-0">
                                                             <ChangePasswordPage />
                                                         </Modal.Body>
-                                                        <div className=" absolute float right-4 top-4 ">
+                                                        <div  onClick={onClose
+                                                                } className=" absolute float right-4 top-4 ">
                                                             <button
-                                                                onClick={() =>
-                                                                    setOpenModal(
-                                                                        false
-                                                                    )
-                                                                }
+                                                               
                                                             >
                                                                 <svg
                                                                     class="w-6 h-6 text-gray-800 dark:text-white"

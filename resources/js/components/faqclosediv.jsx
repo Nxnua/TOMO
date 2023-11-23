@@ -4,7 +4,7 @@ import Fbfaq from "../components/fbfaq";
 export default function FaqIcon() { 
 	return ( 
 
-        <div>
+        <div>gcbty
    
             <Fbfaq/>
 
