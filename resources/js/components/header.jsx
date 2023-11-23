@@ -80,7 +80,6 @@ function Header() {
                         onMouseEnter={toggleTripsDropdown}
                     >
                         <Link
-                            to="/trips"
                             className="hover:text-gray-500 inline-block"
                         >
                             Trips
@@ -100,18 +99,10 @@ function Header() {
                             </li>
                             <li>
                                 <a
-                                    href=""
+                                    href="/trips"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
                                     Agencies
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="hover:text-orange  dark:hover:border-white border-black hover:border-b"
-                                >
-                                    Travel budget
                                 </a>
                             </li>
                         </ul>
@@ -123,33 +114,25 @@ function Header() {
                         <Link to="/guides">Travel Guides</Link>
                     </li>
                     <li className="relative" onMouseEnter={toggleMoreDropdown}>
-                        <a
-                            href="#"
+                        <Link
                             className="hover:text-gray-500 inline-block"
                         >
                             More
-                        </a>
+                        </Link>
                         <ul
                             className={`${
                                 moreDropdownVisible ? "block" : "hidden"
                             } absolute dark:bg-darknav border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out`}
                         >
                             <li>
-                                <a
-                                    href=""
+                                <Link
+                                    to="/reviews"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
                                     Reviews
-                                </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a
-                                    href=""
-                                    className="hover:text-orange border-black dark:hover:border-white hover:border-b"
-                                >
-                                    Flights
-                                </a>
-                            </li>
+                           
                         </ul>
                     </li>
                 </ul>

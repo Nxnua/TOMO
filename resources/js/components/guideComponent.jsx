@@ -55,7 +55,7 @@ export default function Guide({ name, description, image, review, star }) {
                 </div>
                 <div className=" transition ease-in-out delay-50  hover:scale-105  mt-5 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
                 <button className="text-sm text-white bg-orange dark:border-orange-400 dark:bg-[#383C51] w-[90%] border py-1 rounded-lg font-normal tracking-tight">
-                        Book now
+                        <a href="/guide">Book now</a>
                     </button>
                 </div>
 
