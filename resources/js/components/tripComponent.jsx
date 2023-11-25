@@ -14,11 +14,11 @@ export default function TripComponent({
     const isDiscountNull = discount === null ? true : false;
     return (
         <div className=" duration-200 h-[420px] md:w-[300px] lg:w-[310px] xl:w-[320px] border-2 dark:border-neutral-400 border-neutral-100 rounded-2xl bg-white dark:bg-darknav  flex flex-col drop-shadow-[_0px_9px_34px_rgba(0,0,0,0.08)]">
-            <div className=" relative h-[45%] rounded-2xl rounded-b-md">
+            <div className=" relative h-[45%] rounded-t-2xl rounded-b-md">
                 <img src={image} alt="" className=" h-[180px] w-full " />
                 <div
                     className={
-                        " absolute flex justify-center left-3 top-4 rounded-md bg-[#32B837] w-16 h-6 drop-shadow-[_0px_0px_5px_rgba(0,0,0,0.25)] text-white text-xs " +
+                        " absolute flex justify-center left-3 top-4 rounded-2xl bg-[#32B837] w-16 h-6 drop-shadow-[_0px_0px_5px_rgba(0,0,0,0.25)] text-white text-xs " +
                         (isDiscountNull ? " hidden" : "visible") +
                         " items-center"
                     }
@@ -70,7 +70,7 @@ export default function TripComponent({
             </div>
             <div className=" transition ease-in-out delay-50  hover:scale-105  mt-5 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
                 <button className="mx-auto text-sm text-white bg-orange dark:border-orange-400 dark:bg-[#383C51] w-[90%] border py-1 rounded-lg font-normal tracking-tight">
-                    Book now
+                    <a href="/trips/trip">Book now</a>
                 </button>
             </div>
         </div>

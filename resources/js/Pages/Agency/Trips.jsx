@@ -1,13 +1,14 @@
-import Header from "../components/header";
-import { tripList } from "./data";
-import TripComponent from "../components/tripComponent";
+import Header from "../../components/header";
+import { tripList } from "../data";
+import TripComponent from "../../components/tripComponent";
 import { v4 } from "uuid";
-import Footer from "../components/footer";
+import Footer from "../../components/footer";
 import { GrSearch } from "react-icons/gr";
-import BreadCrumb from "../components/breadcrumb";
-import { Search } from "../components/search";
-import { StarRating } from "../components/review/StarRating";
+import BreadCrumb from "../../components/breadcrumb";
+import { Search } from "../../components/search";
+import { StarRating } from "../../components/review/StarRating";
 import { useState } from "react";
+import Fbfaq from "../../components/faq/Fbfaq";
 
 export default function Trip() {
     const filter = [
@@ -261,6 +262,8 @@ export default function Trip() {
             </div>
 
             <Footer />
+            <Fbfaq />
+
         </div>
     );
 }

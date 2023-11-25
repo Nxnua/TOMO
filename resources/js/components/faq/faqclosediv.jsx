@@ -1,10 +1,10 @@
 import { Disclosure } from "@headlessui/react";
-import Fbfaq from "../components/fbfaq";
+import Fbfaq from "./Fbfaq";
 
 export default function FaqIcon() { 
 	return ( 
 
-        <div>
+        <div>gcbty
    
             <Fbfaq/>
 
@@ -18,7 +18,7 @@ export default function FaqIcon() {
           <div className="flex justify-between items-center mb-4">
             <h6 className="text-xl font-semibold">Hotspot</h6>
             
-            <a href="faq" className="text-gray-500 hover:text-blue-700">
+            <a href="faq" className="text-gray-500 hover:text-amber-700">
               
               <svg
                 xmlns="http://www.w3.org/2000/svg" 

@@ -2,14 +2,14 @@ import Review from "./review/review";
 export default function Guide({ name, description, image, review, star }) {
     return (
 
-        <div className="flex mb-5  dark:bg-darknav  bg-white dark:border-neutral-400  rounded-2xl w-[450px] h-[300px] border border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)]">
+        <div className="flex mb-5 dark:bg-darknav  bg-white dark:border-gray-800 rounded-2xl w-[450px] h-[300px] border border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)]">
             <div className=" w-[35%]  flex flex-col justify-between items-center">
                 
-                <div className="float-left w-[150px] h-[150px] rounded-2xl">
+                <div className="float-left w-full h-[150px] rounded-2xl">
                     <img
                         src={image}
                         alt=""
-                        className="float-left w-[150px] h-[150px] rounded-2xl "
+                        className="float-left w-full h-[150px] rounded-2xl "
                     />
                     
                 </div>
@@ -55,7 +55,7 @@ export default function Guide({ name, description, image, review, star }) {
                 </div>
                 <div className=" transition ease-in-out delay-50  hover:scale-105  mt-5 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
                 <button className="text-sm text-white bg-orange dark:border-orange-400 dark:bg-[#383C51] w-[90%] border py-1 rounded-lg font-normal tracking-tight">
-                        Book now
+                        <a href="/guide">Book now</a>
                     </button>
                 </div>
 
