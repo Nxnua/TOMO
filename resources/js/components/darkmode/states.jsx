@@ -1,4 +1,5 @@
-import { createContext, useContext, useState } from "react";
+import { initFlowbite } from "flowbite";
+import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext("light");
 export const ThemeContextProvider = ({children}) => {
     const [isDark, setDark] = useState(false);
@@ -9,6 +10,9 @@ export const ThemeContextProvider = ({children}) => {
         darkMode: isDark,
         setDarkMode,
     };
+    useEffect(() => {
+        initFlowbite()
+    }, [])
 
     return (
         <ThemeContext.Provider value={contextValue}>
