@@ -12,32 +12,7 @@ const Single = () => {
             <div className="absolute text-xs text-[#7451f8] bg-[#7551f818] cursor-pointer p-[5px] rounded-[0px_0px_0px_5px] right-0 top-0">Edit</div>
             <h1 className="text-base text-[lightgray] mb-5">Information</h1>
             <div className="flex gap-5">
-              <img
-                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                alt=""
-                className="w-[100px] h-[100px] object-cover rounded-[50%]"
-              />
-              <div className="details">
-                <h1 className="text-[#555] mb-2.5">Jane Doe</h1>
-                <div className="text-sm mb-2.5">
-                  <span className="font-[bold] text-[gray] mr-[5px]">Email:</span>
-                  <span className="font-light">janedoe@gmail.com</span>
-                </div>
-                <div className="text-sm mb-2.5">
-                  <span className="font-[bold] text-[gray] mr-[5px]">Phone:</span>
-                  <span className="font-light">+1 2345 67 89</span>
-                </div>
-                <div className="text-sm mb-2.5">
-                  <span className="font-[bold] text-[gray] mr-[5px]">Address:</span>
-                  <span className="font-light">
-                    Elton St. 234 Garden Yd. NewYork
-                  </span>
-                </div>
-                <div className="text-sm mb-2.5">
-                  <span className="font-[bold] text-[gray] mr-[5px]">Country:</span>
-                  <span className="font-light">USA</span>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
