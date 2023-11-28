@@ -12,8 +12,8 @@ const Sidebar = () => {
   return (
     <div className="flex-1 min-h-screen bg-slate-500 border-r-[0.5px] border-r-[rgb(230,227,227)] border-solid">
       <div className="h-[50px] flex items-center justify-center">
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="text-xl font-[bold] text-[#ff9539]">SOTOMO</span>
+        <Link to="/admin" style={{ textDecoration: "none" }}>
+          <img src="/images/tomo-new.png" alt="" className="w-[13vw] h-[12vh] hover:opacity-80 " />
         </Link>
       </div>
       <hr className="h-0 border-[0.5px] border-solid border-[rbg(230,227,227)]"/>
@@ -31,7 +31,7 @@ const Sidebar = () => {
               <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Users</span>
             </li>
           </Link>
-          <Link to="/travel" style={{ textDecoration: "none" }}>
+          <Link to="/admin/travel" style={{ textDecoration: "none" }}>
             <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
               <MdTravelExplore color="white"/>
               <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Travel</span>
@@ -55,10 +55,12 @@ const Sidebar = () => {
           <CgProfile color="white"/>
             <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Profile</span>
           </li>
+          <Link to="/">
           <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
           <CiLogout color="white"/>
             <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Logout</span>
           </li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -41,7 +41,7 @@ export default function Main() {
 
                 <p className=" text-2xl  font-bold mb-12 mt-20"> Trips</p>
 
-                <div className="grid justify-between mx-auto xl:grid-cols-4 md:gap-8 lg:gap-8 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                <div className="grid justify-between mx-auto xl:grid-cols-4 md:gap-8 lg:grid-cols-3 lg:gap-8 md:grid-cols-2 grid-cols-1">
                     {tripList.map((item, i) => {
                         return (
                             <TripComponent

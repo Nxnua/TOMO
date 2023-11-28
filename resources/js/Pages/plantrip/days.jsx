@@ -4,6 +4,7 @@ import Footer from "../../components/footer";
 import { Link } from "react-router-dom";
 import { data } from "../data";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import Fbfaq from "../../components/faq/Fbfaq";
 
 export const Days = () => {
     const slideLeft = () => {
@@ -79,10 +80,10 @@ export const Days = () => {
                 />
             </div>
             <Link to="/plantrip/prefer"><button className="mt-10 mb-3 rounded-full bg-yellow-400 py-2 px-3.5 text-sm capitalize text-white">next</button></Link>
-            <div>
+            
                 <Footer/>
-            </div>
+            
+            <Fbfaq />
     </div>
   ) 
 }
-

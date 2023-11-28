@@ -9,6 +9,30 @@ import { Search } from "../../components/search";
 import { StarRating } from "../../components/review/StarRating";
 import { useState } from "react";
 import Fbfaq from "../../components/faq/Fbfaq";
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
+const RangeSlider = () => {
+    const [range, setRange] = useState([80, 1500]);
+  
+    const handleRangeChange = (newRange) => {
+      setRange(newRange);
+    };
+  
+    return (
+      <div className=" px-4">
+        <Slider
+    
+            range={true}
+          min={0}
+          max={3500}
+          step={1}
+          value={range}
+          onChange={handleRangeChange}
+        />
+        <p>Price: ${range[0]} -  ${range[1]}</p>
+      </div>
+    );
+  };
 
 export default function Trip() {
     const filter = [
@@ -146,9 +170,7 @@ export default function Trip() {
                                 <p className=" w-full border-b-2 flex justify-start">
                                     &emsp; PRICE
                                 </p>
-                                <div className=" mt-4 ml-2 dark:opacity-80">
-                                    <img src="/images/price.png" alt="" />
-                                </div>
+                                <RangeSlider/>
                             </div>
 
                             <div className=" mt-8">
@@ -267,3 +289,5 @@ export default function Trip() {
         </div>
     );
 }
+
+

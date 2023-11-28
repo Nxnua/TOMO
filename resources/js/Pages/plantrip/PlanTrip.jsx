@@ -1,6 +1,7 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { Link } from "react-router-dom";
+import Fbfaq from "../../components/faq/Fbfaq";
 
 
 export default function Plantrip () {
@@ -97,6 +98,7 @@ export default function Plantrip () {
             
             
             <Footer />
+            <Fbfaq />
             
         </div>
     );

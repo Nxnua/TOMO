@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import Fbfaq from "../../components/faq/Fbfaq";
 
 
 export const Prefer = () => {
@@ -203,12 +202,11 @@ export const Prefer = () => {
                         type="submit"
                         class=" ml-5  text-white bottom-2.5 bg-amber-600 hover:bg-amber-500 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2"
                     >
-                        <a href='/planyourtrip'>Submit</a>
+                        Submit
                     </button>
                 </div>
             </form>
             <Footer/>
-            <Fbfaq />
     </div>
   )
 }

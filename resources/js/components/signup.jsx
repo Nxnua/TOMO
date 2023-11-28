@@ -10,17 +10,11 @@ export default function SignUp({ signHandler }) {
         password: "",
         password1: "",
     });
-    const onSignUp = (e) => {
-        e.preventDefault();
-        console.log(formData);
 
-        return;
-    };
-    const onChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    // const onChange = (e) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // };
 
-    const [showLogin, setShowLogin] = useState(false);
 
     return (
         <div className="rounded-2xl w-[30vw] h-full bg-white float-right dark:bg-darkbg">
@@ -35,7 +29,6 @@ export default function SignUp({ signHandler }) {
                     className=" flex flex-col justify-center "
                 >
                     <input
-                        onChange={onChange}
                         type="email"
                         name=""
                         id=""
@@ -43,7 +36,7 @@ export default function SignUp({ signHandler }) {
                         className="w-[80%] mx-auto mb-2 h-10 lg:mb-4 lg:h-12 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400 dark:bg-darknav dark:border-0 text-sm rounded-md border-[#E5E5E5] "
                     />
                     <input
-                        onChange={onChange}
+                    
                         type="password"
                         name=""
                         id=""
@@ -51,7 +44,6 @@ export default function SignUp({ signHandler }) {
                         className=" w-[80%] mx-auto mb-2 h-10 lg:mb-4 lg:h-12 border-[2px] px-5 focus:bg-neutral-200 focus:outline-none placeholder-neutral-400 dark:bg-darknav dark:border-0 text-sm rounded-md border-[#E5E5E5] "
                     />
                     <input
-                        onChange={onChange}
                         type="password"
                         name=""
                         id=""

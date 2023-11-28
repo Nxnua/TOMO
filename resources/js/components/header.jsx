@@ -65,7 +65,7 @@ function Header() {
             <Link className="ms-10" to="/">
                 <img
                     src={
-                        darkMode ? "/images/Tomo-White.png" : "/images/tomo-new.png"
+                        darkMode ? "/images/tomo-new.png" : "/images/tomo-new.png"
                     }
                     alt=""
                     className="w-[13vw] h-[12vh]  mt-1 hover:opacity-80"
@@ -135,12 +135,12 @@ function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <a
-                                    href=""
+                                <Link
+                                    to="/Flights"
                                     className="hover:text-orange border-black dark:hover:border-white hover:border-b"
                                 >
                                     Flights
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
