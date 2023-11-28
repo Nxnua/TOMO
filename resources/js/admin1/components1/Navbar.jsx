@@ -35,9 +35,6 @@ const Navbar = () => {
             <div className="w-[10px] h-[10px] bg-[red] text-[white] flex items-center justify-center text-[10px] font-[bold] absolute top-[-5px] right-[-5px] rounded-[50%]">2</div>
           </div>
           <div className="flex items-center relative mr-5">
-          
-          </div>
-          <div className="flex items-center relative mr-5">
             <img
               src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
               alt=""
@@ -47,12 +44,9 @@ const Navbar = () => {
                 className="  md:static float-right relative left-0 top-86px md:w-auto sm:justify-between w-full flex items-center"
                 onMouseLeave={closeDropdowns}
             >
-                <ul>
-                    <li
-                        id="gundalai"
-                        className="relative"
-                        onMouseEnter={toggleProfileDropdown}
-                    >
+                <ul id="gundalai"
+                    className="relative"
+                    onMouseEnter={toggleProfileDropdown}>
                         <Link
                             className="hover:text-gray-500 inline-block"
                         >
@@ -71,7 +65,7 @@ const Navbar = () => {
                                     profile
                                 </Link>
                             </li>
-                            <li>
+                            <li className="relative">
                               <Link
                               to="/"
                               className="hover:text-orange dark:hover:border-white border-black hover:border-b"
@@ -80,7 +74,7 @@ const Navbar = () => {
                               </Link>  
                             </li>
                         </ul>
-                    </li>
+                    
                 </ul>
             </div>
           </div>
