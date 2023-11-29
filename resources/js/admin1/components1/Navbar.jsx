@@ -2,14 +2,15 @@ import { FaEnvelope, FaSearch } from 'react-icons/fa'
 import { GrLanguage } from "react-icons/gr";
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-const Navbar = () => {
-  const [ProfileDropdownVisible, setProfileDropdownVisible] = useState(false);
 
-  const toggleProfileDropdown = () => {
-    setProfileDropdownVisible(!ProfileDropdownVisible);
-  };
-  const closeDropdowns = () => {
-    setProfileDropdownVisible(false);
+
+const Navbar = () => {
+  const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
+const toggleTripsDropdown = () => {
+  setTripsDropdownVisible(!tripsDropdownVisible);
+};
+const closeDropdowns = () => {
+  setTripsDropdownVisible(false);
 };
   return (
     <div className="h-[50px] flex items-center text-sm text-[#555] border-b-[0.5px] border-b-[rgb(252,251,250)] border-solid bg-white">
@@ -38,15 +39,18 @@ const Navbar = () => {
             <img
               src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
               alt=""
-              className="w-[30px] h-[30px] rounded-[50%]"
+              className="w-[30px] h-[30px] rounded-[50%] mr-2"
             />
             <div
                 className="  md:static float-right relative left-0 top-86px md:w-auto sm:justify-between w-full flex items-center"
                 onMouseLeave={closeDropdowns}
             >
-                <ul id="gundalai"
-                    className="relative"
-                    onMouseEnter={toggleProfileDropdown}>
+                <ul>
+                    <li
+                        id="gundalai"
+                        className="relative"
+                        onMouseEnter={toggleProfileDropdown}
+                    >
                         <Link
                             className="hover:text-gray-500 inline-block"
                         >
@@ -54,18 +58,18 @@ const Navbar = () => {
                         </Link>
                         <ul
                             className={`${
-                                ProfileDropdownVisible ? "block" : "hidden"
+                                tripsDropdownVisible ? "block" : "hidden"
                             } absolute border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out  dark:bg-darknav`}
                         >
                             <li className="relative">
                                 <Link
-                                    to="#"
+                                    to="/planyourtrip"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
-                                    profile
+                                    Plan a trip
                                 </Link>
                             </li>
-                            <li className="relative">
+                            <li>
                               <Link
                               to="/"
                               className="hover:text-orange dark:hover:border-white border-black hover:border-b"

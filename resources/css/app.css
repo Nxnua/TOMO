@@ -197,3 +197,24 @@ body {
         opacity: 0;
     }
 }
+.rc-slider-rail {
+    @apply bg-slate-200  !important
+  }
+
+.rc-slider-handle {
+    @apply bg-orange  border-0 opacity-100 !important
+
+}
+.rc-slider-track {
+    @apply bg-orange border-none opacity-100 !important
+
+}
+.rc-slider-handle-dragging {
+    @apply bg-orange border-none opacity-80 !important;
+    box-shadow: 0 0 0 5px orange !important;
+}
+.rc-slider-handle:focus-visible {
+    @apply border-0 !important;
+    box-shadow: 0 0 0 1px orange !important;
+  
+  }

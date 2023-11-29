@@ -11,7 +11,7 @@ import Feedback from "./Pages/feedback";
 import Faq from "./Pages/faq";
 import Faqclose from "./components/faq/faqClose";
 import Home1 from "./admin1/pages1/home1";
-import { Travel } from "./admin1/pages1/travel";
+//import App from "./admin1/App";
 import Single from "./admin1/pages1/Single";
 import { GuideDetail } from "./Pages/Guide/GuideDetail";
 import Reviews from "./Pages/Reviews";
@@ -82,18 +82,6 @@ const router = createBrowserRouter([
     {
         path: "/admin/travel",
         element: <Travel />,
-    },
-    {
-        path: "/admin/orders",
-        element: <Orders />,
-    },
-    {
-        path: "/admin/logs",
-        element: <Logs />,
-    },
-    {
-        path: "/admin/profile",
-        element: <Profile1 />,
     },
     {
         path: "/reviews",
