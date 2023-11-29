@@ -1,5 +1,5 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/main/header";
+import Footer from "../components/main/footer";
 import { useState } from "react";
 import ProfileEditPage from "../components/profileComponent";
 import ChangePasswordPage from "../components/profilePassword";

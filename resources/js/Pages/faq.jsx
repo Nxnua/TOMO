@@ -1,5 +1,5 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/main/header";
+import Footer from "../components/main/footer";
 import Fbfaq from "../components/faq/Fbfaq";
 
 export default function Accordion() {

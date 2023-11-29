@@ -1,11 +1,11 @@
-import Header from "../../components/header";
+import Header from "../../components/main/header";
 import { tripList } from "../data";
 import TripComponent from "../../components/tripComponent";
 import { v4 } from "uuid";
-import Footer from "../../components/footer";
+import Footer from "../../components/main/footer";
 import { GrSearch } from "react-icons/gr";
 import BreadCrumb from "../../components/breadcrumb";
-import { Search } from "../../components/search";
+import { Search } from "../../components/main/search";
 import { StarRating } from "../../components/review/StarRating";
 import { useState } from "react";
 import Fbfaq from "../../components/faq/Fbfaq";

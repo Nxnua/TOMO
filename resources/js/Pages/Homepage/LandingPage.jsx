@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Banner from "../../components/banner/banner";
-import { SignUpNavigator } from "../../components/signupnav";
-import Start from "../../components/start";
-import Login from "../../components/login";
+import { SignUpNavigator } from "../../components/signinup/signupnav";
+import Start from "../../components/main/start";
+import Login from "../../components/signinup/login";
 export default function Landing(scroll) {
     const [onStart, setOnStart] = useState(false);
     return (

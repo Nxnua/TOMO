@@ -1,5 +1,5 @@
-import DarkThemeToggle from "./darkmode/darkModeToggler";
-import { useThemeContext } from "./darkmode/states";
+import DarkThemeToggle from "../darkmode/darkModeToggler";
+import { useThemeContext } from "../darkmode/states";
 export default function Start({ startHandler }) {
     const { darkMode } = useThemeContext();
     return (

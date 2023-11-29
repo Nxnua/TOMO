@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import DarkThemeToggle from "./darkmode/darkModeToggler";
-import { useThemeContext } from "./darkmode/states";
+import DarkThemeToggle from "../darkmode/darkModeToggler";
+import { useThemeContext } from "../darkmode/states";
 import { Modal, Button } from "flowbite-react";
-import Login from "./login";
-import { SignUpNavigator } from "./signupnav";
+import { SignUpNavigator } from "../signinup/signupnav";
 
 function Header() {
     const { darkMode } = useThemeContext();

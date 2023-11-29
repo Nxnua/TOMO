@@ -1,9 +1,9 @@
-import Header from "../../components/header";
+import Header from "../../components/main/header";
 import { v4 } from "uuid";
 import Review from "../../components/review/review";
 import ReviewSection from "../../components/review/ReviewSection";
 import { tripList, tripDays } from "../data";
-import Footer from "../../components/footer";
+import Footer from "../../components/main/footer";
 import { useEffect, useState } from "react";
 import { Accordion, Datepicker } from "flowbite-react";
 import BreadCrumb from "../../components/breadcrumb";

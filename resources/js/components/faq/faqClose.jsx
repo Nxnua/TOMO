@@ -1,5 +1,5 @@
-import Header from "../header";
-import Footer from "../footer";
+import Header from "../main/header";
+import Footer from "../main/footer";
 import Fbfaq from "./Fbfaq";
 import Closediv from "./faqclosediv";
 

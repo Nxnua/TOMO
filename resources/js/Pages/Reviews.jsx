@@ -1,6 +1,6 @@
 import { UserReview } from "../components/review/ReviewSection";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/main/header";
+import Footer from "../components/main/footer";
 import BreadCrumb from "../components/breadcrumb";
 export default function Reviews() {
     return (

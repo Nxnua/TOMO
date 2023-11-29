@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../components/main/header";
+import Footer from "../../components/main/footer";
 import { Link } from "react-router-dom";
 import { data } from "../data";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";

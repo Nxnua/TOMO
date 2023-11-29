@@ -1,5 +1,5 @@
-import Footer from "../../components/footer";
-import Header from "../../components/header";
+import Footer from "../../components/main/footer";
+import Header from "../../components/main/header";
 import React from "react";
 import Guide from "../../components/guideComponent";
 import { v4 } from "uuid";
@@ -7,7 +7,7 @@ import TripComponent from "../../components/tripComponent";
 import SvgComponent from "../../components/Map";
 import { guide, tripList } from "../data";
 import { Link } from "react-router-dom";
-import { Search, SearchCategory } from "../../components/search";
+import { Search, SearchCategory } from "../../components/main/search";
 import Fbfaq from "../../components/faq/Fbfaq";
 
 export default function Main() {

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { BrowserRouter } from "react-router-dom";
 import { Flowbite, DarkThemeToggle } from "flowbite-react";
 export default function Login({ signUpHandler }) {
