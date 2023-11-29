@@ -20,6 +20,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SvgComponent from "./components/Map";
 import { Profile } from "./Pages/Profile";
 import { ThemeContextProvider } from "./components/darkmode/states";
+import { Orders } from "./admin1/pages1/Orders";
+import { Logs } from "./admin1/pages1/Logs";
+import { Profile1 } from "./admin1/pages1/Profile";
 
 
 
@@ -79,6 +82,18 @@ const router = createBrowserRouter([
     {
         path: "/admin/travel",
         element: <Travel />,
+    },
+    {
+        path: "/admin/orders",
+        element: <Orders />,
+    },
+    {
+        path: "/admin/logs",
+        element: <Logs />,
+    },
+    {
+        path: "/admin/profile",
+        element: <Profile1 />,
     },
     {
         path: "/reviews",

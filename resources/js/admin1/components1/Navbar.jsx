@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className='mr-1'>
             <GrLanguage  />
             </div>
-            <Link to="#">English</Link>
+            <Link to="/" >English</Link>
           </div>
           <div className="flex items-center relative mr-5">
             <div className='mr-1'>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <Link
                             className="hover:text-gray-500 inline-block"
                         >
-                            gundalai
+                            Gundalai
                         </Link>
                         <ul
                             className={`${
