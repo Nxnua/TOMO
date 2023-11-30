@@ -103,7 +103,7 @@
     }
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
     0%,
     100% {
         transform: translateY(-4%);
@@ -117,7 +117,7 @@
     bounce {
         animation: delay 2s;
     }
-}
+} */
 
 /*MY CSS*/
 

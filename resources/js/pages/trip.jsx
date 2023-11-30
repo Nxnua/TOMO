@@ -40,7 +40,6 @@ export const TripDetail = () => {
                 }
             });
         };
-
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -50,7 +49,7 @@ export const TripDetail = () => {
     return (
         <>
             <div
-                className={` mx-28  z-10   h-10 dark:bg-darknav bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] dark:border-gray-600 overflow-x-hidden top-[8.5vh] sticky `}
+                className={` mx-28  z-10   h-10 dark:bg-darknav bg-[#F6F6F6] flex flex-row items-center justify-between rounded-md border-b-2 border-[#D9D9D9] dark:border-gray-600 overflow-x-hidden`}
             >
                 <div className="  flex flex-row  items-center ">
                     {menuList.map((item, i) => {

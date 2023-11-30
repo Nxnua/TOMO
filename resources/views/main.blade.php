@@ -8,8 +8,7 @@
     <title>Томо</title>
 
     @viteReactRefresh
-    @vite('../resources/js/main.jsx')
-    @vite('../resources/css/app.css')
+     @vite(['resources/css/app.css', 'resources/js/main.jsx'])
     <script>
         localStorage.theme === 'dark' ||
             (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) ?

@@ -11,7 +11,7 @@
     "Eagle hunting family",
     "Golden Eagle Festival"
   ],
-  "price": "3530",
+  "price": 3530,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -84,7 +84,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, local hotel or ger camp, tented camping\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding /optional/",
   "notIncludes": "Accommodation: Hotel****, local hotel or ger camp, tented camping\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding /optional/",
-  "slug": "golden eagle festival and altai mountain 2024 tour",
+  "slug": "golden-eagle-festival-and-altai-mountain-2024-tour",
   "prices": [
     "2 PAX",
     "3530$",
@@ -92,7 +92,10 @@
     "3310$",
     "5-8 PAX",
     "3135$"
-  ]
+  ],
+  "discount": null,
+  "duration": "9 days and 8 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -107,7 +110,7 @@
     "Ethnic Cultural Performances",
     "Traditional Games and competition on horseback"
   ],
-  "price": "2035",
+  "price": 2035,
   "dailyData": [
     {
       "number": "DAY 1. /SEP 15/",
@@ -150,7 +153,7 @@
   ],
   "inclusions": "Accommodation: Tourist camp in Ulgii town\nPhotography sessions\nA photo guide and interpreting service\nFull board meals \nTransport: Off-road 4x4 minivan\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nMuseums and cultural performance\nTransfer from/ to airport in Ulaanbaatar",
   "notIncludes": "Accommodation: Tourist camp in Ulgii town\nPhotography sessions\nA photo guide and interpreting service\nFull board meals \nTransport: Off-road 4x4 minivan\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nMuseums and cultural performance\nTransfer from/ to airport in Ulaanbaatar",
-  "slug": "sagsai golden eagle festival tour 2024",
+  "slug": "sagsai-golden-eagle-festival-tour-2024",
   "prices": [
     "2 PAX",
     "2035$",
@@ -158,7 +161,10 @@
     "1865$",
     "6-8 PAX",
     "1675$"
-  ]
+  ],
+  "discount": null,
+  "duration": "5 days and 4 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -167,7 +173,7 @@
   "title": "Snow Leopard Tour Mongolia | Ultimate Wildlife Photo Adventure 2023/2024",
   "overview": "Mongolia Snow Leopard Tour is dedicated for those who seek wild and ultimate photographic adventure to capture the elusive Snow Leopard and iconic mammals in their natural habitat. Based on our years of wildlife photography experiences and partnering with local rangers this special tour is designed well and run successfully. Mongolian Altai region, home to the largest snow Leopard population in Mongolia and rare wildlife, lying on 2000m-3500m (m.a.sl.) which gives a higher chance to see rare Snow Leopard and allows us to photograph Argali sheep, Siberian ibex, Grey wolf, Pallas’s cat and some rare species of raptors. Take a once-in-lifetime adventure to the remote Altai Mountains in west Mongolia with experienced photographer Batzaya Choijiljav and wildlife specialists, visiting golden eagle hunters to learn ancient falconry traditions, photograph real hunting scenes and experiencing nomads’ winter lifestyle before heading to the mountains. Read the about previous trip  ",
   "locations": [],
-  "price": " 4750",
+  "price": 4750,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -228,7 +234,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, ger/yurt, tent , Guiding and interpreting service , Wildlife & Photo specialist guide, Full board meals, Domestic flights (UB-Ulgii-UB), Transport: 4x4 vehicle , Entrance fees to protected areas and national parks, Camping equipment",
   "notIncludes": "Accommodation: Hotel****, ger/yurt, tent ",
-  "slug": "snow leopard tour mongolia  ultimate wildlife photo adventure 2023/2024",
+  "slug": "snow-leopard-tour-mongolia--ultimate-wildlife-photo-adventure-20232024",
   "prices": [
     "2 PAX",
     "$ 4750",
@@ -236,7 +242,10 @@
     "$ 4390",
     "5-6 PAX",
     "$ 4050"
-  ]
+  ],
+  "discount": null,
+  "duration": "8 days and 7 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -251,7 +260,7 @@
     "Eagle hunting family and culture of ethnic Kazakhs",
     "Snow-capped mountains"
   ],
-  "price": "3180",
+  "price": 3180,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -348,7 +357,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan \nDomestic flights (Ulaanbaatar-Ulgii & Khovd-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan \nDomestic flights (Ulaanbaatar-Ulgii & Khovd-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding\nCamping equipments",
-  "slug": "adventures in altai tavan bogd mountains tour",
+  "slug": "adventures-in-altai-tavan-bogd-mountains-tour",
   "prices": [
     "2 PAX",
     "3180$",
@@ -356,7 +365,10 @@
     "2880$",
     "5-8 PAX",
     "2790$"
-  ]
+  ],
+  "discount": null,
+  "duration": "12 days and 11 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -372,7 +384,7 @@
     "Erdene Zuu Monastery",
     "Khustai National Park - the home of the only wild horse in the world"
   ],
-  "price": "2750",
+  "price": 2750,
   "dailyData": [
     {
       "number": "DAY 1. /02 JUL/",
@@ -461,7 +473,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camps\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle \nNaadam festival ticket\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/,  ",
   "notIncludes": "Accommodation: Hotel****,* ger camps\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle \nNaadam festival ticket\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/",
-  "slug": "naadam festival and gobi desert tour",
+  "slug": "naadam-festival-and-gobi-desert-tour",
   "prices": [
     "2 PAX",
     "2750$",
@@ -469,7 +481,10 @@
     "2470$",
     "5-8 PAX",
     "2380$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -478,7 +493,7 @@
   "title": "Golden Eagle Festival Mongolia Photo Tour 2024",
   "overview": "This Mongolian Photographic Expedition to the Golden Eagle Festival is dedicated to photographers, who need more private sessions for capturing unique images of Golden Eagles, Eagle hunters, and their real life. The Eagle Festival is held during the first weekend in October. Before the festival, we will capture snow-capped Altai Mountains of Mongolia, magnificent lake Tolbo and ethnic diversity. ",
   "locations": [],
-  "price": "2940",
+  "price": 2940,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -534,7 +549,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, local hotel or ger camp\nPhotography guiding and interpreting service\nPrivate photographic sessions\nFull board meals\nTransport: 4x4 vehicle\nDomestic round-trip flights\nFestival tax\nMuseums and cultural performance",
   "notIncludes": "Accommodation: Hotel****, local hotel or ger camp\nPhotography guiding and interpreting service\nPrivate photographic sessions\nFull board meals\nTransport: 4x4 vehicle\nDomestic round-trip flights\nFestival tax\nMuseums and cultural performance",
-  "slug": "golden eagle festival mongolia photo tour 2024",
+  "slug": "golden-eagle-festival-mongolia-photo-tour-2024",
   "prices": [
     "2 PAX",
     "2940$",
@@ -542,7 +557,10 @@
     "2750$",
     "6-8 PAX",
     "2540$"
-  ]
+  ],
+  "discount": null,
+  "duration": "7 days and 6 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -558,7 +576,7 @@
     "Khongor Sand Dunes",
     "Yol valley - Gobi Gurvan Saikhan National Park"
   ],
-  "price": "2240",
+  "price": 2240,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -639,7 +657,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/",
-  "slug": "gobi desert and orkhon valley tour in mongolia",
+  "slug": "gobi-desert-and-orkhon-valley-tour-in-mongolia",
   "prices": [
     "2 PAX",
     "2240$",
@@ -651,7 +669,10 @@
     "1650$",
     "13-15 PAX",
     "1590$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -666,7 +687,7 @@
     "Gobi Desert - Dinosaur Trail",
     "Camel herding nomad family"
   ],
-  "price": "2995",
+  "price": 2995,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -785,7 +806,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* standard ger camp in the countryside\nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment, An hour horse and camel riding",
   "notIncludes": "Accommodation: Hotel****,* standard ger camp in the countryside\nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment",
-  "slug": "mongolia overland tour 2024/2025",
+  "slug": "mongolia-overland-tour-20242025",
   "prices": [
     "2 PAX",
     "2995$",
@@ -797,7 +818,10 @@
     "2335$",
     "13-15 PAX",
     "2250$"
-  ]
+  ],
+  "discount": null,
+  "duration": "15 days and 14 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -812,7 +836,7 @@
     "Erdene Zuu Monastery",
     "Wild horses in Hustai NP"
   ],
-  "price": "935",
+  "price": 935,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -855,7 +879,7 @@
   ],
   "inclusions": "Accommodation: Tourist ger camps \nPhotography Guide & interpreting service\nPhotographic sessions\nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance,  ",
   "notIncludes": "Accommodation: Tourist ger camps \nPhotography Guide & interpreting service\nPhotographic sessions\nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "5 day photography tour in mongolia",
+  "slug": "5-day-photography-tour-in-mongolia",
   "prices": [
     "2 PAX",
     "935$",
@@ -863,7 +887,10 @@
     "825$",
     "5-8 PAX",
     "740$"
-  ]
+  ],
+  "discount": null,
+  "duration": "5 days and 4 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -879,7 +906,7 @@
     "Khorgo-Terkhiin Tsagaan Lake National Park",
     "Erdene Zuu Monastery in Kharkhorin, the ancient capital of the Mongol Empire"
   ],
-  "price": "3150",
+  "price": 3150,
   "dailyData": [
     {
       "number": "DAY 1",
@@ -976,7 +1003,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nBorder permission\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nBorder permission\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding\nCamping equipments",
-  "slug": "mongolian blue trail to spiritual shaman tour",
+  "slug": "mongolian-blue-trail-to-spiritual-shaman-tour",
   "prices": [
     "2 PAX",
     "$3150",
@@ -986,7 +1013,10 @@
     "$2490",
     "9-12 PAX",
     "$2170"
-  ]
+  ],
+  "discount": null,
+  "duration": "12 days and 11 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1000,7 +1030,7 @@
     "Riding adventure in the wilderness",
     "Legendary Orkhon Valley and Kharkhorin, the ancient capital city of the Mongol Empire"
   ],
-  "price": "2490",
+  "price": 2490,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1091,7 +1121,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guide for horseback riding\nHorseback riding\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guide for horseback riding\nHorseback riding\nCamping equipments",
-  "slug": "a true nomadic adventure tour",
+  "slug": "a-true-nomadic-adventure-tour",
   "prices": [
     "2 PAX",
     "2490$",
@@ -1103,7 +1133,10 @@
     "1890$",
     "13-15 PAX",
     "1790$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1118,7 +1151,7 @@
     "Photo shooting of wrestling, archery, and horse racing competitions in off-target",
     "Add your photo pack in historical sites of Orkhon Valley"
   ],
-  "price": "2940",
+  "price": 2940,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1223,7 +1256,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nTickets to Naadam Festival (opening ceremony & horse racing)\nMuseums and cultural performance\nCamel riding\nHorseback riding (optional)",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nTickets to Naadam Festival (opening ceremony & horse racing)\nMuseums and cultural performance\nCamel riding\nHorseback riding (optional)",
-  "slug": "classic mongolia photography tour",
+  "slug": "classic-mongolia-photography-tour",
   "prices": [
     "2 PAX",
     "2940$",
@@ -1231,7 +1264,10 @@
     "2860$",
     "5-8 PAX",
     "2730$"
-  ]
+  ],
+  "discount": null,
+  "duration": "13 days and 12 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1246,7 +1282,7 @@
     "Visit Kazakh family, family stay in their colorful gers",
     "Meeting with Eagle Hunters"
   ],
-  "price": "3780",
+  "price": 3780,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1325,7 +1361,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (Ulaanbaatar-Ulgii-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nFestival tax\nCamel riding",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (Ulaanbaatar-Ulgii-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nFestival tax\nCamel riding",
-  "slug": "eagle hunting festival and golden gobi-2024 tour",
+  "slug": "eagle-hunting-festival-and-golden-gobi-2024-tour",
   "prices": [
     "2 PAX",
     "3780$",
@@ -1333,7 +1369,10 @@
     "3550$",
     "5-8 PAX",
     "3420$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1348,7 +1387,7 @@
     "Khongor Sand Dunes and Dinosaur Fossil Sites in Gobi Desert",
     "Amarbayasgalant Monastery and its Surrounding Cultural Landscape"
   ],
-  "price": "3640",
+  "price": 3640,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1477,7 +1516,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* Standard ger camp in the countryside\nGuiding and interpreting service \nFull board meals mentioned in the itinerary\nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment, An hour horse and camel riding",
   "notIncludes": "Accommodation: Hotel****,* Standard ger camp in the countryside\nGuiding and interpreting service \nFull board meals mentioned in the itinerary\nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment",
-  "slug": "mongolia highlights tour with naadam festival 2024/2025",
+  "slug": "mongolia-highlights-tour-with-naadam-festival-20242025",
   "prices": [
     "2 PAX",
     "3640$",
@@ -1487,7 +1526,10 @@
     "2880$",
     "9-12 PAX",
     "2630$"
-  ]
+  ],
+  "discount": null,
+  "duration": "16 days and 15 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1502,7 +1544,7 @@
     "Bird watching at biggest Uvs Lake and Khar Us Lake",
     "Visit local families of Durvud ethnic group"
   ],
-  "price": "3435",
+  "price": 3435,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1591,7 +1633,7 @@
   ],
   "inclusions": "Accommodation: Hotel***,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nDomestic flights \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
   "notIncludes": "Accommodation: Hotel***,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nDomestic flights \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "bird watching in western region of mongolia tour",
+  "slug": "bird-watching-in-western-region-of-mongolia-tour",
   "prices": [
     "2 PAX",
     "3435$",
@@ -1601,7 +1643,10 @@
     "3015$",
     "9-12 PAX",
     "2835$"
-  ]
+  ],
+  "discount": null,
+  "duration": "14 days and 13 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1610,7 +1655,7 @@
   "title": "Mongolia Naadam Festival - 2024 Tour",
   "overview": "Discover the famous Mongolian Naadam Festival. Experience Mongolian culture through our National Holiday and visit  beautiful Terelj National Park. This cultural tour is designed to bring you into the colorful event of the year letting you to discover a lifestyle, arts and music that reflect the true national identity and culture of Mongolian people. In the Terelj National Park, you will enjoy the uniqueness of the nature and the peaceful lifestyle of nomads. ",
   "locations": [],
-  "price": "1100",
+  "price": 1100,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1651,7 +1696,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nFestival tax\nHorseback riding,  ",
   "notIncludes": "Accommodation: Hotel****,* ger camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nFestival tax\nHorseback riding",
-  "slug": "mongolia naadam festival - 2024 tour",
+  "slug": "mongolia-naadam-festival---2024-tour",
   "prices": [
     "2 PAX",
     "1100$",
@@ -1659,7 +1704,10 @@
     "1050$",
     "5-8 PAX",
     "950$"
-  ]
+  ],
+  "discount": null,
+  "duration": "5 days and 4 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1668,7 +1716,7 @@
   "title": "Photo Tour to The Reindeer Herders in Mongolia",
   "overview": "Take a photo tour to the wild Taiga Mountains of Mongolia with an experienced guide. Photographers and travelers have a great opportunity to photograph Mongolia’s epic landscapes such as majestic mountains, peaceful forest, and picturesque lakes along with the hundreds of grazing sheep, galloping horses, caravanning reindeers, explore the lifestyle of authentic Mongol nomads - the yurt dwellers, and experience mysterious shaman rituals while staying with Mongolian Ethnic Dukha Tribe-the teepee dwellers.\n\nYou will be roaming through the taiga wilderness on reindeer and horseback, living with mystical Tsaatan people to experience the primitive lifestyle, sitting around the campfire to talk about shaman stories, staying in a teepee, waking up in the foggy morning surrounded by the photogenic landscape of Northern Mongolia and Capture them all with your camera. All levels of photographers are welcome. If you are a landscape, portrait, travel, or night photographer and looking for your next photo destination then this is the right tour for you. We are your specialized photography guide to Mongolia and ready to help you to collect amazing photoshoots and experience unique culture on this Mongolian Photo Adventure. \n\n ",
   "locations": [],
-  "price": "3150",
+  "price": 3150,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1735,7 +1783,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, and tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (UB-Murun-UB)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCook outside Ulaanbaatar \nHorseback riding\nCamping equipments,  ",
   "notIncludes": "Accommodation: Hotel****,* ger camp, and tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (UB-Murun-UB)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCook outside Ulaanbaatar \nHorseback riding\nCamping equipments",
-  "slug": "photo tour to the reindeer herders in mongolia",
+  "slug": "photo-tour-to-the-reindeer-herders-in-mongolia",
   "prices": [
     "3-4 PAX",
     "3150$",
@@ -1743,7 +1791,10 @@
     "2750$",
     "7-8 PAX",
     "2530$"
-  ]
+  ],
+  "discount": null,
+  "duration": "9 days and 8 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1757,7 +1808,7 @@
     "Orkhon Valley",
     "Naadam Festival"
   ],
-  "price": "2300",
+  "price": 2300,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1838,7 +1889,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nNaadam festival ticket\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding /optional/",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nNaadam festival ticket\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding /optional/",
-  "slug": "mongolia – land of nomadic heritage tour",
+  "slug": "mongolia-–-land-of-nomadic-heritage-tour",
   "prices": [
     "2 PAX",
     "2300$",
@@ -1850,7 +1901,10 @@
     "1950$",
     "13-15 PAX",
     "1850$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1863,7 +1917,7 @@
     "Meeting with eagle hunters",
     "Eagle hunting festival"
   ],
-  "price": "1895",
+  "price": 1895,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1890,7 +1944,7 @@
   ],
   "inclusions": "Accommodation: Tourist camp in Ulgii town\nTour guide and interpreting service\nFull board meals \nTransport: 4x4 minivan\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nMuseums and cultural performance\nTransfer from/ to airport in Ulaanbaatar",
   "notIncludes": "Accommodation: Tourist camp in Ulgii town\nTour guide and interpreting service\nFull board meals \nTransport: 4x4 minivan\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nMuseums and cultural performance\nTransfer from/ to airport in Ulaanbaatar",
-  "slug": "short tour to golden eagle festival 2024",
+  "slug": "short-tour-to-golden-eagle-festival-2024",
   "prices": [
     "2 PAX",
     "1895$",
@@ -1898,7 +1952,10 @@
     "1740$",
     "6-8 PAX",
     "1590$"
-  ]
+  ],
+  "discount": null,
+  "duration": "3 days and 2 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -1914,7 +1971,7 @@
     "Elsen Tasarkhai",
     "Horse riding/Trekking"
   ],
-  "price": "1990",
+  "price": 1990,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -1997,7 +2054,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guide for horseback riding\nHorseback rding\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guide for horseback riding\nHorseback rding\nCamping equipments",
-  "slug": "active adventure in an authentic wilderness tour",
+  "slug": "active-adventure-in-an-authentic-wilderness-tour",
   "prices": [
     "2 PAX",
     "1990$",
@@ -2009,7 +2066,10 @@
     "1540$",
     "13-15 PAX",
     "1475$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2018,7 +2078,7 @@
   "title": "Legendary Mongolian Gobi Tour",
   "overview": "Least thing to do in Mongolia for travelers is to visit two major important highlights of the country: South Gobi and Kharkhorin! Indeed, this itinerary could be classified as a CLASSIC by presenting true essence of Mongolian nature and culture with visits to hospitable nomad settlement, active Buddhist monastery, historical sites and natural parks. Nature along this tour will be changing dramatically: from the golden dunes of Gobi to the open green valleys dotted with wild flowers, through vast steppes, a great waterfall and charming Lake Orog! Additionally, the highlight of the tour is exploring mystical Khermen Tsav- a famous place for paleontologists, locating to the west from scenic Khongor Sand Dunes. Here you will feel like living in a middle of nowhere and end of the world.",
   "locations": [],
-  "price": "2560",
+  "price": 2560,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2136,7 +2196,7 @@
   ],
   "inclusions": "Accommodation: Hotel**** and ger camps in the countryside 2-3 PAX\nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment",
   "notIncludes": "Accommodation: Hotel**** and ger camps in the countryside 2-3 PAX\nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment",
-  "slug": "legendary mongolian gobi tour",
+  "slug": "legendary-mongolian-gobi-tour",
   "prices": [
     "2 PAX",
     "2560$",
@@ -2146,7 +2206,10 @@
     "2210$",
     "9-15 PAX",
     "2060$"
-  ]
+  ],
+  "discount": null,
+  "duration": "16 days and 15 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2161,7 +2224,7 @@
     "Khongor Sand Dune",
     "Yol Valley- Gobi Gurvan Saikhan National Park"
   ],
-  "price": "2650",
+  "price": 2650,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2244,7 +2307,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding /optional/",
-  "slug": "golden gobi and kharkhorin tour mongolia",
+  "slug": "golden-gobi-and-kharkhorin-tour-mongolia",
   "prices": [
     "2 PAX",
     "2650$",
@@ -2256,7 +2319,10 @@
     "1995$",
     "13-15 PAX",
     "1860$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2270,7 +2336,7 @@
     "Hiking on sand dune",
     "Visit local museum"
   ],
-  "price": "1700",
+  "price": 1700,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2321,7 +2387,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nDomestic Round-trip flights (UB-Dalanzadgad-UB)\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nDomestic Round-trip flights (UB-Dalanzadgad-UB)\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding",
-  "slug": "golden gobi short tour mongolia",
+  "slug": "golden-gobi-short-tour-mongolia",
   "prices": [
     "2 PAX",
     "1700$",
@@ -2333,7 +2399,10 @@
     "1280$",
     "13-15 PAX",
     "1230$"
-  ]
+  ],
+  "discount": null,
+  "duration": "6 days and 5 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2346,7 +2415,7 @@
     "Hustai National Park",
     "Wild life nature"
   ],
-  "price": "750",
+  "price": 750,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2375,7 +2444,7 @@
   ],
   "inclusions": "Accommodation: ger camp, wooden house, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding,  ",
   "notIncludes": "Accommodation: ger camp, wooden house, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding",
-  "slug": "hiking in khustai national park tour",
+  "slug": "hiking-in-khustai-national-park-tour",
   "prices": [
     "2 PAX",
     "750$",
@@ -2387,7 +2456,10 @@
     "550$",
     "13-15 PAX",
     "530$"
-  ]
+  ],
+  "discount": null,
+  "duration": "4 days and 3 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2400,7 +2472,7 @@
     "Meeting with eagle hunters",
     "Eagle hunting festival"
   ],
-  "price": "2590",
+  "price": 2590,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2451,7 +2523,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, *ger camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding",
   "notIncludes": "Accommodation: Hotel****, *ger camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle\nDomestic Round-trip Flight (UB-Ulgii-UB)\nFestival tax\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding",
-  "slug": "golden eagle festival 2024 tour",
+  "slug": "golden-eagle-festival-2024-tour",
   "prices": [
     "2 PAX",
     "2590$",
@@ -2459,7 +2531,10 @@
     "2445$",
     "6-8 PAX",
     "2215$"
-  ]
+  ],
+  "discount": null,
+  "duration": "6 days and 5 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2473,7 +2548,7 @@
     "Nomad family visits",
     "Mongolian winter experiences"
   ],
-  "price": "1398",
+  "price": 1398,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2518,7 +2593,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nDomestic Round-trip flights (UB-Murun-UB)\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nFestival taxes",
   "notIncludes": "",
-  "slug": "mongolia winter festivals - 2024 tour",
+  "slug": "mongolia-winter-festivals---2024-tour",
   "prices": [
     "2 PAX",
     "1398$",
@@ -2528,7 +2603,10 @@
     "1198$",
     "9-12 PAX",
     "1098$"
-  ]
+  ],
+  "discount": null,
+  "duration": "6 days and 5 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2544,7 +2622,7 @@
     "Tsambagarav mountain peak (4202 m)",
     "Amazing sceneries of Virgin nature"
   ],
-  "price": "3100",
+  "price": 3100,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2609,7 +2687,7 @@
   ],
   "inclusions": "Accommodation: Hotel***,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nDomestic flights \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorses\nCamping equipments    ",
   "notIncludes": "Accommodation: Hotel***,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nDomestic flights \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorses\nCamping equipments    ",
-  "slug": "trekking in khovd province - tsambagarav mountain tour",
+  "slug": "trekking-in-khovd-province---tsambagarav-mountain-tour",
   "prices": [
     "2 pax",
     "3100$",
@@ -2619,7 +2697,10 @@
     "2750$",
     "13-15 pax",
     "2580$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2628,7 +2709,7 @@
   "title": "Vertical Big Loop North to South of Mongolia Tour",
   "overview": "A real off-road adventure that crosses the vast Mongolian land vertically, while passing by unique wild passages of nature. In less than 20 days, you will encounter yourself in chilling areas of taiga, clear waters of the north, peaceful green meadows, as well as hot desert plains, surrounded by mighty impressive dunes of the south, so different colors like Mongolia itself. Our experienced tour team will let you explore all the wonders that this tour offers. We offer you to spend most of the nights under the star dazzling skies to be settled in beautiful wilderness areas.",
   "locations": [],
-  "price": "3450",
+  "price": 3450,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2749,7 +2830,7 @@
   ],
   "inclusions": "Accommodation: Hotel***, * ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel***, * ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "vertical big loop north to south of mongolia tour",
+  "slug": "vertical-big-loop-north-to-south-of-mongolia-tour",
   "prices": [
     "2 PAX",
     "3450$",
@@ -2761,7 +2842,10 @@
     "2800$",
     "13-15 PAX",
     "2650$"
-  ]
+  ],
+  "discount": null,
+  "duration": "16 days and 15 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2770,7 +2854,7 @@
   "title": "Mongolia Wildlife Photo Tour to Ikh Nart Nature Reserve",
   "overview": "We are sure that, this special wildlife photography tour will give you exciting adventures and amazing shooting. Even it is only 4 days, the landscapes are a perfect challenge to your creative photo interests. We are offering you the chance to get thousands of amazing wildlife photos in the East Gobi Province in Mongolia in the fascinating granite rock formation and globally important population of Argali sheep (Ovis ammon). This is a great wilderness adventure that targeted landscapes with steppe and rocky mountains. The best time for capturing wild animals is early in the morning and evening when they going to the water.",
   "locations": [],
-  "price": "1248",
+  "price": 1248,
   "dailyData": [
     {
       "number": "DAY 1",
@@ -2801,7 +2885,7 @@
   ],
   "inclusions": "Accommodation: * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
   "notIncludes": "Accommodation: * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "mongolia wildlife photo tour to ikh nart nature reserve",
+  "slug": "mongolia-wildlife-photo-tour-to-ikh-nart-nature-reserve",
   "prices": [
     "2 PAX",
     "1248$",
@@ -2811,7 +2895,10 @@
     "998$",
     "9-12 PAX",
     "898$"
-  ]
+  ],
+  "discount": null,
+  "duration": "4 days and 3 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2825,7 +2912,7 @@
     "Adventure hiking",
     "Visiting Nomad family"
   ],
-  "price": "680",
+  "price": 680,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2852,7 +2939,7 @@
   ],
   "inclusions": "Accommodation: Hotel***,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding",
   "notIncludes": "Accommodation: Hotel***,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan Entrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding",
-  "slug": "weekend tour",
+  "slug": "weekend-tour",
   "prices": [
     "2 PAX",
     "680$",
@@ -2864,7 +2951,10 @@
     "420$",
     "13-15 PAX",
     "390$"
-  ]
+  ],
+  "discount": null,
+  "duration": "3 days and 2 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -2881,7 +2971,7 @@
     "Tsambagarav mountain (4202 m)",
     "Ancient rock paintings"
   ],
-  "price": "3650",
+  "price": 3650,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -2988,7 +3078,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flights (Ulaanbaatar-Ulaangom & Khovd-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flights (Ulaanbaatar-Ulaangom & Khovd-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "western mongolia photo safari tour",
+  "slug": "western-mongolia-photo-safari-tour",
   "prices": [
     "2 PAX",
     "3650$",
@@ -3000,7 +3090,10 @@
     "2900$",
     "13-15 PAX",
     "2750$"
-  ]
+  ],
+  "discount": null,
+  "duration": "14 days and 13 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3015,7 +3108,7 @@
     "Portrait photography of the Mongols",
     "Take images of landscape and nomads in Winter"
   ],
-  "price": "450",
+  "price": 450,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3050,7 +3143,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, winter camp or student dormitory\nPhotography Guide\nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performances\nFestival tax\nHorseback riding,  ",
   "notIncludes": "Accommodation: Hotel****, winter camp or student dormitory\nPhotography Guide\nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performances\nFestival tax\nHorseback riding",
-  "slug": "winter horse festival mongolia photo tour",
+  "slug": "winter-horse-festival-mongolia-photo-tour",
   "prices": [
     "2 PAX",
     "450$",
@@ -3058,7 +3151,10 @@
     "350$",
     "5-8 PAX",
     "290$"
-  ]
+  ],
+  "discount": null,
+  "duration": "4 days and 3 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3073,7 +3169,7 @@
     "Eagle hunting kazakh family",
     "Tsambagarav mountain (4202 m)"
   ],
-  "price": "3100",
+  "price": 3100,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3164,7 +3260,7 @@
   ],
   "inclusions": "",
   "notIncludes": "",
-  "slug": "discovery to the far west mongolia tour",
+  "slug": "discovery-to-the-far-west-mongolia-tour",
   "prices": [
     "2 PAX",
     "3100$",
@@ -3174,7 +3270,10 @@
     "2700$",
     "9-12 PAX",
     "2500$"
-  ]
+  ],
+  "discount": null,
+  "duration": "12 days and 11 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3187,7 +3286,7 @@
     "Erdene Zuu Monastery in historical Kharkhorin, the ancient capital of the Mongol empire",
     "Wild horses in Khustai National Park"
   ],
-  "price": "2340",
+  "price": 2340,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3252,7 +3351,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guides for horseback riding\nHorseback riding\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guides for horseback riding\nHorseback riding\nCamping equipments",
-  "slug": "horse riding in legendary orkhon valley tour",
+  "slug": "horse-riding-in-legendary-orkhon-valley-tour",
   "prices": [
     "2 PAX",
     "2340$",
@@ -3264,7 +3363,10 @@
     "1990$",
     "13-15 PAX",
     "1940$"
-  ]
+  ],
+  "discount": null,
+  "duration": "8 days and 7 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3273,7 +3375,7 @@
   "title": "Naadam to Naadam Guided Photo Tour",
   "overview": "Take a trip to Mongolia to join the Naadam festival in two different locations (Ulaanbaatar and the countryside), which the best way to experience Mongolian culture, tradition, arts, music, and lifestyle. Mongolian Naadam Festival is a national holiday and is so traditional, colorful, and thrilling event, held in July, annually all over the country.\n\nThis our Special Naadam Tour, you have an opportunity to arrange private photography sessions, give you a great chance to capture Mongolia's unique Naadam festival and portraits of well-dressed Mongolians along with enjoying local and city Naadam on the same trip. Visit the grand opening ceremony of official Naadam and other cultural events in Ulaanbaatar and then jump to the country road to reach the local Naadam festival which is smaller but not too touristic and crowded so it gives you the chance to explore this unique event at your own pace. You will not only experience the cultural heritage of Mongolia but also enjoy the picturesque landscapes of the country and it is one of the most scenic objects for photographers.\n\n ",
   "locations": [],
-  "price": "1890",
+  "price": 1890,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3328,7 +3430,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nTickets to Naadam Festival (opening ceremony & horse racing)\nMuseums and cultural performance\nHorseback riding (optional)",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nTickets to Naadam Festival (opening ceremony & horse racing)\nMuseums and cultural performance\nHorseback riding (optional)",
-  "slug": "naadam to naadam guided photo tour",
+  "slug": "naadam-to-naadam-guided-photo-tour",
   "prices": [
     "2 PAX",
     "1890$",
@@ -3340,7 +3442,10 @@
     "1560$",
     "13-15 PAX",
     "1490$"
-  ]
+  ],
+  "discount": null,
+  "duration": "7 days and 6 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3355,7 +3460,7 @@
     "Ethnic people of the western provinces",
     "Eagle hunting kazakh family"
   ],
-  "price": "3200",
+  "price": 3200,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3446,7 +3551,7 @@
   ],
   "inclusions": "Accommodation: Hotel***,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nDomestic flight\nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel***,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nDomestic flight\nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "naadam festival 2024 in western mongolia tour",
+  "slug": "naadam-festival-2024-in-western-mongolia-tour",
   "prices": [
     "2 pax",
     "3200$",
@@ -3456,7 +3561,10 @@
     "2800$",
     "9-15 pax",
     "2600$"
-  ]
+  ],
+  "discount": null,
+  "duration": "13 days and 12 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3471,7 +3579,7 @@
     "Fill your lens with the semi wild reindeers, between the mountains and flock of reindeers.",
     "Visit Gandan Monastery in Ulaanbaatar, and enjoy a photo shoot in the eccentric Winter Palace of Bogd Khan."
   ],
-  "price": "2880",
+  "price": 2880,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3570,7 +3678,7 @@
   ],
   "inclusions": "Accommodation: , Guiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nReindeer riding\nCamping equipments",
   "notIncludes": "Accommodation: ",
-  "slug": "extreme winter experience photo tour in northern mongolia",
+  "slug": "extreme-winter-experience-photo-tour-in-northern-mongolia",
   "prices": [
     "4 PAX",
     "2880$",
@@ -3582,7 +3690,10 @@
     "2380$",
     "11-12 PAX",
     "2280$"
-  ]
+  ],
+  "discount": null,
+  "duration": "13 days and 12 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3597,7 +3708,7 @@
     "Khorgo - Terkhiin Tsagaan Lake National Park",
     "Lake Ugii"
   ],
-  "price": "2550",
+  "price": 2550,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3688,7 +3799,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan \nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan \nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding",
-  "slug": "mongolian golden circuit tour: through the monasteries and lakes",
+  "slug": "mongolian-golden-circuit-tour:-through-the-monasteries-and-lakes",
   "prices": [
     "2 PAX",
     "2550$",
@@ -3700,7 +3811,10 @@
     "2050$",
     "13-15 PAX",
     "1950$"
-  ]
+  ],
+  "discount": null,
+  "duration": "12 days and 11 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3714,7 +3828,7 @@
     "Sliding at the sand dunes",
     "Hiking in the natural parks"
   ],
-  "price": "2930",
+  "price": 2930,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3803,7 +3917,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flight (Ulaanbaatar-Dalanzadgad)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guides for horse and camel riding\nHorse and camel riding \nCamping equipment",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flight (Ulaanbaatar-Dalanzadgad)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guides for horse and camel riding\nHorse and camel riding \nCamping equipment",
-  "slug": "mongolia riding tour",
+  "slug": "mongolia-riding-tour",
   "prices": [
     "2 PAX",
     "2930$",
@@ -3815,7 +3929,10 @@
     "2470$",
     "13-15 PAX",
     "2415$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3830,7 +3947,7 @@
     "Remote lifestyle, meet with Darkhad People & Shaman",
     "High Mountain passes"
   ],
-  "price": "2590",
+  "price": 2590,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -3901,7 +4018,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (Ulaanbaatar-Murun-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding (optional)\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic round-trip flights (Ulaanbaatar-Murun-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding (optional)\nCamping equipments",
-  "slug": "pioneering in khovsgol taiga wilderness Тrekking Тour",
+  "slug": "pioneering-in-khovsgol-taiga-wilderness-Тrekking-Тour",
   "prices": [
     "2 PAX",
     "2590$",
@@ -3913,7 +4030,10 @@
     "2090$",
     "13-15 PAX",
     "1990$"
-  ]
+  ],
+  "discount": null,
+  "duration": "9 days and 8 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -3928,7 +4048,7 @@
     "Visit to Zaya Gegeenii Khuree Monastery",
     "Explore Kharkhorin & Erdene Zuu Monastery, Orkhon valley"
   ],
-  "price": "3200",
+  "price": 3200,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4009,7 +4129,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "mongolia fishing tour in arkhangai province",
+  "slug": "mongolia-fishing-tour-in-arkhangai-province",
   "prices": [
     "2 PAX",
     "3200$",
@@ -4017,7 +4137,10 @@
     "2830$",
     "5-8 PAX",
     "2450$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4030,7 +4153,7 @@
     "Birthplace of Royal Family of Chinggis Khaan",
     "Wide-open steppe"
   ],
-  "price": "2280",
+  "price": 2280,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4105,7 +4228,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, * ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****, * ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "eastern mongolia tour",
+  "slug": "eastern-mongolia-tour",
   "prices": [
     "2 PAX",
     "2280$",
@@ -4117,7 +4240,10 @@
     "1930$",
     "13-15 PAX",
     "1880$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4133,7 +4259,7 @@
     "Khermen tsav / Famous Dinosaur sites",
     "Visit Camel breeding family"
   ],
-  "price": "2590",
+  "price": 2590,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4220,7 +4346,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flight (Ulaanbaatar- Dalanzadgad)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guide for a camel riding\nCamel riding\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flight (Ulaanbaatar- Dalanzadgad)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nLocal guide for a camel riding\nCamel riding\nCamping equipments",
-  "slug": "caravanning through desert wonders tour",
+  "slug": "caravanning-through-desert-wonders-tour",
   "prices": [
     "2 PAX",
     "2590$",
@@ -4232,7 +4358,10 @@
     "2090$",
     "13-15 PAX",
     "1990$"
-  ]
+  ],
+  "discount": null,
+  "duration": "12 days and 11 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4247,7 +4376,7 @@
     "Yol Valley of Gobi Gurvan Saikhan National Park",
     "Orkhon Valley and Kharkhorin, the ancient capital of the Mongol empire"
   ],
-  "price": "2350",
+  "price": 2350,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4340,7 +4469,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping Equipments\nCamel riding",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping Equipments\nCamel riding",
-  "slug": "tsam religious festival and golden gobi-2024 tour (date to be announced later)",
+  "slug": "tsam-religious-festival-and-golden-gobi-2024-tour-(date-to-be-announced-later)",
   "prices": [
     "2 PAX",
     "2350$",
@@ -4352,7 +4481,10 @@
     "1950$",
     "13-15 PAX",
     "1890$"
-  ]
+  ],
+  "discount": null,
+  "duration": "12 days and 11 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4368,7 +4500,7 @@
     "Visit burial site of Mongolian Royal Family",
     "Terelj National Park"
   ],
-  "price": "1598",
+  "price": 1598,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4449,7 +4581,7 @@
   ],
   "inclusions": "Accommodation: Hotel***, tented camp, * ger camp \nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding,  ,  ",
   "notIncludes": "Accommodation: Hotel***, tented camp, * ger camp \nGuiding and interpreting service \nFull board meals \nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding",
-  "slug": "discovering homeland of chinggis khaan tour",
+  "slug": "discovering-homeland-of-chinggis-khaan-tour",
   "prices": [
     "2 PAX",
     "1598$",
@@ -4461,7 +4593,10 @@
     "1248$",
     "13-15 PAX",
     "1198$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4477,7 +4612,7 @@
     "Meeting with Nomadic families",
     "Erdene zuu monastery in Kharkhorin"
   ],
-  "price": "2240",
+  "price": 2240,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4542,7 +4677,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flight (Uliastai-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic flight (Uliastai-Ulaanbaatar)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "joyful adventure in khangai region tour",
+  "slug": "joyful-adventure-in-khangai-region-tour",
   "prices": [
     "2 PAX",
     "2240$",
@@ -4554,7 +4689,10 @@
     "1740$",
     "13-15 PAX",
     "1640$"
-  ]
+  ],
+  "discount": null,
+  "duration": "8 days and 7 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4568,7 +4706,7 @@
     "Wild Nature",
     "Visit a Nomad Family"
   ],
-  "price": "980",
+  "price": 980,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4603,7 +4741,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding,  ",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp \nGuiding and interpreting service \nFull board meals \nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipment\nHorseback riding",
-  "slug": "khustai national park short trip",
+  "slug": "khustai-national-park-short-trip",
   "prices": [
     "2 PAX",
     "980$",
@@ -4615,7 +4753,10 @@
     "650$",
     "13-15 PAX",
     "590$"
-  ]
+  ],
+  "discount": null,
+  "duration": "5 days and 4 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4628,7 +4769,7 @@
     "Tsagaan Nuur - White lake",
     "Wild rivers of northwestern Mongolia"
   ],
-  "price": "2540",
+  "price": 2540,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4701,7 +4842,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan \nDomestic round-trip flights (Murun-Ulaanbaatar-Murun)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan \nDomestic round-trip flights (Murun-Ulaanbaatar-Murun)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamping equipments",
-  "slug": "fishing in darkhad valley in khovsgol province",
+  "slug": "fishing-in-darkhad-valley-in-khovsgol-province",
   "prices": [
     "2 PAX",
     "2540$",
@@ -4713,7 +4854,10 @@
     "2190$",
     "13-15 PAX",
     "2140$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4728,7 +4872,7 @@
     "Hustai National Park",
     "Takhi - Przewalsi horse"
   ],
-  "price": "1198",
+  "price": 1198,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4779,7 +4923,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "cultural and conventional tour",
+  "slug": "cultural-and-conventional-tour",
   "prices": [
     "2 PAX",
     "1198$",
@@ -4791,7 +4935,10 @@
     "898$",
     "13-15 PAX",
     "848$"
-  ]
+  ],
+  "discount": null,
+  "duration": "6 days and 5 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4806,7 +4953,7 @@
     "Elsen Tasarkhai Sand Dunes",
     "Orkhon waterfall"
   ],
-  "price": "2390",
+  "price": 2390,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4887,7 +5034,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorses for carrying luggage",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorses for carrying luggage",
-  "slug": "trekking through orkhon valley & suvarga khairkhan mountain tour",
+  "slug": "trekking-through-orkhon-valley-&-suvarga-khairkhan-mountain-tour",
   "prices": [
     "2 PAX",
     "2390$",
@@ -4899,7 +5046,10 @@
     "1890$",
     "13-15 PAX",
     "1740$"
-  ]
+  ],
+  "discount": null,
+  "duration": "11 days and 10 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4912,7 +5062,7 @@
     "Argali Wild Mountain Sheep",
     "Horse riding session"
   ],
-  "price": "750",
+  "price": 750,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -4935,7 +5085,7 @@
   ],
   "inclusions": "Accommodation: * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fee to the nature reserve\nHorseback riding",
   "notIncludes": "Accommodation: * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fee to the nature reserve\nHorseback riding",
-  "slug": "short trip to gun-galuut nature reserve for birding",
+  "slug": "short-trip-to-gun-galuut-nature-reserve-for-birding",
   "prices": [
     "2 PAX",
     "750$",
@@ -4947,7 +5097,10 @@
     "500$",
     "13-15 PAX",
     "475$"
-  ]
+  ],
+  "discount": null,
+  "duration": "3 days and 2 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -4956,7 +5109,7 @@
   "title": "World Energy Center - Khamar Monastery Tour Mongolia",
   "overview": "Eastern Gobi region or Dornogobi province is situated in the Southeast of the country and borders China. This wide area is a semi-desert zone, with hard and sandy soil. The territory is famous for medical herbs such as licorice, Cuscuta australis, and annual, perennial species, including wild leek, saksaul, elm, allium mongolicum, and saltwort. Home to iconic wild animals, such as wild horse, wild sheep, ibex, black-tailed antelope, white antelope, and lynx. Railway over 311 miles (500 km) long crosses 6 simons. Dornogobi has a railway station linking Moscow-Ulaanbaatar-Beijing, a medical museum, the music and drama theater named after Noble Saint Danzanravjaa, an ethnographic museum, an electrical power plant, food mills, and trade and cultural centers.",
   "locations": [],
-  "price": "898",
+  "price": 898,
   "dailyData": [
     {
       "number": "DAY 1",
@@ -4987,7 +5140,7 @@
   ],
   "inclusions": "Accommodation: hotel, nomadic stay\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic train ticket (Ulaanbaatar-Sainshand)\nInternational train ticket (Sainshand-Beijing)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
   "notIncludes": "Accommodation: hotel, nomadic stay\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic train ticket (Ulaanbaatar-Sainshand)\nInternational train ticket (Sainshand-Beijing)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "world energy center - khamar monastery tour mongolia",
+  "slug": "world-energy-center---khamar-monastery-tour-mongolia",
   "prices": [
     "2 PAX",
     "898$",
@@ -4999,7 +5152,10 @@
     "598$",
     "13-15 PAX",
     "548$"
-  ]
+  ],
+  "discount": null,
+  "duration": "4 days and 3 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5015,7 +5171,7 @@
     "Ancient Mongolian capital Kharkhorin",
     "Erdene Zuu Monastery"
   ],
-  "price": "1398",
+  "price": 1398,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5064,7 +5220,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, nomadic stay, * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nMuseums and cultural performance\nHorseback riding",
   "notIncludes": "Accommodation: Hotel****, nomadic stay, * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nMuseums and cultural performance\nHorseback riding",
-  "slug": "living a nomad life in orkhon valley tour",
+  "slug": "living-a-nomad-life-in-orkhon-valley-tour",
   "prices": [
     "2 PAX",
     "1398$",
@@ -5076,7 +5232,10 @@
     "1048$",
     "13-15 PAX",
     "998$"
-  ]
+  ],
+  "discount": null,
+  "duration": "6 days and 5 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5090,7 +5249,7 @@
     "Nomadic Family",
     "Horse Riding"
   ],
-  "price": "1345",
+  "price": 1345,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5137,7 +5296,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "cultural short tour with kharkhorin-erdene zuu monastery",
+  "slug": "cultural-short-tour-with-kharkhorin-erdene-zuu-monastery",
   "prices": [
     "2 PAX",
     "1345$",
@@ -5145,7 +5304,10 @@
     "1195$",
     "5-8 PAX",
     "1095$"
-  ]
+  ],
+  "discount": null,
+  "duration": "6 days and 5 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5158,7 +5320,7 @@
     "Horse and camel riding",
     "Discovery of different landscapes of Mongolia."
   ],
-  "price": "1898",
+  "price": 1898,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5241,7 +5403,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, nomadic stay\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding\nCamel riding",
   "notIncludes": "Accommodation: Hotel****,* ger camp, nomadic stay\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nHorseback riding\nCamel riding",
-  "slug": "adventure kids tour in orkhon valley",
+  "slug": "adventure-kids-tour-in-orkhon-valley",
   "prices": [
     "2 PAX",
     "1898$",
@@ -5251,7 +5413,10 @@
     "1548$",
     "9-12 PAX",
     "1448$"
-  ]
+  ],
+  "discount": null,
+  "duration": "10 days and 9 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5260,7 +5425,7 @@
   "title": "Mongolia Russia /Baikal/ Tour",
   "overview": "Imagine that after finding yourself in the very heart of the Gobi Desert you will be at the beautiful Baikal Lake surrounded by deep alpine forest just in 15 days. To do this way you have to cross the border of two big countries much different from each other: Mongolia and Russia. Our tour starts from Mongolia - a land of nomadic civilization under the cloudless blue sky, and the boundless steppe with freely galloping horsemen. Trip to South Gobi desert will give you real adventure by slipping down from the top of awesome sand dunes, riding Bactrian camels, visiting burial place of dinosaurs. Further our trip turns up to the Kharkhorin - the ruins of ancient Mongolian capital with historical Erdene Zuu Monastery aside. Beautiful lake Ogii, place of tranquility, lies on your way to have a good relaxation after long way driving through the legendary land.\n\nAfter crossing Mongolia-Russian borders, we arrive in Ulan-Ude, capital of Buryata, where we start our touring around magnificent Baikal Lake. One of interesting sites of our tour is Ivolginsky Datsan - the center of Buddhism of Russia in 30 km far from Ulan-Ude City. Our next stopover point is Irkutsk - one of the oldest and most attractive Siberian cities with the largest transport unit on the Transsiberian railroad. Enjoy the magnificent views of Baikal Lake from the highest spot in the area - Tchersky Peak and boating in the largest and the deepest lake in the world.",
   "locations": [],
-  "price": "3960",
+  "price": 3960,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5350,7 +5515,7 @@
   "inclusions": "Accommodation: Hotel***,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nDomestic flight from Ulaanbaatar to Gobi\nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nTrain ticket\nCamping equipments",
   "notIncludes": "Accommodation: Hotel***,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nDomestic flight from Ulaanbaatar to Gobi\nTransport: vehicle 4x4 or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nTrain ticket\nCamping equipments",
   "rate": 4.5,
-  "slug": "mongolia russia /baikal/ tour",
+  "slug": "mongolia-russia-baikal-tour",
   "prices": [
     "2-4 pax",
     "3960$",
@@ -5358,7 +5523,10 @@
     "3840$",
     "9-15 pax",
     "3740$"
-  ]
+  ],
+  "discount": null,
+  "duration": "14 days and 13 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5373,7 +5541,7 @@
     "Hiking in the wild forest and opportunity of fishing and horse riding",
     "Wild Nature"
   ],
-  "price": "2440",
+  "price": 2440,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5466,7 +5634,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding (optional)\nCamping equipments",
   "notIncludes": "Accommodation: Hotel****,* ger camp, tented camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding (optional)\nCamping equipments",
-  "slug": "fishing in central mongolia tour",
+  "slug": "fishing-in-central-mongolia-tour",
   "prices": [
     "2 PAX",
     "2440$",
@@ -5478,7 +5646,10 @@
     "1990$",
     "13-15 PAX",
     "1890$"
-  ]
+  ],
+  "discount": null,
+  "duration": "13 days and 12 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5494,7 +5665,7 @@
     "Beijing /The Sacred Road, Roasted Duck at Qianmen Quanjude - Summer Palace - Olympic Village /",
     "The Great Wall"
   ],
-  "price": "2698",
+  "price": 2698,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5557,7 +5728,7 @@
   ],
   "inclusions": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle / minivan / bus\nDomestic round-trip flight (Ulaanbaatar-Dalanzadgad-Ulaanbaatar)\nInternational flight (Ulaanbaatar-Beijing)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding",
   "notIncludes": "Accommodation: Hotel****,* ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle / minivan / bus\nDomestic round-trip flight (Ulaanbaatar-Dalanzadgad-Ulaanbaatar)\nInternational flight (Ulaanbaatar-Beijing)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance\nCamel riding\nHorseback riding",
-  "slug": "mongolia - china tour with flight",
+  "slug": "mongolia---china-tour-with-flight",
   "prices": [
     "2 PAX",
     "2698$",
@@ -5569,7 +5740,10 @@
     "2198$",
     "13-15 PAX",
     "2098$"
-  ]
+  ],
+  "discount": null,
+  "duration": "8 days and 7 night",
+  "image": "/images/semi-gobi.png"
 },
 {
   "_id": {
@@ -5584,7 +5758,7 @@
     "Visiting nomad family",
     "Danzan Ravjaa Museum"
   ],
-  "price": "1980",
+  "price": 1980,
   "dailyData": [
     {
       "number": "DAY 1.",
@@ -5635,7 +5809,7 @@
   ],
   "inclusions": "Accommodation: Hotel****, local hotel, * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic train ticket (Ulaanbaatar-Sainshand)\nInternational train ticket (Sainshand-Beijing)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
   "notIncludes": "Accommodation: Hotel****, local hotel, * ger camp\nGuiding and interpreting service\nFull board meals\nTransport: 4x4 vehicle or minivan\nDomestic train ticket (Ulaanbaatar-Sainshand)\nInternational train ticket (Sainshand-Beijing)\nEntrance fees to protected areas and national parks\nMuseums and cultural performance",
-  "slug": "ulaanbaatar to beijing train tour",
+  "slug": "ulaanbaatar-to-beijing-train-tour",
   "prices": [
     "2 PAX",
     "1980$",
@@ -5647,5 +5821,8 @@
     "1580$",
     "13-15 PAX",
     "1480$"
-  ]
+  ],
+  "discount": null,
+  "duration": "7 days and 6 night",
+  "image": "/images/semi-gobi.png"
 }]
