@@ -26,7 +26,6 @@ export default function Register() {
                 password
             );
             alert("Success");
-            console.log(userCredential);
             // .then((userCredential) => {
             //     alert("Success");
             //     const user = userCredential.user;

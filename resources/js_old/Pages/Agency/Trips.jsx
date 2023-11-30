@@ -9,30 +9,31 @@ import { Search } from "../../components/search";
 import { StarRating } from "../../components/review/StarRating";
 import { useState } from "react";
 import Fbfaq from "../../components/faq/Fbfaq";
-import Slider from 'rc-slider';
-import 'rc-slider/assets/index.css';
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 const RangeSlider = () => {
     const [range, setRange] = useState([80, 1500]);
-  
+
     const handleRangeChange = (newRange) => {
-      setRange(newRange);
+        setRange(newRange);
     };
-  
+
     return (
-      <div className=" px-4">
-        <Slider
-    
-            range={true}
-          min={0}
-          max={3500}
-          step={1}
-          value={range}
-          onChange={handleRangeChange}
-        />
-        <p>Price: ${range[0]} -  ${range[1]}</p>
-      </div>
+        <div className=" px-4">
+            <Slider
+                range={true}
+                min={0}
+                max={3500}
+                step={1}
+                value={range}
+                onChange={handleRangeChange}
+            />
+            <p>
+                Price: ${range[0]} - ${range[1]}
+            </p>
+        </div>
     );
-  };
+};
 
 export default function Trip() {
     const filter = [
@@ -104,7 +105,6 @@ export default function Trip() {
                             className=" overflow-y-auto mt-4 flex justify-start w-[250px] flex-col top-16 "
                         >
                             <div>
-                                
                                 <p className=" w-full  border-b-2 flex justify-start">
                                     {" "}
                                     &emsp; RATING
@@ -121,14 +121,16 @@ export default function Trip() {
                                                     type="checkbox"
                                                     className=" w-3 h-3 bg-gray-100 border-gray-300 mr-1 "
                                                 /> */}
-                                               
-                                                <StarRating 
+
+                                                <StarRating
                                                     totalStars={5}
                                                     rating={item.rating}
                                                     width={4}
-                                                    
                                                 />
-                                                <p className=" ml-1  text-sm leading-3 font-medium"> & up</p>
+                                                <p className=" ml-1  text-sm leading-3 font-medium">
+                                                    {" "}
+                                                    & up
+                                                </p>
                                             </a>
                                         );
                                     })}
@@ -170,7 +172,7 @@ export default function Trip() {
                                 <p className=" w-full border-b-2 flex justify-start">
                                     &emsp; PRICE
                                 </p>
-                                <RangeSlider/>
+                                <RangeSlider />
                             </div>
 
                             <div className=" mt-8">
@@ -285,9 +287,6 @@ export default function Trip() {
 
             <Footer />
             <Fbfaq />
-
         </div>
     );
 }
-
-

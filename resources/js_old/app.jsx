@@ -86,11 +86,11 @@ const router = createBrowserRouter([
     },
 ]);
 
-ReactDOM.createRoot(document.getElementById("app")).render(
-    <MainContextProvider>
-        <RouterProvider router={router} />
-    </MainContextProvider>
-);
+// ReactDOM.createRoot(document.getElementById("app")).render(
+//     <MainContextProvider>
+//         <RouterProvider router={router} />
+//     </MainContextProvider>
+// );
 
 export default function App() {
     return (

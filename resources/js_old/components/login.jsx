@@ -31,7 +31,6 @@ export default function Login() {
         } catch (e) {
             setLoading(false);
             return alert("Нэвтрэх нэр эсвэл нууц үг буруу байна!");
-       
         }
     };
 
@@ -39,8 +38,8 @@ export default function Login() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
     return (
-        <div className="rounded-2xl w-[30vw] bg-white dark:bg-darkbg h-full float-right">
-            <div className=" flex flex-col justify-center">
+        <div className="w-96 rounded-2xl bg-white dark:bg-darkbg h-full float-right">
+            <div className="flex flex-col justify-center w-full">
                 <h1 className=" text-center mt-[8vh] mb-10 dark:text-gray-300 font-extrabold text-3xl">
                     Sign In
                 </h1>

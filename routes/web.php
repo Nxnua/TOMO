@@ -12,10 +12,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/old/{reactRoutes}', function () {
-    return view('main'); // your start view
-})->where('reactRoutes', '^((?!dbconn).)*$');
-
 
 Route::get('{reactRoutes}', function () {
     return view('main'); // your start view

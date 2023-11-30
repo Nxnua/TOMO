@@ -22,8 +22,8 @@ export default function ModalHandler() {
     return (
         <>
             <div className="z-[100] flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div className="w-[75vw] self-center p-0">
-                    <div className="flex relative h-[600px]">
+                <div className="flex w-full">
+                    <div className="flex-1 rounded-2xl">
                         <img
                             src={
                                 darkMode
@@ -31,23 +31,25 @@ export default function ModalHandler() {
                                     : "/images/bg-light.png"
                             }
                             alt=""
-                            className=" rounded-2xl w-[600px] lg:w-[900px]"
+                            className="h-full w-full object-cover object-left"
                         />
 
-                        <div className=" absolute right-0">{renderer()}</div>
-                        <div className="absolute float right-4 top-4">
-                            <button onClick={() => setModal("")}>
-                                <svg
-                                    className="w-6 h-6 text-gray-800 dark:text-white"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
-                                </svg>
-                            </button>
+                        <div className="w-96 rounded-2xl bg-white dark:bg-darkbg h-full float-right">
+                            {renderer()}
                         </div>
+                    </div>
+                    <div className="absolute float right-4 top-4">
+                        <button onClick={() => setModal("")}>
+                            <svg
+                                className="w-6 h-6 text-gray-800 dark:text-white"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
