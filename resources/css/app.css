@@ -1,0 +1,276 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+    font-family: "Nunito", sans-serif;
+    letter-spacing: -0.05em;
+    --orange: #e46a12;
+    --black-75: 0, 0, 0, 0.75;
+    --black-50: 0, 0, 0, 0.5;
+    --info: #40c0d2;
+    --success: #51d175;
+    --error: #d24040;
+    --warning: #f5a52e;
+    --background-dark: #101727;
+    --navigation-dark: #272b3f;
+}
+
+.menu-active {
+    @apply text-orange;
+}
+
+#overview,
+#itinerary,
+#inclusions,
+#review {
+    scroll-margin-top: 120px;
+}
+
+#photos {
+    scroll-margin-top: 200px;
+}
+
+#bar-fixed {
+    height: 100vh;
+    top: 110px;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+::-webkit-scrollbar {
+    margin-left: 20px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sty {
+    mix-blend-mode: multiply;
+}
+
+.to-left {
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-duration: 60s;
+}
+
+.to-left1 {
+    animation-name: move1;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-duration: 90s;
+}
+
+.divider {
+    border-bottom-color: (
+        270deg,
+        transparent 15%,
+        var(--clr-border) 15%,
+        var(--clr-border) 85%,
+        transparent 85%
+    );
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-10000px);
+    }
+}
+
+@keyframes move1 {
+    from {
+        transform: translateX(4400px);
+    }
+    to {
+        transform: translateX(-10000px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-4%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animation {
+    bounce {
+        animation: delay 2s;
+    }
+}
+
+/*MY CSS*/
+
+body {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*CSS3 STROKE EFFECT*/
+
+#mainNav ul li {
+    display: inline-block;
+    display: inline;
+    margin: 20px;
+}
+
+#mainNav ul li a,
+#mainNav ul li a:after,
+#mainNav ul li a:before {
+    transition: all 0.5s;
+}
+
+/* stroke */
+
+#mainNav.stroke ul li a {
+    position: relative;
+}
+
+#mainNav.stroke ul li a:after,
+#mainNav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #e34f25;
+    height: 1px;
+}
+
+#mainNav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.box span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-right: 2px solid #e46a12;
+    border-bottom: 2px solid #e46a12;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.rc-slider-rail {
+    @apply bg-slate-200  !important;
+}
+
+.rc-slider-handle {
+    @apply bg-orange  border-0 opacity-100 !important;
+}
+.rc-slider-track {
+    @apply bg-orange border-none opacity-100 !important;
+}
+.rc-slider-handle-dragging {
+    @apply bg-orange border-none opacity-80 !important;
+    box-shadow: 0 0 0 5px orange !important;
+}
+.rc-slider-handle:focus-visible {
+    @apply border-0 !important;
+    box-shadow: 0 0 0 1px orange !important;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px; 
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: -8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: -8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 18px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 18px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}

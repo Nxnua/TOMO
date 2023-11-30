@@ -1,0 +1,88 @@
+[
+    {
+        "title": "Overnight Semi-Gobi Tour",
+        "location": "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
+        "image": "/images/semi-gobi.png",
+        "price": 200,
+        "discount": 25,
+        "duration": "2 days and 1 night",
+        "review": 40,
+        "rating": 4.5,
+        "stars": ""
+    },
+    {
+        "title": "A day trip to Terelj National Park and Statue of Chinggis Khan",
+        "location": "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
+        "image": "/images/terelj.png",
+        "price": 200,
+        "discount": 30,
+        "duration": "1 day",
+        "review": 40,
+        "rating": 4,
+        "stars": ""
+    },
+    {
+        "title": "Manzushir Monastery",
+        "location": "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
+        "image": "/images/manzushir.png",
+        "price": 200,
+        "discount": 10,
+        "duration": "2 days and 1 night",
+        "review": 40,
+        "rating": 4.5,
+        "stars": ""
+    },
+    {
+        "title": "A day trip to Terelj National Park and Statue of Chinggis Khan",
+        "image": "/images/manzushir.png",
+        "location": "Terelj National Park",
+        "review": 47,
+        "rating": 4.3,
+        "price": 200,
+        "duration": "2 days and 1 night",
+        "discount": null
+    },
+    {
+        "title": "A day trip to Terelj National Park and Statue of Chinggis Khan",
+        "image": "/images/semi-gobi.png",
+        "location": "Manzushir Monastery and hiking to the peak of Bodg Khan at Tsetsee Gun ",
+
+        "rating": 4.5,
+        "review": 471,
+        "price": 200,
+        "duration": "7 days",
+        "discount": null
+    },
+    {
+        "title": "A day trip to Terelj National Park and Statue of Chinggis Khan",
+        "image": "/images/terelj.png",
+        "location": "Elsen Tasarkhai sand dunes, nomadic family, wild horses in Hustai National Park",
+
+        "review": 47,
+        "rating": 3.5,
+        "price": 200,
+        "discount": null,
+        "duration": "2 days and 1 night"
+    },
+    {
+        "title": "A day trip",
+        "image": "/images/semi-gobi.png",
+        "location": "Tasarkhai sand dunes, nomadic family",
+
+        "review": 47,
+        "rating": 4.5,
+        "price": 200,
+        "duration": "2 days and 1 night",
+        "discount": null
+    },
+    {
+        "title": "A day trip to Terelj National Park and Statue of Chinggis Khan",
+        "image": "/images/semi-gobi.png",
+        "location": "Terelj National Park",
+        "review": 47,
+        "rating": 4.5,
+        "price": 200,
+        "discount": null,
+        "duration": "2 days and 1 night"
+    }
+]
