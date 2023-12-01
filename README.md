@@ -1,4 +1,4 @@
-<h1 align="center">TOMO</h1>
+<h1 align="center">TOMO - PROD</h1>
 
 It is only for viewing our project TOMO. We're working on our front-end code now..
 
