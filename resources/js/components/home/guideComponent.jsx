@@ -44,19 +44,17 @@ export default function Guide({ guide }) {
                 <div className="descrption w-auto h-[50%] flex flex-row ">
                     <div className="w-auto m-4 text-sm font-medium text-justify">{description}</div>
                 </div>
-                <div className="w-full flex flex-row justify-start ml-3 space-x-[75%]">
-                    <div>
+                <div className=" flex flex-row justify-between mx-3 ">
+                    <div className=" flex flex-row items-center"> 
                         <img src="/images/hun.png" alt="" />
-                        2-6
+                       <p> 2-6</p>
                     </div>
-                    <div className="favorite flex">
-                        <div className=" absolute flex justify-center ">
+                    <div className="favorite ">
                             <img
                                 src="/images/favorite.png"
                                 alt=""
                                 className=" hover:opacity-50 h-6 w-6"
                             />
-                        </div>
                     </div>
                 </div>
                 <div className=" transition ease-in-out delay-50  hover:scale-105  mt-5 drop-shadow-[_0px_4px_4px_rgba(0,0,0,0.2)] ">
