@@ -1,10 +1,11 @@
 import { tripList } from "../data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "rc-slider/assets/index.css";
-import TripComponent from "../components/trips/tripComponent";
+import TripComponent from "../components/home/tripComponent";
 import { Search } from "../components/search";
 import { StarRating } from "../components/review/StarRating";
 import Slider from "rc-slider";
+import axios from "axios";
 const RangeSlider = () => {
     const [range, setRange] = useState([80, 1500]);
 
@@ -12,6 +13,7 @@ const RangeSlider = () => {
         setRange(newRange);
     };
 
+   
     return (
         <div className=" px-4">
             <Slider
@@ -30,6 +32,27 @@ const RangeSlider = () => {
 };
 
 export default function Trips() {
+    const [trips, setTrips] = useState([]);
+    useEffect(() => {
+        fetchTrips();
+    }, []);
+
+    const fetchTrips = () => {
+        axios
+            .get(`/api/trips?offset=0&limit=8`)
+            .then(({ data }) => {
+                if (data.status === "success") {
+                    setTrips(data.result);
+                } else {
+                    alert("Интернэт холболтоо шалгана уу!");
+                }
+            })
+            .catch((e) => {
+                alert("Интернэт холболтоо шалгана уу!");
+            });
+        return;
+    };
+
     const filter = [
         {
             catName: "RATING",
@@ -222,47 +245,23 @@ export default function Trips() {
                             </div>
                         </div>
                         <div className=" grid  mb-8 xl:grid-cols-3 gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
-                            {tripList.map((item, i) => {
+                            {trips.map((item, i) => {
                                 return (
-                                    <TripComponent
-                                        title={item.title}
-                                        location={item.location}
-                                        image={item.image}
-                                        review={item.review}
-                                        rating={item.rating}
-                                        discount={item.discount}
-                                        duration={item.duration}
-                                        price={item.price}
+                                    <TripComponent tripData={item}
                                         key={"trip_item_in_list_" + i}
                                     />
                                 );
                             })}
-                            {tripList.map((item, i) => {
+                            {trips.map((item, i) => {
                                 return (
-                                    <TripComponent
-                                        title={item.title}
-                                        location={item.location}
-                                        image={item.image}
-                                        review={item.review}
-                                        rating={item.rating}
-                                        discount={item.discount}
-                                        duration={item.duration}
-                                        price={item.price}
+                                    <TripComponent tripData={item}
                                         key={"trip_item_in_list2_" + i}
                                     />
                                 );
                             })}
-                            {tripList.map((item, i) => {
+                            {trips.map((item, i) => {
                                 return (
-                                    <TripComponent
-                                        title={item.title}
-                                        location={item.location}
-                                        image={item.image}
-                                        review={item.review}
-                                        rating={item.rating}
-                                        discount={item.discount}
-                                        duration={item.duration}
-                                        price={item.price}
+                                    <TripComponent tripData={item}
                                         key={"trip_item_in_list3_" + i}
                                     />
                                 );
