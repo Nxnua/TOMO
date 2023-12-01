@@ -45,7 +45,7 @@ export default function MainLayout() {
             <div id="main-wrapper">
                 <Header />
                 <div className=" pt-20"></div>
-                <BreadCrumb />
+                {/* <BreadCrumb /> */}
                 {location.pathname == "/" && (
                     <div className="mt-20 h-[30vh] pt-10 px-28">
                         <SearchCategory />
