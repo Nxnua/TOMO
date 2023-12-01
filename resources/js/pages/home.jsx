@@ -48,7 +48,7 @@ export default function HomePage() {
             <div className="z-20 mx-20 flex justify-center flex-col ">
                 <p className=" text-2xl  font-bold mb-12 "> Guides</p>
 
-                <div className="grid justify-between mx-auto 2xl:grid-cols-3 xl:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-20 md:grid-cols-1 md:mx-auto grid-cols-1">
+                <div className="grid mx-auto 2xl:grid-cols-3 xl:grid-cols-2 gap-8 lg:grid-cols-2  md:grid-cols-1 md:mx-auto grid-cols-1">
                     {guides.map((item, i) => {
                         return (
                             <GuideComponent
