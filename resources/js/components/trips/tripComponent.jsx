@@ -28,6 +28,7 @@ export default function TripComponent({
                 <div className=" absolute flex justify-center right-3 top-2 w-7 items-center">
                     <img
                         src="/images/favorite1.png"
+
                         alt=""
                         className=" hover:opacity-50"
                     />
@@ -58,7 +59,7 @@ export default function TripComponent({
                 <div className=" flex items-center">
                     <p
                         className={
-                            "text-xs " +
+                            "text-xs font-bold" +
                             (isDiscountNull ? " hidden" : "visible") +
                             ""
                         }
