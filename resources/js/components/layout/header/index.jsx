@@ -14,6 +14,7 @@ function Header() {
     const [isSticky, setIsSticky] = useState(false);
     const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
     const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
+    const [userDropdownVisible, setUserDropdownVisible] = useState(false);
     const [openModal, setOpenModal] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -34,16 +35,25 @@ function Header() {
     const toggleTripsDropdown = () => {
         setTripsDropdownVisible(!tripsDropdownVisible);
         setMoreDropdownVisible(false);
+        setUserDropdownVisible(false);
     };
 
     const toggleMoreDropdown = () => {
         setMoreDropdownVisible(!moreDropdownVisible);
         setTripsDropdownVisible(false);
+        setUserDropdownVisible(false);
+    };
+    const toggleUserDropdown = () => {
+        setUserDropdownVisible(!userDropdownVisible);
+        setTripsDropdownVisible(false);
+        setMoreDropdownVisible(false);
+        
     };
 
     const closeDropdowns = () => {
         setTripsDropdownVisible(false);
         setMoreDropdownVisible(false);
+        setUserDropdownVisible(false);
     };
 
     const onSignInButton = () => {
@@ -57,7 +67,7 @@ function Header() {
 
     return (
         <nav
-            className={`fixed z-20 w-full top-0 bg-white rounded-b-lg border-b dark:border-gray-600 shadow-lg flex justify-between items-center h-[10vh] mx-auto font-Nunito dark:bg-darknav dark:text-white ${
+            className={`fixed z-20  w-full top-0 bg-white rounded-b-lg border-b dark:border-gray-600 shadow-lg flex justify-between items-center h-[10vh] mx-auto font-Nunito dark:bg-darknav dark:text-white ${
                 isSticky
                     ? "transform -translate-y-2 sticky top-0"
                     : "transform -translate-y-2"
@@ -145,9 +155,9 @@ function Header() {
                     </li>
                 </ul>
             </div>
-            <div className="bg-white dark:bg-darknav items-center float-right mr-10">
-                <ul className="flex items-center gap-[1vh]">
-                    <li className="flex w-6 h-auto">
+            <div className="bg-white relative  dark:bg-darknav items-center w-1/4 float-right  " >
+                <ul className="flex items-center gap-[1vh]  " onMouseLeave={closeDropdowns}>
+                    <li className="flex w-6 h-auto mr-1">
                         <a href="#">
                             <img
                                 src="/images/image 1.png"
@@ -157,15 +167,36 @@ function Header() {
                         </a>
                     </li>
                     {user ? (
-                        <li className="flex gap-2 items-center">
-                            {user.email}
-                            <button
-                                type="button"
-                                onClick={onLogout}
-                                className={`bg-orange text-white border border-orange px-6 py-1 w-[15vh] h-[5vh] rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
+                        <li className="flex gap-2 items-center"  >
+                            <div onMouseEnter={toggleUserDropdown} className=" absolute">
+                            <div className=" flex flex-row items-center"><img
+                                className="w-10 h-10 rounded-full"
+                                src="/images/avatar/tomo-1.png"
+                                alt=""
+                            />
+                            {user.email} </div>
+                            <ul className={`${
+                                userDropdownVisible ? "block" : "hidden"
+                            } absolute dark:bg-darknav border-black rounded-xl bg-white p-5 w-40 shadow-2xl transform -translate-x-1/2 -left-1/2 opacity-100 transition-all duration-300 ease-in-out`}>
+                                <li className="hover:text-orange border-black dark:hover:border-white hover:border-b relative"
                             >
-                                Logout
-                            </button>
+                                My account
+                            </li>
+                            <li className="hover:text-orange border-black dark:hover:border-white hover:border-b relative"
+                            >
+                                My favorites
+                            </li>
+                            <li className="hover:text-orange border-black dark:hover:border-white hover:border-b relative"
+                            >
+                                My trips
+                            </li>
+                            <li className="hover:text-orange border-black dark:hover:border-white hover:border-b relative"
+                                onClick={onLogout}
+                            >
+                                Sign out
+                            </li>
+                            </ul>
+                            </div>
                         </li>
                     ) : (
                         <li className="flex gap-2">
