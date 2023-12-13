@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GuideController;
+use App\Models\Admin;
 use App\Models\Guide;
 use App\Models\Trip;
 use Illuminate\Http\Request;
@@ -108,18 +109,8 @@ Route::get('/trips', function (Request $request) {
 });
 
 
-// Route::resource('guides', GuideController::class)->only([
-//     'show',
-//     'store',
-// ]);
-
-Route::get('/ping', function (Request $request) {
-    $connection = DB::connection('mongodb');
-    $msg = 'MongoDB is accessible!';
-    try {
-        $connection->command(['ping' => 1]);
-    } catch (\Exception $e) {
-        $msg = 'MongoDB is not accessible. Error: ' . $e->getMessage();
-    }
-    return ['msg' => $msg];
+Route::get('/check-admin', function (Request $request) {
+    $uid = $request->input('uid');
+    $admin = Admin::where('uid', $uid)->get();
+    return response()->json(['status' => "success", 'result' => $admin], 201);
 });

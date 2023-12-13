@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { useAuthContext, useMainContext } from "../../contexts";
+import axios from "axios";
 
 export default function Login() {
     const { setModal } = useMainContext();
@@ -25,10 +26,17 @@ export default function Login() {
             );
             if (userCredential.user) {
                 setUser(userCredential.user);
+                const { data } = await axios.get("/api/check-admin", {
+                    params: {
+                        uid: userCredential.user.uid
+                    }
+                })
+                if(Array.isArray(data.result) && data.result.length > 0) window.location.replace('/admin');
                 setModal("");
             }
             setLoading(false);
         } catch (e) {
+            console.log(e)
             setLoading(false);
             return alert("Нэвтрэх нэр эсвэл нууц үг буруу байна!");
         }
