@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { useAuthContext } from "../../../js_old/contexts";
-import { getAuth } from "firebase/auth";
 import { auth } from "../../firebase";
 import axios from "axios";
 
