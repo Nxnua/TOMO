@@ -19,7 +19,11 @@ import { Prefer } from "./pages/prefer";
 import { Days } from "./pages/days";
 import Plantrip from "./pages/PlanTrip";
 import NotificationPage from "./components/profile/Notification";
-
+import AdminLayout from "./components/layout/adminLayout";
+import { Profile1 } from "./admin1/pages1/Profile";
+import { Travel } from "./admin1/pages1/travel";
+import { Orders } from "./admin1/pages1/Orders";
+import { Logs } from "./admin1/pages1/Logs";
 
 const router = createBrowserRouter([
     {
@@ -90,12 +94,35 @@ const router = createBrowserRouter([
     },
     {
         path: "/admin",
-        element: <Home1 />,
-    },
-    {
-        path: "/admin/users",
-        element: <Single />,
-    },
+        element: <AdminLayout/>,
+        children: [
+            {
+                index: true,
+                element: <Home1 />
+            },
+            {
+                path: "users",
+                element: <Single />
+            },
+            {
+                path: "profile",
+                element: <Profile1 />
+            },
+            {
+                path: "travel",
+                element: <Travel />
+            },
+            {
+                path: "logs",
+                element: <Logs />
+            },
+            {
+                path: "orders",
+                element: <Orders />
+            },
+        ]
+    }
+   
 ]);
 
 export default function App() {
