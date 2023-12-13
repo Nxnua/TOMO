@@ -1,9 +1,34 @@
 import React from "react";
-import { StarRating } from "../components/review/StarRating";
 import Guide from "../components/home/guideComponent";
 import { guide } from "../data";
+import { StarRating } from "../components/review/StarRating";
+import { useState } from "react";
+import Slider from "rc-slider";
 // import "./navbar"
+const RangeSlider = () => {
+    const [range, setRange] = useState([80, 1500]);
 
+    const handleRangeChange = (newRange) => {
+        setRange(newRange);
+    };
+
+   
+    return (
+        <div className=" px-4">
+            <Slider
+                range={true}
+                min={0}
+                max={3500}
+                step={1}
+                value={range}
+                onChange={handleRangeChange}
+            />
+            <p>
+                Price: ${range[0]} - ${range[1]}
+            </p>
+        </div>
+    );
+};
 export const Guides = () => {
     const ratingCat = [
         { isChecked: false, rating: 4 },
@@ -49,7 +74,7 @@ export const Guides = () => {
             </div>
             <div className=" flex flex-row mx-28">
                 <div className=" w-1/4 flex flex-col relative">
-                    <div
+                <div
                         id="bar-fixed"
                         className=" overflow-y-auto mt-4 flex justify-start w-[250px] flex-col top-16 "
                     >
@@ -62,21 +87,21 @@ export const Guides = () => {
                                 {ratingCat.map((item, i) => {
                                     return (
                                         <a
-                                            key={"guides_rating_cat_" + i}
+                                            key={"rating_category_item_" + i}
                                             href=""
-                                            className=" flex flex-row mt-1 items-center"
+                                            className=" flex flex-row mt-1 items-center dark:opacity-80"
                                         >
                                             {/* <input
                                                     type="checkbox"
                                                     className=" w-3 h-3 bg-gray-100 border-gray-300 mr-1 "
                                                 /> */}
+
                                             <StarRating
                                                 totalStars={5}
                                                 rating={item.rating}
                                                 width={4}
                                             />
-                                            <p className=" ml-1 text-black75 text-sm leading-3">
-                                                {" "}
+                                            <p className=" ml-1  text-sm leading-3 font-medium">
                                                 & up
                                             </p>
                                         </a>
@@ -86,12 +111,41 @@ export const Guides = () => {
                         </div>
 
                         <div className=" mt-8">
+                            <p className=" w-full  border-b-2 flex justify-start">
+                                &emsp; ACTIVITIES
+                            </p>
+                            <div className=" mt-4 ml-2">
+                                {activitiesCat.map((item, i) => {
+                                    return (
+                                        <a
+                                            key={"active_cat_item_trips_" + i}
+                                            href=""
+                                            className=" flex flex-row items-center"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                className=" dark:bg-darkbg w-4 h-4 rounded-sm border-2 bg-orange-100 border-orange-300 mr-2 appearance-none checked:bg-orange-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-orange-500 "
+                                            />
+                                            <p className="text-sm font-normal">
+                                                {item.activities}
+                                            </p>
+                                        </a>
+                                    );
+                                })}
+                            </div>
+                            <a
+                                href=""
+                                className=" w-[80%] flex justify-center items-center"
+                            >
+                                <p className=" font-medium ">View more </p>
+                                <img src="/images/downarrow.png" alt="" />
+                            </a>
+                        </div>
+                        <div className=" mt-8">
                             <p className=" w-full border-b-2 flex justify-start">
                                 &emsp; PRICE
                             </p>
-                            <div className=" mt-4 ml-2">
-                                <img src="/images/price.png" alt="" />
-                            </div>
+                            <RangeSlider />
                         </div>
 
                         <div className=" mt-8">
@@ -102,15 +156,18 @@ export const Guides = () => {
                                 {durationCat.map((item, i) => {
                                     return (
                                         <a
-                                            key={"guides_duration_cats_" + i}
+                                            key={
+                                                "durationCat_cat_item_trips_" +
+                                                i
+                                            }
                                             href=""
                                             className=" flex flex-row items-center"
                                         >
                                             <input
                                                 type="checkbox"
-                                                className=" dark:bg-darkbg w-4 h-4 rounded-sm border-2 bg-gray-100 border-gray-300 mr-2  "
+                                                className=" dark:bg-darkbg w-4 h-4 rounded-sm border-2 bg-orange-100 border-orange-300 mr-2 appearance-none checked:bg-orange-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-orange-500 "
                                             />
-                                            <p className="text-sm font-normal">
+                                            <p className="text-sm font-normal ">
                                                 {item.duration}
                                             </p>
                                         </a>

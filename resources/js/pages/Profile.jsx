@@ -1,8 +1,10 @@
 import { useState } from "react";
-
+import {Link} from "react-router-dom"
 import { Modal } from "flowbite-react";
 import ProfileEditPage from "../components/profile/profileComponent";
 import ChangePasswordPage from "../components/profile/profilePassword";
+import NotificationPage from "../components/profile/Notification";
+
 export const Profile = () => {
     const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
     const [moreDropdownVisible, setMoreDropdownVisible] = useState(false);
@@ -169,10 +171,10 @@ export const Profile = () => {
                                 <a href="#">Profile</a>
                             </li>
                             <li>
-                                <a href="#">Notifiction</a>
+                                <Link to='/Notification'>Notification</Link>
                             </li>
                             <li>
-                                <a href="#">Favorite</a>
+                                <a href="">Favorite</a>
                             </li>
                             <li>
                                 <a href="#">Reviewed</a>
@@ -208,8 +210,11 @@ export const Profile = () => {
 
                 <div className="dark:bg-slate-500 post w-[990px] h-[20vw] flex flex-col justify-between rounded-md bg-white mt-5 ml-10 mb-5 shadow-md">
                     bio
+                    
                 </div>
+                
             </div>
+            
         </>
     );
 };

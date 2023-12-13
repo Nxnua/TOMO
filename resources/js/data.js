@@ -59,7 +59,7 @@ export const guide = [
         star: "4.5",
     },
     {
-        id: 1,
+        id: 2,
         name: "Zolboo",
         description:
             "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
@@ -68,29 +68,20 @@ export const guide = [
         star: "4.5",
     },
     {
-        id: 1,
+        id: 3,
         name: "Zoloo",
         description:
             "     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id felis turpis. Integer sit amet nibh non ligula vehicula pulvinar sed eget neque. Proin aliquet tincidunt lectus. In tempor, metus eu vestibulum fermentum, ipsum libero tristique sapien, eget efficitur mauris lorem nec eros. ",
-        image: "/images/profile.jpg",
-        image: "/images/profile.jpg",
+        image: "/images/profile2.jpg",
         review: "47 view",
         star: "4.5",
     },
     {
-        id: 2,
+        id: 4,
         name: "Zulaa",
         description:
             "float-right absolute md:min-h-fit min-h-[60vh] left-0 top-[86px] md:w-auto",
-
         image: "/images/profile0.jpg ",
-
-        image: "/images/profile0.jpg",
-
-
-        image: "/images/profile0.jpg ",
-
-
         review: "9 view",
         star: "2.1",
     },
@@ -725,3 +716,4 @@ export const GuideMore = [
 
     },
 ];
+

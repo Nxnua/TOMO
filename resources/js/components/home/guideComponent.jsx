@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import Review from "../review";
 export default function Guide({ guide }) {
+    
     const { name, description, image, review, rate } = guide;
+    
     return (
         <div className="flex dark:bg-darknav  bg-white dark:border-gray-800 rounded-2xl w-[450px] h-[300px] border border-neutral-100 drop-shadow-[_0px_15px_15px_rgba(0,0,0,0.05)]">
             <div className=" w-[35%]  flex flex-col justify-between items-center">

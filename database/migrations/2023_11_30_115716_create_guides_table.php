@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('guides', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 255)->index();
+            $table->string('description', 255)->index();
+            $table->string('image', 255);
+            
             $table->timestamps();
         });
     }
