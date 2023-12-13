@@ -267,7 +267,17 @@ export default function Trips() {
                                 );
                             })}
                         </div>
+                        
                     </div>
+                    <div>
+                            <a
+                                href=""
+                                className=" w-[80%] flex justify-center items-center ml-[115px]"
+                            >
+                                <p className=" font-medium ">View more </p>
+                                <img src="/images/downarrow.png" alt="" />
+                            </a>
+                        </div>
                 </div>
             </div>
         </div>

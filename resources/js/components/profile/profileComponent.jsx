@@ -7,6 +7,7 @@ const ProfileEditPage = () => {
         lastName: "",
         userName: "",
         bio: "",
+        email:"",
     });
 
     const handleImageClick = () => {
@@ -107,6 +108,16 @@ const ProfileEditPage = () => {
                                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
                         </label>
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Email:
+                            <input
+                                type="text"
+                                name="userName"
+                                value={formData.userName}
+                                onChange={handleChange}
+                                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </label>
 
                         <label className="block text-gray-700 text-sm font-bold mb-2">
                             Bio:
@@ -117,6 +128,7 @@ const ProfileEditPage = () => {
                                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
                         </label>
+                        
                     </div>
                 </div>
 

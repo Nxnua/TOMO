@@ -11,11 +11,20 @@ class Guide extends Model
     protected $connection = 'mongodb';
     protected $collection = 'guides';
     protected $fillable = [
-        'name',
-        'description',
-        'image',
-        'review',
-        "rate"
+        "title",
+        "location",
+        "image",
+        "price",
+        "discount",
+        "duration",
+        "review",
+        "rating",
+        "stars",
+        "discount",
+        "duration",
+        "review",
+        "rating",
+        "star"
     ];
 
 

@@ -13,10 +13,13 @@ import Home1 from "./admin1/pages1/home1";
 import Single from "./admin1/pages1/Single";
 import Feedback from "./pages/feedback";
 import { Profile } from "./pages/Profile";
+import  Notification  from "./components/profile/Notification";
 import SvgComponent from "./components/Map";
 import { Prefer } from "./pages/prefer";
 import { Days } from "./pages/days";
 import Plantrip from "./pages/PlanTrip";
+import NotificationPage from "./components/profile/Notification";
+
 
 const router = createBrowserRouter([
     {
@@ -78,6 +81,10 @@ const router = createBrowserRouter([
             {
                 path: "/faqq",
                 element: <Accordion />,
+            },
+            {
+                path: "/notification",
+                element: <NotificationPage />,
             },
         ],
     },
