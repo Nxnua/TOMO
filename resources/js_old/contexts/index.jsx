@@ -1,7 +1,9 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { ThemeContextProvider } from "./theme";
 import { AuthContextProvider } from "./auth";
 import ModalHandler from "../modals";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase";
 
 const MainContext = createContext({});
 export default function MainContextProvider({ children }) {
@@ -17,6 +19,7 @@ export default function MainContextProvider({ children }) {
             _setLoading(state);
         },
     };
+
     return (
         <MainContext.Provider value={contextValue}>
             <ThemeContextProvider>

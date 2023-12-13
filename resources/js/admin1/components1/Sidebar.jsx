@@ -3,7 +3,6 @@ import { MdDashboard } from "react-icons/md";
 import { MdTravelExplore } from "react-icons/md";
 import { MdBorderColor } from "react-icons/md";
 import { FaThList } from "react-icons/fa";
-import { IoSettingsSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { CiLogout } from "react-icons/ci";
 import { Link } from "react-router-dom";
@@ -25,36 +24,36 @@ const Sidebar = () => {
             <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Dashboard</span>
           </li></Link>
           <p className="text-[10px] font-lg text-[#fff] mt-[15px] mb-[5px]">LISTS</p>
-          <Link to="/admin/users" style={{ textDecoration: "none" }}>
+          <Link to="/admin/users" >
             <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
               <FaUser color="white"/>
               <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Users</span>
             </li>
           </Link>
-          <Link to="/admin/travel" style={{ textDecoration: "none" }}>
+          <Link to="/admin/travel" >
             <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
               <MdTravelExplore color="white"/>
               <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Travel</span>
             </li>
           </Link>
+          <Link to="/admin/orders" >
           <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
           <MdBorderColor color="white"/>
             <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Orders</span>
           </li>
-          <p className="text-[10px] font-lg text-[#fff] mt-[15px] mb-[5px]">SERVICE</p>
+          </Link>
+          <Link to="/admin/logs">
           <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
           <FaThList color="white"/>
             <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Logs</span>
-          </li>
-          <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
-          <IoSettingsSharp color="white"/>
-            <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Settings</span>
-          </li>
+          </li></Link>
           <p className="text-[10px] font-lg text-[#fff] mt-[15px] mb-[5px]">USER</p>
+          <Link to="/admin/profile">
           <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
           <CgProfile color="white"/>
             <span className="text-[13px] font-semibold text-[#fff] ml-2.5">Profile</span>
           </li>
+          </Link>
           <Link to="/">
           <li className="flex items-center cursor-pointer p-[5px] hover:bg-[#ff9539]">
           <CiLogout color="white"/>

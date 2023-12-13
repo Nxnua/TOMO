@@ -179,7 +179,7 @@ function Header() {
                             </button>
                             <button
                                 onClick={() => setModal("signUP")}
-                                className={`bg-orange text-white border border-orange px-6 py-1 w-[15vh] h-[5vh] rounded-2xl hover:opacity-80 dark:bg-error dark:border-error`}
+                                className={`bg-orange text-white border border-orange px-6 py-1 w-[15vh] h-[5vh] rounded-2xl hover:opacity-80 dark:bg-error dark:border-error whitespace-nowrap`}
                             >
                                 Sign Up
                             </button>

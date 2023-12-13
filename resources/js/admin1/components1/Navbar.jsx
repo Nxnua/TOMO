@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
 
+
 const Navbar = () => {
   const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
-const toggleTripsDropdown = () => {
+const toggleProfileDropdown = () => {
   setTripsDropdownVisible(!tripsDropdownVisible);
 };
 const closeDropdowns = () => {
@@ -26,7 +27,7 @@ const closeDropdowns = () => {
             <div className='mr-1'>
             <GrLanguage  />
             </div>
-            <Link to="#">English</Link>
+            <Link to="/" >English</Link>
           </div>
           <div className="flex items-center relative mr-5">
             <div className='mr-1'>
@@ -34,9 +35,6 @@ const closeDropdowns = () => {
             </div>
             <Link to="#">Mail</Link>
             <div className="w-[10px] h-[10px] bg-[red] text-[white] flex items-center justify-center text-[10px] font-[bold] absolute top-[-5px] right-[-5px] rounded-[50%]">2</div>
-          </div>
-          <div className="flex items-center relative mr-5">
-          
           </div>
           <div className="flex items-center relative mr-5">
             <img
@@ -49,10 +47,10 @@ const closeDropdowns = () => {
                 onMouseLeave={closeDropdowns}
             >
                 <ul>
-                <li
-                        id="trips"
+                    <li
+                        id="gundalai"
                         className="relative"
-                        onMouseEnter={toggleTripsDropdown}
+                        onMouseEnter={toggleProfileDropdown}
                     >
                         <Link
                             className="hover:text-gray-500 inline-block"
@@ -66,19 +64,19 @@ const closeDropdowns = () => {
                         >
                             <li className="relative">
                                 <Link
-                                    to="/planyourtrip"
+                                    to="/admin/profile"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
-                                    Plan a trip
+                                    Profile
                                 </Link>
                             </li>
                             <li>
-                                <a
-                                    href="/trips"
-                                    className="hover:text-orange dark:hover:border-white border-black hover:border-b"
-                                >
-                                    Agencies
-                                </a>
+                              <Link
+                              to="/"
+                              className="hover:text-orange dark:hover:border-white border-black hover:border-b"
+                              >
+                                  Logout
+                              </Link>  
                             </li>
                         </ul>
                     </li>
