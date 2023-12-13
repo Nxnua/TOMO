@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
 
+
 const Navbar = () => {
   const [tripsDropdownVisible, setTripsDropdownVisible] = useState(false);
-const toggleTripsDropdown = () => {
+const toggleProfileDropdown = () => {
   setTripsDropdownVisible(!tripsDropdownVisible);
 };
 const closeDropdowns = () => {
@@ -63,10 +64,10 @@ const closeDropdowns = () => {
                         >
                             <li className="relative">
                                 <Link
-                                    to="/planyourtrip"
+                                    to="/admin/profile"
                                     className="hover:text-orange dark:hover:border-white border-black hover:border-b"
                                 >
-                                    Plan a trip
+                                    Profile
                                 </Link>
                             </li>
                             <li>
@@ -78,7 +79,7 @@ const closeDropdowns = () => {
                               </Link>  
                             </li>
                         </ul>
-                    
+                    </li>
                 </ul>
             </div>
           </div>

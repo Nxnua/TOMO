@@ -3,7 +3,6 @@ import { MdDashboard } from "react-icons/md";
 import { MdTravelExplore } from "react-icons/md";
 import { MdBorderColor } from "react-icons/md";
 import { FaThList } from "react-icons/fa";
-import { IoSettingsSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { CiLogout } from "react-icons/ci";
 import { Link } from "react-router-dom";

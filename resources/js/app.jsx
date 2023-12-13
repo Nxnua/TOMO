@@ -11,6 +11,7 @@ import Feedback from "./Pages/feedback";
 import Faq from "./Pages/faq";
 import Faqclose from "./components/faq/faqClose";
 import Home1 from "./admin1/pages1/home1";
+import { Travel } from "./admin1/pages1/travel";
 //import App from "./admin1/App";
 import Single from "./admin1/pages1/Single";
 import { GuideDetail } from "./Pages/Guide/GuideDetail";
@@ -80,12 +81,24 @@ const router = createBrowserRouter([
         element: <Single />,
     },
     {
-        path: "/admin/travel",
-        element: <Travel />,
+        path: "/admin/Logs",
+        element: <Logs />,
+    },
+    {
+        path: "/admin/Profile",
+        element: <Profile1 />,
     },
     {
         path: "/reviews",
         element: <Reviews />,
+    }, 
+    {
+        path: "/admin/travel",
+        element: <Travel />,
+    },
+    {
+        path: "/admin/Orders",
+        element: <Orders />,
     },
     {
         path: "/faq",

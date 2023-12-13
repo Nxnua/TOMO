@@ -9,7 +9,7 @@ export const Orders = () => {
       <div className="flex-[6]">
         <Navbar />
         <div className='flex'>
-            Order
+            sdA
         </div>
       </div>
     </div>
